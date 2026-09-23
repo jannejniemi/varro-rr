@@ -1,0 +1,1731 @@
+# file_note = DEPS holds the audited ALDT/PDT-style analytical tree for comparison, not project UD Enhanced Dependencies; ALDT-only nodes (elided predicates ALDT posits with no UD counterpart) carry MISC=ComparisonNode=ALDT and HEAD=DEPREL=_. HEAD/DEPREL/FEATS mirror the corresponding sentence in RR_reviewed.conllu (matched 1:1 by sent_id); ReviewNote/ReviewTags/SyntaxNote/Variant are cross-referenced there rather than repeated here.
+# sent_id = S000036
+# speaker = Narrator
+# edition_loc = 1.2.1
+# text_old = Sementivis feriis in aedem Telluris veneram rogatus ab aeditumo, ut dicere didicimus a patribus nostris, ut corrigimur a recentibus urbanis, ab aedituo.
+# text = sementivis feriis in aedem Telluris veneram rogatus ab aeditumo, ut dicere didicimus a patribus nostris, ut corrigimur a recentibus urbanis, ab aedituo.
+# text_en = At the Sementivae festival I had come to the temple of Tellus, invited by the aeditumus, as we learned to say from our fathers, or, as we are corrected by recent urban sophisticates, by the aedituus.
+# text_fr = Lors des fêtes Sementives, j’étais venu au temple de Tellus, invité par l’aeditumus, comme nous avons appris à le dire de nos pères, ou, comme nous sommes corrigés par les modernes citadins, par l’aedituus.
+# text_fi = Sementivae-juhlien aikaan olin tullut Telluksen temppeliin aeditumuksen kutsumana, kuten opimme sanomaan isiltämme, tai, kuten nykyiset kaupunkilaiset meitä korjaavat, aedituuksen kutsumana.
+# review_status = silver
+1	sementivis	sementivus	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurO|Number=Plur	2	amod	2:ATR	DiscourseMode=Narrative|OrigForm=Sementivis|Speaker=Narrator
+2	feriis	feriae	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Plur	6	obl	6:ADV	DiscourseMode=Narrative|Speaker=Narrator
+3	in	in	ADP	_	_	4	case	6:AuxP	DiscourseMode=Narrative|Speaker=Narrator
+4	aedem	aedes	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	6	obl	3:ADV	DiscourseMode=Narrative|Speaker=Narrator
+5	Telluris	Tellus	PROPN	_	Case=Gen|Gender=Fem|InflClass=IndEurX|NameType=Rel|Number=Sing	4	nmod	4:ATR	DiscourseMode=Narrative|Speaker=Narrator
+6	veneram	venio	VERB	_	Aspect=Perf|InflClass=LatI4|Mood=Ind|Number=Sing|Person=1|Tense=Pqp|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Narrative|Speaker=Narrator
+7	rogatus	rogo	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatA|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	6	advcl	6:AtvV	DiscourseMode=Narrative|Speaker=Narrator
+8	ab	ab	ADP	_	_	9	case	17:AuxP	DiscourseMode=Narrative|Speaker=Narrator
+9	aeditumo	aeditumus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	7	obl:agent	8:OBJ_AP	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+10	,	,	PUNCT	_	_	13	punct	9:AuxX	DiscourseMode=Narrative|Speaker=Narrator
+11	ut	ut	SCONJ	_	_	13	mark	9:AuxC	DiscourseMode=Narrative|Speaker=Narrator
+12	dicere	dico	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	13	xcomp	13:OBJ	DiscourseMode=Narrative|Speaker=Narrator
+13	didicimus	disco	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	9	acl	11:ATR	DiscourseMode=Narrative|Speaker=Narrator
+14	a	ab	ADP	_	_	15	case	13:AuxP	DiscourseMode=Narrative|Speaker=Narrator
+15	patribus	pater	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurX|Number=Plur	13	obl	14:OBJ	DiscourseMode=Narrative|Speaker=Narrator
+16	nostris	noster	DET	_	Case=Abl|Gender=Masc|Number=Plur|Number[psor]=Plur|Person[psor]=1|Poss=Yes|PronType=Prs	15	det:poss	15:ATR	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+17	,	,	PUNCT	_	_	19	punct	7:APOS	DiscourseMode=Narrative|Speaker=Narrator
+18	ut	ut	SCONJ	_	_	19	mark	25:AuxC	DiscourseMode=Narrative|Speaker=Narrator
+19	corrigimur	corrigo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Pass	25	acl	18:ATR	DiscourseMode=Narrative|Speaker=Narrator
+20	a	ab	ADP	_	_	22	case	19:AuxP	DiscourseMode=Narrative|Speaker=Narrator
+21	recentibus	recens	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurI|Number=Plur	22	amod	22:ATR	DiscourseMode=Narrative|Speaker=Narrator
+22	urbanis	urbanus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Plur	19	obl:agent	20:OBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+23	,	,	PUNCT	_	_	25	punct	25:AuxX	DiscourseMode=Narrative|Speaker=Narrator
+24	ab	ab	ADP	_	_	25	case	17:AuxP	DiscourseMode=Narrative|Speaker=Narrator
+25	aedituo	aedituus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	9	appos	24:OBJ_AP	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+26	.	.	PUNCT	_	_	6	punct	6:AuxK	DiscourseMode=Narrative|Speaker=Narrator
+
+# sent_id = S000037
+# speaker = Narrator
+# edition_loc = 1.2.1
+# text_old = Offendi ibi C. Fundanium, socerum meum, et C. Agrium equitem R. Socraticum et P. Agrasium publicanum spectantes in pariete pictam Italiam.
+# text = offendi ibi C. Fundanium, socerum meum, et C. Agrium equitem R. Socraticum et P. Agrasium publicanum spectantes in pariete pictam Italiam.
+# text_en = There I encountered Gaius Fundanius, my father-in-law, and Gaius Agrius, a Roman knight and Socratic, and Publius Agrasius, a tax-farmer, as they were looking at a painted Italy on the wall.
+# text_fr = Là, je rencontrai Gaius Fundanius, mon beau-père, Gaius Agrius, chevalier romain et socratique, et Publius Agrasius, publicain, qui regardaient sur le mur une Italie peinte.
+# text_fi = Siellä tapasin Gaius Fundaniuksen, appeni, sekä Gaius Agriuksen, roomalaisen ritarin ja sokraattisen miehen, ja Publius Agrasiuksen, veronkantajan, jotka katselivat seinälle maalattua Italiaa.
+# review_status = silver
+1	offendi	offendo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Narrative|OrigForm=Offendi|Speaker=Narrator
+2	ibi	ibi	ADV	_	AdvType=Loc	1	advmod:lmod	1:ADV	DiscourseMode=Narrative|Speaker=Narrator
+3	C	Gaius	PROPN	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	flat:name	5:ATR	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+4	.	.	PUNCT	_	_	3	punct	3:AuxG	DiscourseMode=Narrative|Speaker=Narrator
+5	Fundanium	Fundanius	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	1	obj	6:OBJ_AP_CO	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+6	,	,	PUNCT	_	_	7	punct	18:APOS	DiscourseMode=Narrative|Speaker=Narrator
+7	socerum	socer	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	5	appos	6:OBJ_AP_CO	DiscourseMode=Narrative|Speaker=Narrator
+8	meum	meus	DET	_	Case=Acc|Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	7	det:poss	7:ATR	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+9	,	,	PUNCT	_	_	13	punct	18:AuxX	DiscourseMode=Narrative|Speaker=Narrator
+10	et	et	CCONJ	_	_	13	cc	18:AuxY	DiscourseMode=Narrative|Speaker=Narrator
+11	C	Gaius	PROPN	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	13	flat:name	13:ATR	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+12	.	.	PUNCT	_	_	11	punct	11:AuxG	DiscourseMode=Narrative|Speaker=Narrator
+13	Agrium	Agrius	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	conj	18:OBJ_CO	DiscourseMode=Narrative|Speaker=Narrator
+14	equitem	eques	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	13	appos	13:ATR	DiscourseMode=Narrative|Speaker=Narrator
+15	R	Romanus	ADJ	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	14	amod	14:ATR	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+16	.	.	PUNCT	_	_	15	punct	15:AuxG	DiscourseMode=Narrative|Speaker=Narrator
+17	Socraticum	Socraticus	ADJ	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	13	amod	13:ATR	DiscourseMode=Narrative|Speaker=Narrator
+18	et	et	CCONJ	_	_	21	cc	1:COORD	DiscourseMode=Narrative|Speaker=Narrator
+19	P	Publius	PROPN	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	21	flat:name	21:ATR	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+20	.	.	PUNCT	_	_	19	punct	19:AuxG	DiscourseMode=Narrative|Speaker=Narrator
+21	Agrasium	Agrasius	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	conj	18:OBJ_CO	DiscourseMode=Narrative|Speaker=Narrator
+22	publicanum	publicanus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	21	appos	21:ATR	DiscourseMode=Narrative|Speaker=Narrator
+23	spectantes	specto	VERB	_	Aspect=Imp|Case=Acc|Gender=Masc|InflClass=LatA|InflClass[nominal]=IndEurI|Number=Plur|VerbForm=Part|Voice=Act	5	acl	18:ATR	DiscourseMode=Narrative|Speaker=Narrator
+24	in	in	ADP	_	_	25	case	26:AuxP	DiscourseMode=Narrative|Speaker=Narrator
+25	pariete	paries	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurX|Number=Sing	26	obl	24:ADV	DiscourseMode=Narrative|Speaker=Narrator
+26	pictam	pingo	VERB	_	Aspect=Perf|Case=Acc|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	27	acl	27:ATR	DiscourseMode=Narrative|Speaker=Narrator
+27	Italiam	Italia	PROPN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	23	obj	23:OBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
+28	.	.	PUNCT	_	_	1	punct	1:AuxK	DiscourseMode=Narrative|Speaker=Narrator
+
+# sent_id = S000038
+# speaker = Varro
+# edition_loc = 1.2.1
+# text_old = Quid vos hic? inquam, num feriae sementivae otiosos huc adduxerunt, ut patres et avos solebant nostros?
+# text = quid vos hic? inquam, num feriae sementivae otiosos huc adduxerunt, ut patres et avos solebant nostros?
+# text_en = “What are you doing here?” I said; “have the Sementivae brought you here in holiday leisure, as they used to bring our fathers and grandfathers?”
+# text_fr = « Que faites-vous ici ? » dis-je ; « les fêtes Sementives vous ont-elles amenés ici dans le loisir des jours de fête, comme elles avaient coutume d’amener nos pères et nos grands-pères ? »
+# text_fi = “Mitä te täällä teette?” sanoin; “ovatko Sementivae-juhlat tuoneet teidät tänne juhlapäivän joutilaisuuteen, kuten ne ennen toivat isämme ja esi-isämme?”
+# review_status = silver
+1	quid	quis	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Int	2	orphan	2.1:OBJ	DiscourseMode=Dialogue|OrigForm=Quid|Speaker=Varro
+2	vos	tu	PRON	_	Case=Nom|InflClass=LatAnom|Number=Plur|Person=2|PronType=Prs	0	root	2.1:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+2.1	facitis	_	_	_	_	_	_	6:OBJ_CO	_
+3	hic	hic	ADV	_	AdvType=Loc|PronType=Dem	2	orphan	2.1:ADV	DiscourseMode=Dialogue|Speaker=Varro|SpaceAfter=No
+4	?	?	PUNCT	_	_	2	punct	18:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+5	inquam	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis:reporting	0:PRED	DiscourseMode=Narrative|Speaker=Varro|SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:COORD	DiscourseMode=Narrative|Speaker=Varro
+7	num	num	PART	_	PartType=Int	12	advmod	12:AuxY	DiscourseMode=Dialogue|Speaker=Varro
+8	feriae	feriae	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Plur	12	nsubj	12:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+9	sementivae	sementivus	ADJ	_	Case=Nom|Gender=Fem|InflClass=IndEurO|Number=Plur	8	amod	8:ATR	DiscourseMode=Dialogue|Speaker=Varro
+10	otiosos	otiosus	ADJ	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	12	obj	12:AtvV	DiscourseMode=Dialogue|Speaker=Varro
+11	huc	huc	ADV	_	AdvType=Loc|PronType=Dem	12	advmod:lmod	12:ADV	DiscourseMode=Dialogue|Speaker=Varro
+12	adduxerunt	adduco	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	6:OBJ_CO	DiscourseMode=Dialogue|Speaker=Varro|SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	12:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+14	ut	ut	SCONJ	_	_	18	mark	12:AuxC	DiscourseMode=Dialogue|Speaker=Varro
+15	patres	pater	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Plur	18	obj	16:OBJ_CO	DiscourseMode=Dialogue|Speaker=Varro
+16	et	et	CCONJ	_	_	17	cc	19.1:COORD	DiscourseMode=Dialogue|Speaker=Varro
+17	avos	avus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	15	conj	16:OBJ_CO	DiscourseMode=Dialogue|Speaker=Varro
+18	solebant	soleo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	advcl	14:ADV	DiscourseMode=Dialogue|Speaker=Varro
+19	nostros	noster	DET	_	Case=Acc|Gender=Masc|Number=Plur|Number[psor]=Plur|Person[psor]=1|Poss=Yes|PronType=Prs	15	det:poss	16:ATR	DiscourseMode=Dialogue|Speaker=Varro|SpaceAfter=No
+19.1	adducere	_	_	v--pna---	_	_	_	18:OBJ	ComparisonNode=ALDT
+20	?	?	PUNCT	_	_	12	punct	5:AuxK	DiscourseMode=Dialogue|Speaker=Varro
+
+# sent_id = S000039
+# speaker = Agrius
+# edition_loc = 1.2.2
+# text_old = Nos vero, inquit Agrius, ut arbitror, eadem causa quae te, rogatio aeditumi.
+# text = nos vero – inquit Agrius – ut arbitror, eadem causa quae te, rogatio aeditumi.
+# text_en = “Us too,” said Agrius, “as I think, the same reason that brought you: the temple-keeper’s summons.”
+# text_fr = « Nous aussi, dit Agrius, à ce que je crois, la même raison qui t’a amené : la convocation du gardien du temple. »
+# text_fi = ”Meidätkin”, sanoi Agrius, ”luullakseni sama syy kuin sinut: temppelinpalvelijan kutsu.”
+# review_status = silver
+1	nos	nos	PRON	_	Case=Acc|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	11	orphan	11.1:OBJ	DiscourseMode=Dialogue|OrigForm=Nos|Speaker=Agrius
+2	vero	vero	ADV	_	_	11	discourse	11.1:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+3	–	–	PUNCT	_	_	4	punct	11.1:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Agrius
+4	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	parataxis:reporting	0:PRED	DiscourseMode=Narrative|Speaker=Agrius
+5	Agrius	Agrius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	4	nsubj	4:SBJ	DiscourseMode=Narrative|Speaker=Agrius
+6	–	–	PUNCT	_	_	4	punct	11.1:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Agrius
+7	ut	ut	SCONJ	_	_	8	mark	11.1:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+8	arbitror	arbitror	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Pass	11	advcl:cmp	7:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+9	,	,	PUNCT	_	_	8	punct	11.1:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+10	eadem	idem	DET	_	Case=Nom|Form=Emp|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	11	det	11:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+11	causa	causa	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	0	root	14:SBJ_AP	DiscourseMode=Dialogue|Speaker=Agrius
+11.1	adduxit	_	_	_	_	_	_	4:OBJ	InheritedFrom=S000038:12
+12	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	11	acl:relcl	12.1:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+12.1	adduxit	_	_	_	_	_	_	10:ATR	InheritedFrom=S000038:12
+13	te	tu	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing|Person=2|PronType=Prs	12	orphan	12.1:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+14	,	,	PUNCT	_	_	12	punct	11.1:APOS	DiscourseMode=Dialogue|Speaker=Agrius
+15	rogatio	rogatio	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	11	appos	14:SBJ_AP	DiscourseMode=Dialogue|Speaker=Agrius
+16	aeditumi	aeditumus	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	15	nmod	15:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+17	.	.	PUNCT	_	_	11	punct	4:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000040
+# speaker = Agrius
+# edition_loc = 1.2.2
+# text_old = Itaque si ita est, ut annuis, morere oportet nobiscum, dum ille revertatur.
+# text = itaque si ita est, ut annuis, morere oportet nobiscum, dum ille revertatur.
+# text_en = Therefore, if it is so, as you indicate, you should stay with us until he returns.
+# text_fr = Donc, s’il en est ainsi, comme tu l’indiques, il faut que tu restes avec nous jusqu’à ce qu’il revienne.
+# text_fi = Niinpä, jos asia on niin kuin nyökkäät, sinun on jäätävä meidän kanssamme, kunnes hän palaa.
+# review_status = silver
+1	itaque	itaque	ADV	_	_	10	discourse	10:AuxY	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Agrius
+2	si	si	SCONJ	_	_	3	mark	10:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+3	ita	ita	ADV	_	_	10	advcl	4:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+4	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	2:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+5	,	,	PUNCT	_	_	3	punct	7:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+6	ut	ut	SCONJ	_	_	7	mark	3:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+7	annuis	annuo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl:cmp	6:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+8	,	,	PUNCT	_	_	3	punct	7:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+9	morere	moror	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Pass	10	csubj	10:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+10	oportet	oportet	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Agrius
+11	nobis	nos	PRON	_	Case=Abl|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	9	obl	12:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+12	cum	cum	ADP	_	AdpType=Post	11	case	10:AuxP	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+13	,	,	PUNCT	_	_	16	punct	10:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+14	dum	dum	SCONJ	_	_	16	mark	9:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+15	ille	ille	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	16	nsubj	16:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+16	revertatur	revertor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	9	advcl	14:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+17	.	.	PUNCT	_	_	10	punct	10:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000041
+# speaker = Agrius
+# edition_loc = 1.2.2
+# text_old = Nam accersitus ab aedile, cuius procuratio huius templi est, nondum rediit et nos uti expectaremus se reliquit qui rogaret.
+# text = nam accersitus ab aedile, cuius procuratio huius templi est, nondum rediit et nos uti expectaremus se reliquit qui rogaret.
+# text_en = For, having been summoned by the aedile whose charge this temple is, he has not yet returned, and he left someone to ask that we wait for him.
+# text_fr = Car, appelé par l’édile qui a la charge de ce temple, il n’est pas encore revenu, et il a laissé quelqu’un pour nous demander de l’attendre.
+# text_fi = Sillä kutsuttuna ediilin luo, jonka vastuulla tämä temppeli on, hän ei ole vielä palannut, ja hän jätti jonkun pyytämään, että odottaisimme häntä.
+# review_status = silver
+1	nam	nam	PART	_	_	13	discourse	2:AuxY	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Agrius
+2	accersitus	accerso	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	13	advcl:pred	14:AtvV	DiscourseMode=Dialogue|Speaker=Agrius
+3	ab	ab	ADP	_	_	4	case	2:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+4	aedile	aedilis	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurI|Number=Sing	2	obl:agent	3:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+5	,	,	PUNCT	_	_	7	punct	2:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+6	cuius	qui	PRON	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	7	nmod	7:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+7	procuratio	procuratio	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	4	acl:relcl	10:PNOM	DiscourseMode=Dialogue|Speaker=Agrius
+8	huius	hic	DET	_	Case=Gen|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	9	det	9:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+9	templi	templum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	7	nmod	7:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+10	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	4:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+11	,	,	PUNCT	_	_	7	punct	14:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+12	nondum	nondum	ADV	_	_	13	advmod:tmod	13:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+13	rediit	redeo	VERB	_	Aspect=Perf|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	14:PRED_CO	DiscourseMode=Dialogue|Speaker=Agrius
+14	et	et	CCONJ	_	_	19	cc	0:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+15	nos	nos	PRON	_	Case=Acc|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	21	obj	17:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+16	uti	ut	SCONJ	_	_	17	mark	21:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+17	expectaremus	expecto	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Sub|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	21	ccomp	16:OBJ_CO	DiscourseMode=Dialogue|Speaker=Agrius
+18	se	sui	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	17	obj	17:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+19	reliquit	relinquo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	conj	14:PRED_CO	DiscourseMode=Dialogue|Speaker=Agrius
+20	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	21	nsubj	21:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+21	rogaret	rogo	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	ccomp:relcl	19:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+22	.	.	PUNCT	_	_	13	punct	14:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000042
+# speaker = Varro
+# edition_loc = 1.2.2
+# text_old = Voltis igitur interea vetus proverbium, quod est "Romanus sedendo vincit", usurpemus, dum ille venit?
+# text = voltis igitur interea vetus proverbium, quod est “Romanus sedendo vincit”, usurpemus, dum ille venit?
+# text_en = Do you therefore want us, meanwhile, to put into use the old proverb, which is “the Roman wins by sitting,” until he comes?
+# text_fr = Voulez-vous donc, entre temps, que nous mettions en pratique le vieux proverbe qui dit : « Le Romain l’emporte en restant assis », jusqu’à ce qu’il arrive ?
+# text_fi = Haluatteko siis sillä välin, että otamme käyttöön vanhan sananlaskun, joka kuuluu: ”Roomalainen voittaa istumalla”, kunnes hän tulee?
+# review_status = silver
+1	voltis	volo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|OrigForm=Voltis|Speaker=Varro
+2	igitur	igitur	PART	_	_	1	discourse	1:AuxY	DiscourseMode=Dialogue|Speaker=Varro
+3	interea	interea	ADV	_	AdvType=Tim|Compound=Yes	15	advmod:tmod	15:ADV	DiscourseMode=Dialogue|Speaker=Varro
+4	vetus	vetus	ADJ	_	Case=Acc|Gender=Neut|InflClass=IndEurX|Number=Sing	5	amod	5:ATR	DiscourseMode=Dialogue|Speaker=Varro
+5	proverbium	proverbium	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	15	obj	15:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+6	,	,	PUNCT	_	_	12	punct	8:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+7	quod	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	12	nsubj:outer	8:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+8	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop:outer	5:ATR	DiscourseMode=Dialogue|Speaker=Varro
+9	“	“	PUNCT	_	_	12	punct	12:AuxG	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+10	Romanus	romanus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	12	nsubj	12:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+11	sedendo	sedeo	VERB	_	Aspect=Prosp|Case=Abl|InflClass=LatE|InflClass[nominal]=IndEurO|VerbForm=Part|Voice=Pass	12	advcl	12:ADV	DiscourseMode=Dialogue|Speaker=Varro|TraditionalMood=Gerundium
+12	vincit	vinco	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	8:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+13	”	”	PUNCT	_	_	12	punct	12:AuxG	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+14	,	,	PUNCT	_	_	12	punct	8:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+15	usurpemus	usurpo	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	1:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+16	,	,	PUNCT	_	_	19	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+17	dum	dum	SCONJ	_	_	19	mark	15:AuxC	DiscourseMode=Dialogue|Speaker=Varro
+18	ille	ille	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	19	nsubj	19:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+19	venit	venio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	advcl	17:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+20	?	?	PUNCT	_	_	1	punct	1:AuxK	DiscourseMode=Dialogue|Speaker=Varro
+
+# sent_id = S000043
+# speaker = Agrius
+# edition_loc = 1.2.2
+# text_old = Sane, inquit Agrius, et simul cogitans portam itineri dici longissimam esse ad subsellia sequentibus nobis procedit.
+# text = sane – inquit Agrius, et simul cogitans portam itineri dici longissimam esse ad subsellia sequentibus nobis procedit.
+# text_en = “Certainly,” said Agrius, and at the same time, thinking that the departure gate for a journey is said to be the longest, he proceeded to the benches, with us following.
+# text_fr = « Fort bien », dit Agrius, et en même temps, pensant que la porte de départ d’un voyage est dite être la plus longue, il se dirige vers les bancs, nous le suivant.
+# text_fi = ”Hyvä on”, sanoi Agrius, ja samalla, ajatellen että matkan lähtöportin sanotaan olevan pisin, hän lähti penkeille meidän seuratessamme.
+# review_status = silver
+1	sane	sane	ADV	_	_	0	root	3:OBJ	DiscourseMode=Dialogue|OrigForm=Sane|Speaker=Agrius
+2	–	–	PUNCT	_	_	3	punct	3:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Agrius
+3	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	parataxis:reporting	6:PRED_CO	DiscourseMode=Narrative|Speaker=Agrius
+4	Agrius	Agrius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	3	nsubj	3:SBJ	DiscourseMode=Narrative|Speaker=Agrius|SpaceAfter=No
+5	,	,	PUNCT	_	_	18	punct	3:AuxX	DiscourseMode=Narrative|Speaker=Agrius
+6	et	et	CCONJ	_	_	18	cc	0:COORD	DiscourseMode=Narrative|Speaker=Agrius
+7	simul	simul	ADV	_	_	8	advmod	8:AuxY	DiscourseMode=Narrative|Speaker=Agrius
+8	cogitans	cogito	VERB	_	Aspect=Imp|Case=Nom|Gender=Masc|InflClass=LatA|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	18	advcl	18:ADV	DiscourseMode=Narrative|Speaker=Agrius
+9	portam	porta	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	11	nsubj:pass	13:SBJ	DiscourseMode=Narrative|Speaker=Agrius
+10	itineri	iter	NOUN	_	Case=Dat|Gender=Neut|InflClass=IndEurX|Number=Sing	12	obl	12:OBJ	DiscourseMode=Narrative|Speaker=Agrius
+11	dici	dico	VERB	_	Aspect=Imp|InflClass=LatX|Tense=Pres|VerbForm=Inf|Voice=Pass	8	ccomp	8:OBJ	DiscourseMode=Narrative|Speaker=Agrius
+12	longissimam	longus	ADJ	_	Case=Acc|Degree=Sup|Gender=Fem|InflClass=IndEurO|Number=Sing	11	xcomp	13:PNOM	DiscourseMode=Narrative|Speaker=Agrius
+13	esse	sum	AUX	_	InflClass=LatAnom|Tense=Pres|VerbForm=Inf|Voice=Act	12	cop	11:OBJ	DiscourseMode=Narrative|Speaker=Agrius
+14	ad	ad	ADP	_	_	15	case	18:AuxP	DiscourseMode=Narrative|Speaker=Agrius
+15	subsellia	subsellium	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	18	obl:lmod	14:OBJ	DiscourseMode=Narrative|Speaker=Agrius
+16	sequentibus	sequor	VERB	_	Aspect=Imp|Case=Abl|Gender=Masc|InflClass=LatX|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	18	advcl:abs	18:ADV	DiscourseMode=Narrative|Speaker=Agrius
+17	nobis	nos	PRON	_	Case=Abl|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	16	nsubj	16:SBJ	DiscourseMode=Narrative|Speaker=Agrius
+18	procedit	procedo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	6:PRED_CO	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Agrius
+19	.	.	PUNCT	_	_	1	punct	6:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000044
+# speaker = Agrasius
+# edition_loc = 1.2.3
+# text_old = Cum consedissemus, Agrasius, Vos, qui multas perambulastis terras, ecquam cultiorem Italia vidistis? inquit.
+# text = cum consedissemus, Agrasius: vos, qui multas perambulastis terras, ecquam cultiorem Italia vidistis? inquit.
+# text_en = When we had sat down, Agrasius said: “You, who have traveled through many lands, have you seen any more cultivated than Italy?”
+# text_fr = Lorsque nous nous fûmes assis, Agrasius dit : « Vous qui avez parcouru de nombreux pays, en avez-vous vu un plus cultivé que l’Italie ? »
+# text_fi = Kun olimme istuutuneet, Agrasius sanoi: ”Te, jotka olette kulkeneet monien maiden halki, oletteko nähneet yhtäkään Italiaa viljellympää?”
+# review_status = silver
+1	cum	cum	SCONJ	_	_	2	mark	18:AuxC	DiscourseMode=Narrative|OrigForm=Cum|Speaker=Agrasius
+2	consedissemus	consido	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Sub|Number=Plur|Person=1|Tense=Pqp|VerbForm=Fin|Voice=Act	18	advcl	1:ADV	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Agrasius
+3	,	,	PUNCT	_	_	2	punct	2:AuxX	DiscourseMode=Narrative|Speaker=Agrasius
+4	Agrasius	Agrasius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	18	nsubj	18:SBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Agrasius
+5	:	:	PUNCT	_	_	18	punct	18:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Agrasius
+6	vos	tu	PRON	_	Case=Nom|InflClass=LatAnom|Number=Plur|Person=2|PronType=Prs	16	nsubj	16:SBJ	DiscourseMode=Dialogue|OrigForm=Vos|SpaceAfter=No|Speaker=Agrasius
+7	,	,	PUNCT	_	_	10	punct	10:AuxX	DiscourseMode=Dialogue|Speaker=Agrasius
+8	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	10	nsubj	10:SBJ	DiscourseMode=Dialogue|Speaker=Agrasius
+9	multas	multus	ADJ	_	Case=Acc|Degree=Pos|Gender=Fem|InflClass=IndEurA|Number=Plur|NumType=Card	11	amod	11:ATR	DiscourseMode=Dialogue|Speaker=Agrasius
+10	perambulastis	perambulo	VERB	_	Aspect=Perf|InflClass=LatA|Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	6:ATR	DiscourseMode=Dialogue|Speaker=Agrasius
+11	terras	terra	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	10	obj	10:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrasius
+12	,	,	PUNCT	_	_	10	punct	10:AuxX	DiscourseMode=Dialogue|Speaker=Agrasius
+13	ecquam	ecquis	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Ind	16	obj	16:OBJ	DiscourseMode=Dialogue|Speaker=Agrasius
+14	cultiorem	cultus	ADJ	_	Case=Acc|Degree=Cmp|Gender=Fem|InflClass=IndEurX|Number=Sing	13	amod	13:ATR	DiscourseMode=Dialogue|Speaker=Agrasius
+15	Italia	Italia	PROPN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	14	obl:cmp	14:ADV	DiscourseMode=Dialogue|Speaker=Agrasius
+16	vidistis	video	VERB	_	Aspect=Perf|InflClass=LatE|Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	18:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrasius
+17	?	?	PUNCT	_	_	16	punct	16:AuxX	DiscourseMode=Dialogue|Speaker=Agrasius
+18	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	parataxis:reporting	0:PRED	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Agrasius
+19	.	.	PUNCT	_	_	18	punct	18:AuxK	DiscourseMode=Narrative|Speaker=Agrasius
+
+# sent_id = S000045
+# speaker = Agrius
+# edition_loc = 1.2.3
+# text_old = Ego vero, Agrius, nullam arbitror esse quae tam tota sit culta.
+# text = ego vero – Agrius – nullam arbitror esse quae tam tota sit culta.
+# text_en = I indeed, Agrius, think that there is none which is so wholly cultivated.
+# text_fr = Moi, certes, Agrius, je pense qu’il n’en est aucune qui soit aussi entièrement cultivée.
+# text_fi = Minä tosiaan, Agrius, arvelen, ettei ole yhtäkään, joka olisi niin kokonaan viljelty.
+# review_status = silver
+1	ego	ego	PRON	_	Case=Nom|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	7	nsubj	7:SBJ	DiscourseMode=Dialogue|OrigForm=Ego|Speaker=Agrius
+2	vero	vero	ADV	_	_	7	discourse	13.1:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+3	–	–	PUNCT	_	_	4	punct	4.1:AuxG	DiscourseMode=Narrative|OrigForm=,|Speaker=Agrius
+4	Agrius	Agrius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	7	parataxis:reporting	4.1:SBJ	DiscourseMode=Narrative|Speaker=Agrius
+4.1	inquit	_	VERB	_	_	_	_	0:PRED	ComparisonNode=ALDT
+5	–	–	PUNCT	_	_	4	punct	4.1:AuxG	DiscourseMode=Narrative|OrigForm=,|Speaker=Agrius
+6	nullam	nullus	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|Polarity=Neg|PronType=Ind	13	nsubj:outer	8:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+7	arbitror	arbitror	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	4.1:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+8	esse	sum	AUX	_	InflClass=LatAnom|Tense=Pres|VerbForm=Inf|Voice=Act	13	cop:outer	7:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+9	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	13	nsubj:pass	13:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+10	tam	tam	ADV	_	_	11	advmod	13:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+11	tota	totus	ADJ	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Tot	9	amod	9:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+12	sit	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux:pass	13:AuxV	DiscourseMode=Dialogue|Speaker=Agrius
+13	culta	colo	VERB	_	Aspect=Perf|Case=Nom|Gender=Fem|InflClass=LatX|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	7	ccomp	8:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+13.1	inquit	_	_	v3spia---	_	_	_	4.1:ExD	ComparisonNode=ALDT
+14	.	.	PUNCT	_	_	7	punct	4.1:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000046
+# speaker = Agrius
+# edition_loc = 1.2.4
+# text_old = Primum cum orbis terrae divisus sit in duas partes ab Eratosthene maxume secundum naturam, ad meridiem versus et ad septemtriones, et sine dubio quoniam salubrior pars septemtrionalis est quam meridiana, et quae salubriora illa fructuosiora, dicendum utique Italiam magis etiam fuisse opportunam ad colendum quam Asiam, primum quod est in Europa, secundo quod haec temperatior pars quam interior.
+# text = primum cum orbis terrae divisus sit in duas partes ab Eratosthene maxume secundum naturam, ad meridiem versus et ad septemtriones, et sine dubio quoniam salubrior pars septemtrionalis est quam meridiana, et quae salubriora illa fructuosiora, dicendum utique Italiam magis etiam fuisse opportunam ad colendum quam Asiam, primum quod est in Europa, secundo quod haec temperatior pars quam interior.
+# text_en = First, since the globe of the earth has been divided by Eratosthenes, chiefly according to nature, into two parts, toward the south and toward the north, and since without doubt the northern part is healthier than the southern, and those things that are healthier are more fruitful, it must certainly be said that Italy was even more suitable for cultivation than Asia, first because it is in Europe, secondly because this part is more temperate than the inner one.
+# text_fr = D’abord, puisque le globe de la terre a été divisé par Ératosthène, surtout selon la nature, en deux parties, vers le midi et vers le septentrion, et puisque, sans aucun doute, la partie septentrionale est plus salubre que la méridionale, et que les choses plus salubres sont plus fécondes, il faut assurément dire que l’Italie fut même plus propre à être cultivée que l’Asie, premièrement parce qu’elle est en Europe, deuxièmement parce que cette partie est plus tempérée que l’intérieure.
+# text_fi = Ensiksi, koska Eratosthenes on jakanut maanpiirin, ennen kaikkea luonnon mukaan, kahteen osaan, etelää kohti ja pohjoista kohti, ja koska epäilemättä pohjoinen osa on terveellisempi kuin eteläinen ja terveellisemmät seudut ovat hedelmällisempiä, on joka tapauksessa sanottava, että Italia oli vielä Aasiaakin sopivampi viljeltäväksi, ensiksi koska se on Euroopassa, toiseksi koska tämä osa on lauhkeampi kuin sisempi.
+# review_status = silver
+1	primum	primum	ADV	_	NumType=Ord	40	advmod	5:AuxY	DiscourseMode=Dialogue|OrigForm=Primum|Speaker=Agrius
+2	cum	cum	SCONJ	_	_	5	mark	40:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+3	orbis	orbis	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurI|Number=Sing	5	nsubj:pass	5:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+4	terrae	terra	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|Number=Sing	3	nmod	3:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+5	divisus	divido	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	40	advcl	34:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
+6	sit	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux:pass	5:AuxV	DiscourseMode=Dialogue|Speaker=Agrius
+7	in	in	ADP	_	_	9	case	15:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+8	duas	duo	NUM	_	Case=Acc|Gender=Fem|InflClass=LatAnom|Number=Plur|NumType=Card	9	nummod	9:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+9	partes	pars	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurI|Number=Plur	5	obl	7:OBJ_AP	DiscourseMode=Dialogue|Speaker=Agrius
+10	ab	ab	ADP	_	_	11	case	5:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+11	Eratosthene	Eratosthenes	PROPN	_	Case=Abl|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	5	obl:agent	10:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+12	maxume	maxime	ADV	_	Degree=Sup	14	advmod	13:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+13	secundum	secundum	ADP	_	_	14	case	5:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+14	naturam	natura	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	5	obl	13:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+15	,	,	PUNCT	_	_	5	punct	5:APOS	DiscourseMode=Dialogue|Speaker=Agrius
+16	ad	ad	ADP	_	_	17	case	19:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+17	meridiem	meridies	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurE|Number=Sing	9	appos	16:OBJ_AP_CO	DiscourseMode=Dialogue|Speaker=Agrius
+18	versus	versus	ADV	_	_	17	advmod	16:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+19	et	et	CCONJ	_	_	21	cc	15:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+20	ad	ad	ADP	_	_	21	case	19:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+21	septemtriones	septemtriones	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Plur	17	conj	20:OBJ_AP_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+22	,	,	PUNCT	_	_	27	punct	34:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+23	et	et	CCONJ	_	_	27	cc	34:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+24	sine	sine	ADP	_	_	25	case	30:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+25	dubio	dubium	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	27	obl	24:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+26	quoniam	quoniam	SCONJ	_	_	27	mark	34:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+27	salubrior	saluber	ADJ	_	Case=Nom|Degree=Cmp|Gender=Fem|InflClass=IndEurX|Number=Sing	40	advcl	30:PNOM	DiscourseMode=Dialogue|Speaker=Agrius
+28	pars	pars	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Sing	27	nsubj	30:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+29	septemtrionalis	septemtrionalis	ADJ	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Sing	28	amod	28:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+30	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	27	cop	26:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
+31	quam	quam	SCONJ	_	_	32	mark	27:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+32	meridiana	meridianus	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|InflClass=IndEurO|Number=Sing	27	advcl:cmp	31:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+33	,	,	PUNCT	_	_	27	punct	34:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+34	et	et	CCONJ	_	_	38	cc	2:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+35	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	36	nsubj	38.1:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+36	salubriora	saluber	ADJ	_	Case=Nom|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Plur	37	acl:relcl	38.1:PNOM	DiscourseMode=Dialogue|Speaker=Agrius
+37	illa	ille	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Dem	38	nsubj	38.1:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+38	fructuosiora	fructuosus	ADJ	_	Case=Nom|Degree=Cmp|Gender=Neut|InflClass=IndEurO|Number=Plur	40	advcl	37:PNOM	DiscourseMode=Dialogue|Speaker=Agrius|SpaceAfter=No
+38.1	est	_	_	v3spia---	_	_	_	26:ADV_CO	ComparisonNode=ALDT
+39	,	,	PUNCT	_	_	38	punct	60.1:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+40	dicendum	dico	VERB	_	Aspect=Prosp|Case=Nom|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	0	root	40.1:PNOM	DiscourseMode=Dialogue|Speaker=Agrius|TraditionalMood=Gerundivum
+40.1	est	_	_	v3spia---	_	_	_	0:PRED	ComparisonNode=ALDT
+41	utique	utique	ADV	_	_	40	advmod:emph	40:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+42	Italiam	Italia	PROPN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	46	nsubj	45:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+43	magis	magis	ADV	_	Degree=Cmp	46	advmod	45:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+44	etiam	etiam	ADV	_	_	46	advmod:emph	45:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+45	fuisse	sum	AUX	_	Aspect=Perf|InflClass=LatAnom|Tense=Past|VerbForm=Inf|Voice=Act	46	cop	40:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+46	opportunam	opportunus	ADJ	_	Case=Acc|Degree=Pos|Gender=Fem|InflClass=IndEurO|Number=Sing	40	ccomp	45:PNOM	DiscourseMode=Dialogue|Speaker=Agrius
+47	ad	ad	ADP	_	_	48	mark	46:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+48	colendum	colo	VERB	_	Aspect=Prosp|Case=Acc|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	46	advcl	47:ATR	DiscourseMode=Dialogue|Speaker=Agrius|TraditionalMood=Gerundium
+49	quam	quam	SCONJ	_	_	50	mark	43:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+50	Asiam	Asia	PROPN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	46	advcl:cmp	49:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+51	,	,	PUNCT	_	_	56	punct	57:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+52	primum	primum	ADV	_	NumType=Ord	56	advmod	54:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+53	quod	quod	SCONJ	_	_	56	mark	57:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+54	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	56	cop	53:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
+55	in	in	ADP	_	_	56	case	54:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+56	Europa	Europa	PROPN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	46	advcl	55:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+57	,	,	PUNCT	_	_	56	punct	46:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+58	secundo	secundo	ADV	_	NumType=Ord	61	advmod	60.1:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+59	quod	quod	SCONJ	_	_	61	mark	57:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+60	haec	hic	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	62	det	60.1:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+60.1	est	_	_	v3spia---	_	_	_	59:ADV_CO	ComparisonNode=ALDT
+61	temperatior	temperatus	ADJ	_	Case=Nom|Degree=Cmp|Gender=Fem|InflClass=IndEurO|Number=Sing	46	advcl	62:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+62	pars	pars	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Sing	61	nsubj	60.1:PNOM	DiscourseMode=Dialogue|Speaker=Agrius
+63	quam	quam	SCONJ	_	_	64	mark	61:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+63.1	pars	_	_	n-s---fn-	_	_	_	64.1:SBJ	ComparisonNode=ALDT
+64	interior	interus	ADJ	_	Case=Nom|Degree=Cmp|Gender=Fem|InflClass=IndEurX|Number=Sing	61	advcl:cmp	63.1:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+64.1	est	_	_	v3spia---	_	_	_	63:OBJ	ComparisonNode=ALDT
+65	.	.	PUNCT	_	_	40	punct	40.1:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000047
+# speaker = Agrius
+# edition_loc = 1.2.4
+# text_old = Nam intus paene sempiternae hiemes, neque mirum, quod sunt regiones inter circulum septemtrionalem et inter cardinem caeli, ubi sol etiam sex mensibus continuis non videtur.
+# text = nam intus paene sempiternae hiemes, neque mirum, quod sunt regiones inter circulum septemtrionalem et inter cardinem caeli, ubi sol etiam sex mensibus continuis non videtur.
+# text_en = For inland there are almost perpetual winters, and it is not surprising, because there are regions between the northern circle and the axis of the sky, where the sun is not seen even for six continuous months.
+# text_fr = Car à l’intérieur il y a des hivers presque éternels, et cela n’est pas étonnant, puisqu’il y a des régions entre le cercle septentrional et l’axe du ciel, où le soleil ne se voit pas même pendant six mois continus.
+# text_fi = Sillä sisämaassa on lähes ikuisia talvia, eikä se ole ihme, koska on alueita pohjoisen piirin ja taivaan akselin välissä, missä aurinkoa ei nähdä edes kuuteen yhtäjaksoiseen kuukauteen.
+# review_status = silver
+1	nam	nam	PART	_	_	5	discourse	5.1:AuxY	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Agrius
+2	intus	intus	ADV	_	_	5	advmod	5.1:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+3	paene	paene	ADV	_	_	4	advmod	4:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+4	sempiternae	sempiternus	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|InflClass=IndEurO|Number=Plur	5	amod	5.1:PNOM	DiscourseMode=Dialogue|Speaker=Agrius
+5	hiemes	hiems	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Plur	0	root	5.1:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+5.1	sunt	_	_	v3ppia---	_	_	_	7:PRED_CO	ComparisonNode=ALDT
+6	,	,	PUNCT	_	_	8	punct	8.1:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+7	neque	neque	CCONJ	_	_	8	cc	0:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+8	mirum	mirus	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|InflClass=IndEurO|Number=Sing	5	conj	8.1:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+8.1	est	_	_	v3spia---	_	_	_	7:PRED_CO	ComparisonNode=ALDT
+9	,	,	PUNCT	_	_	12	punct	8.1:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+10	quod	quod	SCONJ	_	_	12	mark	8.1:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+11	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	10:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+12	regiones	regio	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Plur	8	advcl	11:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+13	inter	inter	ADP	_	_	14	case	16:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+14	circulum	circulus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	12	obl	13:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
+15	septemtrionalem	septemtrionalis	ADJ	_	Case=Acc|Degree=Pos|Gender=Masc|InflClass=IndEurI|Number=Sing	14	amod	14:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+16	et	et	CCONJ	_	_	18	cc	11:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+17	inter	inter	ADP	_	_	18	case	16:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+18	cardinem	cardo	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	14	conj	17:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
+19	caeli	caelum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	18	nmod	18:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+20	,	,	PUNCT	_	_	28	punct	16:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+21	ubi	ubi	ADV	_	PronType=Rel	28	advmod:lmod	16:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+22	sol	sol	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|Number=Sing	28	nsubj:pass	28:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+23	etiam	etiam	ADV	_	_	25	advmod:emph	28:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+24	sex	sex	NUM	_	NumForm=Word|NumType=Card	25	nummod	25:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+25	mensibus	mensis	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurI|Number=Plur	28	obl	28:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+26	continuis	continuus	ADJ	_	Case=Abl|Degree=Pos|Gender=Masc|InflClass=IndEurO|Number=Plur	25	amod	25:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+27	non	non	PART	_	Polarity=Neg	28	advmod:neg	28:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+28	videtur	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	12	acl:relcl	21:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+29	.	.	PUNCT	_	_	5	punct	7:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000048
+# speaker = Agrius
+# edition_loc = 1.2.4
+# text_old = Itaque in oceano in ea parte ne navigari quidem posse dicunt propter mare congelatum.
+# text = itaque in oceano in ea parte ne navigari quidem posse dicunt propter mare congelatum.
+# text_en = And so they say that in the ocean in that part not even sailing is possible because of the frozen sea.
+# text_fr = C’est pourquoi ils disent que, dans l’océan en cette partie, il n’est même pas possible de naviguer à cause de la mer gelée.
+# text_fi = Niinpä he sanovat, että valtameressä sillä alueella ei ole mahdollista edes purjehtia jäätyneen meren vuoksi.
+# review_status = silver
+1	itaque	itaque	ADV	_	_	11	discourse	11:AuxY	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Agrius
+2	in	in	ADP	_	_	3	case	8:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+3	oceano	oceanus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	8	obl:lmod	2:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+4	in	in	ADP	_	_	6	case	8:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+5	ea	is	DET	_	Case=Abl|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	6	det	6:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+6	parte	pars	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Sing	8	obl:lmod	4:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+7	ne	ne	PART	_	Polarity=Neg	8	advmod:neg	8:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+8	navigari	navigo	VERB	_	Aspect=Imp|InflClass=LatA|Tense=Pres|VerbForm=Inf|Voice=Pass	10	xcomp	10:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+9	quidem	quidem	ADV	_	_	8	advmod:emph	8:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+10	posse	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Tense=Pres|VerbForm=Inf|Voice=Act	11	ccomp	11:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+11	dicunt	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Agrius
+12	propter	propter	ADP	_	_	13	case	10:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+13	mare	mare	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurI|Number=Sing	10	obl	12:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+14	congelatum	congelo	VERB	_	Aspect=Perf|Case=Acc|Gender=Neut|InflClass=LatA|InflClass[nominal]=IndEurO|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	13	acl	13:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+15	.	.	PUNCT	_	_	11	punct	11:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000049
+# speaker = Fundanius
+# edition_loc = 1.2.5
+# text_old = Fundanius, Em ubi tu quicquam nasci putes posse aut coli natum.
+# text = Fundanius: em ubi tu quicquam nasci putes posse aut coli natum.
+# text_en = Fundanius: Look, where do you think anything can be born or, once born, cultivated?
+# text_fr = Fundanius : Vois donc, où penses-tu que quelque chose puisse naître ou, une fois né, être cultivé ?
+# text_fi = Fundanius: Katso nyt, missä arvelet minkään voivan syntyä tai, synnyttyään, tulla viljellyksi?
+# review_status = silver
+1	Fundanius	Fundanius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	8	parataxis:reporting	1.1:SBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Fundanius
+1.1	inquit	_	VERB	_	_	_	_	0:PRED	ComparisonNode=ALDT
+2	:	:	PUNCT	_	_	1	punct	1.1:AuxG	DiscourseMode=Narrative|OrigForm=,|Speaker=Fundanius
+3	em	em	PART	_	_	8	discourse	8:AuxY	DiscourseMode=Dialogue|OrigForm=Em|Speaker=Fundanius
+4	ubi	ubi	ADV	_	PronType=Rel	7	advmod:lmod	8:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+5	tu	tu	PRON	_	Case=Nom|InflClass=LatAnom|Number=Sing|Person=2|PronType=Prs	8	nsubj	8:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+6	quicquam	quisquam	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Ind	7	nsubj	10:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+7	nasci	nascor	VERB	_	Aspect=Imp|InflClass=LatX|Tense=Pres|VerbForm=Inf|Voice=Pass	9	xcomp	9:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+8	putes	puto	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	1.1:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+9	posse	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Tense=Pres|VerbForm=Inf|Voice=Act	8	ccomp	10:OBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+10	aut	aut	CCONJ	_	_	11	cc	8:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+11	coli	colo	VERB	_	Aspect=Imp|InflClass=LatX|Tense=Pres|VerbForm=Inf|Voice=Pass	7	conj	10:OBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+12	natum	nascor	VERB	_	Aspect=Perf|Case=Nom|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	11	advcl:pred	11:AtvV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+12.1	inquit	_	_	v3spia---	_	_	_	1.1:ExD	ComparisonNode=ALDT
+13	.	.	PUNCT	_	_	8	punct	1.1:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000050
+# speaker = Fundanius
+# edition_loc = 1.2.5
+# text_old = Verum enim est illud Pacuvi sol si perpetuo sit aut nox, flammeo vapore aut frigore terrae fructos omnis interire.
+# text = verum enim est illud Pacuvi sol si perpetuo sit aut nox, flammeo vapore aut frigore terrae fructos omnis interire.
+# text_en = For that saying of Pacuvius is true: if the sun or night were perpetual, all the fruits of the earth would perish by fiery heat or by cold.
+# text_fr = Car cette parole de Pacuvius est vraie : si le soleil ou la nuit était perpétuel, tous les fruits de la terre périraient par une chaleur de feu ou par le froid.
+# text_fi = Sillä tuo Pacuviuksen lausuma on tosi: jos aurinko tai yö olisi lakkaamaton, kaikki maan hedelmät tuhoutuisivat liekehtivästä kuumuudesta tai kylmyydestä.
+# review_status = silver
+1	verum	verus	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|InflClass=IndEurO|Number=Sing	0	root	3:PNOM	DiscourseMode=Dialogue|OrigForm=Verum|Speaker=Fundanius
+2	enim	enim	PART	_	_	1	discourse	3:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+3	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+4	illud	ille	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	1	nsubj	4.1:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+4.1	dictum	_	_	n-s---nn-	_	_	_	3:SBJ	ComparisonNode=ALDT
+5	Pacuvi	Pacuvius	PROPN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	4	nmod	4.1:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+6	sol	sol	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|Number=Sing	8	nsubj	10:SBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+7	si	si	SCONJ	_	_	8	mark	20:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+8	perpetuo	perpetuo	ADV	_	_	20	advcl	9:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+9	sit	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	7:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+10	aut	aut	CCONJ	_	_	11	cc	9:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+11	nox	nox	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	6	conj	10:SBJ_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+12	,	,	PUNCT	_	_	20	punct	10:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+13	flammeo	flammeus	ADJ	_	Case=Abl|Degree=Pos|Gender=Masc|InflClass=IndEurO|Number=Sing	14	amod	14:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+14	vapore	vapor	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurX|Number=Sing	20	obl	15:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+15	aut	aut	CCONJ	_	_	16	cc	20:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+16	frigore	frigus	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurX|Number=Sing	14	conj	15:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+17	terrae	terra	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|Number=Sing	16	nmod	18:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+18	fructos	fructus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	20	nsubj	20:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+19	omnis	omnis	DET	_	Case=Acc|Gender=Masc|InflClass=IndEurI|Number=Plur|PronType=Tot	18	det	18:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+20	interire	intereo	VERB	_	Aspect=Imp|InflClass=LatAnom|Tense=Pres|VerbForm=Inf|Voice=Act	4	acl	4.1:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+21	.	.	PUNCT	_	_	1	punct	3:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000051
+# speaker = Fundanius
+# edition_loc = 1.2.5
+# text_old = Ego hic, ubi nox et dies modice redit et abit, tamen aestivo die, si non diffinderem meo insiticio somno meridie, vivere non possum.
+# text = ego hic, ubi nox et dies modice redit et abit, tamen aestivo die, si non diffinderem meo insiticio somno meridie, vivere non possum.
+# text_en = Here, where night and day return and depart in due measure, nevertheless on a summer day, if I did not divide it with my inserted sleep at midday, I cannot live.
+# text_fr = Ici, où la nuit et le jour reviennent et s’en vont avec mesure, pourtant, un jour d’été, si je ne le coupais pas par mon sommeil intercalé à midi, je ne peux pas vivre.
+# text_fi = Täällä, missä yö ja päivä palaavat ja väistyvät kohtuullisesti, en kuitenkaan kesäpäivänä voi elää, ellen katkaisisi sitä omalla väliin sijoitetulla unellani keskipäivällä.
+# review_status = silver
+1	ego	ego	PRON	_	Case=Nom|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	27	nsubj	27:SBJ	DiscourseMode=Dialogue|OrigForm=Ego|Speaker=Fundanius
+2	hic	hic	ADV	_	PronType=Dem	27	advmod:lmod	27:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+3	,	,	PUNCT	_	_	9	punct	10:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+4	ubi	ubi	ADV	_	PronType=Rel	9	advmod:lmod	2:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+5	nox	nox	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	9	nsubj	6:SBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+6	et	et	CCONJ	_	_	7	cc	10:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+7	dies	dies	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurE|Number=Sing	5	conj	6:SBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+8	modice	modice	ADV	_	Degree=Pos	9	advmod	10:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+9	redit	redeo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	27	advcl	10:ATR_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+10	et	et	CCONJ	_	_	11	cc	4:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+11	abit	abeo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	conj	10:ATR_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+12	,	,	PUNCT	_	_	9	punct	10:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+13	tamen	tamen	ADV	_	_	27	advmod	15:AuxZ	DiscourseMode=Dialogue|Speaker=Fundanius
+14	aestivo	aestivus	ADJ	_	Case=Abl|Degree=Pos|Gender=Masc|InflClass=IndEurO|Number=Sing	15	amod	15:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+15	die	dies	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurE|Number=Sing	27	obl:tmod	27:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+16	,	,	PUNCT	_	_	19	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+17	si	si	SCONJ	_	_	19	mark	27:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+18	non	non	PART	_	Polarity=Neg	19	advmod:neg	19:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+19	diffinderem	diffindo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	27	advcl	17:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+20	meo	meus	DET	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	22	det:poss	22:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+21	insiticio	insiticius	ADJ	_	Case=Abl|Degree=Pos|Gender=Masc|InflClass=IndEurO|Number=Sing	22	amod	22:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+22	somno	somnus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	19	obl	19:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+23	meridie	meridies	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurE|Number=Sing	19	obl:tmod	22:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+24	,	,	PUNCT	_	_	19	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+25	vivere	vivo	VERB	_	Aspect=Imp|InflClass=LatX|Tense=Pres|VerbForm=Inf|Voice=Act	27	xcomp	27:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+26	non	non	PART	_	Polarity=Neg	27	advmod:neg	27:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+27	possum	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+28	.	.	PUNCT	_	_	27	punct	27:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000052
+# speaker = Fundanius
+# edition_loc = 1.2.6
+# text_old = Illic in semenstri die aut nocte quem ad modum quicquam seri aut alescere aut meti possit?
+# text = illic in semenstri die aut nocte quem ad modum quicquam seri aut alescere aut meti possit?
+# text_en = There, in a six-month day or night, how could anything be sown, or grow, or be harvested?
+# text_fr = Là-bas, dans un jour ou une nuit de six mois, de quelle manière quelque chose pourrait-il être semé, croître ou être moissonné ?
+# text_fi = Siellä, puolen vuoden päivässä tai yössä, miten mikään voisi tulla kylvetyksi, kasvaa tai tulla korjatuksi?
+# review_status = silver
+1	illic	illic	ADV	_	PronType=Dem	16	advmod:lmod	16:ADV	DiscourseMode=Dialogue|OrigForm=Illic|Speaker=Fundanius
+2	in	in	ADP	_	_	4	case	1:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+3	semenstri	semenstris	ADJ	_	Case=Abl|Degree=Pos|Gender=Masc|InflClass=IndEurI|Number=Sing	4	amod	2:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+4	die	dies	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurE|Number=Sing	16	obl:tmod	5:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+5	aut	aut	CCONJ	_	_	6	cc	16:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+6	nocte	nox	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Sing	4	conj	5:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+7	quem	quemadmodum	ADV	_	PronType=Int	16	advmod	9:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+8	ad	ad	ADV	_	PronType=Int	7	fixed	16:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+9	modum	modum	ADV	_	PronType=Int	7	fixed	8:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+10	quicquam	quisquam	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Ind	11	nsubj:pass	16:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+11	seri	sero	VERB	_	Aspect=Imp|InflClass=LatX|Tense=Pres|VerbForm=Inf|Voice=Pass	16	xcomp	14:OBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+12	aut	aut	CCONJ	_	_	13	cc	14:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+13	alescere	alesco	VERB	_	Aspect=Imp|InflClass=LatX|Tense=Pres|VerbForm=Inf|Voice=Act	11	conj	14:OBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+14	aut	aut	CCONJ	_	_	15	cc	16:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+15	meti	meto	VERB	_	Aspect=Imp|InflClass=LatX|InflClass[nominal]=Ind|Tense=Pres|VerbForm=Inf|Voice=Pass	11	conj	14:OBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+16	possit	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+17	?	?	PUNCT	_	_	16	punct	16:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000053
+# speaker = Fundanius
+# edition_loc = 1.2.6
+# text_old = Contra quid in Italia utensile non modo non nascitur, sed etiam non egregium fit?
+# text = contra quid in Italia utensile non modo non nascitur, sed etiam non egregium fit?
+# text_en = On the contrary, what useful thing in Italy not only does not grow, but also does not become outstanding?
+# text_fr = Au contraire, quelle chose utile en Italie non seulement ne pousse pas, mais encore ne devient pas exceptionnelle ?
+# text_fi = Päinvastoin, mikä hyödyllinen asia Italiassa ei ainoastaan jää kasvamatta, vaan ei myöskään tule erinomaiseksi?
+# review_status = silver
+1	contra	contra	ADV	_	_	9	advmod	11:ADV	DiscourseMode=Dialogue|OrigForm=Contra|Speaker=Fundanius
+2	quid	quis	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Int	9	nsubj:pass	11:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+3	in	in	ADP	_	_	4	case	11:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+4	Italia	Italia	PROPN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	9	obl:lmod	3:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+5	utensile	utensilis	ADJ	_	Case=Nom|Gender=Neut|InflClass=IndEurI|Number=Sing	2	amod	2:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+6	non	non	PART	_	Polarity=Neg	7	advmod:neg	7:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+7	modo	modo	ADV	_	_	9	advmod	9:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+8	non	non	PART	_	Polarity=Neg	9	advmod:neg	9:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+9	nascitur	nascor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	11:PRED_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+10	,	,	PUNCT	_	_	15	punct	11:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+11	sed	sed	CCONJ	_	_	15	cc	0:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+12	etiam	etiam	ADV	_	_	14	advmod:emph	11:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+13	non	non	PART	_	Polarity=Neg	14	advmod:neg	15:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+14	egregium	egregius	ADJ	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	15	xcomp	15:PNOM	DiscourseMode=Dialogue|Speaker=Fundanius
+15	fit	fio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	conj	11:PRED_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+16	?	?	PUNCT	_	_	9	punct	11:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000054
+# speaker = Fundanius
+# edition_loc = 1.2.6
+# text_old = Quod far conferam Campano?
+# text = quod far conferam Campano?
+# text_en = What emmer wheat should I compare with the Campanian?
+# text_fr = Quel blé amidonnier comparerais-je au campanien ?
+# text_fi = Mitä emmervehnää vertaisin campanialaiseen?
+# review_status = silver
+1	quod	qui	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Int	2	nmod	2:ATR	DiscourseMode=Dialogue|OrigForm=Quod|Speaker=Fundanius
+2	far	far	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurI|Number=Sing	3	obj	3:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+3	conferam	confero	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+4	Campano	Campanus	ADJ	_	Case=Dat|Gender=Neut|InflClass=IndEurO|Number=Sing	3	obl	3:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+5	?	?	PUNCT	_	_	3	punct	3:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000055
+# speaker = Fundanius
+# edition_loc = 1.2.6
+# text_old = Quod triticum Apulo?
+# text = quod triticum Apulo?
+# text_en = What wheat with the Apulian?
+# text_fr = Quel blé à l’apulien ?
+# text_fi = Mitä vehnää apulialaiseen?
+# review_status = silver
+1	quod	qui	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Int	2	nmod	2:ATR	DiscourseMode=Dialogue|OrigForm=Quod|Speaker=Fundanius
+2	triticum	triticum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	0	root	2.1:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+2.1	conferam	_	_	_	_	_	_	0:PRED	InheritedFrom=S000054:3
+3	Apulo	Apulus	ADJ	_	Case=Dat|Gender=Neut|InflClass=IndEurO|Number=Sing	2	orphan	2.1:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+4	?	?	PUNCT	_	_	2	punct	2.1:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000056
+# speaker = Fundanius
+# edition_loc = 1.2.6
+# text_old = Quod vinum Falerno?
+# text = quod vinum Falerno?
+# text_en = What wine with the Falernian?
+# text_fr = Quel vin au falernien ?
+# text_fi = Mitä viiniä falernialaiseen?
+# review_status = silver
+1	quod	qui	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Int	2	nmod	2:ATR	DiscourseMode=Dialogue|OrigForm=Quod|Speaker=Fundanius
+2	vinum	vinum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	0	root	2.1:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+2.1	conferam	_	_	_	_	_	_	0:PRED	InheritedFrom=S000054:3
+3	Falerno	Falernus	ADJ	_	Case=Dat|Gender=Neut|InflClass=IndEurO|Number=Sing	2	orphan	2.1:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+4	?	?	PUNCT	_	_	2	punct	2.1:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000057
+# speaker = Fundanius
+# edition_loc = 1.2.6
+# text_old = Quod oleum Venafro?
+# text = quod oleum Venafro?
+# text_en = What oil with the Venafran?
+# text_fr = Quelle huile au vénafrien ?
+# text_fi = Mitä öljyä venafrilaiseen?
+# review_status = silver
+1	quod	qui	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Int	2	nmod	2:ATR	DiscourseMode=Dialogue|OrigForm=Quod|Speaker=Fundanius
+2	oleum	oleum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	0	root	2.1:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+2.1	conferam	_	_	_	_	_	_	0:PRED	InheritedFrom=S000054:3
+3	Venafro	Venafer	ADJ	_	Case=Dat|Gender=Neut|InflClass=IndEurO|Number=Sing	2	orphan	2.1:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+4	?	?	PUNCT	_	_	2	punct	2.1:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000058
+# speaker = Fundanius
+# edition_loc = 1.2.6
+# text_old = Non arboribus consita Italia, ut tota pomarium videatur?
+# text = non arboribus consita Italia, ut tota pomarium videatur?
+# text_en = Is Italy not planted with trees, so that it seems entirely an orchard?
+# text_fr = L’Italie n’est-elle pas plantée d’arbres, de sorte qu’elle semble tout entière un verger ?
+# text_fi = Eikö Italia ole istutettu täyteen puita, niin että se kokonaisuudessaan näyttää hedelmätarhalta?
+# review_status = silver
+1	non	non	PART	_	Polarity=Neg	3	advmod:neg	3:AuxY	DiscourseMode=Dialogue|OrigForm=Non|Speaker=Fundanius
+2	arboribus	arbor	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurX|Number=Plur	3	obl	3:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+3	consita	consero	VERB	_	Aspect=Perf|Case=Nom|Gender=Fem|InflClass=LatX|InflClass[nominal]=IndEurA|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+4	Italia	Italia	PROPN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	3	nsubj:pass	3:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+5	,	,	PUNCT	_	_	3	punct	3:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+6	ut	ut	SCONJ	_	_	9	mark	3:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+7	tota	totus	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Tot	9	nsubj:pass	9:AtvV	DiscourseMode=Dialogue|Speaker=Fundanius
+8	pomarium	pomarium	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	9	xcomp	9:PNOM	DiscourseMode=Dialogue|Speaker=Fundanius
+9	videatur	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	3	advcl	6:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+10	?	?	PUNCT	_	_	3	punct	3:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000059
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = An Phrygia magis vitibus cooperta, quam Homerus appellat ἀμπελόεσσαν, quam haec?
+# text = an Phrygia magis vitibus cooperta, quam Homerus appellat ἀμπελόεσσαν, quam haec?
+# text_en = Or is Phrygia more covered with vines, which Homer calls “vine-clad,” than this one?
+# text_fr = Ou bien la Phrygie est-elle plus couverte de vignes, elle qu’Homère appelle « riche en vignes », que celle-ci ?
+# text_fi = Vai onko Fryygia enemmän viiniköynnösten peittämä, se jota Homeros kutsuu ”viiniköynnösrikkaaksi”, kuin tämä?
+# review_status = silver
+1	an	an	PART	_	PartType=Int	5	discourse	14:AuxC	DiscourseMode=Dialogue|OrigForm=An|Speaker=Fundanius
+2	Phrygia	Phrygia	PROPN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	5	nsubj:pass	5:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+3	magis	magis	ADV	_	Degree=Cmp	5	advmod	4:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+4	vitibus	vitis	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Plur	5	obl	5:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+5	cooperta	cooperio	VERB	_	Aspect=Perf|Case=Nom|Gender=Fem|InflClass=LatX|InflClass[nominal]=IndEurA|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+6	,	,	PUNCT	_	_	9	punct	9:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+7	quam	qui	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	9	obj	9:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+8	Homerus	Homerus	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	9	nsubj	9:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+9	appellat	appello	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	4:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+10	ἀμπελόεσσαν	ἀμπελόεις	ADJ	_	Case=Acc|Foreign=Yes|Gender=Fem|Number=Sing	9	xcomp	9:OCOMP	DiscourseMode=Dialogue|Lang=grc|SpaceAfter=No|Speaker=Fundanius
+11	,	,	PUNCT	_	_	9	punct	13.1:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+12	quam	quam	SCONJ	_	_	13	mark	3:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+13	haec	hic	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	5	advcl:cmp	13.1:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+13.1	est	_	_	v3spia---	_	_	_	12:ADV	ComparisonNode=ALDT
+14	?	?	PUNCT	_	_	5	punct	5:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000060
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = Aut tritico Argos, quod idem poeta πολύπυρον?
+# text = aut tritico Argos, quod idem poeta πολύπυρον?
+# text_en = Or Argos with wheat, which the same poet calls “wheat-rich”?
+# text_fr = Ou Argos avec du blé, que le même poète appelle « riche en blé » ?
+# text_fi = Tai Argos vehnällä, jota sama runoilija kutsuu ”viljarikkaaksi”?
+# review_status = silver
+1	aut	aut	CCONJ	_	_	3	cc	3.1:AuxC	DiscourseMode=Dialogue|OrigForm=Aut|Speaker=Fundanius
+2	tritico	triticum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	3	orphan	3.1:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+3	Argos	Argos	PROPN	_	Case=Nom|Gender=Neut|InflClass=IndEurX|NameType=Geo|Number=Sing	0	root	3.1:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+3.1	coopertum	_	_	_	_	_	_	0:PRED_CO	InheritedFrom=S000059:5
+4	,	,	PUNCT	_	_	7	punct	7.1:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+5	quod	qui	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	7	orphan	7.1:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+6	idem	idem	DET	_	Case=Nom|Form=Emp|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	7	det	7:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+7	poeta	poeta	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurA|Number=Sing	3	acl:relcl	7.1:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+7.1	appellat	_	_	_	_	_	_	3:ATR	InheritedFrom=S000059:9
+8	πολύπυρον	πολύπυρος	ADJ	_	Case=Acc|Foreign=Yes|Gender=Neut|Number=Sing	7	orphan	7.1:OCOMP	DiscourseMode=Dialogue|Lang=grc|SpaceAfter=No|Speaker=Fundanius
+9	?	?	PUNCT	_	_	3	punct	3.1:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000061
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = In qua terra iugerum unum denos et quinos denos culleos fert vini, quot quaedam in Italia regiones?
+# text = in qua terra iugerum unum denos et quinos denos culleos fert vini, quot quaedam in Italia regiones?
+# text_en = In what land does one iugerum bear ten and fifteen cullei of wine, as much as certain regions in Italy?
+# text_fr = Dans quelle terre un seul jugère produit-il dix et quinze cullei de vin, autant que certaines régions d'Italie ?
+# text_fi = Missä maassa yksi jugerum tuottaa kymmenen ja viisitoista culleusta viiniä, yhtä paljon kuin eräät Italian alueet?
+# review_status = silver
+1	in	in	ADP	_	_	3	case	11:AuxP	DiscourseMode=Dialogue|OrigForm=In|Speaker=Fundanius
+2	qua	qui	DET	_	Case=Abl|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	3	det	3:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+3	terra	terra	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	11	obl:lmod	1:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+4	iugerum	iugerum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	11	nsubj	11:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+5	unum	unus	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|NumType=Card|NumValue=1	4	det	4:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+6	denos	deni	DET	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur|NumType=Dist	10	det	7:ATR_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+7	et	et	CCONJ	_	_	9	cc	10:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+8	quinos	quini	DET	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur|NumType=Dist	9	det	9:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+9	denos	deni	DET	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur|NumType=Dist	6	conj	7:ATR_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+10	culleos	culleus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	11	obj	11:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+11	fert	fero	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+12	vini	vinum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	10	nmod	10:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+13	,	,	PUNCT	_	_	11	punct	11:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+14	quot	quot	DET	_	PronType=Rel	18	det	14.1:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+14.1	ferunt	_	_	v3ppia---	_	_	_	10:ATR	ComparisonNode=ALDT
+15	quaedam	quidam	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Ind	18	det	18:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+16	in	in	ADP	_	_	17	case	14.1:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+17	Italia	Italia	PROPN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	18	nmod	16:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+18	regiones	regio	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Plur	10	nmod	14.1:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+19	?	?	PUNCT	_	_	11	punct	11:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000062
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = An non M. Cato scribit in libro Originum sic:
+# text = an non M. Cato scribit in libro Originum sic:
+# text_en = Does not M. Cato write thus in the book Origines:
+# text_fr = M. Caton n'écrit-il pas ainsi dans le livre des Origines :
+# text_fi = Eikö M. Cato kirjoita näin teoksessa Origines:
+# review_status = silver
+1	an	an	PART	_	PartType=Int	6	discourse	0:AuxC	DiscourseMode=Dialogue|OrigForm=An|Speaker=Fundanius
+2	non	non	PART	_	Polarity=Neg	6	advmod:neg	6:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+3	M	Marcus	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	flat:name	5:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+4	.	.	PUNCT	_	_	3	punct	3:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+5	Cato	Cato	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Sur|Number=Sing	6	nsubj	6:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+6	scribit	scribo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	1:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+7	in	in	ADP	_	_	8	case	6:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+8	libro	liber	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	6	obl:lmod	7:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+9	Originum	Origines	PROPN	_	Case=Gen|Gender=Fem|InflClass=IndEurX|NameType=Lit|Number=Plur	8	nmod	8:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+10	sic	sic	ADV	_	_	6	advmod	6:AuxY	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+11	:	:	PUNCT	_	_	6	punct	6:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000063
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = " ager Gallicus Romanus vocatur, qui viritim cis Ariminum datus est ultra agrum Picentium.
+# text = “ager Gallicus Romanus vocatur, qui viritim cis Ariminum datus est ultra agrum Picentium.
+# text_en = The Roman Gallic territory is called the land which was allotted individually on this side of Ariminum beyond the territory of the Picentes.
+# text_fr = Le territoire gaulois romain est appelé la terre qui fut attribuée individuellement en deçà d'Ariminum, au-delà du territoire des Picentes.
+# text_fi = Roomalaiseksi Gallian maaksi kutsutaan aluetta, joka annettiin yksityisinä tiloina Ariminumin tältä puolelta pikeenien alueen toiselle puolelle asti.
+# review_status = silver
+1	“	“	PUNCT	_	_	5	punct	5:AuxG	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+2	ager	ager	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	5	nsubj:pass	5:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+3	Gallicus	Gallicus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	2	amod	5:PNOM	DiscourseMode=Dialogue|Speaker=Fundanius
+4	Romanus	Romanus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	2	amod	3:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+5	vocatur	voco	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+6	,	,	PUNCT	_	_	11	punct	11:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+7	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	11	nsubj:pass	11:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+8	viritim	viritim	ADV	_	_	11	advmod	11:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+9	cis	cis	ADP	_	_	10	case	11:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+10	Ariminum	Ariminum	PROPN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|NameType=Geo|Number=Sing	11	obl	9:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+11	datus	do	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatA|InflClass[nominal]=IndEurO|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	2	acl:relcl	2:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+12	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	11:AuxV	DiscourseMode=Dialogue|Speaker=Fundanius
+13	ultra	ultra	ADP	_	_	14	case	11:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+14	agrum	ager	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	11	obl	13:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+15	Picentium	Picens	ADJ	_	Case=Gen|Gender=Masc|InflClass=IndEurI|NameType=Nat|Number=Plur	14	nmod	14:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+16	.	.	PUNCT	_	_	5	punct	5:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000064
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = In eo agro aliquotfariam in singula iugera dena cullea vini fiunt ”?
+# text = in eo agro aliquotfariam in singula iugera dena cullea vini fiunt ”?
+# text_en = In that territory, in several places, ten cullei of wine are produced for each individual iugerum?
+# text_fr = Dans ce territoire, en plusieurs endroits, dix cullei de vin sont produits par jugère ?
+# text_fi = Sillä pellolla useissa paikoissa syntyy kymmenen culleusta viiniä kutakin jugerumia kohti?
+# review_status = silver
+1	in	in	ADP	_	_	3	case	11:AuxP	DiscourseMode=Dialogue|OrigForm=In|Speaker=Fundanius
+2	eo	is	DET	_	Case=Abl|Gender=Masc|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	3	det	3:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+3	agro	ager	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	11	obl:lmod	1:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+4	aliquotfariam	aliquotfariam	ADV	_	_	11	advmod	11:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+5	in	in	ADP	_	_	7	case	11:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+6	singula	singulus	DET	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur|NumType=Dist	7	det	7:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+7	iugera	iugerum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	11	obl	5:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+8	dena	deni	DET	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur|NumType=Dist	9	det	9:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+9	cullea	culleus	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	11	nsubj	11:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+10	vini	vinum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	9	nmod	9:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+11	fiunt	fio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+12	”	”	PUNCT	_	_	11	punct	11:AuxG	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+13	?	?	PUNCT	_	_	11	punct	11:AuxK	DiscourseMode=Dialogue
+
+# sent_id = S000065
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = Nonne item in agro Faventino, a quo ibi trecenariae appellantur vites, quod iugerum trecenas amphoras reddat?
+# text = nonne item in agro Faventino, a quo ibi trecenariae appellantur vites, quod iugerum trecenas amphoras reddat?
+# text_en = Isn't it the same, too, in the Faventine territory, from which the vines there are called "trecenariae," because the iugerum yields three hundred amphorae?
+# text_fr = N'en est-il pas de même dans le territoire de Faventia, d'où les vignes y sont appelées « trecenariae », parce que le jugère rend trois cents amphores ?
+# text_fi = Eikö niin ole myös Faventiuksen alueella, josta siellä viiniköynnöksiä kutsutaan nimellä "trecenariae", koska jugerum tuottaa kolmesataa amforaa?
+# review_status = silver
+1	nonne	nonne	ADV	_	Polarity=Neg	4	advmod:neg	5.1:AuxY	DiscourseMode=Dialogue|OrigForm=Nonne|Speaker=Fundanius
+2	item	item	ADV	_	_	4	advmod	5.1:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+3	in	in	ADP	_	_	4	case	5.1:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+4	agro	ager	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	0	root	3:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+5	Faventino	Faventinus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	4	amod	4:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+5.1	est	_	_	_	_	_	_	0:PRED	ComparisonNode=ALDT
+6	,	,	PUNCT	_	_	11	punct	11:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+7	a	ab	ADP	_	_	8	case	11:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+8	quo	qui	PRON	_	Case=Abl|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	11	obl	7:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+9	ibi	ibi	ADV	_	AdvType=Loc	11	advmod:lmod	11:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+10	trecenariae	trecenarius	ADJ	_	Case=Nom|Gender=Fem|InflClass=IndEurO|Number=Plur	11	xcomp	11:PNOM	DiscourseMode=Dialogue|Speaker=Fundanius
+11	appellantur	appello	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	4	acl:relcl	4:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+12	vites	vitis	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Plur	11	nsubj:pass	11:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+13	,	,	PUNCT	_	_	18	punct	11:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+14	quod	quod	SCONJ	_	_	18	mark	11:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+15	iugerum	iugerum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	18	nsubj	18:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+16	trecenas	treceni	DET	_	Case=Acc|Gender=Fem|InflClass=IndEurO|Number=Plur|NumType=Dist	17	det	17:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+17	amphoras	amphora	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	18	obj	18:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+18	reddat	reddo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	advcl	14:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+19	?	?	PUNCT	_	_	4	punct	5.1:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000066
+# speaker = Fundanius
+# edition_loc = 1.2.7
+# text_old = Simul aspicit me, Certe, inquit, Libo Marcius, praefectus fabrum tuos, in fundo suo Faventiae hanc multitudinem dicebat suas reddere vites.
+# text = simul aspicit me: certe – inquit – Libo Marcius, praefectus fabrum tuos, in fundo suo Faventiae hanc multitudinem dicebat suas reddere vites.
+# text_en = At the same time he glances at me: "Certainly," he says, "Libo Marcius, your prefect of engineers, used to say that on his own estate at Faventia, this was the quantity his vines yielded."
+# text_fr = En même temps, il me regarde : « Certainement, dit-il, Libo Marcius, ton préfet des ouvriers, disait que sur son domaine à Faventia, c'était là la quantité que rendaient ses vignes. »
+# text_fi = Samalla hän katsoo minua: "Varmasti", hän sanoo, "Libo Marcius, sinun työnjohtajasi, sanoi, että omalla tilallaan Faventiassa tämä oli se määrä, jonka hänen viiniköynnöksensä tuottivat."
+# review_status = silver
+1	simul	simul	ADV	_	_	2	advmod	2:AuxY	DiscourseMode=Narrative|OrigForm=Simul|Speaker=Fundanius
+2	aspicit	aspicio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	parataxis:reporting	7:ADV	DiscourseMode=Narrative|Speaker=Fundanius
+3	me	ego	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	2	obj	2:OBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Fundanius
+4	:	:	PUNCT	_	_	2	punct	2:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Fundanius
+5	certe	certe	ADV	_	_	22	advmod	7:AuxZ	DiscourseMode=Dialogue|OrigForm=Certe|Speaker=Fundanius
+6	–	–	PUNCT	_	_	7	punct	7:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Fundanius
+7	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	0:PRED	DiscourseMode=Narrative|Speaker=Fundanius
+8	–	–	PUNCT	_	_	7	punct	7:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Fundanius
+9	Libo	Libo	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	22	nsubj	10:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+10	Marcius	Marcius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	9	flat:name	11:SBJ_AP	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+11	,	,	PUNCT	_	_	12	punct	22:APOS	DiscourseMode=Dialogue|Speaker=Fundanius
+12	praefectus	praefectus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurU|Number=Sing	9	appos	11:SBJ_AP	DiscourseMode=Dialogue|Speaker=Fundanius
+13	fabrum	faber	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurX|Number=Plur	12	nmod	12:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+14	tuos	tuus	DET	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|Person[psor]=2|Poss=Yes|PronType=Prs	12	det:poss	12:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+15	,	,	PUNCT	_	_	12	punct	22:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+16	in	in	ADP	_	_	17	case	24:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+17	fundo	fundus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	24	obl:lmod	16:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+18	suo	suus	DET	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing|Person[psor]=3|Poss=Yes|PronType=Prs|Reflex=Yes	17	det:poss	17:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+19	Faventiae	Faventia	PROPN	_	Case=Loc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	17	nmod	24:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+20	hanc	hic	DET	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	21	det	21:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+21	multitudinem	multitudo	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	24	obj	24:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+22	dicebat	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	7:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+23	suas	suus	DET	_	Case=Acc|Gender=Fem|InflClass=IndEurO|Number=Plur|Person[psor]=3|Poss=Yes|PronType=Prs|Reflex=Yes	25	det:poss	25:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+24	reddere	reddo	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	22	ccomp	22:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+25	vites	vitis	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurI|Number=Plur	24	nsubj	24:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+26	.	.	PUNCT	_	_	22	punct	7:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000067
+# speaker = Fundanius
+# edition_loc = 1.2.8
+# text_old = Duo in primis spectasse videntur Italici homines colendo, possentne fructus pro impensa ac labore redire et utrum saluber locus esset an non.
+# text = duo in primis spectasse videntur Italici homines colendo, possentne fructus pro impensa ac labore redire et utrum saluber locus esset an non.
+# text_en = Italian farmers seem to have looked chiefly at two things in their farming: whether the profits could return in proportion to the outlay and labor, and whether the place was healthy or not.
+# text_fr = Les Italiens semblent avoir considéré avant tout deux choses dans la culture : si les profits pouvaient revenir en proportion de la dépense et du travail, et si le lieu était salubre ou non.
+# text_fi = Italialaiset näyttävät katsoneen viljelyssä ennen kaikkea kahta asiaa: voisivatko tuotot palautua panostukseen ja työhön nähden, ja oliko paikka terveellinen vai ei.
+# review_status = silver
+1	duo	duo	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|NumForm=Word|NumType=Card|Number=Plur	4	obj	9:OBJ_AP	DiscourseMode=Dialogue|OrigForm=Duo|Speaker=Fundanius
+2	in	in	ADP	_	_	3	case	4:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+3	primis	primus	ADJ	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur|NumType=Ord	4	obl	2:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+4	spectasse	specto	VERB	_	Aspect=Perf|InflClass=LatA|Tense=Past|VerbForm=Inf|Voice=Act	5	xcomp	5:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+5	videntur	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+6	Italici	Italicus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Plur	7	amod	7:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+7	homines	homo	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|Number=Plur	5	nsubj:pass	4:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+8	colendo	colo	VERB	_	Aspect=Prosp|Case=Abl|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	4	advcl	4:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius|TraditionalMood=Gerundium
+9	,	,	PUNCT	_	_	4	punct	4:APOS	DiscourseMode=Dialogue|Speaker=Fundanius
+10-11	possentne	_	_	_	_	_	_	_	_
+10	possent	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl	18:OBJ_AP_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+11	ne	ne	PART	_	PartType=Int	10	discourse	10:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+12	fructus	fructus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurU|Number=Plur	10	nsubj	17:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+13	pro	pro	ADP	_	_	14	case	17:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+14	impensa	impensa	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	17	obl	15:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+15	ac	atque	CCONJ	_	_	16	cc	13:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+16	labore	labor	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurX|Number=Sing	14	conj	15:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+17	redire	redeo	VERB	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf|Voice=Act	10	xcomp	10:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+18	et	et	CCONJ	_	_	20	cc	9:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+19	utrum	utrum	ADV	_	PronType=Con	20	advmod	18:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+20	saluber	saluber	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurI|Number=Sing	10	conj	22:PNOM	DiscourseMode=Dialogue|Speaker=Fundanius
+21	locus	locus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	20	nsubj	22:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+22	esset	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	cop	19:OBJ_AP_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+23	an	an	CCONJ	_	_	24	cc	22:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+24	non	non	PART	_	Polarity=Neg	20	conj	23:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+25	.	.	PUNCT	_	_	5	punct	5:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000068
+# speaker = Fundanius
+# edition_loc = 1.2.8
+# text_old = Quorum si alterutrum decolat et nihilo minus quis vult colere, mente est captus adque adgnatos et gentiles est deducendus.
+# text = quorum si alterutrum decolat et nihilo minus quis vult colere, mente est captus adque adgnatos et gentiles est deducendus.
+# text_en = If one of these two fails, and yet someone still wants to farm it, he is out of his mind and must be handed over to his agnates and clansmen.
+# text_fr = Si l'un des deux fait défaut, et que quelqu'un veuille néanmoins cultiver, il est réputé dément et doit être remis à ses agnats et à ses gentiles.
+# text_fi = Jos jompikumpi näistä pettää, ja joku silti haluaa viljellä, hänet katsotaan mieleltään vialliseksi ja hänet on luovutettava agnaateilleen ja sukulaisilleen.
+# review_status = silver
+1	quorum	qui	PRON	_	Case=Gen|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	3	nmod	3:ATR	DiscourseMode=Dialogue|OrigForm=Quorum|Speaker=Fundanius
+2	si	si	SCONJ	_	_	4	mark	15:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+3	alterutrum	alteruter	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Ind	4	nsubj	4:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+4	decolat	decolo	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	advcl	5:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+5	et	et	CCONJ	_	_	9	cc	2:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+6	nihilo	nihilum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	7	obl	7:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+7	minus	parum	ADV	_	Degree=Cmp	9	advmod	9:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+8	quis	quis	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Ind	9	nsubj	9:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+9	vult	volo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	5:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+10	colere	colo	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	9	xcomp	9:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+11	,	,	PUNCT	_	_	4	punct	14:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+12	mente	mens	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Sing	14	obl	14:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+13	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	14:AuxV	DiscourseMode=Dialogue|Speaker=Fundanius
+14	captus	capio	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatX|Number=Sing|VerbForm=Part|Voice=Pass	0	root	15:PRED_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+15	adque	atque	CCONJ	_	_	20	cc	0:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+16	adgnatos	adgnatus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	20	obl	17:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+17	et	et	CCONJ	_	_	18	cc	19:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+18	gentiles	gentilis	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurI|Number=Plur	16	conj	17:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+19	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	15:PRED_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+20	deducendus	deduco	VERB	_	Aspect=Prosp|Case=Nom|Gender=Masc|InflClass=LatX|Number=Sing|VerbForm=Part|Voice=Pass	14	conj	19:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius|TraditionalMood=Gerundivum
+21	.	.	PUNCT	_	_	14	punct	15:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000069
+# speaker = Fundanius
+# edition_loc = 1.2.8
+# text_old = Nemo enim sanus debet velle impensam ac sumptum facere in cultura, si videt non posse refici, nec si potest reficere fructus, si videt eos fore ut pestilentia dispereant.
+# text = nemo enim sanus debet velle impensam ac sumptum facere in cultura, si videt non posse refici, nec si potest reficere fructus, si videt eos fore ut pestilentia dispereant.
+# text_en = For no sane person ought to want to spend outlay and expense on cultivation, if he sees that it cannot be recovered - nor even if he can recover the produce, if he sees that unhealthy conditions will destroy them.
+# text_fr = Car aucun homme sensé ne doit vouloir faire des frais et des dépenses pour la culture, s'il voit qu'ils ne peuvent être récupérés ; ni même s'il peut récupérer les récoltes, s'il voit que des conditions malsaines vont les faire périr.
+# text_fi = Kenenkään järkevän ei pidä haluta panna kuluja ja menoja viljelyyn, jos näkee, ettei niitä voida saada takaisin, eikä myöskään, vaikka voisikin saada satoa, jos näkee sen tulevan huonojen olosuhteiden tuhoamaksi.
+# review_status = silver
+1	nemo	nemo	PRON	_	Case=Nom|InflClass=IndEurX|Number=Sing|PronType=Neg	4	nsubj	4:SBJ	DiscourseMode=Dialogue|OrigForm=Nemo|Speaker=Fundanius
+2	enim	enim	PART	_	_	4	discourse	4:AuxZ	DiscourseMode=Dialogue|Speaker=Fundanius
+3	sanus	sanus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	1	amod	4:ATV	DiscourseMode=Dialogue|Speaker=Fundanius
+4	debet	debeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+5	velle	volo	VERB	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf|Voice=Act	4	xcomp	4:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+6	impensam	impensa	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	9	obj	7:OBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+7	ac	atque	CCONJ	_	_	8	cc	9:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+8	sumptum	sumptus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurU|Number=Sing	6	conj	7:OBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+9	facere	facio	VERB	_	Aspect=Imp|InflClass=LatI2|VerbForm=Inf|Voice=Act	5	xcomp	5:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+10	in	in	ADP	_	_	11	case	9:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+11	cultura	cultura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	9	obl	10:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+12	,	,	PUNCT	_	_	14	punct	14:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+13	si	si	SCONJ	_	_	14	mark	19:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+14	videt	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	advcl	13:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+15	non	non	PART	_	Polarity=Neg	16	advmod:neg	16:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
+16	posse	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf|Voice=Act	14	ccomp	14:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+17	refici	reficio	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Pass	16	xcomp	16:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+18	,	,	PUNCT	_	_	21	punct	21:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+19	nec	neque	CCONJ	_	_	21	cc	4:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+20	si	si	SCONJ	_	_	21	mark	19:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+21	potest	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	conj	20:ADV_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+22	reficere	reficio	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	21	xcomp	21:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+23	fructus	fructus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurU|Number=Plur	22	obj	22:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+24	,	,	PUNCT	_	_	26	punct	26:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+25	si	si	SCONJ	_	_	26	mark	21:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+26	videt	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	advcl	25:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+27	eos	is	PRON	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Plur|Person=3|PronType=Prs	28	nsubj	28:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+28	fore	sum	AUX	_	Aspect=Prosp|InflClass=LatAnom|Tense=Fut|VerbForm=Inf|Voice=Act	26	ccomp	26:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+29	ut	ut	SCONJ	_	_	31	mark	26:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+30	pestilentia	pestilens	ADJ	_	Case=Nom|Gender=Neut|InflClass=IndEurI|Number=Plur	31	nsubj	31:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+31	dispereant	dispereo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	ccomp	29:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+32	.	.	PUNCT	_	_	4	punct	4:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000070
+# speaker = Fundanius
+# edition_loc = 1.2.9
+# text_old = Sed, opinor, qui haec commodius ostendere possint adsunt.
+# text = sed, opinor, qui haec commodius ostendere possint adsunt.
+# text_en = But, I think, those who can show these things more conveniently are here.
+# text_fr = Mais, je pense, ceux qui peuvent montrer cela plus commodément sont là.
+# text_fi = Mutta, luulen, ne, jotka voivat näyttää nämä asiat sopivammin, ovat läsnä.
+# review_status = silver
+1	sed	sed	CCONJ	_	_	3	cc	3:AuxC	DiscourseMode=Dialogue|OrigForm=Sed|SpaceAfter=No|Speaker=Fundanius
+2	,	,	PUNCT	_	_	3	punct	3:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+3	opinor	opinor	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+4	,	,	PUNCT	_	_	3	punct	3:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+5	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	9	nsubj	9:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+6	haec	hic	DET	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Dem	8	obj	8:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+7	commodius	commode	ADV	_	Degree=Cmp	8	advmod	8:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+8	ostendere	ostendo	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	9	xcomp	9:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+9	possint	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	csubj	10:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+10	adsunt	adsum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp:reported	1:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+11	.	.	PUNCT	_	_	10	punct	3:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000071
+# speaker = Fundanius
+# edition_loc = 1.2.9
+# text_old = Nam C. Licinium Stolonem et Cn. Tremelium Scrofam video venire;
+# text = nam C. Licinium Stolonem et Cn. Tremelium Scrofam video venire;
+# text_en = For I see Gaius Licinius Stolo and Gnaeus Tremelius Scrofa coming;
+# text_fr = Car je vois venir Gaius Licinius Stolo et Gnaeus Tremelius Scrofa ;
+# text_fi = Sillä näen Gaius Licinius Stolon ja Gnaeus Tremelius Scrofan tulevan;
+# review_status = silver
+1	nam	nam	PART	_	_	11	discourse	11:AuxZ	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Fundanius
+2	C	Gaius	PROPN	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	flat:name	5:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+3	.	.	PUNCT	_	_	2	punct	2:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+4	Licinium	Licinius	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	flat:name	5:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+5	Stolonem	Stolo	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	12	nsubj	13:SBJ_AP_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+6	et	et	CCONJ	_	_	10	cc	12:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+7	Cn	Gnaeus	PROPN	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	10	flat:name	10:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+8	.	.	PUNCT	_	_	7	punct	7:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+9	Tremelium	Tremelius	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	10	flat:name	10:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+10	Scrofam	Scrofa	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurA|NameType=Giv|Number=Sing	5	conj	6:SBJ_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+11	video	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+12	venire	venio	VERB	_	Aspect=Imp|InflClass=LatI|VerbForm=Inf|Voice=Act	11	ccomp	11:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+13	;	;	PUNCT	_	_	11	punct	6:APOS	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000072
+# speaker = Fundanius
+# edition_loc = 1.2.9
+# text_old = unum, cuius maiores de modo agri legem tulerunt (nam Stolonis illa lex, quae vetat plus D iugera habere civem R.), et qui propter diligentiam culturae Stolonum confirmavit cognomen, quod nullus in eius fundo reperiri poterat stolo, quod effodiebat circum arbores e radicibus quae nascerentur e solo, quos stolones appellabant.
+# text = unum, cuius maiores de modo agri legem tulerunt (nam Stolonis illa lex, quae vetat plus D iugera habere civem R.) , et qui propter diligentiam culturae Stolonum confirmavit cognomen, quod nullus in eius fundo reperiri poterat stolo, quod effodiebat circum arbores e radicibus quae nascerentur e solo, quos stolones appellabant.
+# text_en = one, whose ancestors carried a law about the limit of land (for that is Stolo's law, which forbids a Roman citizen to have more than 500 iugera) - and who, on account of his diligence in cultivation, confirmed the Stolos' cognomen, because no sucker could be found on his estate, because he used to dig out, around the trees, from the root-suckers which sprang up from the ground, [the suckers] which they called stolones.
+# text_fr = l'un, dont les ancêtres portèrent une loi sur la limite des terres (c'est en effet la loi de Stolon, qui interdit à un citoyen romain d'avoir plus de 500 arpents) - et qui, par son zèle dans la culture, confirma le surnom des Stolons, parce qu'on ne pouvait trouver sur son domaine aucun surgeon, parce qu'il arrachait, autour des arbres, à partir des drageons-racines qui poussaient du sol, ceux qu'on appelait des « stolones ».
+# text_fi = toinen, jonka esi-isät säätivät lain maan enimmäismäärästä (sillä se on Stolon laki, joka kieltää roomalaista kansalaista omistamasta enempää kuin 500 jugerumia) - ja joka, viljelynsä huolellisuuden ansiosta, vahvisti Stolo-suvun liikanimen, koska hänen tilaltaan ei löytynyt yhtään vesaa, koska hän kaivoi puiden ympäriltä pois juurivesat, jotka kasvoivat maasta, joita kutsuttiin nimellä stolones.
+# review_status = silver
+1	unum	unus	NUM	_	Case=Acc|Gender=Masc|InflClass=LatPron|NumForm=Word|NumType=Card|Number=Sing	0	root	1.1:OBJ	DiscourseMode=Dialogue|InheritedFrom=S000071:5|SpaceAfter=No|Speaker=Fundanius
+1.1	video	_	VERB	_	_	_	_	0:PRED	ComparisonNode=ALDT
+2	,	,	PUNCT	_	_	9	punct	9:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+3	cuius	qui	PRON	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	4	nmod	4:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+4	maiores	maior	ADJ	_	Case=Nom|Degree=Cmp|Gender=Masc|InflClass=IndEurX|Number=Plur	9	nsubj	9:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+5	de	de	ADP	_	_	6	case	8:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+6	modo	modus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	9	obl	5:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+7	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	6	nmod	6:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+8	legem	lex	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	9	obj	9:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+9	tulerunt	fero	VERB	_	Aspect=Perf|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl	27:ATR_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+10	(	(	PUNCT	_	_	14	punct	14:AuxG	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+11	nam	nam	PART	_	_	14	discourse	14:AuxZ	DiscourseMode=Dialogue|Speaker=Fundanius
+12	Stolonis	Stolo	PROPN	_	Case=Gen|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	14	nmod	14:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+13	illa	ille	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	14	det	14:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+14	lex	lex	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	9	parataxis	9:ExD	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+15	,	,	PUNCT	_	_	17	punct	17:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+16	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	17	nsubj	17:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+17	vetat	veto	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	acl:relcl	14:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+18	plus	multum	ADV	_	Degree=Cmp	20	advmod	21:OCOMP	DiscourseMode=Dialogue|Speaker=Fundanius
+19	D	quingenti	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|NumForm=Roman|NumType=Card|Number=Plur	20	nummod	18:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+20	iugera	iugerum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	21	obj	21:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+21	habere	habeo	VERB	_	Aspect=Imp|InflClass=LatE|VerbForm=Inf|Voice=Act	17	ccomp	17:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+22	civem	civis	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurI|Number=Sing	21	nsubj	17:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+23	R	Romanus	ADJ	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	22	amod	22:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+24	.	.	PUNCT	_	_	23	punct	23:AuxX	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+25	)	)	PUNCT	_	_	14	punct	24:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+26	,	,	PUNCT	_	_	33	punct	14:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+27	et	et	CCONJ	_	_	33	cc	1:COORD	DiscourseMode=Dialogue|Speaker=Fundanius
+28	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	33	nsubj	33:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+29	propter	propter	ADP	_	_	30	case	33:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+30	diligentiam	diligentia	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	33	obl	29:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+31	culturae	cultura	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|Number=Sing	30	nmod	30:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+32	Stolonum	Stolo	PROPN	_	Case=Gen|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Plur	34	nmod	33:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+33	confirmavit	confirmo	VERB	_	Aspect=Perf|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	27:ATR_CO	DiscourseMode=Dialogue|Speaker=Fundanius
+34	cognomen	cognomen	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurX|Number=Sing	33	obj	33:OCOMP	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+35	,	,	PUNCT	_	_	42	punct	33:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+36	quod	quod	SCONJ	_	_	42	mark	33:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+37	nullus	nullus	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|Polarity=Neg|PronType=Ind	43	det	43:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+38	in	in	ADP	_	_	40	case	41:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+39	eius	is	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|Person=3|Poss=Yes|PronType=Prs	40	det	40:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+40	fundo	fundus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	41	obl:lmod	38:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+41	reperiri	reperio	VERB	_	Aspect=Imp|InflClass=LatI|VerbForm=Inf|Voice=Pass	42	xcomp	42:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+42	poterat	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	33	advcl	36:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+43	stolo	stolo	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|Number=Sing	41	nsubj:pass	41:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+44	,	,	PUNCT	_	_	46	punct	42:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+45	quod	quod	SCONJ	_	_	46	mark	42:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+46	effodiebat	effodio	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	42	advcl	45:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+47	circum	circum	ADP	_	_	48	case	46:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+48	arbores	arbor	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Plur	46	obl:lmod	47:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+49	e	ex	ADP	_	_	50	case	46:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+50	radicibus	radix	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurX|Number=Plur	46	obl:lmod	49:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+51	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Rel	52	nsubj:pass	52:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+52	nascerentur	nascor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	50	acl:relcl	46:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+53	e	ex	ADP	_	_	54	case	52:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+54	solo	solum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	52	obl:lmod	53:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+55	,	,	PUNCT	_	_	58	punct	58:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+56	quos	qui	PRON	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	58	obj	58:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+57	stolones	stolo	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Plur	58	xcomp	58:OCOMP	DiscourseMode=Dialogue|Speaker=Fundanius
+58	appellabant	appello	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	50	acl:relcl	51:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+59	.	.	PUNCT	_	_	1	punct	1.1:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000073
+# speaker = Fundanius
+# edition_loc = 1.2.9
+# text_old = Eiusdem gentis C. Licinius, tr. pl. cum esset, post reges exactos annis CCCLXV primus populum ad leges accipiendas in septem iugera forensia e comitio eduxit.
+# text = eiusdem gentis C. Licinius, tr. pl. cum esset, post reges exactos annis CCCLXV primus populum ad leges accipiendas in septem iugera forensia e comitio eduxit.
+# text_en = Of the same clan, Gaius Licinius, when he was tribune of the plebs, 365 years after the kings were expelled, was the first to lead the people into the seven forensic iugera, from the comitium, for the purpose of receiving laws.
+# text_fr = Du même clan, Gaius Licinius, alors qu'il était tribun de la plèbe, 365 ans après l'expulsion des rois, fut le premier à mener le peuple, hors du comitium, dans les sept arpents du forum, pour recevoir des lois.
+# text_fi = Samaa sukua, Gaius Licinius, ollessaan kansantribuuni, 365 vuotta kuninkaiden karkottamisen jälkeen, johti ensimmäisenä kansan lakien vastaanottamista varten comitiumista foorumin "seitsemälle jugerumille".
+# review_status = silver
+1	eiusdem	idem	DET	_	Case=Gen|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	2	det	2:ATR	DiscourseMode=Dialogue|OrigForm=Eiusdem|Speaker=Fundanius
+2	gentis	gens	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurI|Number=Sing	3	nmod	5:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+3	C	Gaius	PROPN	_	Abbr=Yes|Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	30	nsubj	5:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+4	.	.	PUNCT	_	_	3	punct	3:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+5	Licinius	Licinius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	3	flat:name	30:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+6	,	,	PUNCT	_	_	7	punct	12:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+7	tr	tribunus	NOUN	_	Abbr=Yes|Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	30	advcl	12:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+8	.	.	PUNCT	_	_	7	punct	7:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+9	pl	plebs	NOUN	_	Abbr=Yes|Case=Gen|Gender=Fem|InflClass=IndEurX|Number=Sing	7	nmod	7:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+10	.	.	PUNCT	_	_	7	punct	9:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+11	cum	cum	SCONJ	_	_	7	mark	30:AuxC	DiscourseMode=Dialogue|Speaker=Fundanius
+12	esset	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	11:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+13	,	,	PUNCT	_	_	12	punct	12:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+14	post	post	ADP	_	_	15	case	30:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+15	reges	rex	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Plur	30	obl	17:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+16	exactos	exigo	VERB	_	Aspect=Perf|Case=Acc|Gender=Masc|InflClass=LatX|Number=Plur|VerbForm=Part|Voice=Pass	15	acl	15:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+17	annis	annus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Plur	16	obl	14:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+18	CCCLXV	CCCLXV	NUM	_	NumForm=Roman|NumType=Card	17	nummod	17:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+19	primus	primus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	3	amod	5:ATV	DiscourseMode=Dialogue|Speaker=Fundanius
+20	populum	populus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	30	obj	30:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+21	ad	ad	ADP	_	_	23	case	30:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+22	leges	lex	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Plur	23	nsubj:pass	23:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+23	accipiendas	accipio	VERB	_	Aspect=Prosp|Case=Acc|Gender=Fem|InflClass=LatI2|Number=Plur|VerbForm=Part|Voice=Pass	30	advcl	21:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius|TraditionalMood=Gerundivum
+24	in	in	ADP	_	_	26	case	30:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+25	septem	septem	NUM	_	NumForm=Word|NumType=Card	26	nummod	26:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+26	iugera	iugerum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	30	obl	24:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+27	forensia	forensis	ADJ	_	Case=Acc|Gender=Neut|InflClass=IndEurI|Number=Plur	26	amod	26:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+28	e	ex	ADP	_	_	29	case	30:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+29	comitio	comitium	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	30	obl:lmod	28:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+30	eduxit	educo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+31	.	.	PUNCT	_	_	30	punct	30:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000074
+# speaker = Fundanius
+# edition_loc = 1.2.10
+# text_old = Alterum collegam tuum, viginti virum qui fuit ad agros dividendos Campanos, video huc venire, Cn. Tremelium Scrofam, virum omnibus virtutibus politum, qui de agri cultura Romanus peritissimus existimatur.
+# text = alterum collegam tuum, viginti virum qui fuit ad agros dividendos Campanos, video huc venire, Cn. Tremelium Scrofam, virum omnibus virtutibus politum, qui de agri cultura Romanus peritissimus existimatur.
+# text_en = I see the other, your colleague, one of the Twenty Men who was assigned to divide the Campanian lands, coming here - Gnaeus Tremelius Scrofa, a man accomplished in every virtue, who is reckoned the most expert Roman in agriculture.
+# text_fr = Je vois venir ici l'autre, ton collègue, l'un des Vingt hommes qui fut chargé de diviser les terres campaniennes - Gnaeus Tremelius Scrofa, un homme accompli en toutes les vertus, qui est considéré comme le Romain le plus expert en agriculture.
+# text_fi = Näen tänne tulevan sen toisen, virkatoverisi, yhden niistä kahdestakymmenestä miehestä, joka oli määrätty jakamaan Campanian maita - Gnaeus Tremelius Scrofan, kaikin hyvein varustetun miehen, jota pidetään maanviljelyksen taitavimpana roomalaisena.
+# review_status = silver
+1	alterum	alter	DET	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	2	det	4:OBJ_AP	DiscourseMode=Dialogue|OrigForm=Alterum|Speaker=Fundanius
+2	collegam	collega	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurA|Number=Sing	16	nsubj	4:OBJ_AP	DiscourseMode=Dialogue|Speaker=Fundanius
+3	tuum	tuus	DET	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing|Person[psor]=2|Poss=Yes|PronType=Prs	2	det:poss	2:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+4	,	,	PUNCT	_	_	6	punct	14:APOS	DiscourseMode=Dialogue|Speaker=Fundanius
+5	viginti	viginti	NUM	_	NumForm=Word|NumType=Card	6	nummod	6:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+6	virum	vir	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	2	appos	8:PNOM	DiscourseMode=Dialogue|Speaker=Fundanius
+7	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	8	nsubj	8:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+8	fuit	sum	AUX	_	Aspect=Perf|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	2:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+9	ad	ad	ADP	_	_	10	case	6:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+10	agros	ager	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	11	nsubj:pass	11:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+11	dividendos	divido	VERB	_	Aspect=Prosp|Case=Acc|Gender=Masc|InflClass=LatX|Number=Plur|VerbForm=Part|Voice=Pass	8	advcl	9:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius|TraditionalMood=Gerundivum
+12	Campanos	Campanus	ADJ	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	10	amod	10:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+13	,	,	PUNCT	_	_	6	punct	14:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+14	video	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Fundanius
+15	huc	huc	ADV	_	AdvType=Loc	16	advmod:lmod	16:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+16	venire	venio	VERB	_	Aspect=Imp|InflClass=LatI|VerbForm=Inf|Voice=Act	14	ccomp	14:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+17	,	,	PUNCT	_	_	21	punct	14:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+18	Cn	Gnaeus	PROPN	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	21	flat:name	21:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+19	.	.	PUNCT	_	_	18	punct	18:AuxG	DiscourseMode=Dialogue|Speaker=Fundanius
+20	Tremelium	Tremelius	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	21	flat:name	21:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+21	Scrofam	Scrofa	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurA|NameType=Giv|Number=Sing	2	appos	4:OBJ_AP	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+22	,	,	PUNCT	_	_	23	punct	23:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+23	virum	vir	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	2	appos	4:OBJ_AP	DiscourseMode=Dialogue|Speaker=Fundanius
+24	omnibus	omnis	DET	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Plur|PronType=Tot	25	det	25:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+25	virtutibus	virtus	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurX|Number=Plur	26	obl	26:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+26	politum	polio	VERB	_	Aspect=Perf|Case=Acc|Gender=Masc|InflClass=LatI|Number=Sing|VerbForm=Part|Voice=Pass	23	acl	23:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+27	,	,	PUNCT	_	_	34	punct	23:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
+28	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	34	nsubj:pass	34:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
+29	de	de	ADP	_	_	31	case	34:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
+30	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	31	nmod	31:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+31	cultura	cultura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	34	obl	29:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
+32	Romanus	Romanus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	34	xcomp	34:PNOM	DiscourseMode=Dialogue|Speaker=Fundanius
+33	peritissimus	peritus	ADJ	_	Case=Nom|Degree=Sup|Gender=Masc|InflClass=IndEurO|Number=Sing	34	xcomp	32:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+34	existimatur	existimo	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	23	acl:relcl	23:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+35	.	.	PUNCT	_	_	14	punct	14:AuxK	DiscourseMode=Dialogue|Speaker=Fundanius
+
+# sent_id = S000075
+# speaker = Varro
+# edition_loc = 1.2.10
+# text_old = An non iure? inquam.
+# text = an non iure? inquam.
+# text_en = "Or is it not with good reason?" I said.
+# text_fr = « N'est-ce pas à bon droit ? » dis-je.
+# text_fi = "Vai eikö syystä?" sanoin.
+# review_status = silver
+1	an	an	PART	_	PartType=Int	3	discourse	3.1:AuxZ	DiscourseMode=Dialogue|OrigForm=An|Speaker=Varro
+2	non	non	PART	_	Polarity=Neg	3	advmod:neg	3.1:AuxZ	DiscourseMode=Dialogue|Speaker=Varro
+3	iure	ius	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurI|Number=Sing	0	root	3.1:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+3.1	est	_	_	v3spia---	_	_	_	6:OBJ_CO	ComparisonNode=ALDT
+4	?	?	PUNCT	_	_	3	punct	6:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+5	inquam	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis:reporting	0:PRED	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Varro
+6	.	.	PUNCT	_	_	5	punct	5:COORD	DiscourseMode=Narrative|Speaker=Varro
+
+# sent_id = S000076
+# speaker = Varro
+# edition_loc = 1.2.10
+# text_old = Fundi enim eius propter culturam iucundiore spectaculo sunt multis, quam regie polita aedificia aliorum, cum huius spectatum veniant villas, non, ut apud Lucullum, ut videant pinacothecas, sed oporothecas.
+# text = fundi enim eius propter culturam iucundiore spectaculo sunt multis, quam regie polita aedificia aliorum, cum huius spectatum veniant villas, non, ut apud Lucullum, ut videant pinacothecas, sed oporothecas.
+# text_en = For his farms, on account of their cultivation, are a more pleasant spectacle to many than the royally adorned buildings of others, when they come to view his villas - not, as at Lucullus's, to see picture-galleries, but fruit-galleries.
+# text_fr = Car ses fermes, en raison de leur culture, offrent à beaucoup un spectacle plus agréable que les bâtiments royalement ornés des autres, lorsqu'ils viennent visiter ses villas - non, comme chez Lucullus, pour voir des pinacothèques, mais des oporothèques.
+# text_fi = Sillä hänen tilansa ovat viljelynsä ansiosta monelle miellyttävämpi näky kuin toisten kuninkaallisesti koristellut rakennukset, kun he tulevat katsomaan hänen huviloitaan - ei, niin kuin Luculluksen luona, nähdäkseen taidegallerioita, vaan hedelmätarhoja.
+# review_status = silver
+1	fundi	fundus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Plur	7	nsubj	8:SBJ	DiscourseMode=Dialogue|OrigForm=Fundi|Speaker=Varro
+2	enim	enim	PART	_	_	7	discourse	8:AuxZ	DiscourseMode=Dialogue|Speaker=Varro
+3	eius	is	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	1	det	1:ATR	DiscourseMode=Dialogue|Speaker=Varro
+4	propter	propter	ADP	_	_	5	case	8:AuxP	DiscourseMode=Dialogue|Speaker=Varro
+5	culturam	cultura	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	7	obl	4:ADV	DiscourseMode=Dialogue|Speaker=Varro
+6	iucundiore	iucundus	ADJ	_	Case=Abl|Degree=Cmp|Gender=Neut|InflClass=IndEurO|Number=Sing	7	amod	7:ATR	DiscourseMode=Dialogue|Speaker=Varro
+7	spectaculo	spectaculum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	0	root	8:PNOM	DiscourseMode=Dialogue|Speaker=Varro
+8	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	0:PRED	DiscourseMode=Dialogue|Speaker=Varro
+9	multis	multus	DET	_	Case=Dat|Gender=Masc|InflClass=IndEurO|Number=Plur|NumType=Card|PronType=Ind	7	obl:arg	8:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+10	,	,	PUNCT	_	_	13	punct	8:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+11	quam	quam	SCONJ	_	_	13	mark	6:AuxC	DiscourseMode=Dialogue|Speaker=Varro
+12	regie	regie	ADV	_	_	13	advmod	13:ADV	DiscourseMode=Dialogue|Speaker=Varro
+13	polita	polio	VERB	_	Aspect=Perf|Case=Nom|Gender=Neut|InflClass=LatI|Number=Plur|VerbForm=Part|Voice=Pass	6	advcl:cmp	14:ATR	DiscourseMode=Dialogue|Speaker=Varro
+14	aedificia	aedificium	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	13	nsubj:pass	15.1:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+15	aliorum	alius	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Con	14	nmod	14:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+15.1	sunt	_	_	v3ppia---	_	_	_	11:ADV	ComparisonNode=ALDT
+16	,	,	PUNCT	_	_	20	punct	8:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+17	cum	cum	SCONJ	_	_	20	mark	8:AuxC	DiscourseMode=Dialogue|Speaker=Varro
+18	huius	hic	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	21	det	21:ATR	DiscourseMode=Dialogue|Speaker=Varro
+19	spectatum	specto	VERB	_	VerbForm=Conv|Aspect=Prosp|InflClass=LatA	20	xcomp	20:OBJ	DiscourseMode=Dialogue|Speaker=Varro|TraditionalMood=Supinum
+20	veniant	venio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	17:ADV	DiscourseMode=Dialogue|Speaker=Varro
+21	villas	villa	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	19	obj	19:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+22	,	,	PUNCT	_	_	19	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+23	non	non	PART	_	Polarity=Neg	31	advmod:neg	30:AuxZ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+24	,	,	PUNCT	_	_	27	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+25	ut	ut	SCONJ	_	_	27	mark	30:AuxC	DiscourseMode=Dialogue|Speaker=Varro
+26	apud	apud	ADP	_	_	27	case	25:AuxP	DiscourseMode=Dialogue|Speaker=Varro
+27	Lucullum	Lucullus	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	20	obl:lmod	26:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+28	,	,	PUNCT	_	_	30	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+29	ut	ut	SCONJ	_	_	30	mark	19:AuxC	DiscourseMode=Dialogue|Speaker=Varro
+30	videant	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	advcl	32:OBJ_CO	DiscourseMode=Dialogue|Speaker=Varro
+31	pinacothecas	pinacotheca	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	30	obj	30:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+32	,	,	PUNCT	_	_	34	punct	29:COORD	DiscourseMode=Dialogue|Speaker=Varro
+33	sed	sed	CCONJ	_	_	34	cc	33.1:AuxZ	DiscourseMode=Dialogue|Speaker=Varro
+33.1	videant	_	_	v3ppsa---	_	_	_	32:OBJ_CO	ComparisonNode=ALDT
+34	oporothecas	oporotheca	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	31	conj	33.1:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+35	.	.	PUNCT	_	_	7	punct	8:AuxK	DiscourseMode=Dialogue|Speaker=Varro
+
+# sent_id = S000077
+# speaker = Varro
+# edition_loc = 1.2.10
+# text_old = Huiusce, inquam, pomarii summa sacra via, ubi poma veneunt contra aurum, imago.
+# text = huiusce – inquam – pomarii summa sacra via, ubi poma veneunt contra aurum, imago.
+# text_en = Of this man's orchard, I say, the upper Sacred Way - where fruits sell for their weight in gold - is an image.
+# text_fr = De ce verger, dis-je, la haute voie Sacrée, où les fruits se vendent à prix d'or, est une image.
+# text_fi = Tämän miehen hedelmätarhasta, sanon, Pyhän tien yläosa, jossa hedelmiä myydään kullan hinnasta, on kuva.
+# review_status = silver
+1	huiusce	hice	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	6	det	5:ATR	DiscourseMode=Dialogue|Speaker=Varro|LemmaNorm=hic
+2	–	–	PUNCT	_	_	3	punct	3:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Varro
+3	inquam	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	16	parataxis:reporting	0:PRED	DiscourseMode=Narrative|Speaker=Varro
+4	–	–	PUNCT	_	_	3	punct	3:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Varro
+5	pomarii	pomarium	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	16	nmod	16:ATR	DiscourseMode=Dialogue|Speaker=Varro
+6	summa	summus	ADJ	_	Case=Nom|Gender=Fem|InflClass=IndEurO|Number=Sing	8	amod	16.1:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+7	sacra	sacer	ADJ	_	Case=Nom|Gender=Fem|InflClass=IndEurO|Number=Sing	8	amod	8:ATR	DiscourseMode=Dialogue|Speaker=Varro
+8	via	via	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	16	nsubj	6:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+9	,	,	PUNCT	_	_	12	punct	16.1:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+10	ubi	ubi	SCONJ	_	_	12	mark	6:AuxC	DiscourseMode=Dialogue|Speaker=Varro
+11	poma	pomum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	12	nsubj	12:SBJ	DiscourseMode=Dialogue|Speaker=Varro
+12	veneunt	veneo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl	10:ATR	DiscourseMode=Dialogue|Speaker=Varro
+13	contra	contra	ADP	_	_	14	case	12:AuxP	DiscourseMode=Dialogue|Speaker=Varro
+14	aurum	aurum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	12	obl	13:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+15	,	,	PUNCT	_	_	12	punct	16.1:AuxX	DiscourseMode=Dialogue|Speaker=Varro
+16	imago	imago	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	0	root	16.1:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
+16.1	est	_	_	v3spia---	_	_	_	3:OBJ	ComparisonNode=ALDT
+17	.	.	PUNCT	_	_	16	punct	3:AuxK	DiscourseMode=Dialogue|Speaker=Varro
+
+# sent_id = S000078
+# speaker = Stolo
+# edition_loc = 1.2.11
+# text_old = Illi interea ad nos, et Stolo, Num cena comessa, inquit, venimus?
+# text = illi interea ad nos, et Stolo: num cena comessa – inquit – venimus?
+# text_en = They had meanwhile joined us, and Stolo said: "Surely we haven't come after dinner's already been eaten?"
+# text_fr = Entretemps ils nous avaient rejoints, et Stolon dit : « N'allons-nous pas arriver alors que le dîner est déjà terminé ? »
+# text_fi = He olivat sillä välin liittyneet joukkoomme, ja Stolo sanoi: "Emmehän vain tulleet, kun illallinen on jo syöty?"
+# review_status = silver
+1	illi	ille	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Dem	13	conj	4.1:SBJ	DiscourseMode=Narrative|Speaker=Stolo
+1.1	_	_	VERB	_	_	_	_	1:ExD	_
+2	interea	interea	ADV	_	_	1	advmod	4.1:AuxY	DiscourseMode=Narrative|Speaker=Stolo
+3	ad	ad	ADP	_	_	4	case	4.1:AuxP	DiscourseMode=Narrative|Speaker=Stolo
+4	nos	ego	PRON	_	Case=Acc|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	1	orphan	3:OBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Stolo
+4.1	venerunt	_	_	v3pria---	_	_	_	6:PRED_CO	ComparisonNode=ALDT
+5	,	,	PUNCT	_	_	13	punct	4.1:AuxX	DiscourseMode=Narrative|Speaker=Stolo
+6	et	et	CCONJ	_	_	13	cc	0:COORD	DiscourseMode=Narrative|Speaker=Stolo
+7	Stolo	Stolo	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	13	nsubj	13:SBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Stolo
+8	:	:	PUNCT	_	_	13	punct	6:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+9	num	num	PART	_	PartType=Int	15	discourse	11:AuxY	DiscourseMode=Dialogue|OrigForm=Num|Speaker=Stolo
+10	cena	cena	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	11	nsubj	11:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+11	comessa	comedo	VERB	_	Aspect=Perf|Case=Abl|Gender=Fem|InflClass=LatX|Number=Sing|VerbForm=Part|Voice=Pass	15	advcl:abs	15:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+12	–	–	PUNCT	_	_	13	punct	13:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+13	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	parataxis:reporting	6:PRED_CO	DiscourseMode=Narrative|Speaker=Stolo
+14	–	–	PUNCT	_	_	13	punct	13:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+15	venimus	venio	VERB	_	Aspect=Perf|InflClass=LatI|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	13:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+16	?	?	PUNCT	_	_	15	punct	6:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000079
+# speaker = Stolo
+# edition_loc = 1.2.11
+# text_old = Nam non L. videmus Fundilium, qui nos advocavit.
+# text = nam non L. videmus Fundilium, qui nos advocavit.
+# text_en = For we don't see L. Fundilius, who summoned us.
+# text_fr = Car nous ne voyons pas L. Fundilius, qui nous a convoqués.
+# text_fi = Sillä emme näe L. Fundiliusta, joka kutsui meidät.
+# review_status = silver
+1	nam	nam	PART	_	_	5	discourse	5:AuxY	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Stolo
+2	non	non	PART	_	Polarity=Neg	5	advmod:neg	5:AuxY	DiscourseMode=Dialogue|Speaker=Stolo
+3	L	Lucius	PROPN	_	Abbr=Yes|Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	6	flat:name	6:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+4	.	.	PUNCT	_	_	3	punct	3:AuxG	DiscourseMode=Dialogue|Speaker=Stolo
+5	videmus	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Stolo
+6	Fundilium	Fundilius	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	obj	5:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+7	,	,	PUNCT	_	_	10	punct	5:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+8	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	10	nsubj	10:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+9	nos	ego	PRON	_	Case=Acc|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	10	obj	10:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+10	advocavit	advoco	VERB	_	Aspect=Perf|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	6:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+11	.	.	PUNCT	_	_	5	punct	5:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000080
+# speaker = Agrius
+# edition_loc = 1.2.11
+# text_old = Bono animo este, inquit Agrius.
+# text = bono animo este – inquit Agrius.
+# text_en = "Be of good cheer," said Agrius.
+# text_fr = « Ayez bon courage », dit Agrius.
+# text_fi = "Olkaa hyvällä mielellä", sanoi Agrius.
+# review_status = silver
+1	bono	bonus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	2	amod	2:ATR	DiscourseMode=Dialogue|OrigForm=Bono|Speaker=Agrius
+2	animo	animus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	0	root	3:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+3	este	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	5:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+4	–	–	PUNCT	_	_	5	punct	5:AuxG	DiscourseMode=Narrative|OrigForm=,|Speaker=Agrius
+5	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis:reporting	0:PRED	DiscourseMode=Narrative|Speaker=Agrius
+6	Agrius	Agrius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	5	nsubj	5:SBJ	DiscourseMode=Narrative|Speaker=Agrius|SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	5:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000081
+# speaker = Agrius
+# edition_loc = 1.2.11
+# text_old = Nam non modo ovom illut sublatum est, quod ludis circensibus novissimi curriculi finem facit quadrigis, sed ne illud quidem ovom vidimus, quod in cenali pompa solet esse primum.
+# text = nam non modo ovom illut sublatum est, quod ludis circensibus novissimi curriculi finem facit quadrigis, sed ne illud quidem ovom vidimus, quod in cenali pompa solet esse primum.
+# text_en = For not only has that egg not been raised - which marks the end of the last lap with the four-horse chariots at the circus games - but we haven't even seen that other egg, which is usually first in the dinner-procession.
+# text_fr = Car non seulement cet œuf n'a pas été retiré - qui marque la fin du dernier tour avec les quadriges aux jeux du cirque - mais nous n'avons même pas vu cet autre œuf, qui est habituellement le premier dans le cortège du dîner.
+# text_fi = Sillä ei ainoastaan ole vielä nostettu sitä munaa - joka merkitsee nelivaljakoiden kanssa viimeisen kierroksen loppua sirkuspeleissä - vaan emme ole nähneet edes sitä toista munaa, joka on tavallisesti ensimmäinen illalliskulkueessa.
+# review_status = silver
+1	nam	nam	PART	_	_	6	discourse	6:AuxY	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Agrius
+2	non	non	PART	_	Polarity=Neg	3	advmod:neg	3:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+3	modo	modo	ADV	_	_	6	advmod	6:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+4	ovom	ovum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	6	nsubj:pass	6:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+5	illut	ille	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	4	det	4:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+6	sublatum	tollo	VERB	_	Aspect=Perf|Case=Nom|Gender=Neut|InflClass=LatX|Number=Sing|VerbForm=Part|Voice=Pass	0	root	8:PRED_CO	DiscourseMode=Dialogue|Speaker=Agrius
+7	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	6:AuxV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+8	,	,	PUNCT	_	_	15	punct	0:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+9	quod	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	15	nsubj	15:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+10	ludis	ludus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Plur	15	obl	15:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+11	circensibus	circensis	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurI|Number=Plur	10	amod	10:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+12	novissimi	novissimus	ADJ	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	13	amod	13:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+13	curriculi	curriculum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	14	nmod	14:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+14	finem	finis	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurI|Number=Sing	15	obj	15:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+15	facit	facio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	4:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+16	quadrigis	quadrigae	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Plur	15	obl:arg	15:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+17	,	,	PUNCT	_	_	23	punct	15:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+18	sed	sed	CCONJ	_	_	23	cc	23:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+19	ne	ne	PART	_	Polarity=Neg	23	advmod:neg	23:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+20	illud	ille	DET	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	22	det	22:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+21	quidem	quidem	PART	_	_	23	discourse	23:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+22	ovom	ovum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	23	obj	23:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+23	vidimus	video	VERB	_	Aspect=Perf|InflClass=LatE|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	8:PRED_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+24	,	,	PUNCT	_	_	29	punct	23:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+25	quod	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	29	nsubj	29:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+26	in	in	ADP	_	_	28	case	29:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+27	cenali	cenalis	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Sing	28	amod	28:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+28	pompa	pompa	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	29	obl	26:ADV	DiscourseMode=Dialogue|Speaker=Agrius
+29	solet	soleo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	acl:relcl	22:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+30	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	31	cop	29:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+31	primum	primus	ADJ	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing|NumType=Ord	29	xcomp	30:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+32	.	.	PUNCT	_	_	6	punct	8:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000082
+# speaker = Agrius
+# edition_loc = 1.2.12
+# text_old = Itaque dum id nobiscum una videatis ac venit aeditumus, docete nos, agri cultura quam summam habeat, utilitatemne an voluptatem an utrumque.
+# text = itaque dum id nobiscum una videatis ac venit aeditumus, docete nos, agri cultura quam summam habeat, utilitatemne an voluptatem an utrumque.
+# text_en = So, while you look into this together with us, and the sacristan arrives, teach us what supreme value the cultivation of the land has: utility, or pleasure, or both.
+# text_fr = Ainsi, tandis que vous examinez cela avec nous, et que le sacristain arrive, enseignez-nous quelle est la valeur suprême de la culture de la terre : l'utilité, le plaisir, ou les deux.
+# text_fi = Niinpä, kun te tarkastelette tätä yhdessä meidän kanssamme ja temppelinvartija saapuu, opettakaa meille, mikä on maanviljelyksen korkein arvo: hyöty, mielihyvä vai molemmat.
+# review_status = silver
+1	itaque	itaque	PART	_	_	12	discourse	7:AuxY	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Agrius
+2	dum	dum	SCONJ	_	_	7	mark	8:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
+3	id	is	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	7	obj	7:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+4-5	nobiscum	_	_	_	_	_	_	_	_
+4	nobis	nos	PRON	_	Case=Abl|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	7	obl	5:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+5	cum	cum	ADP	_	AdpType=Post	4	case	6:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+6	una	una	ADV	_	_	7	advmod	7:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+7	videatis	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	2:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
+8	ac	atque	CCONJ	_	_	9	cc	12:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+9	venit	venio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	8:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
+10	aeditumus	aeditumus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	9	nsubj	9:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+11	,	,	PUNCT	_	_	12	punct	12:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+12	docete	doceo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Agrius
+13	nos	nos	PRON	_	Case=Acc|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	12	obj	12:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+14	,	,	PUNCT	_	_	12	punct	12:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+15	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	16	nmod	16:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+16	cultura	cultura	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	19	nsubj	19:SBJ	DiscourseMode=Dialogue|Speaker=Agrius
+17	quam	qui	DET	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Int	18	det	18:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+18	summam	summus	ADJ	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	19	obj	19:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+19	habeat	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	ccomp	12:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+20	,	,	PUNCT	_	_	21	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
+21-22	utilitatemne	_	_	_	_	_	_	_	_
+21	utilitatem	utilitas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	18	appos	23:OCOMP_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+22	ne	ne	PART	_	PartType=Int	21	discourse	23:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+23	an	an	CCONJ	_	_	24	cc	19:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+24	voluptatem	voluptas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	21	conj	23:OCOMP_CO	DiscourseMode=Dialogue|Speaker=Agrius
+25	an	an	CCONJ	_	_	26	cc	23:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+26	utrumque	uterque	DET	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Con	21	conj	23:OCOMP_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+27	.	.	PUNCT	_	_	12	punct	12:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000083
+# speaker = Agrius
+# edition_loc = 1.2.12
+# text_old = Ad te enim rudem esse agri culturae nunc, olim ad Stolonem fuisse dicunt.
+# text = ad te enim rudem esse agri culturae nunc, olim ad Stolonem fuisse dicunt.
+# text_en = For they say that you are now the veteran master of farming, as Stolo once was.
+# text_fr = Car on dit que tu es maintenant le maître chevronné de l'agriculture, comme le fut jadis Stolon.
+# text_fi = Sillä sanotaan, että sinä olet nyt maanviljelyn kokenut mestari, niin kuin Stolo oli ennen.
+# review_status = silver
+1	ad	ad	ADP	_	_	2	case	5:AuxP	DiscourseMode=Dialogue|OrigForm=Ad|Speaker=Agrius
+2	te	tu	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing|Person=2|PronType=Prs	4	obl	1:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+3	enim	enim	PART	_	_	14	discourse	5:AuxZ	DiscourseMode=Dialogue|Speaker=Agrius
+4	rudem	rudis	ADJ	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	14	ccomp	5:PNOM	DiscourseMode=Dialogue|Speaker=Agrius
+5	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	4	cop	9:OBJ_CO	DiscourseMode=Dialogue|Speaker=Agrius
+6	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	7	nmod	7:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+7	culturae	cultura	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|Number=Sing	4	nmod	4:ATR	DiscourseMode=Dialogue|Speaker=Agrius
+8	nunc	nunc	ADV	_	AdvType=Tim	4	advmod:tmod	5:AuxY	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+9	,	,	PUNCT	_	_	13	punct	14:COORD	DiscourseMode=Dialogue|Speaker=Agrius
+10	olim	olim	ADV	_	AdvType=Tim	13	advmod:tmod	13:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
+11	ad	ad	ADP	_	_	12	case	13:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
+12	Stolonem	Stolo	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	13	obl	11:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
+13	fuisse	sum	AUX	_	Aspect=Perf|InflClass=LatAnom|VerbForm=Inf	4	conj	9:OBJ_CO	DiscourseMode=Dialogue|Speaker=Agrius
+14	dicunt	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+15	.	.	PUNCT	_	_	14	punct	14:AuxK	DiscourseMode=Dialogue|Speaker=Agrius
+
+# sent_id = S000084
+# speaker = Scrofa
+# edition_loc = 1.2.12
+# text_old = Scrofa, Prius, inquit, discernendum, utrum quae serantur in agro, ea sola sint in cultura, an etiam quae inducantur in rura, ut oves et armenta.
+# text = Scrofa: prius – inquit – discernendum, utrum quae serantur in agro, ea sola sint in cultura, an etiam quae inducantur in rura, ut oves et armenta.
+# text_en = Scrofa said: "First it must be determined whether the things which are sown in the field belong to cultivation alone, or also the things which are brought onto the land, like sheep and herds."
+# text_fr = Scrofa dit : « Il faut d'abord déterminer si seules les choses qui sont semées dans le champ relèvent de la culture, ou aussi celles qui sont amenées sur les terres, comme les moutons et les troupeaux. »
+# text_fi = Scrofa sanoi: "Ensin on määriteltävä, kuuluvatko viljelyyn ainoastaan ne asiat, joita kylvetään pellolle, vai myös ne, joita tuodaan maille, kuten lampaat ja karja."
+# review_status = silver
+1	Scrofa	Scrofa	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	5	nsubj	5:SBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Scrofa
+2	:	:	PUNCT	_	_	5	punct	5:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
+3	prius	prius	ADV	_	Degree=Cmp	7	advmod	7:AuxY	DiscourseMode=Dialogue|OrigForm=Prius|Speaker=Scrofa
+4	–	–	PUNCT	_	_	5	punct	5:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
+5	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	parataxis:reporting	0:PRED	DiscourseMode=Narrative|Speaker=Scrofa
+6	–	–	PUNCT	_	_	5	punct	5:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
+7	discernendum	discerno	VERB	_	Aspect=Prosp|Case=Nom|Gender=Neut|InflClass=LatX|Number=Sing|VerbForm=Part|Voice=Pass	0	root	5:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa|TraditionalMood=Gerundivum
+8	,	,	PUNCT	_	_	9	punct	7:AuxX	DiscourseMode=Dialogue|Speaker=Scrofa
+9	utrum	utrum	ADV	_	PronType=Con	19	advmod	10:ATR	DiscourseMode=Dialogue|Speaker=Scrofa
+10	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	11	nsubj:pass	11:SBJ	DiscourseMode=Dialogue|Speaker=Scrofa
+11	serantur	sero	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	15	acl:relcl	15:ATR	DiscourseMode=Dialogue|Speaker=Scrofa
+12	in	in	ADP	_	_	13	case	11:AuxP	DiscourseMode=Dialogue|Speaker=Scrofa
+13	agro	ager	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	11	obl:lmod	12:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+14	,	,	PUNCT	_	_	15	punct	11:AuxX	DiscourseMode=Dialogue|Speaker=Scrofa
+15	ea	is	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Dem	19	nsubj	17:SBJ	DiscourseMode=Dialogue|Speaker=Scrofa
+16	sola	solus	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Con	15	amod	15:ATV	DiscourseMode=Dialogue|Speaker=Scrofa
+17	sint	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	cop	21:OBJ_CO	DiscourseMode=Dialogue|Speaker=Scrofa
+18	in	in	ADP	_	_	19	case	17:AuxP	DiscourseMode=Dialogue|Speaker=Scrofa
+19	cultura	cultura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	7	csubj:pass	18:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+20	,	,	PUNCT	_	_	24	punct	17:AuxX	DiscourseMode=Dialogue|Speaker=Scrofa
+21	an	an	CCONJ	_	_	24	cc	7:COORD	DiscourseMode=Dialogue|Speaker=Scrofa
+22	etiam	etiam	ADV	_	_	24	advmod:emph	24:AuxZ	DiscourseMode=Dialogue|Speaker=Scrofa
+23	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	24	nsubj:pass	27:SBJ_AP	DiscourseMode=Dialogue|Speaker=Scrofa
+24	inducantur	induco	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	19	conj	21:OBJ_CO	DiscourseMode=Dialogue|Speaker=Scrofa
+25	in	in	ADP	_	_	26	case	24:AuxP	DiscourseMode=Dialogue|Speaker=Scrofa
+26	rura	rus	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurX|Number=Plur	24	obl:lmod	25:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+27	,	,	PUNCT	_	_	29	punct	24:APOS	DiscourseMode=Dialogue|Speaker=Scrofa
+28	ut	ut	SCONJ	_	_	29	mark	24:AuxC	DiscourseMode=Dialogue|Speaker=Scrofa
+29	oves	ovis	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Plur	24	advcl:cmp	30:SBJ_CO	DiscourseMode=Dialogue|Speaker=Scrofa
+30	et	et	CCONJ	_	_	31	cc	31.1:COORD	DiscourseMode=Dialogue|Speaker=Scrofa
+31	armenta	armentum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	29	conj	30:SBJ_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+31.1	inducantur	_	VERB	_	_	_	_	28:ADV	ComparisonNode=ALDT
+32	.	.	PUNCT	_	_	7	punct	5:AuxK	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000085
+# speaker = Scrofa
+# edition_loc = 1.2.13
+# text_old = Video enim, qui de agri cultura scripserunt et Poenice et Graece et Latine, latius vagatos, quam oportuerit.
+# text = video enim, qui de agri cultura scripserunt et Poenice et Graece et Latine, latius vagatos, quam oportuerit.
+# text_en = For I see that those who have written on agriculture, both in Punic, in Greek, and in Latin, have wandered more widely than they should have.
+# text_fr = Car je vois que ceux qui ont écrit sur l'agriculture, en punique, en grec et en latin, se sont égarés plus largement qu'il n'aurait fallu.
+# text_fi = Sillä näen, että ne, jotka ovat kirjoittaneet maanviljelyksestä, sekä puuniksi, kreikaksi että latinaksi, ovat harhailleet laajemmalle kuin olisi ollut asianmukaista.
+# review_status = silver
+1	video	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|OrigForm=Video|Speaker=Scrofa
+2	enim	enim	PART	_	_	1	discourse	1:AuxZ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+3	,	,	PUNCT	_	_	8	punct	8:AuxX	DiscourseMode=Dialogue|Speaker=Scrofa
+4	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	8	nsubj	8:SBJ	DiscourseMode=Dialogue|Speaker=Scrofa
+5	de	de	ADP	_	_	7	case	8:AuxP	DiscourseMode=Dialogue|Speaker=Scrofa
+6	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	7	nmod	7:ATR	DiscourseMode=Dialogue|Speaker=Scrofa
+7	cultura	cultura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	8	obl	5:ADV	DiscourseMode=Dialogue|Speaker=Scrofa
+8	scripserunt	scribo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	csubj:relcl	1:OBJ	DiscourseMode=Dialogue|Speaker=Scrofa
+9	et	et	CCONJ	_	_	10	cc	8:COORD	DiscourseMode=Dialogue|Speaker=Scrofa
+10	Poenice	Poenice	ADV	_	_	8	advmod	9:ADV_CO	DiscourseMode=Dialogue|Speaker=Scrofa
+11	et	et	CCONJ	_	_	12	cc	9:AuxY	DiscourseMode=Dialogue|Speaker=Scrofa
+12	Graece	Graece	ADV	_	_	10	conj	9:ADV_CO	DiscourseMode=Dialogue|Speaker=Scrofa
+13	et	et	CCONJ	_	_	14	cc	9:AuxY	DiscourseMode=Dialogue|Speaker=Scrofa
+14	Latine	Latine	ADV	_	_	10	conj	9:ADV_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+15	,	,	PUNCT	_	_	17	punct	8:AuxX	DiscourseMode=Dialogue|Speaker=Scrofa
+16	latius	late	ADV	_	Degree=Cmp	17	advmod	17:ADV	DiscourseMode=Dialogue|Speaker=Scrofa
+17	vagatos	vago	VERB	_	Aspect=Perf|Case=Acc|Gender=Masc|InflClass=LatA|Number=Plur|VerbForm=Part|Voice=Pass	1	ccomp	1:OCOMP	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+18	,	,	PUNCT	_	_	20	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Scrofa
+19	quam	quam	SCONJ	_	_	20	mark	17:AuxC	DiscourseMode=Dialogue|Speaker=Scrofa
+20	oportuerit	oportet	VERB	_	Aspect=Perf|InflClass=LatE|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	advcl:cmp	19:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+21	.	.	PUNCT	_	_	1	punct	1:AuxK	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000086
+# speaker = Stolo
+# edition_loc = 1.2.13
+# text_old = Ego vero, inquit Stolo, eos non in omni re imitandos arbitror et eo melius fecisse quosdam, qui minore pomerio finierunt exclusis partibus quae non pertinent ad hanc rem.
+# text = ego vero – inquit Stolo – eos non in omni re imitandos arbitror et eo melius fecisse quosdam, qui minore pomerio finierunt exclusis partibus quae non pertinent ad hanc rem.
+# text_en = "But I," said Stolo, "do not think they are to be imitated in every respect, and that some have done better by setting a narrower boundary, excluding parts which do not pertain to this matter."
+# text_fr = « Mais moi, dit Stolon, je ne pense pas qu'il faille les imiter en tout point, et que certains ont mieux fait en fixant une limite plus étroite, excluant les parties qui ne se rapportent pas à ce sujet. »
+# text_fi = "Minä puolestani", sanoi Stolo, "en usko, että heitä tulisi jäljitellä joka suhteessa, ja että jotkut ovat tehneet paremmin asettamalla kapeamman rajan, sulkien pois osat, jotka eivät kuulu tähän asiaan."
+# review_status = silver
+1	ego	ego	PRON	_	Case=Nom|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	13	nsubj	13:SBJ	DiscourseMode=Dialogue|OrigForm=Ego|Speaker=Stolo
+2	vero	vero	ADV	_	_	13	discourse	13:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+3	–	–	PUNCT	_	_	4	punct	4:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+4	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	parataxis:reporting	0:PRED	DiscourseMode=Narrative|Speaker=Stolo
+5	Stolo	Stolo	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	4	nsubj	4:SBJ	DiscourseMode=Narrative|Speaker=Stolo
+6	–	–	PUNCT	_	_	4	punct	4:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+7	eos	is	PRON	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Dem	12	nsubj:pass	13:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+8	non	non	PART	_	Polarity=Neg	12	advmod:neg	12:AuxZ	DiscourseMode=Dialogue|Speaker=Stolo
+9	in	in	ADP	_	_	11	case	12:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+10	omni	omnis	DET	_	Case=Abl|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Tot	11	det	11:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+11	re	res	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurE|Number=Sing	12	obl	9:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+12	imitandos	imitor	VERB	_	Aspect=Prosp|Case=Acc|Gender=Masc|InflClass=LatA|Number=Plur|VerbForm=Part|Voice=Pass	13	ccomp	13:OCOMP	DiscourseMode=Dialogue|Speaker=Stolo|TraditionalMood=Gerundivum
+13	arbitror	arbitror	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	14:OBJ_CO	DiscourseMode=Dialogue|Speaker=Stolo
+14	et	et	CCONJ	_	_	17	cc	4:COORD	DiscourseMode=Dialogue|Speaker=Stolo
+15	eo	is	PRON	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	16	obl	18:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+16	melius	bene	ADV	_	Degree=Cmp	17	advmod	17:OCOMP	DiscourseMode=Dialogue|Speaker=Stolo
+17	fecisse	facio	VERB	_	Aspect=Perf|InflClass=LatI2|Tense=Past|VerbForm=Inf|Voice=Act	12	conj	18.1:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+18	quosdam	quidam	PRON	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Ind	17	nsubj	17:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+18.1	arbitror	_	_	v1spip---	_	_	_	14:OBJ_CO	ComparisonNode=ALDT
+19	,	,	PUNCT	_	_	23	punct	23:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+20	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	23	nsubj	23:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+21	minore	parvus	ADJ	_	Case=Abl|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Sing	22	amod	22:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+22	pomerio	pomerium	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	23	obl	23:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+23	finierunt	finio	VERB	_	Aspect=Perf|InflClass=LatI|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	acl:relcl	18:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+24	exclusis	excludo	VERB	_	Aspect=Perf|Case=Abl|Gender=Fem|InflClass=LatX|Number=Plur|VerbForm=Part|Voice=Pass	23	advcl:abs	23:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+25	partibus	pars	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Plur	24	nsubj:pass	24:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+26	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Rel	28	nsubj	28:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+27	non	non	PART	_	Polarity=Neg	28	advmod:neg	28:AuxZ	DiscourseMode=Dialogue|Speaker=Stolo
+28	pertinent	pertineo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	acl:relcl	25:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+29	ad	ad	ADP	_	_	31	case	28:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+30	hanc	hic	DET	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	31	det	31:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+31	rem	res	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurE|Number=Sing	28	obl:arg	29:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+32	.	.	PUNCT	_	_	13	punct	4:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000087
+# speaker = Stolo
+# edition_loc = 1.2.13
+# text_old = Quare tota pastio, quae coniungitur a plerisque cum agri cultura, magis ad pastorem quam ad agricolam pertinere videtur.
+# text = quare tota pastio, quae coniungitur a plerisque cum agri cultura, magis ad pastorem quam ad agricolam pertinere videtur.
+# text_en = Therefore, the whole business of herding, which most writers join with agriculture, seems to pertain more to the herdsman than to the farmer.
+# text_fr = C'est pourquoi tout l'élevage, que la plupart réunissent à l'agriculture, paraît relever davantage du berger que du cultivateur.
+# text_fi = Siksi koko karjanhoito, jonka useimmat yhdistävät maanviljelykseen, näyttää kuuluvan enemmän paimenelle kuin maanviljelijälle.
+# review_status = silver
+1	quare	quare	ADV	_	_	20	advmod	20:AuxY	DiscourseMode=Dialogue|OrigForm=Quare|Speaker=Stolo
+2	tota	totus	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Tot	3	det	3:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+3	pastio	pastio	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	20	nsubj:pass	20:SBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+4	,	,	PUNCT	_	_	6	punct	6:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+5	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	6	nsubj:pass	6:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+6	coniungitur	coniungo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	3	acl:relcl	3:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+7	a	ab	ADP	_	_	8	case	6:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+8	plerisque	plerique	DET	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Plur|PronType=Ind	6	obl:agent	7:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+9	cum	cum	ADP	_	_	11	case	6:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+10	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	11	nmod	11:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+11	cultura	cultura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	6	obl:arg	9:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+12	,	,	PUNCT	_	_	3	punct	6:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+13	magis	magis	ADV	_	Degree=Cmp	19	advmod	20:OCOMP	DiscourseMode=Dialogue|Speaker=Stolo
+14	ad	ad	ADP	_	_	15	case	20:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+15	pastorem	pastor	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	19	obl:arg	14:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+16	quam	quam	SCONJ	_	_	18	mark	13:AuxC	DiscourseMode=Dialogue|Speaker=Stolo
+17	ad	ad	ADP	_	_	18	case	16:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+18	agricolam	agricola	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurA|Number=Sing	13	advcl:cmp	17:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+19	pertinere	pertineo	VERB	_	Aspect=Imp|InflClass=LatE|VerbForm=Inf|Voice=Act	20	xcomp	20:PNOM	DiscourseMode=Dialogue|Speaker=Stolo
+20	videtur	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+21	.	.	PUNCT	_	_	20	punct	20:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000088
+# speaker = Stolo
+# edition_loc = 1.2.14
+# text_old = Quocirca principes qui utrique rei praeponuntur vocabulis quoque sunt diversi, quod unus vocatur vilicus, alter magister pecoris.
+# text = quocirca principes qui utrique rei praeponuntur vocabulis quoque sunt diversi, quod unus vocatur vilicus, alter magister pecoris.
+# text_en = Wherefore the overseers who are put in charge of each business are also different in name: one is called vilicus (farm-steward), the other magister pecoris (master of the flock).
+# text_fr = C'est pourquoi les chefs qui sont préposés à chacune de ces deux activités diffèrent aussi par leur nom : l'un est appelé vilicus, l'autre magister pecoris.
+# text_fi = Siksi kummankin tehtävän johtajat eroavat myös nimeltään: toista kutsutaan vilicukseksi, toista magister pecoriksi eli karjanhoidon esimieheksi.
+# review_status = silver
+1	quocirca	quocirca	ADV	_	_	10	advmod	9:AuxY	DiscourseMode=Dialogue|OrigForm=Quocirca|Speaker=Stolo
+2	principes	princeps	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|Number=Plur	10	nsubj	9:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+3	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	6	nsubj:pass	6:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+4	utrique	uterque	DET	_	Case=Dat|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Con	5	det	5:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+5	rei	res	NOUN	_	Case=Dat|Gender=Fem|InflClass=IndEurE|Number=Sing	6	obl:arg	6:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+6	praeponuntur	praepono	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	2	acl:relcl	2:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+7	vocabulis	vocabulum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur	10	obl	9:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+8	quoque	quoque	PART	_	_	10	discourse	9:AuxY	DiscourseMode=Dialogue|Speaker=Stolo
+9	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	0:PRED	DiscourseMode=Dialogue|Speaker=Stolo
+10	diversi	diversus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Plur	0	root	9:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+11	,	,	PUNCT	_	_	14	punct	9:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+12	quod	quod	SCONJ	_	_	14	mark	9:AuxC	DiscourseMode=Dialogue|Speaker=Stolo
+13	unus	unus	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Ind	14	nsubj:pass	14:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+14	vocatur	voco	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	10	advcl	16:ADV_CO	DiscourseMode=Dialogue|Speaker=Stolo
+15	vilicus	vilicus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	14	xcomp	14:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+16	,	,	PUNCT	_	_	18	punct	12:COORD	DiscourseMode=Dialogue|Speaker=Stolo
+17	alter	alter	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	14	conj	17.1:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+17.1	vocatur	_	_	_	_	_	_	16:ADV_CO	InheritedFrom=S000088:14
+18	magister	magister	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	17	orphan	17.1:PNOM	DiscourseMode=Dialogue|Speaker=Stolo
+19	pecoris	pecus	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurX|Number=Sing	18	nmod	18:ATR	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+20	.	.	PUNCT	_	_	10	punct	9:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000089
+# speaker = Stolo
+# edition_loc = 1.2.14
+# review_status = silver
+# text_old = Vilicus agri colendi causa constitutus atque appellatus a villa, quod ab eo in eam convehuntur fructus et evehuntur, cum veneunt.
+# text = vilicus agri colendi causa constitutus atque appellatus a villa, quod ab eo in eam convehuntur fructus et evehuntur, cum veneunt.
+# text_en = The farm-steward was appointed for the sake of the field to be cultivated, and was named from the villa, because through him produce is brought into it and carried out from it when it is sold.
+# text_fr = Le vilicus fut institué pour la culture du champ et reçut son nom de la villa, parce que c'est par lui que les produits y sont apportés et en sont emportés lorsqu'ils sont vendus.
+# text_fi = Tilanhoitaja asetettiin pellon viljelemistä varten, ja hän sai nimensä sanasta villa, koska hänen välityksellään sadon tuotteet tuodaan siihen ja viedään sieltä pois, kun ne myydään.
+1	vilicus	vilicus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	5	nsubj:pass	6:SBJ	DiscourseMode=Dialogue|OrigForm=Vilicus|Speaker=Stolo
+2	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	4	nmod	3:ATR	DiscourseMode=Dialogue|Speaker=Stolo
+3	colendi	colo	VERB	_	Aspect=Prosp|Case=Gen|Gender=Masc|InflClass=LatX|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	4:ATR	DiscourseMode=Dialogue|Speaker=Stolo|TraditionalMood=Gerundivum
+4	causa	causa	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	5	obl	5:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+5	constitutus	constituo	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatX|Number=Sing|VerbForm=Part|Voice=Pass	0	root	6:PRED_CO	DiscourseMode=Dialogue|Speaker=Stolo
+6	atque	atque	CCONJ	_	_	7	cc	0:COORD	DiscourseMode=Dialogue|Speaker=Stolo
+7	appellatus	appello	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatA|Number=Sing|VerbForm=Part|Voice=Pass	5	conj	6:PRED_CO	DiscourseMode=Dialogue|Speaker=Stolo
+8	a	ab	ADP	_	_	9	case	7:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+9	villa	villa	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	7	obl:agent	8:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+10	,	,	PUNCT	_	_	16	punct	18:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+11	quod	quod	SCONJ	_	_	16	mark	7:AuxC	DiscourseMode=Dialogue|Speaker=Stolo
+12	ab	ab	ADP	_	_	13	case	16:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+13	eo	is	PRON	_	Case=Abl|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	16	obl:lmod	12:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+14	in	in	ADP	_	_	15	case	16:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+15	eam	is	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	16	obl:lmod	14:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+16	convehuntur	conveho	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	7	advcl	18:ADV_CO	DiscourseMode=Dialogue|Speaker=Stolo
+17	fructus	fructus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurU|Number=Plur	16	nsubj:pass	18:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+18	et	et	CCONJ	_	_	19	cc	11:COORD	DiscourseMode=Dialogue|Speaker=Stolo
+19	evehuntur	eveho	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	16	conj	18:ADV_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+20	,	,	PUNCT	_	_	22	punct	18:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+21	cum	cum	SCONJ	_	_	22	mark	19:AuxC	DiscourseMode=Dialogue|Speaker=Stolo
+22	veneunt	veneo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	advcl	21:ADV	DiscourseMode=Dialogue|Speaker=Stolo|SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	6:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000090
+# speaker = Stolo
+# edition_loc = 1.2.14
+# text_old = A quo rustici etiam nunc quoque viam veham appellant propter vecturas et vellam, non villam, quo vehunt et unde vehunt.
+# text = a quo rustici etiam nunc quoque viam veham appellant propter vecturas et vellam, non villam, quo vehunt et unde vehunt.
+# text_en = From this [word] country-folk even now also call a road "veha" on account of hauling, and [name] "vella", not "villa", that to which and from which they haul.
+# text_fr = De ce mot, les gens de la campagne appellent encore aujourd'hui une route « veha » à cause du transport, et [nomment] « vella », non « villa », ce vers quoi et d'où l'on transporte.
+# text_fi = Tästä sanasta maalaiset kutsuvat vielä nytkin tietä nimellä ”veha” kuljetusten vuoksi, ja [nimittävät] sitä, mihin ja mistä tavaraa kuljetetaan, ”vellaksi”, ei ”villaksi”.
+# review_status = silver
+1	a	ab	ADP	_	_	2	case	12:AuxP	DiscourseMode=Dialogue|OrigForm=A|Speaker=Stolo
+2	quo	qui	PRON	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	9	obl	1:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+3	rustici	rusticus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Plur	9	nsubj	12:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+4	etiam	etiam	ADV	_	_	5	advmod:emph	5:AuxZ	DiscourseMode=Dialogue|Speaker=Stolo
+5	nunc	nunc	ADV	_	AdvType=Tim	9	advmod:tmod	12:AuxY	DiscourseMode=Dialogue|Speaker=Stolo
+6	quoque	quoque	PART	_	_	9	discourse	12:AuxY	DiscourseMode=Dialogue|Speaker=Stolo
+7	viam	via	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	9	obj	9:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+8	veham	veha	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	9	xcomp	9:OCOMP	DiscourseMode=Dialogue|Speaker=Stolo
+9	appellant	appello	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	12:PRED_CO	DiscourseMode=Dialogue|Speaker=Stolo
+10	propter	propter	ADP	_	_	11	case	9:AuxP	DiscourseMode=Dialogue|Speaker=Stolo
+11	vecturas	vectura	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	9	obl	10:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+12	et	et	CCONJ	_	_	13	cc	0:COORD	DiscourseMode=Dialogue|Speaker=Stolo
+13	vellam	vella	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	19	orphan	14:OCOMP_AP	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+14	,	,	PUNCT	_	_	16	punct	16.1:APOS	DiscourseMode=Dialogue|Speaker=Stolo
+15	non	non	PART	_	Polarity=Neg	16	advmod:neg	16:AuxZ	DiscourseMode=Dialogue|Speaker=Stolo
+16	villam	villa	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	13	conj	14:OCOMP_AP	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+16.1	appellant	_	_	_	_	_	_	12:PRED_CO	InheritedFrom=S000090:9
+17	,	,	PUNCT	_	_	19	punct	20:AuxX	DiscourseMode=Dialogue|Speaker=Stolo
+18	quo	quo	ADV	_	AdvType=Loc|PronType=Rel	19	advmod:lmod	19:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+19	vehunt	veho	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	conj	20:ATR_CO	DiscourseMode=Dialogue|Speaker=Stolo
+20	et	et	CCONJ	_	_	22	cc	13:COORD	DiscourseMode=Dialogue|Speaker=Stolo
+21	unde	unde	ADV	_	AdvType=Loc|PronType=Rel	22	advmod:lmod	22:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+22	vehunt	veho	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	conj	20:ATR_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+23	.	.	PUNCT	_	_	9	punct	12:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000091
+# speaker = Stolo
+# edition_loc = 1.2.14
+# text_old = Item dicuntur qui vecturis vivunt velaturam facere.
+# text = item dicuntur qui vecturis vivunt velaturam facere.
+# text_en = Likewise, those who live by hauling are said to practice "velatura" (the hauling-trade).
+# text_fr = De même, ceux qui vivent du transport sont dits pratiquer la « velatura » (le métier du transport).
+# text_fi = Samoin niiden, jotka elävät kuljetuksista, sanotaan harjoittavan "velaturaa" (kuljetuselinkeinoa).
+# review_status = silver
+1	item	item	ADV	_	_	2	advmod	2:AuxY	DiscourseMode=Dialogue|OrigForm=Item|Speaker=Stolo
+2	dicuntur	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Stolo
+3	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	5	nsubj	5:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+4	vecturis	vectura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Plur	5	obl	5:ADV	DiscourseMode=Dialogue|Speaker=Stolo
+5	vivunt	vivo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	csubj:pass	2:SBJ	DiscourseMode=Dialogue|Speaker=Stolo
+6	velaturam	velatura	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	7	obj	7:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
+7	facere	facio	VERB	_	Aspect=Imp|InflClass=LatI2|VerbForm=Inf|Voice=Act	2	xcomp	2:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+8	.	.	PUNCT	_	_	2	punct	2:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
