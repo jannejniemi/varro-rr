@@ -12,10 +12,9 @@ A Universal Dependencies treebank of Varro's *Res rusticae*: the corpus in its c
 
 ## Browsing the corpus
 
-[`conllu-browser.html`](conllu-browser.html) is a self-contained, client-side viewer for the `.conllu` files above: dependency trees (Basic and Enhanced), a flat table view, and per-sentence metadata, with nothing sent anywhere -- it parses and renders entirely in your browser.
+**[Open the live browser](https://jannejniemi.github.io/varro-rr/conllu-browser.html)** -- dependency trees (Basic and Enhanced), a flat table view, and per-sentence metadata for any sentence in the corpus. Use the *Reviewed* / *Pending* / *ALDT comparison* buttons to load the matching file.
 
-- **Served over the web** (for example via GitHub Pages, or by running `python3 -m http.server` from this repository's root and opening the page from there): use the *Reviewed* / *Pending* / *ALDT comparison* buttons to load the matching file automatically.
-- **Opened as a local file**: browsers block a page from reading its neighbouring files this way, so use the page's "Open file…" button, or drag one of the `corpus/*.conllu` files onto it, instead.
+[`conllu-browser.html`](conllu-browser.html) is the self-contained, client-side viewer behind that link: nothing is sent anywhere, it parses and renders entirely in your browser. If you'd rather run it yourself instead of using the hosted copy -- cloned locally, or served some other way -- the same *Reviewed*/*Pending*/*ALDT comparison* buttons work wherever the page is served over http(s); opened directly as a local file, browsers block it from reading its neighbouring files, so use "Open file…" or drag one of the `corpus/*.conllu` files onto the page instead.
 
 ## Documentation
 
