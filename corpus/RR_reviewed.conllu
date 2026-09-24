@@ -2252,6 +2252,7 @@
 23	an	an	CCONJ	_	_	24	cc	_	DiscourseMode=Dialogue|Speaker=Fundanius
 24	non	non	PART	_	Polarity=Neg	20	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
 25	.	.	PUNCT	_	_	5	punct	_	DiscourseMode=Dialogue|Speaker=Fundanius
+
 # sent_id = S000068
 # speaker = Fundanius
 # edition_loc = 1.2.8
@@ -2629,6 +2630,7 @@
 15	,	,	PUNCT	_	_	12	punct	_	DiscourseMode=Dialogue|Speaker=Varro
 16	imago	imago	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 17	.	.	PUNCT	_	_	16	punct	_	DiscourseMode=Dialogue|Speaker=Varro
+
 # sent_id = S000078
 # speaker = Stolo
 # edition_loc = 1.2.11
@@ -4014,7 +4016,7 @@
 # text_old = "cucumerem anguinum condito in aquam eamque infundito quo voles, nulli accedent;
 # text = “cucumerem anguinum condito in aquam eamque infundito quo voles, nulli accedent;
 # text_en = “Preserve a snake-cucumber in water, and pour it wherever you wish; none will approach;”
-# text_fr = « « Conservez un concombre serpentaire dans l’eau, et versez-la où vous voudrez ; aucune n’approchera ; »
+# text_fr = « Conservez un concombre serpentaire dans l’eau, et versez-la où vous voudrez ; aucune n’approchera ; »
 # text_fi = ”Säilytä käärmekurkku vedessä ja kaada se minne haluat; yksikään ei tule lähelle;”
 # review_status = silver
 1	“	“	PUNCT	_	_	4	punct	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
@@ -4062,9 +4064,9 @@
 # text_old = Fundanius aspicit ad Scrofam, Et tamen verum dicit, inquit, hic, ut hoc scripserit in agri cultura.
 # text = Fundanius aspicit ad Scrofam: et tamen verum dicit – inquit – hic, ut hoc scripserit in agri cultura.
 # meta: split_from = S000121; offset = 11
-# text_en = “Fundanius looks at Scrofa: “And yet,” said he, “this man speaks the truth, in that he wrote this in [his work] on agriculture.”
-# text_fr = « Fundanius regarde Scrofa : « Et pourtant, dit-il, celui-ci dit vrai, du fait qu’il a écrit cela dans son traité d’agriculture. » »
-# text_fi = ”Fundanius katsoo Scrofaan: ”Ja silti”, hän sanoi, ”tämä puhuu totta, koska hän kirjoitti tämän maanviljelystä kertovassa teoksessaan.”
+# text_en = Fundanius looks at Scrofa: “And yet,” said he, “this man speaks the truth, in that he wrote this in [his work] on agriculture.”
+# text_fr = Fundanius regarde Scrofa : « Et pourtant, dit-il, celui-ci dit vrai, du fait qu’il a écrit cela dans son traité d’agriculture. »
+# text_fi = Fundanius katsoo Scrofaan: ”Ja silti”, hän sanoi, ”tämä puhuu totta, koska hän kirjoitti tämän maanviljelystä kertovassa teoksessaan.”
 # review_status = silver
 1	Fundanius	Fundanius	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	2	nsubj	_	DiscourseMode=Narrative|Speaker=Fundanius
 2	aspicit	aspicio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	parataxis:reporting	_	DiscourseMode=Narrative|Speaker=Fundanius
@@ -4093,9 +4095,9 @@
 # edition_loc = 1.2.26
 # text_old = Ille, Tam hercle quam hoc, siquem glabrum facere velis, quod iubet ranam luridam coicere in aquam, usque qua ad tertiam partem decoxeris, eoque unguere corpus.
 # text = ille: tam hercle quam hoc, siquem glabrum facere velis, quod iubet ranam luridam coicere in aquam, usque qua ad tertiam partem decoxeris, eoque unguere corpus.
-# text_en = “He: ‘Yes indeed, just as much as this: if you should want to make someone hairless, [there is a remedy] which prescribes throwing a yellowish frog into water, until you have boiled it down to a third part in it, and anointing the body with it.’”
-# text_fr = « Lui : « Ma foi oui, et ceci encore : si vous voulez épiler quelqu’un, vous n’avez qu’à jeter dans l’eau une rainette jaunâtre, et la faire bouillir jusqu’à ce qu’elle réduise des deux tiers, puis à en oindre le corps. » »
-# text_fi = ”Hän: ’Totisesti, aivan yhtä paljon kuin tämä: jos haluat tehdä jonkun karvattomaksi, [on keino], joka käskee heittämään kellertävän sammakon veteen, kunnes olet keittänyt sen kolmannekseen siinä, ja voitelemaan kehon sillä.’”
+# text_en = He: “Yes indeed, just as much as this: if you should want to make someone hairless, [there is a remedy] which prescribes throwing a yellowish frog into water, until you have boiled it down to a third part in it, and anointing the body with it.”
+# text_fr = Lui : « Ma foi oui, et ceci encore : si vous voulez épiler quelqu’un, vous n’avez qu’à jeter dans l’eau une rainette jaunâtre, et la faire bouillir jusqu’à ce qu’elle réduise des deux tiers, puis à en oindre le corps. »
+# text_fi = Hän: ”Totisesti, aivan yhtä paljon kuin tämä: jos haluat tehdä jonkun karvattomaksi, [on keino], joka käskee heittämään kellertävän sammakon veteen, kunnes olet keittänyt sen kolmannekseen siinä, ja voitelemaan kehon sillä.”
 # review_status = silver
 1	ille	ille	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	6	parataxis:reporting	_	DiscourseMode=Narrative|OrigForm=Ille|SpaceAfter=No|Speaker=Scrofa
 2	:	:	PUNCT	_	_	1	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
@@ -4135,9 +4137,9 @@
 # edition_loc = 1.2.26
 # text_old = Ego, Quod magis, inquam, pertineat ad Fundani valetudinem in eo libro, est satius dicas;
 # text = ego: quod magis – inquam – pertineat ad Fundani valetudinem in eo libro, est satius dicas;
-# text_en = “I [said]: ‘It would be better for you to tell [us] what, I say, pertains more to Fundanius’s health in that book;’”
-# text_fr = « Moi : « Il y a une chose qui intéresserait davantage la santé de Fundanius dans ce livre : tu ferais mieux de la dire. » »
-# text_fi = ”Minä: ’Olisi parempi, että kertoisit sen, mikä, sanon minä, koskee enemmän Fundaniuksen terveyttä siinä kirjassa;’”
+# text_en = I [said]: “It would be better for you to tell [us] what, I say, pertains more to Fundanius’s health in that book;”
+# text_fr = Moi : « Il y a une chose qui intéresserait davantage la santé de Fundanius dans ce livre : tu ferais mieux de la dire. »
+# text_fi = Minä: ”Olisi parempi, että kertoisit sen, mikä, sanon minä, koskee enemmän Fundaniuksen terveyttä siinä kirjassa;”
 # review_status = silver
 1	ego	ego	PRON	_	Case=Nom|Gender=Masc|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	DiscourseMode=Narrative|OrigForm=Ego|SpaceAfter=No|Speaker=Narrator
 2	:	:	PUNCT	_	_	18	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Narrator
@@ -4185,9 +4187,9 @@
 # edition_loc = 1.2.27
 # text_old = Dic sodes, inquit Fundanius;
 # text = dic sodes – inquit Fundanius;
-# text_en = “‘Please tell [me],’ said Fundanius —”
+# text_en = “Please tell [me],” said Fundanius —
 # text_fr = « Dis-le-moi, je t’en prie », dit Fundanius —
-# text_fi = ”’Kerro toki’, sanoi Fundanius —”
+# text_fi = ”Kerro toki”, sanoi Fundanius —
 # review_status = silver
 1	dic	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|OrigForm=Dic|Speaker=Fundanius
 2	sodes	sodes	ADV	_	_	1	advmod	_	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -4227,9 +4229,9 @@
 # edition_loc = 1.2.27
 # text_old = Stolo subridens, Dicam, inquit, eisdem quibus ille verbis scripsit (vel Tarquennam audivi, cum homini pedes dolere coepissent, qui tui meminisset, ei mederi posse):
 # text = Stolo subridens: dicam – inquit – eisdem quibus ille verbis scripsit (vel Tarquennam audivi, cum homini pedes dolere coepissent, qui tui meminisset, ei mederi posse) :
-# text_en = “Stolo, smiling, said: ‘I shall tell it in the very words in which he wrote it, or in which I heard Tarquenna say that, when a man’s feet had begun to hurt, he could heal him if he kept you in mind:’”
-# text_fr = « Stolon, en souriant, dit : « Je vais le dire dans les termes mêmes où il l’a écrit, ou dans lesquels j’ai entendu Tarquenna dire que, lorsque les pieds d’un homme avaient commencé à lui faire mal, il pouvait le guérir si celui-ci pensait à toi : » »
-# text_fi = ”Stolo sanoi hymyillen: ’Kerron sen aivan samoin sanoin kuin hän sen kirjoitti, tai samoin kuin kuulin Tarquennan sanovan, että kun miehen jalkoja oli alkanut särkeä, hän saattoi parantaa miehen, jos tämä piti sinut mielessään:’”
+# text_en = Stolo, smiling, said: “I shall tell it in the very words in which he wrote it, or in which I heard Tarquenna say that, when a man’s feet had begun to hurt, he could heal him if he kept you in mind:”
+# text_fr = Stolon, en souriant, dit : « Je vais le dire dans les termes mêmes où il l’a écrit, ou dans lesquels j’ai entendu Tarquenna dire que, lorsque les pieds d’un homme avaient commencé à lui faire mal, il pouvait le guérir si celui-ci pensait à toi : »
+# text_fi = Stolo sanoi hymyillen: ”Kerron sen aivan samoin sanoin kuin hän sen kirjoitti, tai samoin kuin kuulin Tarquennan sanovan, että kun miehen jalkoja oli alkanut särkeä, hän saattoi parantaa miehen, jos tämä piti sinut mielessään:”
 # review_status = silver
 1	Stolo	Stolo	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	6	nsubj	_	DiscourseMode=Narrative|Speaker=Stolo
 2	subridens	subrideo	VERB	_	Aspect=Imp|Case=Nom|Gender=Masc|InflClass=LatE|InflClass[nominal]=IndEurI|Number=Sing|VerbForm=Part|Voice=Act	6	advcl	_	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Stolo
@@ -4269,9 +4271,9 @@
 # edition_loc = 1.2.27
 # text_old = "ego tui memini, medere meis pedibus, terra pestem teneto, salus hic maneto in meis pedibus".
 # text = “ego tui memini, medere meis pedibus, terra pestem teneto, salus hic maneto in meis pedibus”.
-# text_en = “‘I have you in mind. Heal my feet; let the earth hold the illness; let health remain here, in my feet.’”
+# text_en = “I have you in mind. Heal my feet; let the earth hold the illness; let health remain here, in my feet.”
 # text_fr = « Je pense à toi. Guéris mes pieds ; que la terre retienne le mal ; que la santé demeure ici, dans mes pieds. »
-# text_fi = ”’Pidän sinut mielessäni. Paranna jalkani; pitäköön maa taudin; pysyköön terveys täällä, jaloissani.’”
+# text_fi = ”Pidän sinut mielessäni. Paranna jalkani; pitäköön maa taudin; pysyköön terveys täällä, jaloissani.”
 # review_status = silver
 1	“	“	PUNCT	_	_	4	punct	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 2	ego	ego	PRON	_	Case=Nom|Gender=Masc|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	DiscourseMode=Dialogue|Speaker=Stolo
@@ -4324,9 +4326,9 @@
 # edition_loc = 1.2.28
 # text_old = Multa, inquam, item alia miracula apud Sasernas invenies, quae omnia sunt diversa ab agri cultura et ideo repudianda.
 # text = multa – inquam – item alia miracula apud Sasernas invenies, quae omnia sunt diversa ab agri cultura et ideo repudianda.
-# text_en = “‘You will find many other marvels of the same kind,’ I said, ‘in the works of the Sasernas, all of which are unrelated to agriculture and therefore to be rejected.’”
+# text_en = “You will find many other marvels of the same kind,” I said, “in the works of the Sasernas, all of which are unrelated to agriculture and therefore to be rejected.”
 # text_fr = « Tu trouveras, dis-je, beaucoup d’autres merveilles du même genre dans les ouvrages des Saserna, qui toutes sont étrangères à l’agriculture et doivent donc être rejetées. »
-# text_fi = ”’Löydät’, sanoin, ’Sasernojen teoksista myös monia muita tämänkaltaisia ihmeitä, jotka kaikki ovat maanviljelykselle vieraita ja jotka on siksi hylättävä.’”
+# text_fi = ”Löydät”, sanoin, ”Sasernojen teoksista myös monia muita tämänkaltaisia ihmeitä, jotka kaikki ovat maanviljelykselle vieraita ja jotka on siksi hylättävä.”
 # VariantStructure = Giusta:speaker_Stolo
 # review_status = silver
 1	multa	multus	DET	_	Case=Acc|Degree=Pos|Gender=Neut|InflClass=IndEurO|Number=Plur|NumType=Card|PronType=Ind	7	det	_	DiscourseMode=Dialogue|OrigForm=Multa|Speaker=Varro
@@ -4357,9 +4359,9 @@
 # edition_loc = 1.2.28
 # text_old = Quasi vero, inquit, non apud ceteros quoque scriptores talia reperiantur.
 # text = quasi vero – inquit – non apud ceteros quoque scriptores talia reperiantur.
-# text_en = “‘As if, indeed,’ he said, ‘such things were not found in other writers too!’”
+# text_en = “As if, indeed,” he said, “such things were not found in other writers too!”
 # text_fr = « Comme si, dit-il, on ne trouvait pas aussi de telles choses chez les autres auteurs ! »
-# text_fi = ”’Ikään kuin’, hän sanoi, ’sellaisia asioita ei löytyisi myös muilta kirjailijoilta!’”
+# text_fi = ”Ikään kuin”, hän sanoi, ”sellaisia asioita ei löytyisi myös muilta kirjailijoilta!”
 # VariantStructure = Giusta:speaker_Varro
 # review_status = silver
 1	quasi	quasi	SCONJ	_	_	12	mark	_	DiscourseMode=Dialogue|OrigForm=Quasi|Speaker=Stolo
@@ -4430,9 +4432,9 @@
 # edition_loc = 1.2.28
 # text_old = Illud non dicis, inquit Agrius, quod scribit, "si velis in convivio multum bibere cenareque libenter, ante esse oportet brassicam crudam ex aceto aliqua folia quinque".
 # text = illud non dicis – inquit Agrius – quod scribit, “si velis in convivio multum bibere cenareque libenter, ante esse oportet brassicam crudam ex aceto aliqua folia quinque”.
-# text_en = “‘What you do not mention,’ said Agrius, ‘is what he writes: “If you wish to drink a great deal at a banquet and dine agreeably, you ought first to eat raw cabbage in vinegar, about five leaves.”’”
-# text_fr = « Ce que tu ne dis pas, dit Agrius, c’est ce qu’il écrit : « Si tu veux boire beaucoup dans un banquet et dîner avec plaisir, il faut d’abord manger du chou cru au vinaigre, environ cinq feuilles. » »
-# text_fi = ”’Se, mitä et mainitse’, Agrius sanoi, ’on se, mitä hän kirjoittaa: “Jos haluat juoda paljon pidoissa ja aterioida mielihyvin, sinun tulee ensin syödä raakaa kaalia etikassa, noin viisi lehteä.”’”
+# text_en = “What you do not mention,” said Agrius, “is what he writes: ‘If you wish to drink a great deal at a banquet and dine agreeably, you ought first to eat raw cabbage in vinegar, about five leaves.’”
+# text_fr = « Ce que tu ne dis pas, dit Agrius, c’est ce qu’il écrit : ‹ Si tu veux boire beaucoup dans un banquet et dîner avec plaisir, il faut d’abord manger du chou cru au vinaigre, environ cinq feuilles. › »
+# text_fi = ”Se, mitä et mainitse”, Agrius sanoi, ”on se, mitä hän kirjoittaa: ’Jos haluat juoda paljon pidoissa ja aterioida mielihyvin, sinun tulee ensin syödä raakaa kaalia etikassa, noin viisi lehteä.’”
 # VariantStructure = Giusta:lacuna_before_29
 # review_status = silver
 1	illud	ille	PRON	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	3	obj	_	DiscourseMode=Dialogue|OrigForm=Illud|Speaker=Agrius
