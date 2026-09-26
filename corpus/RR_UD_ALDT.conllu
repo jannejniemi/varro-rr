@@ -13,7 +13,7 @@
 3	in	in	ADP	_	_	4	case	6:AuxP	DiscourseMode=Narrative|Speaker=Narrator
 4	aedem	aedes	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	6	obl	3:ADV	DiscourseMode=Narrative|Speaker=Narrator
 5	Telluris	Tellus	PROPN	_	Case=Gen|Gender=Fem|InflClass=IndEurX|NameType=Rel|Number=Sing	4	nmod	4:ATR	DiscourseMode=Narrative|Speaker=Narrator
-6	veneram	venio	VERB	_	Aspect=Perf|InflClass=LatI4|Mood=Ind|Number=Sing|Person=1|Tense=Pqp|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Narrative|Speaker=Narrator
+6	veneram	venio	VERB	_	Aspect=Perf|InflClass=LatI|Mood=Ind|Number=Sing|Person=1|Tense=Pqp|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Narrative|Speaker=Narrator
 7	rogatus	rogo	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatA|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	6	advcl	6:AtvV	DiscourseMode=Narrative|Speaker=Narrator
 8	ab	ab	ADP	_	_	9	case	17:AuxP	DiscourseMode=Narrative|Speaker=Narrator
 9	aeditumo	aeditumus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	7	obl:agent	8:OBJ_AP	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
@@ -733,7 +733,7 @@
 # text_old = In qua terra iugerum unum denos et quinos denos culleos fert vini, quot quaedam in Italia regiones?
 # text = in qua terra iugerum unum denos et quinos denos culleos fert vini, quot quaedam in Italia regiones?
 # text_en = In what land does one iugerum bear ten and fifteen cullei of wine, as much as certain regions in Italy?
-# text_fr = Dans quelle terre un seul jugère produit-il dix et quinze cullei de vin, autant que certaines régions d'Italie ?
+# text_fr = Dans quelle terre un seul jugère produit-il dix et quinze cullei de vin, autant que certaines régions d’Italie ?
 # text_fi = Missä maassa yksi jugerum tuottaa kymmenen ja viisitoista culleusta viiniä, yhtä paljon kuin eräät Italian alueet?
 # review_status = silver
 1	in	in	ADP	_	_	3	case	11:AuxP	DiscourseMode=Dialogue|OrigForm=In|Speaker=Fundanius
@@ -763,7 +763,7 @@
 # text_old = An non M. Cato scribit in libro Originum sic:
 # text = an non M. Cato scribit in libro Originum sic:
 # text_en = Does not M. Cato write thus in the book Origines:
-# text_fr = M. Caton n'écrit-il pas ainsi dans le livre des Origines :
+# text_fr = M. Caton n’écrit-il pas ainsi dans le livre des Origines :
 # text_fi = Eikö M. Cato kirjoita näin teoksessa Origines:
 # review_status = silver
 1	an	an	PART	_	PartType=Int	6	discourse	0:AuxC	DiscourseMode=Dialogue|OrigForm=An|Speaker=Fundanius
@@ -784,7 +784,7 @@
 # text_old = " ager Gallicus Romanus vocatur, qui viritim cis Ariminum datus est ultra agrum Picentium.
 # text = “ager Gallicus Romanus vocatur, qui viritim cis Ariminum datus est ultra agrum Picentium.
 # text_en = The Roman Gallic territory is called the land which was allotted individually on this side of Ariminum beyond the territory of the Picentes.
-# text_fr = Le territoire gaulois romain est appelé la terre qui fut attribuée individuellement en deçà d'Ariminum, au-delà du territoire des Picentes.
+# text_fr = Le territoire gaulois romain est appelé la terre qui fut attribuée individuellement en deçà d’Ariminum, au-delà du territoire des Picentes.
 # text_fi = Roomalaiseksi Gallian maaksi kutsutaan aluetta, joka annettiin yksityisinä tiloina Ariminumin tältä puolelta pikeenien alueen toiselle puolelle asti.
 # review_status = silver
 1	“	“	PUNCT	_	_	5	punct	5:AuxG	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
@@ -832,9 +832,9 @@
 # edition_loc = 1.2.7
 # text_old = Nonne item in agro Faventino, a quo ibi trecenariae appellantur vites, quod iugerum trecenas amphoras reddat?
 # text = nonne item in agro Faventino, a quo ibi trecenariae appellantur vites, quod iugerum trecenas amphoras reddat?
-# text_en = Isn't it the same, too, in the Faventine territory, from which the vines there are called "trecenariae," because the iugerum yields three hundred amphorae?
-# text_fr = N'en est-il pas de même dans le territoire de Faventia, d'où les vignes y sont appelées « trecenariae », parce que le jugère rend trois cents amphores ?
-# text_fi = Eikö niin ole myös Faventiuksen alueella, josta siellä viiniköynnöksiä kutsutaan nimellä "trecenariae", koska jugerum tuottaa kolmesataa amforaa?
+# text_en = Isn’t it the same, too, in the Faventine territory, from which the vines there are called “trecenariae,” because the iugerum yields three hundred amphorae?
+# text_fr = N’en est-il pas de même dans le territoire de Faventia, d’où les vignes y sont appelées « trecenariae », parce que le jugère rend trois cents amphores ?
+# text_fi = Eikö niin ole myös Faventiuksen alueella, josta siellä viiniköynnöksiä kutsutaan nimellä ”trecenariae”, koska jugerum tuottaa kolmesataa amforaa?
 # review_status = silver
 1	nonne	nonne	ADV	_	Polarity=Neg	4	advmod:neg	5.1:AuxY	DiscourseMode=Dialogue|OrigForm=Nonne|Speaker=Fundanius
 2	item	item	ADV	_	_	4	advmod	5.1:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -862,9 +862,9 @@
 # edition_loc = 1.2.7
 # text_old = Simul aspicit me, Certe, inquit, Libo Marcius, praefectus fabrum tuos, in fundo suo Faventiae hanc multitudinem dicebat suas reddere vites.
 # text = simul aspicit me: certe – inquit – Libo Marcius, praefectus fabrum tuos, in fundo suo Faventiae hanc multitudinem dicebat suas reddere vites.
-# text_en = At the same time he glances at me: "Certainly," he says, "Libo Marcius, your prefect of engineers, used to say that on his own estate at Faventia, this was the quantity his vines yielded."
-# text_fr = En même temps, il me regarde : « Certainement, dit-il, Libo Marcius, ton préfet des ouvriers, disait que sur son domaine à Faventia, c'était là la quantité que rendaient ses vignes. »
-# text_fi = Samalla hän katsoo minua: "Varmasti", hän sanoo, "Libo Marcius, sinun työnjohtajasi, sanoi, että omalla tilallaan Faventiassa tämä oli se määrä, jonka hänen viiniköynnöksensä tuottivat."
+# text_en = At the same time he glances at me: “Certainly,” he says, “Libo Marcius, your prefect of engineers, used to say that on his own estate at Faventia, this was the quantity his vines yielded.”
+# text_fr = En même temps, il me regarde : « Certainement, dit-il, Libo Marcius, ton préfet des ouvriers, disait que sur son domaine à Faventia, c’était là la quantité que rendaient ses vignes. »
+# text_fi = Samalla hän katsoo minua: ”Varmasti”, hän sanoo, ”Libo Marcius, sinun työnjohtajasi, sanoi, että omalla tilallaan Faventiassa tämä oli se määrä, jonka hänen viiniköynnöksensä tuottivat.”
 # review_status = silver
 1	simul	simul	ADV	_	_	2	advmod	2:AuxY	DiscourseMode=Narrative|OrigForm=Simul|Speaker=Fundanius
 2	aspicit	aspicio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	parataxis:reporting	7:ADV	DiscourseMode=Narrative|Speaker=Fundanius
@@ -902,7 +902,7 @@
 # text_fr = Les Italiens semblent avoir considéré avant tout deux choses dans la culture : si les profits pouvaient revenir en proportion de la dépense et du travail, et si le lieu était salubre ou non.
 # text_fi = Italialaiset näyttävät katsoneen viljelyssä ennen kaikkea kahta asiaa: voisivatko tuotot palautua panostukseen ja työhön nähden, ja oliko paikka terveellinen vai ei.
 # review_status = silver
-1	duo	duo	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|NumForm=Word|NumType=Card|Number=Plur	4	obj	9:OBJ_AP	DiscourseMode=Dialogue|OrigForm=Duo|Speaker=Fundanius
+1	duo	duo	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur|NumForm=Word|NumType=Card	4	obj	9:OBJ_AP	DiscourseMode=Dialogue|OrigForm=Duo|Speaker=Fundanius
 2	in	in	ADP	_	_	3	case	4:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
 3	primis	primus	ADJ	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur|NumType=Ord	4	obl	2:ADV	DiscourseMode=Dialogue|Speaker=Fundanius
 4	spectasse	specto	VERB	_	Aspect=Perf|InflClass=LatA|Tense=Past|VerbForm=Inf|Voice=Act	5	xcomp	5:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -912,7 +912,7 @@
 8	colendo	colo	VERB	_	Aspect=Prosp|Case=Abl|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	4	advcl	4:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius|TraditionalMood=Gerundium
 9	,	,	PUNCT	_	_	4	punct	4:APOS	DiscourseMode=Dialogue|Speaker=Fundanius
 10-11	possentne	_	_	_	_	_	_	_	_
-10	possent	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl	18:OBJ_AP_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
+10	possent	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl	18:OBJ_AP_CO	DiscourseMode=Dialogue|Speaker=Fundanius
 11	ne	ne	PART	_	PartType=Int	10	discourse	10:AuxY	DiscourseMode=Dialogue|Speaker=Fundanius
 12	fructus	fructus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurU|Number=Plur	10	nsubj	17:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
 13	pro	pro	ADP	_	_	14	case	17:AuxP	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -935,7 +935,7 @@
 # text_old = Quorum si alterutrum decolat et nihilo minus quis vult colere, mente est captus adque adgnatos et gentiles est deducendus.
 # text = quorum si alterutrum decolat et nihilo minus quis vult colere, mente est captus adque adgnatos et gentiles est deducendus.
 # text_en = If one of these two fails, and yet someone still wants to farm it, he is out of his mind and must be handed over to his agnates and clansmen.
-# text_fr = Si l'un des deux fait défaut, et que quelqu'un veuille néanmoins cultiver, il est réputé dément et doit être remis à ses agnats et à ses gentiles.
+# text_fr = Si l’un des deux fait défaut, et que quelqu’un veuille néanmoins cultiver, il est réputé dément et doit être remis à ses agnats et à ses gentiles.
 # text_fi = Jos jompikumpi näistä pettää, ja joku silti haluaa viljellä, hänet katsotaan mieleltään vialliseksi ja hänet on luovutettava agnaateilleen ja sukulaisilleen.
 # review_status = silver
 1	quorum	qui	PRON	_	Case=Gen|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	3	nmod	3:ATR	DiscourseMode=Dialogue|OrigForm=Quorum|Speaker=Fundanius
@@ -966,7 +966,7 @@
 # text_old = Nemo enim sanus debet velle impensam ac sumptum facere in cultura, si videt non posse refici, nec si potest reficere fructus, si videt eos fore ut pestilentia dispereant.
 # text = nemo enim sanus debet velle impensam ac sumptum facere in cultura, si videt non posse refici, nec si potest reficere fructus, si videt eos fore ut pestilentia dispereant.
 # text_en = For no sane person ought to want to spend outlay and expense on cultivation, if he sees that it cannot be recovered - nor even if he can recover the produce, if he sees that unhealthy conditions will destroy them.
-# text_fr = Car aucun homme sensé ne doit vouloir faire des frais et des dépenses pour la culture, s'il voit qu'ils ne peuvent être récupérés ; ni même s'il peut récupérer les récoltes, s'il voit que des conditions malsaines vont les faire périr.
+# text_fr = Car aucun homme sensé ne doit vouloir faire des frais et des dépenses pour la culture, s’il voit qu’ils ne peuvent être récupérés ; ni même s’il peut récupérer les récoltes, s’il voit que des conditions malsaines vont les faire périr.
 # text_fi = Kenenkään järkevän ei pidä haluta panna kuluja ja menoja viljelyyn, jos näkee, ettei niitä voida saada takaisin, eikä myöskään, vaikka voisikin saada satoa, jos näkee sen tulevan huonojen olosuhteiden tuhoamaksi.
 # review_status = silver
 1	nemo	nemo	PRON	_	Case=Nom|InflClass=IndEurX|Number=Sing|PronType=Neg	4	nsubj	4:SBJ	DiscourseMode=Dialogue|OrigForm=Nemo|Speaker=Fundanius
@@ -1051,11 +1051,11 @@
 # edition_loc = 1.2.9
 # text_old = unum, cuius maiores de modo agri legem tulerunt (nam Stolonis illa lex, quae vetat plus D iugera habere civem R.), et qui propter diligentiam culturae Stolonum confirmavit cognomen, quod nullus in eius fundo reperiri poterat stolo, quod effodiebat circum arbores e radicibus quae nascerentur e solo, quos stolones appellabant.
 # text = unum, cuius maiores de modo agri legem tulerunt (nam Stolonis illa lex, quae vetat plus D iugera habere civem R.) , et qui propter diligentiam culturae Stolonum confirmavit cognomen, quod nullus in eius fundo reperiri poterat stolo, quod effodiebat circum arbores e radicibus quae nascerentur e solo, quos stolones appellabant.
-# text_en = one, whose ancestors carried a law about the limit of land (for that is Stolo's law, which forbids a Roman citizen to have more than 500 iugera) - and who, on account of his diligence in cultivation, confirmed the Stolos' cognomen, because no sucker could be found on his estate, because he used to dig out, around the trees, from the root-suckers which sprang up from the ground, [the suckers] which they called stolones.
-# text_fr = l'un, dont les ancêtres portèrent une loi sur la limite des terres (c'est en effet la loi de Stolon, qui interdit à un citoyen romain d'avoir plus de 500 arpents) - et qui, par son zèle dans la culture, confirma le surnom des Stolons, parce qu'on ne pouvait trouver sur son domaine aucun surgeon, parce qu'il arrachait, autour des arbres, à partir des drageons-racines qui poussaient du sol, ceux qu'on appelait des « stolones ».
+# text_en = one, whose ancestors carried a law about the limit of land (for that is Stolo’s law, which forbids a Roman citizen to have more than 500 iugera) - and who, on account of his diligence in cultivation, confirmed the Stolos’ cognomen, because no sucker could be found on his estate, because he used to dig out, around the trees, from the root-suckers which sprang up from the ground, [the suckers] which they called stolones.
+# text_fr = l’un, dont les ancêtres portèrent une loi sur la limite des terres (c’est en effet la loi de Stolon, qui interdit à un citoyen romain d’avoir plus de 500 arpents) - et qui, par son zèle dans la culture, confirma le surnom des Stolons, parce qu’on ne pouvait trouver sur son domaine aucun surgeon, parce qu’il arrachait, autour des arbres, à partir des drageons-racines qui poussaient du sol, ceux qu’on appelait des « stolones ».
 # text_fi = toinen, jonka esi-isät säätivät lain maan enimmäismäärästä (sillä se on Stolon laki, joka kieltää roomalaista kansalaista omistamasta enempää kuin 500 jugerumia) - ja joka, viljelynsä huolellisuuden ansiosta, vahvisti Stolo-suvun liikanimen, koska hänen tilaltaan ei löytynyt yhtään vesaa, koska hän kaivoi puiden ympäriltä pois juurivesat, jotka kasvoivat maasta, joita kutsuttiin nimellä stolones.
 # review_status = silver
-1	unum	unus	NUM	_	Case=Acc|Gender=Masc|InflClass=LatPron|NumForm=Word|NumType=Card|Number=Sing	0	root	1.1:OBJ	DiscourseMode=Dialogue|InheritedFrom=S000071:5|SpaceAfter=No|Speaker=Fundanius
+1	unum	unus	NUM	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Sing|NumForm=Word|NumType=Card	0	root	1.1:OBJ	DiscourseMode=Dialogue|InheritedFrom=S000071:5|SpaceAfter=No|Speaker=Fundanius
 1.1	video	_	VERB	_	_	_	_	0:PRED	ComparisonNode=ALDT
 2	,	,	PUNCT	_	_	9	punct	9:AuxX	DiscourseMode=Dialogue|Speaker=Fundanius
 3	cuius	qui	PRON	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	4	nmod	4:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -1074,7 +1074,7 @@
 16	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	17	nsubj	17:SBJ	DiscourseMode=Dialogue|Speaker=Fundanius
 17	vetat	veto	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	acl:relcl	14:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
 18	plus	multum	ADV	_	Degree=Cmp	20	advmod	21:OCOMP	DiscourseMode=Dialogue|Speaker=Fundanius
-19	D	quingenti	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|NumForm=Roman|NumType=Card|Number=Plur	20	nummod	18:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
+19	D	quingenti	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur|NumForm=Roman|NumType=Card	20	nummod	18:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
 20	iugera	iugerum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	21	obj	21:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
 21	habere	habeo	VERB	_	Aspect=Imp|InflClass=LatE|VerbForm=Inf|Voice=Act	17	ccomp	17:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
 22	civem	civis	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurI|Number=Sing	21	nsubj	17:OBJ	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -1122,8 +1122,8 @@
 # text_old = Eiusdem gentis C. Licinius, tr. pl. cum esset, post reges exactos annis CCCLXV primus populum ad leges accipiendas in septem iugera forensia e comitio eduxit.
 # text = eiusdem gentis C. Licinius, tr. pl. cum esset, post reges exactos annis CCCLXV primus populum ad leges accipiendas in septem iugera forensia e comitio eduxit.
 # text_en = Of the same clan, Gaius Licinius, when he was tribune of the plebs, 365 years after the kings were expelled, was the first to lead the people into the seven forensic iugera, from the comitium, for the purpose of receiving laws.
-# text_fr = Du même clan, Gaius Licinius, alors qu'il était tribun de la plèbe, 365 ans après l'expulsion des rois, fut le premier à mener le peuple, hors du comitium, dans les sept arpents du forum, pour recevoir des lois.
-# text_fi = Samaa sukua, Gaius Licinius, ollessaan kansantribuuni, 365 vuotta kuninkaiden karkottamisen jälkeen, johti ensimmäisenä kansan lakien vastaanottamista varten comitiumista foorumin "seitsemälle jugerumille".
+# text_fr = Du même clan, Gaius Licinius, alors qu’il était tribun de la plèbe, 365 ans après l’expulsion des rois, fut le premier à mener le peuple, hors du comitium, dans les sept arpents du forum, pour recevoir des lois.
+# text_fi = Samaa sukua, Gaius Licinius, ollessaan kansantribuuni, 365 vuotta kuninkaiden karkottamisen jälkeen, johti ensimmäisenä kansan lakien vastaanottamista varten comitiumista foorumin ”seitsemälle jugerumille”.
 # review_status = silver
 1	eiusdem	idem	DET	_	Case=Gen|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	2	det	2:ATR	DiscourseMode=Dialogue|OrigForm=Eiusdem|Speaker=Fundanius
 2	gentis	gens	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurI|Number=Sing	3	nmod	5:ATR	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -1163,7 +1163,7 @@
 # text_old = Alterum collegam tuum, viginti virum qui fuit ad agros dividendos Campanos, video huc venire, Cn. Tremelium Scrofam, virum omnibus virtutibus politum, qui de agri cultura Romanus peritissimus existimatur.
 # text = alterum collegam tuum, viginti virum qui fuit ad agros dividendos Campanos, video huc venire, Cn. Tremelium Scrofam, virum omnibus virtutibus politum, qui de agri cultura Romanus peritissimus existimatur.
 # text_en = I see the other, your colleague, one of the Twenty Men who was assigned to divide the Campanian lands, coming here - Gnaeus Tremelius Scrofa, a man accomplished in every virtue, who is reckoned the most expert Roman in agriculture.
-# text_fr = Je vois venir ici l'autre, ton collègue, l'un des Vingt hommes qui fut chargé de diviser les terres campaniennes - Gnaeus Tremelius Scrofa, un homme accompli en toutes les vertus, qui est considéré comme le Romain le plus expert en agriculture.
+# text_fr = Je vois venir ici l’autre, ton collègue, l’un des Vingt hommes qui fut chargé de diviser les terres campaniennes - Gnaeus Tremelius Scrofa, un homme accompli en toutes les vertus, qui est considéré comme le Romain le plus expert en agriculture.
 # text_fi = Näen tänne tulevan sen toisen, virkatoverisi, yhden niistä kahdestakymmenestä miehestä, joka oli määrätty jakamaan Campanian maita - Gnaeus Tremelius Scrofan, kaikin hyvein varustetun miehen, jota pidetään maanviljelyksen taitavimpana roomalaisena.
 # review_status = silver
 1	alterum	alter	DET	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	2	det	4:OBJ_AP	DiscourseMode=Dialogue|OrigForm=Alterum|Speaker=Fundanius
@@ -1207,9 +1207,9 @@
 # edition_loc = 1.2.10
 # text_old = An non iure? inquam.
 # text = an non iure? inquam.
-# text_en = "Or is it not with good reason?" I said.
-# text_fr = « N'est-ce pas à bon droit ? » dis-je.
-# text_fi = "Vai eikö syystä?" sanoin.
+# text_en = “Or is it not with good reason?” I said.
+# text_fr = « N’est-ce pas à bon droit ? » dis-je.
+# text_fi = ”Vai eikö syystä?” sanoin.
 # review_status = silver
 1	an	an	PART	_	PartType=Int	3	discourse	3.1:AuxZ	DiscourseMode=Dialogue|OrigForm=An|Speaker=Varro
 2	non	non	PART	_	Polarity=Neg	3	advmod:neg	3.1:AuxZ	DiscourseMode=Dialogue|Speaker=Varro
@@ -1224,8 +1224,8 @@
 # edition_loc = 1.2.10
 # text_old = Fundi enim eius propter culturam iucundiore spectaculo sunt multis, quam regie polita aedificia aliorum, cum huius spectatum veniant villas, non, ut apud Lucullum, ut videant pinacothecas, sed oporothecas.
 # text = fundi enim eius propter culturam iucundiore spectaculo sunt multis, quam regie polita aedificia aliorum, cum huius spectatum veniant villas, non, ut apud Lucullum, ut videant pinacothecas, sed oporothecas.
-# text_en = For his farms, on account of their cultivation, are a more pleasant spectacle to many than the royally adorned buildings of others, when they come to view his villas - not, as at Lucullus's, to see picture-galleries, but fruit-galleries.
-# text_fr = Car ses fermes, en raison de leur culture, offrent à beaucoup un spectacle plus agréable que les bâtiments royalement ornés des autres, lorsqu'ils viennent visiter ses villas - non, comme chez Lucullus, pour voir des pinacothèques, mais des oporothèques.
+# text_en = For his farms, on account of their cultivation, are a more pleasant spectacle to many than the royally adorned buildings of others, when they come to view his villas - not, as at Lucullus’s, to see picture-galleries, but fruit-galleries.
+# text_fr = Car ses fermes, en raison de leur culture, offrent à beaucoup un spectacle plus agréable que les bâtiments royalement ornés des autres, lorsqu’ils viennent visiter ses villas - non, comme chez Lucullus, pour voir des pinacothèques, mais des oporothèques.
 # text_fi = Sillä hänen tilansa ovat viljelynsä ansiosta monelle miellyttävämpi näky kuin toisten kuninkaallisesti koristellut rakennukset, kun he tulevat katsomaan hänen huviloitaan - ei, niin kuin Luculluksen luona, nähdäkseen taidegallerioita, vaan hedelmätarhoja.
 # review_status = silver
 1	fundi	fundus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Plur	7	nsubj	8:SBJ	DiscourseMode=Dialogue|OrigForm=Fundi|Speaker=Varro
@@ -1247,7 +1247,7 @@
 16	,	,	PUNCT	_	_	20	punct	8:AuxX	DiscourseMode=Dialogue|Speaker=Varro
 17	cum	cum	SCONJ	_	_	20	mark	8:AuxC	DiscourseMode=Dialogue|Speaker=Varro
 18	huius	hic	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	21	det	21:ATR	DiscourseMode=Dialogue|Speaker=Varro
-19	spectatum	specto	VERB	_	VerbForm=Conv|Aspect=Prosp|InflClass=LatA	20	xcomp	20:OBJ	DiscourseMode=Dialogue|Speaker=Varro|TraditionalMood=Supinum
+19	spectatum	specto	VERB	_	Aspect=Prosp|InflClass=LatA|VerbForm=Conv	20	xcomp	20:OBJ	DiscourseMode=Dialogue|Speaker=Varro|TraditionalMood=Supinum
 20	veniant	venio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	17:ADV	DiscourseMode=Dialogue|Speaker=Varro
 21	villas	villa	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	19	obj	19:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 22	,	,	PUNCT	_	_	19	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Varro
@@ -1271,8 +1271,8 @@
 # edition_loc = 1.2.10
 # text_old = Huiusce, inquam, pomarii summa sacra via, ubi poma veneunt contra aurum, imago.
 # text = huiusce – inquam – pomarii summa sacra via, ubi poma veneunt contra aurum, imago.
-# text_en = Of this man's orchard, I say, the upper Sacred Way - where fruits sell for their weight in gold - is an image.
-# text_fr = De ce verger, dis-je, la haute voie Sacrée, où les fruits se vendent à prix d'or, est une image.
+# text_en = Of this man’s orchard, I say, the upper Sacred Way - where fruits sell for their weight in gold - is an image.
+# text_fr = De ce verger, dis-je, la haute voie Sacrée, où les fruits se vendent à prix d’or, est une image.
 # text_fi = Tämän miehen hedelmätarhasta, sanon, Pyhän tien yläosa, jossa hedelmiä myydään kullan hinnasta, on kuva.
 # review_status = silver
 1	huiusce	hice	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	6	det	5:ATR	DiscourseMode=Dialogue|Speaker=Varro|LemmaNorm=hic
@@ -1299,9 +1299,9 @@
 # edition_loc = 1.2.11
 # text_old = Illi interea ad nos, et Stolo, Num cena comessa, inquit, venimus?
 # text = illi interea ad nos, et Stolo: num cena comessa – inquit – venimus?
-# text_en = They had meanwhile joined us, and Stolo said: "Surely we haven't come after dinner's already been eaten?"
-# text_fr = Entretemps ils nous avaient rejoints, et Stolon dit : « N'allons-nous pas arriver alors que le dîner est déjà terminé ? »
-# text_fi = He olivat sillä välin liittyneet joukkoomme, ja Stolo sanoi: "Emmehän vain tulleet, kun illallinen on jo syöty?"
+# text_en = They had meanwhile joined us, and Stolo said: “Surely we haven’t come after dinner’s already been eaten?”
+# text_fr = Entretemps ils nous avaient rejoints, et Stolon dit : « N’allons-nous pas arriver alors que le dîner est déjà terminé ? »
+# text_fi = He olivat sillä välin liittyneet joukkoomme, ja Stolo sanoi: ”Emmehän vain tulleet, kun illallinen on jo syöty?”
 # review_status = silver
 1	illi	ille	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Dem	13	conj	4.1:SBJ	DiscourseMode=Narrative|Speaker=Stolo
 1.1	_	_	VERB	_	_	_	_	1:ExD	_
@@ -1327,7 +1327,7 @@
 # edition_loc = 1.2.11
 # text_old = Nam non L. videmus Fundilium, qui nos advocavit.
 # text = nam non L. videmus Fundilium, qui nos advocavit.
-# text_en = For we don't see L. Fundilius, who summoned us.
+# text_en = For we don’t see L. Fundilius, who summoned us.
 # text_fr = Car nous ne voyons pas L. Fundilius, qui nous a convoqués.
 # text_fi = Sillä emme näe L. Fundiliusta, joka kutsui meidät.
 # review_status = silver
@@ -1348,9 +1348,9 @@
 # edition_loc = 1.2.11
 # text_old = Bono animo este, inquit Agrius.
 # text = bono animo este – inquit Agrius.
-# text_en = "Be of good cheer," said Agrius.
+# text_en = “Be of good cheer,” said Agrius.
 # text_fr = « Ayez bon courage », dit Agrius.
-# text_fi = "Olkaa hyvällä mielellä", sanoi Agrius.
+# text_fi = ”Olkaa hyvällä mielellä”, sanoi Agrius.
 # review_status = silver
 1	bono	bonus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	2	amod	2:ATR	DiscourseMode=Dialogue|OrigForm=Bono|Speaker=Agrius
 2	animo	animus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	0	root	3:ADV	DiscourseMode=Dialogue|Speaker=Agrius
@@ -1365,8 +1365,8 @@
 # edition_loc = 1.2.11
 # text_old = Nam non modo ovom illut sublatum est, quod ludis circensibus novissimi curriculi finem facit quadrigis, sed ne illud quidem ovom vidimus, quod in cenali pompa solet esse primum.
 # text = nam non modo ovom illut sublatum est, quod ludis circensibus novissimi curriculi finem facit quadrigis, sed ne illud quidem ovom vidimus, quod in cenali pompa solet esse primum.
-# text_en = For not only has that egg not been raised - which marks the end of the last lap with the four-horse chariots at the circus games - but we haven't even seen that other egg, which is usually first in the dinner-procession.
-# text_fr = Car non seulement cet œuf n'a pas été retiré - qui marque la fin du dernier tour avec les quadriges aux jeux du cirque - mais nous n'avons même pas vu cet autre œuf, qui est habituellement le premier dans le cortège du dîner.
+# text_en = For not only has that egg not been raised - which marks the end of the last lap with the four-horse chariots at the circus games - but we haven’t even seen that other egg, which is usually first in the dinner-procession.
+# text_fr = Car non seulement cet œuf n’a pas été retiré - qui marque la fin du dernier tour avec les quadriges aux jeux du cirque - mais nous n’avons même pas vu cet autre œuf, qui est habituellement le premier dans le cortège du dîner.
 # text_fi = Sillä ei ainoastaan ole vielä nostettu sitä munaa - joka merkitsee nelivaljakoiden kanssa viimeisen kierroksen loppua sirkuspeleissä - vaan emme ole nähneet edes sitä toista munaa, joka on tavallisesti ensimmäinen illalliskulkueessa.
 # review_status = silver
 1	nam	nam	PART	_	_	6	discourse	6:AuxY	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Agrius
@@ -1408,14 +1408,14 @@
 # text_old = Itaque dum id nobiscum una videatis ac venit aeditumus, docete nos, agri cultura quam summam habeat, utilitatemne an voluptatem an utrumque.
 # text = itaque dum id nobiscum una videatis ac venit aeditumus, docete nos, agri cultura quam summam habeat, utilitatemne an voluptatem an utrumque.
 # text_en = So, while you look into this together with us, and the sacristan arrives, teach us what supreme value the cultivation of the land has: utility, or pleasure, or both.
-# text_fr = Ainsi, tandis que vous examinez cela avec nous, et que le sacristain arrive, enseignez-nous quelle est la valeur suprême de la culture de la terre : l'utilité, le plaisir, ou les deux.
+# text_fr = Ainsi, tandis que vous examinez cela avec nous, et que le sacristain arrive, enseignez-nous quelle est la valeur suprême de la culture de la terre : l’utilité, le plaisir, ou les deux.
 # text_fi = Niinpä, kun te tarkastelette tätä yhdessä meidän kanssamme ja temppelinvartija saapuu, opettakaa meille, mikä on maanviljelyksen korkein arvo: hyöty, mielihyvä vai molemmat.
 # review_status = silver
 1	itaque	itaque	PART	_	_	12	discourse	7:AuxY	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Agrius
 2	dum	dum	SCONJ	_	_	7	mark	8:AuxC	DiscourseMode=Dialogue|Speaker=Agrius
 3	id	is	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	7	obj	7:OBJ	DiscourseMode=Dialogue|Speaker=Agrius
 4-5	nobiscum	_	_	_	_	_	_	_	_
-4	nobis	nos	PRON	_	Case=Abl|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	7	obl	5:ADV	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+4	nobis	nos	PRON	_	Case=Abl|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	7	obl	5:ADV	DiscourseMode=Dialogue|Speaker=Agrius
 5	cum	cum	ADP	_	AdpType=Post	4	case	6:AuxP	DiscourseMode=Dialogue|Speaker=Agrius
 6	una	una	ADV	_	_	7	advmod	7:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
 7	videatis	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	2:ADV_CO	DiscourseMode=Dialogue|Speaker=Agrius
@@ -1433,7 +1433,7 @@
 19	habeat	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	ccomp	12:OBJ	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
 20	,	,	PUNCT	_	_	21	punct	19:AuxX	DiscourseMode=Dialogue|Speaker=Agrius
 21-22	utilitatemne	_	_	_	_	_	_	_	_
-21	utilitatem	utilitas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	18	appos	23:OCOMP_CO	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+21	utilitatem	utilitas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	18	appos	23:OCOMP_CO	DiscourseMode=Dialogue|Speaker=Agrius
 22	ne	ne	PART	_	PartType=Int	21	discourse	23:AuxY	DiscourseMode=Dialogue|Speaker=Agrius
 23	an	an	CCONJ	_	_	24	cc	19:COORD	DiscourseMode=Dialogue|Speaker=Agrius
 24	voluptatem	voluptas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	21	conj	23:OCOMP_CO	DiscourseMode=Dialogue|Speaker=Agrius
@@ -1447,7 +1447,7 @@
 # text_old = Ad te enim rudem esse agri culturae nunc, olim ad Stolonem fuisse dicunt.
 # text = ad te enim rudem esse agri culturae nunc, olim ad Stolonem fuisse dicunt.
 # text_en = For they say that you are now the veteran master of farming, as Stolo once was.
-# text_fr = Car on dit que tu es maintenant le maître chevronné de l'agriculture, comme le fut jadis Stolon.
+# text_fr = Car on dit que tu es maintenant le maître chevronné de l’agriculture, comme le fut jadis Stolon.
 # text_fi = Sillä sanotaan, että sinä olet nyt maanviljelyn kokenut mestari, niin kuin Stolo oli ennen.
 # review_status = silver
 1	ad	ad	ADP	_	_	2	case	5:AuxP	DiscourseMode=Dialogue|OrigForm=Ad|Speaker=Agrius
@@ -1471,9 +1471,9 @@
 # edition_loc = 1.2.12
 # text_old = Scrofa, Prius, inquit, discernendum, utrum quae serantur in agro, ea sola sint in cultura, an etiam quae inducantur in rura, ut oves et armenta.
 # text = Scrofa: prius – inquit – discernendum, utrum quae serantur in agro, ea sola sint in cultura, an etiam quae inducantur in rura, ut oves et armenta.
-# text_en = Scrofa said: "First it must be determined whether the things which are sown in the field belong to cultivation alone, or also the things which are brought onto the land, like sheep and herds."
-# text_fr = Scrofa dit : « Il faut d'abord déterminer si seules les choses qui sont semées dans le champ relèvent de la culture, ou aussi celles qui sont amenées sur les terres, comme les moutons et les troupeaux. »
-# text_fi = Scrofa sanoi: "Ensin on määriteltävä, kuuluvatko viljelyyn ainoastaan ne asiat, joita kylvetään pellolle, vai myös ne, joita tuodaan maille, kuten lampaat ja karja."
+# text_en = Scrofa said: “First it must be determined whether the things which are sown in the field belong to cultivation alone, or also the things which are brought onto the land, like sheep and herds.”
+# text_fr = Scrofa dit : « Il faut d’abord déterminer si seules les choses qui sont semées dans le champ relèvent de la culture, ou aussi celles qui sont amenées sur les terres, comme les moutons et les troupeaux. »
+# text_fi = Scrofa sanoi: ”Ensin on määriteltävä, kuuluvatko viljelyyn ainoastaan ne asiat, joita kylvetään pellolle, vai myös ne, joita tuodaan maille, kuten lampaat ja karja.”
 # review_status = silver
 1	Scrofa	Scrofa	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	5	nsubj	5:SBJ	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Scrofa
 2	:	:	PUNCT	_	_	5	punct	5:AuxX	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
@@ -1515,7 +1515,7 @@
 # text_old = Video enim, qui de agri cultura scripserunt et Poenice et Graece et Latine, latius vagatos, quam oportuerit.
 # text = video enim, qui de agri cultura scripserunt et Poenice et Graece et Latine, latius vagatos, quam oportuerit.
 # text_en = For I see that those who have written on agriculture, both in Punic, in Greek, and in Latin, have wandered more widely than they should have.
-# text_fr = Car je vois que ceux qui ont écrit sur l'agriculture, en punique, en grec et en latin, se sont égarés plus largement qu'il n'aurait fallu.
+# text_fr = Car je vois que ceux qui ont écrit sur l’agriculture, en punique, en grec et en latin, se sont égarés plus largement qu’il n’aurait fallu.
 # text_fi = Sillä näen, että ne, jotka ovat kirjoittaneet maanviljelyksestä, sekä puuniksi, kreikaksi että latinaksi, ovat harhailleet laajemmalle kuin olisi ollut asianmukaista.
 # review_status = silver
 1	video	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	0:PRED	DiscourseMode=Dialogue|OrigForm=Video|Speaker=Scrofa
@@ -1545,9 +1545,9 @@
 # edition_loc = 1.2.13
 # text_old = Ego vero, inquit Stolo, eos non in omni re imitandos arbitror et eo melius fecisse quosdam, qui minore pomerio finierunt exclusis partibus quae non pertinent ad hanc rem.
 # text = ego vero – inquit Stolo – eos non in omni re imitandos arbitror et eo melius fecisse quosdam, qui minore pomerio finierunt exclusis partibus quae non pertinent ad hanc rem.
-# text_en = "But I," said Stolo, "do not think they are to be imitated in every respect, and that some have done better by setting a narrower boundary, excluding parts which do not pertain to this matter."
-# text_fr = « Mais moi, dit Stolon, je ne pense pas qu'il faille les imiter en tout point, et que certains ont mieux fait en fixant une limite plus étroite, excluant les parties qui ne se rapportent pas à ce sujet. »
-# text_fi = "Minä puolestani", sanoi Stolo, "en usko, että heitä tulisi jäljitellä joka suhteessa, ja että jotkut ovat tehneet paremmin asettamalla kapeamman rajan, sulkien pois osat, jotka eivät kuulu tähän asiaan."
+# text_en = “But I,” said Stolo, “do not think they are to be imitated in every respect, and that some have done better by setting a narrower boundary, excluding parts which do not pertain to this matter.”
+# text_fr = « Mais moi, dit Stolon, je ne pense pas qu’il faille les imiter en tout point, et que certains ont mieux fait en fixant une limite plus étroite, excluant les parties qui ne se rapportent pas à ce sujet. »
+# text_fi = ”Minä puolestani”, sanoi Stolo, ”en usko, että heitä tulisi jäljitellä joka suhteessa, ja että jotkut ovat tehneet paremmin asettamalla kapeamman rajan, sulkien pois osat, jotka eivät kuulu tähän asiaan.”
 # review_status = silver
 1	ego	ego	PRON	_	Case=Nom|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	13	nsubj	13:SBJ	DiscourseMode=Dialogue|OrigForm=Ego|Speaker=Stolo
 2	vero	vero	ADV	_	_	13	discourse	13:ADV	DiscourseMode=Dialogue|Speaker=Stolo
@@ -1589,7 +1589,7 @@
 # text_old = Quare tota pastio, quae coniungitur a plerisque cum agri cultura, magis ad pastorem quam ad agricolam pertinere videtur.
 # text = quare tota pastio, quae coniungitur a plerisque cum agri cultura, magis ad pastorem quam ad agricolam pertinere videtur.
 # text_en = Therefore, the whole business of herding, which most writers join with agriculture, seems to pertain more to the herdsman than to the farmer.
-# text_fr = C'est pourquoi tout l'élevage, que la plupart réunissent à l'agriculture, paraît relever davantage du berger que du cultivateur.
+# text_fr = C’est pourquoi tout l’élevage, que la plupart réunissent à l’agriculture, paraît relever davantage du berger que du cultivateur.
 # text_fi = Siksi koko karjanhoito, jonka useimmat yhdistävät maanviljelykseen, näyttää kuuluvan enemmän paimenelle kuin maanviljelijälle.
 # review_status = silver
 1	quare	quare	ADV	_	_	20	advmod	20:AuxY	DiscourseMode=Dialogue|OrigForm=Quare|Speaker=Stolo
@@ -1620,7 +1620,7 @@
 # text_old = Quocirca principes qui utrique rei praeponuntur vocabulis quoque sunt diversi, quod unus vocatur vilicus, alter magister pecoris.
 # text = quocirca principes qui utrique rei praeponuntur vocabulis quoque sunt diversi, quod unus vocatur vilicus, alter magister pecoris.
 # text_en = Wherefore the overseers who are put in charge of each business are also different in name: one is called vilicus (farm-steward), the other magister pecoris (master of the flock).
-# text_fr = C'est pourquoi les chefs qui sont préposés à chacune de ces deux activités diffèrent aussi par leur nom : l'un est appelé vilicus, l'autre magister pecoris.
+# text_fr = C’est pourquoi les chefs qui sont préposés à chacune de ces deux activités diffèrent aussi par leur nom : l’un est appelé vilicus, l’autre magister pecoris.
 # text_fi = Siksi kummankin tehtävän johtajat eroavat myös nimeltään: toista kutsutaan vilicukseksi, toista magister pecoriksi eli karjanhoidon esimieheksi.
 # review_status = silver
 1	quocirca	quocirca	ADV	_	_	10	advmod	9:AuxY	DiscourseMode=Dialogue|OrigForm=Quocirca|Speaker=Stolo
@@ -1652,7 +1652,7 @@
 # text_old = Vilicus agri colendi causa constitutus atque appellatus a villa, quod ab eo in eam convehuntur fructus et evehuntur, cum veneunt.
 # text = vilicus agri colendi causa constitutus atque appellatus a villa, quod ab eo in eam convehuntur fructus et evehuntur, cum veneunt.
 # text_en = The farm-steward was appointed for the sake of the field to be cultivated, and was named from the villa, because through him produce is brought into it and carried out from it when it is sold.
-# text_fr = Le vilicus fut institué pour la culture du champ et reçut son nom de la villa, parce que c'est par lui que les produits y sont apportés et en sont emportés lorsqu'ils sont vendus.
+# text_fr = Le vilicus fut institué pour la culture du champ et reçut son nom de la villa, parce que c’est par lui que les produits y sont apportés et en sont emportés lorsqu’ils sont vendus.
 # text_fi = Tilanhoitaja asetettiin pellon viljelemistä varten, ja hän sai nimensä sanasta villa, koska hänen välityksellään sadon tuotteet tuodaan siihen ja viedään sieltä pois, kun ne myydään.
 1	vilicus	vilicus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	5	nsubj:pass	6:SBJ	DiscourseMode=Dialogue|OrigForm=Vilicus|Speaker=Stolo
 2	agri	ager	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	4	nmod	3:ATR	DiscourseMode=Dialogue|Speaker=Stolo
@@ -1683,8 +1683,8 @@
 # edition_loc = 1.2.14
 # text_old = A quo rustici etiam nunc quoque viam veham appellant propter vecturas et vellam, non villam, quo vehunt et unde vehunt.
 # text = a quo rustici etiam nunc quoque viam veham appellant propter vecturas et vellam, non villam, quo vehunt et unde vehunt.
-# text_en = From this [word] country-folk even now also call a road "veha" on account of hauling, and [name] "vella", not "villa", that to which and from which they haul.
-# text_fr = De ce mot, les gens de la campagne appellent encore aujourd'hui une route « veha » à cause du transport, et [nomment] « vella », non « villa », ce vers quoi et d'où l'on transporte.
+# text_en = From this [word] country-folk even now also call a road “veha” on account of hauling, and [name] “vella”, not “villa”, that to which and from which they haul.
+# text_fr = De ce mot, les gens de la campagne appellent encore aujourd’hui une route « veha » à cause du transport, et [nomment] « vella », non « villa », ce vers quoi et d’où l’on transporte.
 # text_fi = Tästä sanasta maalaiset kutsuvat vielä nytkin tietä nimellä ”veha” kuljetusten vuoksi, ja [nimittävät] sitä, mihin ja mistä tavaraa kuljetetaan, ”vellaksi”, ei ”villaksi”.
 # review_status = silver
 1	a	ab	ADP	_	_	2	case	12:AuxP	DiscourseMode=Dialogue|OrigForm=A|Speaker=Stolo
@@ -1717,9 +1717,9 @@
 # edition_loc = 1.2.14
 # text_old = Item dicuntur qui vecturis vivunt velaturam facere.
 # text = item dicuntur qui vecturis vivunt velaturam facere.
-# text_en = Likewise, those who live by hauling are said to practice "velatura" (the hauling-trade).
+# text_en = Likewise, those who live by hauling are said to practice “velatura” (the hauling-trade).
 # text_fr = De même, ceux qui vivent du transport sont dits pratiquer la « velatura » (le métier du transport).
-# text_fi = Samoin niiden, jotka elävät kuljetuksista, sanotaan harjoittavan "velaturaa" (kuljetuselinkeinoa).
+# text_fi = Samoin niiden, jotka elävät kuljetuksista, sanotaan harjoittavan ”velaturaa” (kuljetuselinkeinoa).
 # review_status = silver
 1	item	item	ADV	_	_	2	advmod	2:AuxY	DiscourseMode=Dialogue|OrigForm=Item|Speaker=Stolo
 2	dicuntur	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	0:PRED	DiscourseMode=Dialogue|Speaker=Stolo
@@ -1729,3 +1729,4 @@
 6	velaturam	velatura	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	7	obj	7:OBJ	DiscourseMode=Dialogue|Speaker=Stolo
 7	facere	facio	VERB	_	Aspect=Imp|InflClass=LatI2|VerbForm=Inf|Voice=Act	2	xcomp	2:PNOM	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 8	.	.	PUNCT	_	_	2	punct	2:AuxK	DiscourseMode=Dialogue|Speaker=Stolo
+

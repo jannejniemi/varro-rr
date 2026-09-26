@@ -96,7 +96,7 @@
 13	velis	volo	VERB	_	InflClass=LatAnom|Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
 14	,	,	PUNCT	_	_	22	punct	_	DiscourseMode=Preface|Speaker=Narrator
 15-16	meque	_	_	_	_	_	_	_	_
-15	me	ego	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing	22	obj	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator|Variant=Giusta:aeque
+15	me	ego	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing	22	obj	_	DiscourseMode=Preface|Speaker=Narrator|Variant=Giusta:aeque
 16	que	que	CCONJ	_	_	22	cc	_	DiscourseMode=Preface|Speaker=Narrator|Variant=Giusta:CF_15
 17	ut	ut	SCONJ	_	_	20	mark	_	DiscourseMode=Preface|Speaker=Narrator
 18	id	is	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing	20	obj	_	DiscourseMode=Preface|Speaker=Narrator
@@ -164,7 +164,7 @@
 13	velis	volo	VERB	_	InflClass=LatAnom|Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
 14	,	,	PUNCT	_	_	22	punct	_	DiscourseMode=Preface|Speaker=Narrator
 15-16	meque	_	_	_	_	_	_	_	_
-15	me	ego	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing	22	obj	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
+15	me	ego	PRON	_	Case=Acc|InflClass=LatAnom|Number=Sing	22	obj	_	DiscourseMode=Preface|Speaker=Narrator
 16	que	que	CCONJ	_	_	22	cc	_	DiscourseMode=Preface|Speaker=Narrator
 17	ut	ut	SCONJ	_	_	20	mark	_	DiscourseMode=Preface|Speaker=Narrator
 18	id	is	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing	20	obj	_	DiscourseMode=Preface|Speaker=Narrator
@@ -212,7 +212,7 @@
 4	non	non	ADV	_	Polarity=Neg	5	advmod:neg	_	DiscourseMode=Preface|Speaker=Narrator
 5	solum	solum	ADV	_	_	6	advmod	_	DiscourseMode=Preface|Speaker=Narrator
 6	cecinisse	cano	VERB	_	Aspect=Perf|InflClass=LatX|Tense=Past|VerbForm=Inf|Voice=Act	2	ccomp	_	DiscourseMode=Preface|Speaker=Narrator
-7	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur	12	nsubj	12:nsubj|6:obj:syllepsis	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator|ReviewNote=RN_S000005_03|ReviewTags=Syntax|SyntaxNote=Syllepsis
+7	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur	12	nsubj	6:obj:syllepsis|12:nsubj	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator|ReviewNote=RN_S000005_03|ReviewTags=Syntax|SyntaxNote=Syllepsis
 8	,	,	PUNCT	_	_	12	punct	_	DiscourseMode=Preface|Speaker=Narrator
 9	dum	dum	SCONJ	_	_	10	mark	_	DiscourseMode=Preface|Speaker=Narrator
 10	viveret	vivo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	advcl	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
@@ -296,7 +296,7 @@
 4	non	non	ADV	_	Polarity=Neg	5	advmod:neg	_	DiscourseMode=Preface|Speaker=Narrator
 5	solum	solum	ADV	_	_	6	advmod	_	DiscourseMode=Preface|Speaker=Narrator
 6	cecinisse	cano	VERB	_	Aspect=Perf|InflClass=LatX|Tense=Past|VerbForm=Inf|Voice=Act	2	ccomp	_	DiscourseMode=Preface|Speaker=Narrator
-7	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur	12	nsubj	12:nsubj|6:obj:syllepsis	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator|ReviewNote=RN_S000005_03|ReviewTags=Syntax|SyntaxNote=Syllepsis
+7	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur	12	nsubj	6:obj:syllepsis|12:nsubj	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator|ReviewNote=RN_S000005_03|ReviewTags=Syntax|SyntaxNote=Syllepsis
 8	,	,	PUNCT	_	_	12	punct	_	DiscourseMode=Preface|Speaker=Narrator
 9	dum	dum	SCONJ	_	_	10	mark	_	DiscourseMode=Preface|Speaker=Narrator
 10	viveret	vivo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	advcl	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
@@ -536,7 +536,7 @@
 11	appellatur	appello	VERB	_	InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
 12	,	,	PUNCT	_	_	13	punct	_	DiscourseMode=Preface|Speaker=Narrator
 13	Tellus	Tellus	PROPN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|NameType=Rel|Number=Sing	11	conj	15.1:nsubj:pass	DiscourseMode=Preface|Speaker=Narrator
-14	terra	terra	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	15	nmod	_	DiscourseMode=Preface|Speaker=Narrator|Variant=Heurgon:Terra 
+14	terra	terra	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	15	nmod	_	DiscourseMode=Preface|Speaker=Narrator|Variant=Heurgon:Terra
 15	mater	mater	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	13	orphan	15.1:xcomp	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator|Variant=Heurgon:Mater
 15.1	appellatur	_	_	_	_	_	_	11:conj	DiscourseMode=Preface|InheritedFrom=S000012:11|Speaker=Narrator
 16	.	.	PUNCT	_	_	11	punct	_	DiscourseMode=Preface|Speaker=Narrator
@@ -683,7 +683,7 @@
 15	neque	neque	CCONJ	_	Polarity=Neg	18	cc	_	DiscourseMode=Preface|Speaker=Narrator
 16	non	non	ADV	_	Polarity=Neg	17	advmod:neg	_	DiscourseMode=Preface|Speaker=Narrator
 17	tempestive	tempestive	ADV	_	_	18	advmod	_	DiscourseMode=Preface|Speaker=Narrator
-18	florent	floreo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator|SyntaxNote=SubjectChange
+18	florent	floreo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	DiscourseMode=Preface|ReviewNote=RN_S000016_02|ReviewTags=Syntax|SpaceAfter=No|Speaker=Narrator|SyntaxNote=SubjectChange
 19	.	.	PUNCT	_	_	2	punct	_	DiscourseMode=Preface|Speaker=Narrator
 
 # sent_id = S000017
@@ -726,7 +726,7 @@
 5	Venerem	Venus	PROPN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|NameType=Rel|Number=Sing	3	conj	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
 6	,	,	PUNCT	_	_	9	punct	_	DiscourseMode=Preface|Speaker=Narrator
 7	quarum	qui	PRON	_	Case=Gen|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Rel	9	nmod	_	DiscourseMode=Preface|Speaker=Narrator
-8	unius	unus	DET	_	Case=Gen|Gender=Fem|InflClass=LatPron|NumType=Card|Number=Sing	9	nmod	_	DiscourseMode=Preface|Speaker=Narrator
+8	unius	unus	DET	_	Case=Gen|Gender=Fem|InflClass=LatPron|Number=Sing|NumType=Card	9	nmod	_	DiscourseMode=Preface|Speaker=Narrator
 9	procuratio	procuratio	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Sing	3	acl:relcl	_	DiscourseMode=Preface|Speaker=Narrator
 10	oliveti	olivetum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	9	nmod	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
 11	,	,	PUNCT	_	_	13	punct	_	DiscourseMode=Preface|Speaker=Narrator
@@ -1175,7 +1175,7 @@
 14	de	de	ADP	_	_	15	case	_	DiscourseMode=Preface|Speaker=Narrator
 15	Magonis	Mago	PROPN	_	Case=Gen|Gender=Masc|InflClass=IndEurX|NameType=Giv|Number=Sing	16	obl	_	DiscourseMode=Preface|Speaker=Narrator
 16	dempsit	demo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	DiscourseMode=Preface|Speaker=Narrator
-17	instar	instar	NOUN	_	Case=Acc|Gender=Neut|InflClass=Ind|Number=Sing	16	obj	_	DiscourseMode=Preface|Speaker=Narrator
+17	instar	instar	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	16	obj	_	DiscourseMode=Preface|Speaker=Narrator
 18	librorum	liber	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Plur	17	nmod	_	DiscourseMode=Preface|Speaker=Narrator
 19	VIII	octo	NUM	_	NumForm=Roman|NumType=Card	18	nummod	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
 20	.	.	PUNCT	_	_	10	punct	_	DiscourseMode=Preface|Speaker=Narrator
@@ -1314,7 +1314,7 @@
 21	quae	qui	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	24	obj	_	DiscourseMode=Preface|Speaker=Narrator
 22	a	ab	ADP	_	_	23	case	_	DiscourseMode=Preface|Speaker=Narrator
 23	peritis	peritus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Plur	24	obl:arg	_	DiscourseMode=Preface|Speaker=Narrator
-24	audii	audio	VERB	_	Aspect=Perf|InflClass=LatI4|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	14	conj	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
+24	audii	audio	VERB	_	Aspect=Perf|InflClass=LatI|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	14	conj	_	DiscourseMode=Preface|SpaceAfter=No|Speaker=Narrator
 25	.	.	PUNCT	_	_	4	punct	_	DiscourseMode=Preface|Speaker=Narrator
 
 # sent_id = S000036
@@ -1331,7 +1331,7 @@
 3	in	in	ADP	_	_	4	case	_	DiscourseMode=Narrative|Speaker=Narrator
 4	aedem	aedes	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	6	obl	_	DiscourseMode=Narrative|Speaker=Narrator
 5	Telluris	Tellus	PROPN	_	Case=Gen|Gender=Fem|InflClass=IndEurX|NameType=Rel|Number=Sing	4	nmod	_	DiscourseMode=Narrative|Speaker=Narrator
-6	veneram	venio	VERB	_	Aspect=Perf|InflClass=LatI4|Mood=Ind|Number=Sing|Person=1|Tense=Pqp|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Narrative|Speaker=Narrator
+6	veneram	venio	VERB	_	Aspect=Perf|InflClass=LatI|Mood=Ind|Number=Sing|Person=1|Tense=Pqp|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Narrative|Speaker=Narrator
 7	rogatus	rogo	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatA|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	6	advcl	_	DiscourseMode=Narrative|Speaker=Narrator
 8	ab	ab	ADP	_	_	9	case	_	DiscourseMode=Narrative|Speaker=Narrator
 9	aeditumo	aeditumus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	7	obl:agent	_	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Narrator
@@ -2226,7 +2226,7 @@
 # review_status = silver
 # review_note = RN_S000067_01
 # review_tags = Syntax;Interpretation
-1	duo	duo	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|NumForm=Word|NumType=Card|Number=Plur	4	obj	_	DiscourseMode=Dialogue|OrigForm=Duo|Speaker=Fundanius
+1	duo	duo	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur|NumForm=Word|NumType=Card	4	obj	_	DiscourseMode=Dialogue|OrigForm=Duo|Speaker=Fundanius
 2	in	in	ADP	_	_	3	case	_	DiscourseMode=Dialogue|Speaker=Fundanius
 3	primis	primus	ADJ	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur|NumType=Ord	4	obl	_	DiscourseMode=Dialogue|Speaker=Fundanius
 4	spectasse	specto	VERB	_	Aspect=Perf|InflClass=LatA|Tense=Past|VerbForm=Inf|Voice=Act	5	xcomp	_	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -2236,7 +2236,7 @@
 8	colendo	colo	VERB	_	Aspect=Prosp|Case=Abl|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	4	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius|TraditionalMood=Gerundium|Variant=Keil:in+
 9	,	,	PUNCT	_	_	4	punct	_	DiscourseMode=Dialogue|Speaker=Fundanius
 10-11	possentne	_	_	_	_	_	_	_	_
-10	possent	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl	_	DiscourseMode=Dialogue|ReviewNote=RN_S000067_01|SpaceAfter=No|Speaker=Fundanius
+10	possent	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl	_	DiscourseMode=Dialogue|ReviewNote=RN_S000067_01|Speaker=Fundanius
 11	ne	ne	PART	_	PartType=Int	10	discourse	_	DiscourseMode=Dialogue|Speaker=Fundanius
 12	fructus	fructus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurU|Number=Plur	10	nsubj	_	DiscourseMode=Dialogue|Speaker=Fundanius
 13	pro	pro	ADP	_	_	14	case	_	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -2389,7 +2389,7 @@
 # review_status = silver
 # review_note = RN_S000072_01
 # review_tags = Syntax;Textual;Interpretation
-1	unum	unus	NUM	_	Case=Acc|Gender=Masc|InflClass=LatPron|NumForm=Word|NumType=Card|Number=Sing	0	root	_	DiscourseMode=Dialogue|InheritedFrom=S000071:5|ReviewNote=RN_S000072_01|SpaceAfter=No|Speaker=Fundanius
+1	unum	unus	NUM	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Sing|NumForm=Word|NumType=Card	0	root	_	DiscourseMode=Dialogue|InheritedFrom=S000071:5|ReviewNote=RN_S000072_01|SpaceAfter=No|Speaker=Fundanius
 2	,	,	PUNCT	_	_	9	punct	_	DiscourseMode=Dialogue|Speaker=Fundanius
 3	cuius	qui	PRON	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	4	nmod	_	DiscourseMode=Dialogue|Speaker=Fundanius
 4	maiores	maior	ADJ	_	Case=Nom|Degree=Cmp|Gender=Masc|InflClass=IndEurX|Number=Plur	9	nsubj	_	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -2407,7 +2407,7 @@
 16	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	17	nsubj	_	DiscourseMode=Dialogue|Speaker=Fundanius
 17	vetat	veto	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Fundanius
 18	plus	multum	ADV	_	Degree=Cmp	20	advmod	_	DiscourseMode=Dialogue|Speaker=Fundanius
-19	D	quingenti	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|NumForm=Roman|NumType=Card|Number=Plur	20	nummod	_	DiscourseMode=Dialogue|Speaker=Fundanius
+19	D	quingenti	NUM	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur|NumForm=Roman|NumType=Card	20	nummod	_	DiscourseMode=Dialogue|Speaker=Fundanius
 20	iugera	iugerum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	21	obj	_	DiscourseMode=Dialogue|Speaker=Fundanius
 21	habere	habeo	VERB	_	Aspect=Imp|InflClass=LatE|VerbForm=Inf|Voice=Act	17	ccomp	_	DiscourseMode=Dialogue|Speaker=Fundanius
 22	civem	civis	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurI|Number=Sing	21	nsubj	_	DiscourseMode=Dialogue|Speaker=Fundanius
@@ -2584,7 +2584,7 @@
 16	,	,	PUNCT	_	_	20	punct	_	DiscourseMode=Dialogue|Speaker=Varro
 17	cum	cum	SCONJ	_	_	20	mark	_	DiscourseMode=Dialogue|Speaker=Varro
 18	huius	hic	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	21	det	_	DiscourseMode=Dialogue|Speaker=Varro
-19	spectatum	specto	VERB	_	VerbForm=Conv|Aspect=Prosp|InflClass=LatA	20	xcomp	_	DiscourseMode=Dialogue|Speaker=Varro|TraditionalMood=Supinum
+19	spectatum	specto	VERB	_	Aspect=Prosp|InflClass=LatA|VerbForm=Conv	20	xcomp	_	DiscourseMode=Dialogue|Speaker=Varro|TraditionalMood=Supinum
 20	veniant	venio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	DiscourseMode=Dialogue|Speaker=Varro
 21	villas	villa	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	19	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 22	,	,	PUNCT	_	_	19	punct	_	DiscourseMode=Dialogue|Speaker=Varro
@@ -2755,7 +2755,7 @@
 2	dum	dum	SCONJ	_	_	7	mark	_	DiscourseMode=Dialogue|Speaker=Agrius
 3	id	is	PRON	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	7	obj	_	DiscourseMode=Dialogue|Speaker=Agrius
 4-5	nobiscum	_	_	_	_	_	_	_	_
-4	nobis	nos	PRON	_	Case=Abl|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	7	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+4	nobis	nos	PRON	_	Case=Abl|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	7	obl	_	DiscourseMode=Dialogue|Speaker=Agrius
 5	cum	cum	ADP	_	AdpType=Post	4	case	_	DiscourseMode=Dialogue|Speaker=Agrius
 6	una	una	ADV	_	_	7	advmod	_	DiscourseMode=Dialogue|Speaker=Agrius
 7	videatis	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	DiscourseMode=Dialogue|Speaker=Agrius
@@ -2773,7 +2773,7 @@
 19	habeat	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	ccomp	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
 20	,	,	PUNCT	_	_	21	punct	_	DiscourseMode=Dialogue|Speaker=Agrius
 21-22	utilitatemne	_	_	_	_	_	_	_	_
-21	utilitatem	utilitas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	18	appos	_	DiscourseMode=Dialogue|ReviewNote=RN_S000082_02|ReviewTags=Syntax|SpaceAfter=No|Speaker=Agrius
+21	utilitatem	utilitas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	18	appos	_	DiscourseMode=Dialogue|ReviewNote=RN_S000082_02|ReviewTags=Syntax|Speaker=Agrius
 22	ne	ne	PART	_	PartType=Int	21	discourse	_	DiscourseMode=Dialogue|Speaker=Agrius
 23	an	an	CCONJ	_	_	24	cc	_	DiscourseMode=Dialogue|Speaker=Agrius
 24	voluptatem	voluptas	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Sing	21	conj	_	DiscourseMode=Dialogue|Speaker=Agrius
@@ -3479,7 +3479,7 @@
 11	quod	quod	SCONJ	_	_	16	mark	_	DiscourseMode=Dialogue|Speaker=Fundanius
 12	eam	is	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	15	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Fundanius
 13	quam	qui	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	14	obj	_	DiscourseMode=Dialogue|Speaker=Fundanius
-14	laeserit	laedo	VERB	_	Aspect=Perf|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act|InflClass=LatX	12	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Fundanius
+14	laeserit	laedo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Fundanius
 15	fieri	fio	VERB	_	Aspect=Imp|InflClass=LatI|VerbForm=Inf|Voice=Pass	16	ccomp	_	DiscourseMode=Dialogue|Speaker=Fundanius
 16	dicunt	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	DiscourseMode=Dialogue|Speaker=Fundanius
 17	sterilem	sterilis	ADJ	_	Case=Acc|Gender=Fem|InflClass=IndEurI|Number=Sing	15	xcomp	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Fundanius
@@ -3561,7 +3561,7 @@
 18	cultior	cultus	ADJ	_	Case=Nom|Degree=Cmp|Gender=Masc|InflClass=IndEurX|Number=Sing	15	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Varro|ReviewNote=RN_S000106_01|ReviewTags=Syntax
 19	sit	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 20	,	,	PUNCT	_	_	18	punct	_	DiscourseMode=Dialogue|Speaker=Varro
-21	adiuvare	adiuvo	VERB	_	Aspect=Imp|InflClass=LatA|VerbForm=Inf|Voice=Act	10	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro|SyntaxNote=Ellipsis
+21	adiuvare	adiuvo	VERB	_	Aspect=Imp|InflClass=LatA|VerbForm=Inf|Voice=Act	10	advcl	_	DiscourseMode=Dialogue|ReviewNote=RN_S000106_02|ReviewTags=Syntax|SpaceAfter=No|Speaker=Varro|SyntaxNote=Ellipsis
 22	,	,	PUNCT	_	_	24	punct	_	DiscourseMode=Dialogue|Speaker=Varro
 23	ut	ut	SCONJ	_	_	24	mark	_	DiscourseMode=Dialogue|Speaker=Varro
 24	eae	is	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Plur|Person=3|PronType=Prs	21	advcl:cmp	_	DiscourseMode=Dialogue|Speaker=Varro
@@ -3635,7 +3635,7 @@
 15	istam	iste	DET	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	16	det	_	DiscourseMode=Dialogue|Speaker=Agrius
 16	rem	res	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurE|Number=Sing	17	obl	_	DiscourseMode=Dialogue|Speaker=Agrius
 17	habendum	habeo	VERB	_	Aspect=Prosp|Case=Acc|Gender=Neut|InflClass=LatE|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	18	xcomp	_	DiscourseMode=Dialogue|Speaker=Agrius|TraditionalMood=Gerundivum
-18	statuerimus	statuo	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act|InflClass=LatX	8	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
+18	statuerimus	statuo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	8	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
 19	.	.	PUNCT	_	_	8	punct	_	DiscourseMode=Dialogue|Speaker=Agrius
 
 # sent_id = S000109
@@ -4026,14 +4026,14 @@
 5	in	in	ADP	_	_	6	case	_	DiscourseMode=Dialogue|Speaker=Stolo
 6	aquam	aqua	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	4	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Stolo
 7-8	eamque	_	_	_	_	_	_	_	_
-7	eam	is	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	9	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+7	eam	is	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	9	obj	_	DiscourseMode=Dialogue|Speaker=Stolo
 8	que	que	CCONJ	_	_	9	cc	_	DiscourseMode=Dialogue|Speaker=Stolo
 9	infundito	infundo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Imp|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin|Voice=Act	4	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
 10	quo	quo	ADV	_	PronType=Rel	11	advmod	_	DiscourseMode=Dialogue|Speaker=Stolo
 11	voles	volo	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin|Voice=Act	9	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 12	,	,	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
 13	nulli	nullus	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|Polarity=Neg|PronType=Ind	14	nsubj	_	DiscourseMode=Dialogue|Speaker=Stolo
-14	accedent	accedo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	9	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo|SyntaxNote=Anacoluthon
+14	accedent	accedo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	9	conj	_	DiscourseMode=Dialogue|ReviewNote=RN_S000120_01|ReviewTags=Syntax|SpaceAfter=No|Speaker=Stolo|SyntaxNote=Anacoluthon
 15	;	;	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
 
 # sent_id = S000121
@@ -4047,13 +4047,13 @@
 # text_fi = ”tai häränsappea etikkaan sekoitettuna, voitele vuode.”
 # review_status = silver
 1	vel	vel	CCONJ	_	_	8	cc	_	DiscourseMode=Dialogue|Speaker=Stolo
-2	fel	fel	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurX|Number=Sing	8	parataxis	_	DiscourseMode=Dialogue|Speaker=Stolo|SyntaxNote=Ellipsis
+2	fel	fel	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurX|Number=Sing	8	parataxis	_	DiscourseMode=Dialogue|ReviewNote=RN_S000121_01|ReviewTags=Syntax;Textual|Speaker=Stolo|SyntaxNote=Ellipsis
 3	bubulum	bubulus	ADJ	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	2	amod	_	DiscourseMode=Dialogue|Speaker=Stolo
 4	cum	cum	ADP	_	_	5	case	_	DiscourseMode=Dialogue|Speaker=Stolo
 5	aceto	acetum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	6	obl	_	DiscourseMode=Dialogue|Speaker=Stolo
 6	mixtum	misceo	VERB	_	Aspect=Perf|Case=Acc|Gender=Neut|InflClass=LatE|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	2	amod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 7	,	,	PUNCT	_	_	8	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
-8	unguito	unguo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Imp|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Stolo|SyntaxNote=Anacoluthon
+8	unguito	unguo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Imp|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|ReviewNote=RN_S000121_01|ReviewTags=Syntax|Speaker=Stolo|SyntaxNote=Anacoluthon
 9	lectum	lectus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	8	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 10	.	.	PUNCT	_	_	8	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
 11	”	”	PUNCT	_	_	8	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
@@ -4597,7 +4597,7 @@
 # review_status = silver
 # elevated_from = bronze
 1-2	eaque	_	_	_	_	_	_	_	_
-1	ea	is	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+1	ea	is	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
 2	que	que	CCONJ	_	_	4	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
 3	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	DiscourseMode=Dialogue|Speaker=Scrofa
 4	scientia	scientia	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
@@ -4687,7 +4687,7 @@
 2	profecti	proficiscor	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Plur|VerbForm=Part|Voice=Pass	8	advcl	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:profectum
 3	agricolae	agricola	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurA|Number=Plur	8	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
 4	ad	ad	ADP	_	_	6	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	duas	duo	NUM	_	Case=Acc|Gender=Fem|InflClass=LatAnom|NumForm=Word|NumType=Card|Number=Plur	6	nummod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	duas	duo	NUM	_	Case=Acc|Gender=Fem|InflClass=LatAnom|Number=Plur|NumForm=Word|NumType=Card	6	nummod	_	DiscourseMode=Dialogue|Speaker=Scrofa
 6	metas	meta	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	7	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
 7	dirigere	dirigo	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	8	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
 8	debent	debeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
@@ -4974,7 +4974,7 @@
 17	,	,	PUNCT	_	_	20	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
 18	sed	sed	CCONJ	_	_	20	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
 19	in	in	ADP	_	_	20	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	naturae	natura	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|Number=Sing	16	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa|SyntaxNote=Ellipsis
+20	naturae	natura	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|Number=Sing	16	conj	_	DiscourseMode=Dialogue|ReviewNote=RN_S000150_02|ReviewTags=Syntax|SpaceAfter=No|Speaker=Scrofa|SyntaxNote=Ellipsis
 21	,	,	PUNCT	_	_	27	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
 22	ut	ut	SCONJ	_	_	27	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
 23	tamen	tamen	ADV	_	_	27	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -5151,11 +5151,11 @@
 26	obstructis	obstruo	VERB	_	Aspect=Perf|Case=Abl|Gender=Fem|InflClass=LatX|InflClass[nominal]=IndEurA|Number=Plur|VerbForm=Part|Voice=Pass	21	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
 27	pestilentibus	pestilens	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Plur	26	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
 28-29	ianuaque	_	_	_	_	_	_	_	_
-28	ianua	ianua	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	30	nsubj:pass	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+28	ianua	ianua	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	30	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
 29	que	que	CCONJ	_	_	30	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
 30	permutata	permuto	VERB	_	Aspect=Perf|Case=Abl|Gender=Fem|InflClass=LatA|InflClass[nominal]=IndEurA|Number=Sing|VerbForm=Part|Voice=Pass	21	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
 31-32	ceteraque	_	_	_	_	_	_	_	_
-31	cetera	ceterus	DET	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing|PronType=Con	35	det	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+31	cetera	ceterus	DET	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing|PronType=Con	35	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
 32	que	que	CCONJ	_	_	35	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
 33	eius	is	PRON	_	Case=Gen|Gender=Neut|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	34	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
 34	generis	genus	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurX|Number=Sing	35	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -5353,7 +5353,7 @@
 6	,	,	PUNCT	_	_	11	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
 7	solum	solum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	11	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
 8-9	partesque	_	_	_	_	_	_	_	_
-8	partes	pars	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Plur	7	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+8	partes	pars	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Plur	7	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
 9	que	que	CCONJ	_	_	8	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
 10	eius	is	PRON	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|Person=3|PronType=Prs	8	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
 11	quales	qualis	DET	_	Case=Nom|InflClass=IndEurI|Number=Plur|PronType=Int	4	acl	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -5590,8 +5590,8 @@
 9	subtilius	subtiliter	ADV	_	Degree=Cmp	12	orphan	12.1:advmod	DiscourseMode=Dialogue|Speaker=Scrofa
 10	de	de	ADP	_	_	12	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
 11	octo	octo	NUM	_	NumForm=Word|NumType=Card	12	nummod	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12.1	dicam	_	_	_	_	_	_	6:conj	InheritedFrom=S000169:6
 12	secundis	secundus	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurO|Number=Plur|NumType=Ord	6	conj	12.1:obl:arg	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+12.1	dicam	_	_	_	_	_	_	6:conj	InheritedFrom=S000169:6
 13	.	.	PUNCT	_	_	6	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
 
 # sent_id = S000170
@@ -6219,3 +6219,4 @@
 11	habent	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
 12	momentum	momentum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	11	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa|Variant=Giusta:momenta
 13	.	.	PUNCT	_	_	11	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
