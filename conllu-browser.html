@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>CoNLL-U Tree Browser</title>
 <style>
 :root{
@@ -462,6 +463,8 @@ table.conllu-table tr.mwt-row:hover td{background:var(--surface-2);}
 svg .idlabel-sm{font-family:"IBM Plex Mono",monospace; font-size:9px; fill:var(--ink-faint);}
 svg .feats{font-family:"IBM Plex Mono",monospace; font-size:9.5px; fill:var(--ink-dim);}
 svg .misc{font-family:"IBM Plex Mono",monospace; font-size:9.5px; fill:var(--rust);}
+svg .kvcolon{fill:var(--ink-faint);}
+svg .kvsep{stroke:var(--border); stroke-width:1;}
 
 /* svg text */
 svg .form{font-family:"IBM Plex Sans",sans-serif; font-weight:600; font-size:13px; fill:var(--ink);}
@@ -748,21 +751,23 @@ function attrString(obj){
 
 // fields: {lemma, upos, xpos, feats, misc} booleans -- form and id are always
 // available separately (id is appended by callers that want it, not here).
+// FEATS and MISC come back one part per attribute, {cls, key, value}, so that
+// they can be drawn one per line and aligned on the colon.
 function labelParts(tok, fields){
   const parts = [{cls:"form", text: tok.form}];
   if (fields.lemma && tok.lemma && tok.lemma !== "_") parts.push({cls:"lemma", text: tok.lemma});
   if (fields.upos && tok.upos && tok.upos !== "_") parts.push({cls:"upos", text: tok.upos});
   if (fields.xpos && tok.xpos && tok.xpos !== "_") parts.push({cls:"xpos", text: tok.xpos});
-  if (fields.feats){
-    const s = attrString(tok.feats);
-    if (s) parts.push({cls:"feats", text: s});
-  }
-  if (fields.misc){
-    const s = attrString(tok.misc);
-    if (s) parts.push({cls:"misc", text: s});
-  }
+  [["feats", tok.feats], ["misc", tok.misc]].forEach(([cls, obj])=>{
+    if (!fields[cls] || !obj) return;
+    Object.keys(obj).forEach(k=>{
+      parts.push({cls, key:k, value: obj[k]===true ? "" : String(obj[k])});
+    });
+  });
   return parts;
 }
+
+const isKV = p => p.key !== undefined;
 
 /* =========================================================================
    3. SVG DRAWING PRIMITIVES
@@ -797,44 +802,96 @@ function measureRoughWidth(str, fontSize){
   return Math.max(18, str.length * fontSize * 0.62);
 }
 
+const KV_GAP = 4;       // space either side of the colon
+const LINE_H = 14;      // line height of stacked labels
+const GROUP_GAP = 5;    // extra space before the FEATS block and the MISC block
+
+function partWidth(p){
+  const fs = fontSizeFor(p.cls);
+  if (!isKV(p)) return measureRoughWidth(p.text, fs);
+  // the colon sits on the centre line, so the part is twice its longer half
+  const half = Math.max(p.key.length, p.value.length) * fs * 0.62 + KV_GAP + 2;
+  return 2*half;
+}
+
 function partsWidth(parts, minWidth){
   let maxW = minWidth || 30;
-  parts.forEach(p=>{
-    maxW = Math.max(maxW, measureRoughWidth(p.text, fontSizeFor(p.cls)) + 14);
-  });
+  parts.forEach(p=>{ maxW = Math.max(maxW, partWidth(p) + 14); });
   return maxW;
 }
 
-function labelledBadge(svg, x, y, parts, minWidth, rectClass){
-  // stacked text lines centered at (x,y-ish); returns {width, height}
-  const lineHeight = 15;
-  const maxW = partsWidth(parts, minWidth);
-  const h = parts.length * lineHeight + 10;
-  const rect = el("rect", {
-    x: x - maxW/2, y: y - h/2,
-    width: maxW, height: h,
-    rx: 5,
-    class: rectClass || "nodebox"
-  });
-  svg.appendChild(rect);
-  const startY = y - h/2 + lineHeight - 3;
+// y offset (from the first baseline) of each line, with a small gap before
+// the first FEATS line and the first MISC line.
+function lineOffsets(parts){
+  const ys = [];
+  let y = 0, prev = null;
   parts.forEach((p,i)=>{
-    svg.appendChild(textEl(x, startY + i*lineHeight, p.text, p.cls));
+    if (i > 0){
+      y += LINE_H;
+      if (isKV(p) && p.cls !== prev) y += GROUP_GAP;
+    }
+    ys.push(y);
+    prev = isKV(p) ? p.cls : null;
   });
-  return { width: maxW, height: h };
+  return ys;
+}
+
+// draws the lines of `parts` centred on x, first baseline at y0
+function drawParts(svg, x, y0, parts, box){
+  const ys = lineOffsets(parts);
+  parts.forEach((p,i)=>{
+    const y = y0 + ys[i];
+    if (isKV(p)){
+      if (box && (i === 0 || parts[i-1].cls !== p.cls)){
+        const sy = y - 11 - GROUP_GAP/2 + 1;
+        svg.appendChild(el("line", {x1:x-box/2+5, y1:sy, x2:x+box/2-5, y2:sy, class:"kvsep"}));
+      }
+      if (p.value === ""){
+        svg.appendChild(textEl(x, y, p.key, p.cls));
+      } else {
+        svg.appendChild(textEl(x-KV_GAP, y, p.key, p.cls+" kvkey", "end"));
+        svg.appendChild(textEl(x, y, ":", p.cls+" kvcolon"));
+        svg.appendChild(textEl(x+KV_GAP, y, p.value, p.cls+" kvval", "start"));
+      }
+    } else {
+      svg.appendChild(textEl(x, y, p.text, p.cls));
+    }
+  });
+  return ys.length ? ys[ys.length-1] : 0;
+}
+
+function badgeHeight(parts){
+  const ys = lineOffsets(parts);
+  return (ys.length ? ys[ys.length-1] : 0) + LINE_H + 10;
+}
+
+// box of stacked lines, top edge at topY; returns {width, height}
+function labelledBadge(svg, x, topY, parts, minWidth, rectClass){
+  const w = partsWidth(parts, minWidth);
+  const h = badgeHeight(parts);
+  svg.appendChild(el("rect", { x: x - w/2, y: topY, width: w, height: h, rx: 5, class: rectClass || "nodebox" }));
+  drawParts(svg, x, topY + LINE_H - 1, parts, w);
+  return { width: w, height: h };
 }
 
 // Stacked text with no background box, top-anchored at (x, topY). Used for
 // the linear word row in the flat view, and the bottom word row in the
 // tree view -- both read as running text rather than floating nodes.
 function wordStack(svg, x, topY, parts){
-  const lineHeight = 14;
-  let y = topY;
-  parts.forEach((p,i)=>{
-    y += (i===0 ? 12 : lineHeight);
-    svg.appendChild(textEl(x, y, p.text, p.cls));
-  });
-  return { height: y - topY + 4, width: partsWidth(parts, 20) };
+  const last = drawParts(svg, x, topY + 12, parts, 0);
+  return { height: last + 16, width: partsWidth(parts, 20) };
+}
+function stackHeight(parts){
+  const ys = lineOffsets(parts);
+  return (ys.length ? ys[ys.length-1] : 0) + 16;
+}
+
+// cumulative x positions from per-token column widths
+function columnLayout(order, widths, left){
+  const xs = new Map();
+  let x = left;
+  order.forEach((t,i)=>{ xs.set(t.id, x + widths[i]/2); x += widths[i]; });
+  return { xOf: id => xs.get(id), right: x };
 }
 
 /* =========================================================================
@@ -844,27 +901,37 @@ function wordStack(svg, x, topY, parts){
 function renderBasicTree(svg, sentence, opts){
   svg.innerHTML = "";
   const fields = opts.fields;
-  const hor = 118 + (fields.feats?90:0) + (fields.misc?90:0) + (fields.xpos?16:0);
-  const levelH = 74;
   const topMargin = 54;
-
   const order = sentence.tokens; // doc order, includes empty nodes
-  const posIndex = new Map();
-  order.forEach((t,i)=>posIndex.set(t.id, i));
-  const xOf = id => 50 + posIndex.get(id)*hor + hor/2;
 
-  // uniform bottom-row height: driven by the token with the most stacked lines
-  const bottomParts = order.map(t=>labelParts(t, fields));
-  const maxLines = Math.max(1, ...bottomParts.map(p=>p.length));
-  const bottomStackH = 12 + (maxLines-1)*14 + 4;
+  // Words in the tree carry their full label (incl. FEATS/MISC) in the node
+  // box; the bottom row repeats only the short fields, so FEATS/MISC appear
+  // once. Empty nodes have no place in the Basic tree, so their box in the
+  // bottom row is the only place they are shown and keeps the full label.
+  const fullParts = order.map(t=>labelParts(t, fields));
+  const bottomParts = order.map((t,i)=> t.idType === "empty" ? fullParts[i] : fullParts[i].filter(p=>!isKV(p)));
+  const colW = order.map((t,i)=> Math.max(78, partsWidth(fullParts[i], 40) + 22));
+  const { xOf, right } = columnLayout(order, colW, 40);
 
   const forest = buildBasicForest(sentence);
+  const treeIds = new Set();
+  forest.nodeMap.forEach((n,id)=>treeIds.add(id));
+  const boxH = new Map();
+  let maxBoxH = 0;
+  order.forEach((t,i)=>{
+    if (!treeIds.has(t.id)) return;
+    const h = badgeHeight(fullParts[i]);
+    boxH.set(t.id, h); maxBoxH = Math.max(maxBoxH, h);
+  });
+  const levelH = maxBoxH + 40;
+
+  const bottomStackH = Math.max(0, ...order.map((t,i)=> t.idType==="empty" ? badgeHeight(bottomParts[i]) : stackHeight(bottomParts[i])));
   const treeTop = topMargin;
-  const treeBottomY = topMargin + Math.max(forest.maxDepth,0)*levelH + 28;
-  const wordRowY = treeBottomY + 46;
-  const idRowY = wordRowY + bottomStackH + 6;
+  const treeBottomY = treeTop + Math.max(forest.maxDepth,0)*levelH + maxBoxH;
+  const wordRowY = treeBottomY + 34;
+  const idRowY = wordRowY + bottomStackH + 10;
   const mwtRowY = idRowY + 20;
-  const width = Math.max(360, order.length*hor + 100);
+  const width = Math.max(360, right + 40);
   const height = mwtRowY + 24;
 
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
@@ -883,41 +950,38 @@ function renderBasicTree(svg, sentence, opts){
   });
   svg.appendChild(defs);
 
-  const nodeY = new Map(); // id -> y center of tree-level box (bottom edge for connector)
+  const nodeTop = new Map();
   const nodeBottom = new Map();
+  const partsById = new Map(order.map((t,i)=>[t.id, fullParts[i]]));
 
   function drawNode(node){
     const t = node.tok;
     const x = xOf(t.id);
-    const y = treeTop + node.depth*levelH + 14;
-    const parts = labelParts(t, fields);
-    const size = labelledBadge(svg, x, y, parts, 40);
-    nodeY.set(t.id, y);
-    nodeBottom.set(t.id, y + size.height/2);
+    const top = treeTop + node.depth*levelH;
+    const size = labelledBadge(svg, x, top, partsById.get(t.id), 40);
+    nodeTop.set(t.id, top);
+    nodeBottom.set(t.id, top + size.height);
 
     if (node.parent){
       const px = xOf(node.parent.tok.id);
       const parentBottom = nodeBottom.get(node.parent.tok.id);
       const dir = x < px ? "left" : "right";
-      const path = el("path", {
-        d: `M ${px} ${parentBottom} L ${x} ${y - size.height/2}`,
-        class: "edge "+dir,
-        fill: "none",
-        "stroke-width": 1.3,
+      svg.appendChild(el("path", {
+        d: `M ${px} ${parentBottom} L ${x} ${top}`,
+        class: "edge "+dir, fill: "none", "stroke-width": 1.3,
         "marker-end": `url(#arrow-${dir})`
-      });
-      svg.appendChild(path);
-      const midx = (px+x)/2, midy = (parentBottom + (y-size.height/2))/2;
+      }));
+      const midx = (px+x)/2, midy = (parentBottom + top)/2;
       const label = t.deprel || "";
       const w = measureRoughWidth(label, 10.5)+6;
       svg.appendChild(el("rect", {x:midx-w/2, y:midy-9, width:w, height:12, class:"deprel-bg"}));
       svg.appendChild(textEl(midx, midy+0.5, label, "deprel "+dir));
     } else {
       svg.appendChild(el("path", {
-        d: `M ${x} ${y-size.height/2-16} L ${x} ${y-size.height/2}`,
+        d: `M ${x} ${top-16} L ${x} ${top}`,
         class:"rootline", fill:"none", "marker-end":"url(#arrow-right)"
       }));
-      svg.appendChild(textEl(x, y-size.height/2-20, "root", "rootlabel"));
+      svg.appendChild(textEl(x, top-20, "root", "rootlabel"));
     }
     node.children.forEach(drawNode);
   }
@@ -926,15 +990,13 @@ function renderBasicTree(svg, sentence, opts){
   // dashed connectors + bottom word row (all tokens incl. empty nodes)
   order.forEach((t,i)=>{
     const x = xOf(t.id);
-    const top = t.idType === "token" && nodeBottom.has(t.id) ? nodeY.get(t.id) : null;
-    if (top !== null){
-      svg.appendChild(el("line", { x1:x, y1: nodeBottom.get(t.id), x2:x, y2: wordRowY-13, class:"connector" }));
+    if (nodeBottom.has(t.id)){
+      svg.appendChild(el("line", { x1:x, y1: nodeBottom.get(t.id), x2:x, y2: wordRowY-4, class:"connector" }));
     }
-    const parts = bottomParts[i];
     if (t.idType === "empty"){
-      labelledBadge(svg, x, wordRowY + bottomStackH/2 - 6, parts, 40, "emptybox");
+      labelledBadge(svg, x, wordRowY - 4, bottomParts[i], 40, "emptybox");
     } else {
-      wordStack(svg, x, wordRowY - 6, parts);
+      wordStack(svg, x, wordRowY - 2, bottomParts[i]);
     }
     svg.appendChild(textEl(x, idRowY, t.id, "idlabel"));
   });
@@ -956,7 +1018,9 @@ function renderBasicTree(svg, sentence, opts){
 /* =========================================================================
    5. FLAT-GRAPH RENDERER (single word row; basic arcs above, enhanced
       arcs below -- shows both layers of the sentence at once, the way
-      ConlluEditor's "hedge" display does)
+      ConlluEditor's "hedge" display does). Arcs are flattened: a short
+      slanted leg at each end and a level top carrying the relation label,
+      stacked in levels so that nested arcs sit inside their containers.
    ========================================================================= */
 
 function collectArcs(order, posIndex, getEdges){
@@ -964,110 +1028,149 @@ function collectArcs(order, posIndex, getEdges){
   order.forEach(t=>{
     getEdges(t).forEach(d=>{
       if (!d.head || d.head === "0" || !posIndex.has(d.head)) return;
-      edges.push({ from:t.id, to:d.head, relation:d.relation||"" });
+      edges.push({ dep:t.id, head:d.head, relation:d.relation||"" });
     });
   });
-  edges.sort((a,b)=> Math.abs(posIndex.get(a.from)-posIndex.get(a.to)) - Math.abs(posIndex.get(b.from)-posIndex.get(b.to)));
+  edges.forEach(e=>{
+    const a = posIndex.get(e.dep), b = posIndex.get(e.head);
+    e.lo = Math.min(a,b); e.hi = Math.max(a,b);
+  });
+  edges.sort((a,b)=> (a.hi-a.lo) - (b.hi-b.lo) || a.lo - b.lo);
+  // level = one above the highest arc it contains, raised further while it
+  // would share a level with an arc it overlaps (touching ends are fine)
+  const placed = [];
+  edges.forEach(e=>{
+    let level = 1;
+    placed.forEach(p=>{ if (p.lo >= e.lo && p.hi <= e.hi) level = Math.max(level, p.level+1); });
+    while (placed.some(p=> p.level === level && p.lo < e.hi && e.lo < p.hi)) level++;
+    e.level = level;
+    placed.push(e);
+  });
   return edges;
 }
 
-function arcBandHeight(edges, posIndex){
-  let maxSlots = 0;
-  edges.forEach(e=> maxSlots = Math.max(maxSlots, Math.abs(posIndex.get(e.from)-posIndex.get(e.to))));
-  return Math.min(maxSlots, 10) * 20 + 34;
+const ARC_STEP = 17;   // vertical distance between arc levels
+const ARC_BASE = 10;   // height of a level-1 arc above the word row
+
+function maxLevel(edges){ return edges.reduce((m,e)=>Math.max(m,e.level), 0); }
+function arcBandHeight(edges, hasRoot){
+  return (maxLevel(edges) + (hasRoot ? 1 : 0)) * ARC_STEP + ARC_BASE + 16;
 }
 
-function drawArcBand(svg, edges, posIndex, xOf, baseline, direction, markerPrefix){
-  // direction: +1 = arcs curve downward (below baseline), -1 = upward (above)
+// polyline P0-P1-P2-P3 with rounded corners at P1 and P2
+function flatArcPath(x0, x3, base, top){
+  const s = x3 > x0 ? 1 : -1;
+  const span = Math.abs(x3 - x0);
+  const leg = Math.min(9, span/4);
+  const x1 = x0 + s*leg, x2 = x3 - s*leg;
+  const r = Math.min(5, Math.abs(base-top)/2, span/4);
+  const round = (ax, ay, bx, by, cx, cy)=>{
+    // corner at B between A->B and B->C
+    const l1 = Math.hypot(bx-ax, by-ay) || 1, l2 = Math.hypot(cx-bx, cy-by) || 1;
+    const p = [bx - (bx-ax)*r/l1, by - (by-ay)*r/l1];
+    const q = [bx + (cx-bx)*r/l2, by + (cy-by)*r/l2];
+    return `L ${p[0]} ${p[1]} Q ${bx} ${by} ${q[0]} ${q[1]}`;
+  };
+  return `M ${x0} ${base} ${round(x0,base,x1,top,x2,top)} ${round(x1,top,x2,top,x3,base)} L ${x3} ${base}`;
+}
+
+function drawArcBand(svg, edges, xOf, baseline, direction, markerPrefix){
+  // direction: +1 = arcs open downward (below baseline), -1 = upward (above)
+  const END = 4; // endpoints sit slightly to the side the arc leaves towards
   edges.forEach(e=>{
-    const x1 = xOf(e.from), x2 = xOf(e.to);
-    const dist = Math.abs(posIndex.get(e.from)-posIndex.get(e.to));
-    const h = (Math.min(dist,10)*20 + 26) * direction;
-    const apex = baseline + h;
-    const dir = x1 < x2 ? "right" : "left";
-    const path = el("path", {
-      d: `M ${x1} ${baseline} C ${x1} ${apex} ${x2} ${apex} ${x2} ${baseline}`,
+    const xh = xOf(e.head), xd = xOf(e.dep);
+    const s = xd > xh ? 1 : -1;
+    const x0 = xh + s*END, x3 = xd - s*END;
+    const top = baseline + direction*(ARC_BASE + e.level*ARC_STEP);
+    const dir = xd < xh ? "right" : "left"; // head to the right / left of the dependent
+    svg.appendChild(el("path", {
+      d: flatArcPath(x0, x3, baseline, top),
       fill:"none", class:"edge "+dir, "stroke-width":1.15,
       "marker-end": `url(#${markerPrefix}-${dir})`
-    });
-    svg.appendChild(path);
-    const w = measureRoughWidth(e.relation, 10)+6;
-    svg.appendChild(el("rect", {x:(x1+x2)/2-w/2, y:apex-9+(direction>0?18:0), width:w, height:12, class:"deprel-bg"}));
-    svg.appendChild(textEl((x1+x2)/2, apex+0.5+(direction>0?18:0), e.relation, "deprel "+dir));
+    }));
+    const w = measureRoughWidth(e.relation, 10.5)*0.92+6;
+    const mx = (x0+x3)/2;
+    svg.appendChild(el("rect", {x:mx-w/2, y:top-7, width:w, height:13, class:"deprel-bg"}));
+    svg.appendChild(textEl(mx, top+3.5, e.relation, "deprel "+dir));
   });
 }
 
 function renderFlatGraph(svg, sentence, opts){
   svg.innerHTML = "";
   const fields = opts.fields;
-  const hor = 108 + (fields.feats?90:0) + (fields.misc?90:0) + (fields.xpos?16:0);
-
   const order = sentence.tokens;
   const posIndex = new Map();
   order.forEach((t,i)=>posIndex.set(t.id, i));
-  const xOf = id => 50 + posIndex.get(id)*hor + hor/2;
+
+  const wordParts = order.map(t=>labelParts(t, fields));
+  const colW = order.map((t,i)=> Math.max(58, partsWidth(wordParts[i], 30) + 10));
+  const { xOf, right } = columnLayout(order, colW, 70);
 
   const basicEdges = collectArcs(order, posIndex, t=> t.head ? [{head:t.head, relation:t.deprel||""}] : []);
   const enhancedEdges = collectArcs(order, posIndex, t=> t.deps || []);
   const basicRoots = order.filter(t=>t.head==="0").map(t=>t.id);
   const enhancedRoots = order.filter(t=>(t.deps||[]).some(d=>d.head==="0")).map(t=>t.id);
 
-  const basicBand = arcBandHeight(basicEdges, posIndex);
-  const enhancedBand = arcBandHeight(enhancedEdges, posIndex);
+  const basicBand = arcBandHeight(basicEdges, basicRoots.length > 0);
+  const enhancedBand = (enhancedEdges.length || enhancedRoots.length) ? arcBandHeight(enhancedEdges, enhancedRoots.length > 0) : 24;
+  const wordStackH = Math.max(0, ...order.map((t,i)=> t.idType==="empty" ? badgeHeight(wordParts[i]) : stackHeight(wordParts[i])));
 
-  const wordParts = order.map(t=>labelParts(t, fields));
-  const maxLines = Math.max(1, ...wordParts.map(p=>p.length));
-  const wordStackH = 12 + (maxLines-1)*14 + 4;
-
-  const topMargin = 34;
+  const topMargin = 16;
   const baseline = topMargin + basicBand;
-  const idRowY = baseline + wordStackH + 14;
+  const idRowY = baseline + wordStackH + 18;
   const mwtY = idRowY + 16;
-  const enhancedTop = (sentence.mwts.length ? mwtY + 16 : idRowY + 16);
-  const height = enhancedTop + enhancedBand + 10;
-  const width = Math.max(360, order.length*hor + 100);
+  const enhancedTop = (sentence.mwts.length ? mwtY + 22 : idRowY + 12);
+  const height = enhancedTop + enhancedBand + 6;
+  const width = Math.max(360, right + 40);
 
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("width", width);
   svg.setAttribute("height", height);
 
+  // markers point along the path, i.e. at the dependent
   const defs = el("defs");
   ["right","left"].forEach(dir=>{
     ["arrow-b","arrow-e"].forEach(prefix=>{
-      const marker = el("marker", { id:prefix+"-"+dir, markerWidth:10, markerHeight:10, refX: dir==="right"?8:2, refY:5, orient:"auto" });
-      const p = el("path", { d: dir==="right" ? "M1,1 L9,5 L1,9 Z" : "M9,1 L1,5 L9,9 Z" });
+      const marker = el("marker", { id:prefix+"-"+dir, markerWidth:8, markerHeight:8, refX:7, refY:4, orient:"auto", markerUnits:"userSpaceOnUse" });
+      const p = el("path", { d: "M0,0.5 L7,4 L0,7.5 Z" });
       p.setAttribute("fill", dir==="right" ? "var(--head-right)" : "var(--head-left)");
       marker.appendChild(p);
       defs.appendChild(marker);
     });
+    // root marker
   });
+  const rm = el("marker", { id:"arrow-root", markerWidth:8, markerHeight:8, refX:7, refY:4, orient:"auto", markerUnits:"userSpaceOnUse" });
+  const rp = el("path", { d: "M0,0.5 L7,4 L0,7.5 Z" }); rp.setAttribute("fill", "var(--root)");
+  rm.appendChild(rp); defs.appendChild(rm);
   svg.appendChild(defs);
 
   // band labels
-  svg.appendChild(textEl(14, topMargin+2, "basic", "idlabel-sm", "start"));
-  svg.appendChild(textEl(14, enhancedTop+enhancedBand+4, "enhanced", "idlabel-sm", "start"));
+  svg.appendChild(textEl(14, topMargin+4, "basic", "idlabel-sm", "start"));
+  svg.appendChild(textEl(14, enhancedTop+enhancedBand-4, "enhanced", "idlabel-sm", "start"));
 
-  drawArcBand(svg, basicEdges, posIndex, xOf, baseline, -1, "arrow-b");
-  drawArcBand(svg, enhancedEdges, posIndex, xOf, enhancedTop, +1, "arrow-e");
+  drawArcBand(svg, basicEdges, xOf, baseline, -1, "arrow-b");
+  drawArcBand(svg, enhancedEdges, xOf, enhancedTop, +1, "arrow-e");
 
+  const bTop = baseline - (ARC_BASE + (maxLevel(basicEdges)+1)*ARC_STEP);
   basicRoots.forEach(id=>{
     const x = xOf(id);
-    svg.appendChild(el("path", {d:`M ${x} ${baseline-18} L ${x} ${baseline}`, class:"rootline", fill:"none", "marker-end":"url(#arrow-b-right)"}));
-    svg.appendChild(textEl(x, baseline-22, "root", "rootlabel"));
+    svg.appendChild(el("path", {d:`M ${x} ${bTop+6} L ${x} ${baseline}`, class:"rootline", fill:"none", "marker-end":"url(#arrow-root)"}));
+    svg.appendChild(textEl(x, bTop+2, "root", "rootlabel"));
   });
+  const eTop = enhancedTop + (ARC_BASE + (maxLevel(enhancedEdges)+1)*ARC_STEP);
   enhancedRoots.forEach(id=>{
     const x = xOf(id);
-    svg.appendChild(el("path", {d:`M ${x} ${enhancedTop} L ${x} ${enhancedTop+18}`, class:"rootline", fill:"none", "marker-end":"url(#arrow-e-right)"}));
-    svg.appendChild(textEl(x, enhancedTop+30, "root", "rootlabel"));
+    svg.appendChild(el("path", {d:`M ${x} ${eTop-6} L ${x} ${enhancedTop}`, class:"rootline", fill:"none", "marker-end":"url(#arrow-root)"}));
+    svg.appendChild(textEl(x, eTop+6, "root", "rootlabel"));
   });
 
   order.forEach((t,i)=>{
     const x = xOf(t.id);
     const parts = wordParts[i];
     if (t.idType === "empty"){
-      labelledBadge(svg, x, baseline + wordStackH/2 + 6, parts, 40, "emptybox");
+      labelledBadge(svg, x, baseline + 4, parts, 40, "emptybox");
     } else {
-      wordStack(svg, x, baseline + 6, parts);
+      wordStack(svg, x, baseline + 4, parts);
     }
     svg.appendChild(textEl(x, idRowY, t.id, "idlabel"));
   });
@@ -1235,8 +1338,32 @@ const state = {
   sentenceIndex: 0,
   view: "tree", // tree | flat | table
   fields: { lemma:true, upos:true, xpos:false, feats:false, misc:false },
-  filter: ""
+  filter: "",
+  repoFile: null // set when the document came from corpus/ (deep-linkable)
 };
+
+/* ---- deep links: ?file=reviewed|pending|aldt&sent=S000154&view=flat&fields=lemma,upos,feats ---- */
+const REPO_FILES = { reviewed:"RR_reviewed.conllu", pending:"RR_pending.conllu", aldt:"RR_UD_ALDT.conllu" };
+function repoFileFromParam(v){
+  if (!v) return null;
+  if (REPO_FILES[v.toLowerCase()]) return REPO_FILES[v.toLowerCase()];
+  return /^[\w.\-]+\.conllu$/.test(v) ? v : null;
+}
+function updateUrl(){
+  if (!history.replaceState) return;
+  const p = new URLSearchParams();
+  if (state.repoFile){
+    const key = Object.keys(REPO_FILES).find(k=>REPO_FILES[k]===state.repoFile);
+    p.set("file", key || state.repoFile);
+    const s = currentSentence();
+    if (s && s.meta.sent_id) p.set("sent", s.meta.sent_id);
+  }
+  if (state.view !== "tree") p.set("view", state.view);
+  const f = Object.keys(state.fields).filter(k=>state.fields[k]).join(",");
+  if (f !== "lemma,upos") p.set("fields", f || "none");
+  const q = p.toString().replace(/%2C/gi, ",");
+  try{ history.replaceState(null, "", location.pathname + (q ? "?"+q : "") + location.hash); }catch(e){}
+}
 
 const els = {
   fileInput: document.getElementById("file-input"),
@@ -1264,11 +1391,17 @@ const els = {
   repoNote: document.getElementById("repo-note")
 };
 
-function loadDocument(text, filename){
+function loadDocument(text, filename, opts){
+  opts = opts || {};
   const doc = parseConllu(text);
   state.doc = doc;
   state.filename = filename;
+  state.repoFile = opts.repoFile || null;
   state.sentenceIndex = 0;
+  if (opts.sentId){
+    const hit = doc.findSentence(opts.sentId);
+    if (hit) state.sentenceIndex = hit.index;
+  }
   els.fileInfo.textContent = filename + " · " + doc.sentences.length + " sentence" + (doc.sentences.length===1?"":"s");
   renderSentenceList();
   renderCurrent();
@@ -1305,6 +1438,8 @@ function renderSentenceList(){
     });
     els.sentList.appendChild(item);
   });
+  const active = els.sentList.querySelector(".sent-item.active");
+  if (active && active.scrollIntoView) active.scrollIntoView({block:"nearest"});
 }
 
 function escapeHtml(str){
@@ -1351,6 +1486,7 @@ function renderCurrent(){
 
   els.prevBtn.disabled = s.index === 0;
   els.nextBtn.disabled = s.index === (state.doc.sentences.length - 1);
+  updateUrl();
 }
 
 /* ---- loading a corpus file from alongside this page (corpus/<name>) ----
@@ -1367,7 +1503,7 @@ function showRepoNote(html){
   document.getElementById("repo-note-dismiss").addEventListener("click", ()=>{ els.repoNote.hidden = true; });
 }
 
-async function loadFromRepo(name, btn){
+async function loadFromRepo(name, btn, sentId){
   els.repoNote.hidden = true;
   const prevLabel = btn.textContent;
   btn.textContent = "Loading…";
@@ -1376,7 +1512,7 @@ async function loadFromRepo(name, btn){
     const res = await fetch("corpus/" + name, { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
     const text = await res.text();
-    loadDocument(text, name);
+    loadDocument(text, name, { repoFile:name, sentId });
     [...els.repoSeg.children].forEach(b=>b.classList.toggle("active", b===btn));
   }catch(err){
     showRepoNote(
@@ -1433,12 +1569,17 @@ document.addEventListener("keydown", (e)=>{
 els.viewSeg.addEventListener("click", (e)=>{
   const btn = e.target.closest("button[data-view]");
   if (!btn) return;
-  state.view = btn.dataset.view;
+  setView(btn.dataset.view);
+  renderCurrent();
+});
+function setView(view){
+  const btn = els.viewSeg.querySelector(`button[data-view="${view}"]`);
+  if (!btn) return;
+  state.view = view;
   [...els.viewSeg.children].forEach(b=>b.classList.toggle("active", b===btn));
   els.exportSvgBtn.disabled = (state.view === "table");
   els.exportPngBtn.disabled = (state.view === "table");
-  renderCurrent();
-});
+}
 els.fieldChips.addEventListener("click", (e)=>{
   const btn = e.target.closest("button[data-field]");
   if (!btn) return;
@@ -1554,16 +1695,25 @@ wrap.addEventListener("drop", async (e)=>{
   [...els.repoSeg.children].forEach(b=>b.classList.remove("active"));
 });
 
-/* ---- boot: try the reviewed corpus first (works when served over http(s));
-   fall back to the bundled sample, silently, if that fetch fails (e.g. this
-   page was opened directly as a local file) ---- */
+/* ---- boot: load the corpus file named in the URL (default: the reviewed
+   corpus; works when served over http(s)); fall back to the bundled sample,
+   silently, if that fetch fails (e.g. this page was opened directly as a
+   local file) ---- */
 (async function boot(){
+  const params = new URLSearchParams(location.search);
+  if (params.get("view")) setView(params.get("view"));
+  if (params.get("fields")){
+    const want = params.get("fields").split(",").map(x=>x.trim().toLowerCase());
+    Object.keys(state.fields).forEach(k=>{ state.fields[k] = want.includes(k); });
+    [...els.fieldChips.querySelectorAll("button[data-field]")].forEach(b=>b.classList.toggle("active", !!state.fields[b.dataset.field]));
+  }
+  const name = repoFileFromParam(params.get("file")) || "RR_reviewed.conllu";
   try{
-    const res = await fetch("corpus/RR_reviewed.conllu", { cache: "no-store" });
+    const res = await fetch("corpus/" + name, { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
     const text = await res.text();
-    loadDocument(text, "RR_reviewed.conllu");
-    const btn = els.repoSeg.querySelector('[data-repo-file="RR_reviewed.conllu"]');
+    loadDocument(text, name, { repoFile:name, sentId: params.get("sent") });
+    const btn = els.repoSeg.querySelector(`[data-repo-file="${name}"]`);
     if (btn) btn.classList.add("active");
   }catch(err){
     loadDocument(SAMPLE_CONLLU, "example.conllu (sample)");
