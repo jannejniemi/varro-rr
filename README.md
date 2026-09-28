@@ -23,5 +23,6 @@ This treebank's choice of framework continues a specific line of prior work rath
 ## Documentation
 
 - [`documentation/annotation-guidelines.md`](documentation/annotation-guidelines.md): the annotation manual, covering the treebank's full structure -- lexicon and morphology, Basic and Enhanced syntax, Latin and Varronian constructions, and text/discourse/provenance metadata. Its overall presentation takes inspiration from the *Guidelines for the Ancient Greek Dependency Treebank 2.5*; the annotation scheme itself follows Universal Dependencies rather than that document's Prague-style scheme.
+- [`documentation/review_notes.md`](documentation/review_notes.md): the Review Notes referenced from `corpus/RR_reviewed.conllu` (MISC `ReviewNote=`, sentence header `# review_note`): the reasoning behind non-obvious analyses, rejected alternatives, commentary-dependent readings and open questions.
 
 A companion planning document, describing how this manual relates to this treebank's internal policy, workflow, and validation records, is kept in the private repository only.
