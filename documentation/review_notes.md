@@ -574,19 +574,6 @@ The resulting sense is '(he sees that) unhealthy conditions will destroy them', 
 
 <sub>Tokens: pestilentia (30), dispereant (31)</sub>
 
-## S000070 (1.2.9)
-
-> sed, opinor, qui haec commodius ostendere possint adsunt.
-
-<a id="rn_s000070_01"></a>
-**RN_S000070_01** · adsunt (10) · Syntax
-
-opinor (3) is the root and the bare indicative adsunt (10) is its ccomp:reported: opinor is the current speaker's own epistemic hedge, not a verb framing someone else's words, so parataxis:reporting is not used.
-
-A verb of opinion normally takes an accusative with infinitive, so a bare indicative after opinor marks it as parenthetical. Taking opinor as a parataxis:reporting dependent of adsunt was rejected because that relation is reserved for frames of another speaker's words (inquit type; RPT001). A plain ccomp would not mark the parenthetical character; ccomp:reported, with the reporting verb as head, does.
-
-<sub>Tokens: opinor (3), adsunt (10)</sub>
-
 ## S000071 (1.2.9)
 
 > nam C. Licinium Stolonem et Cn. Tremelium Scrofam video venire;
@@ -661,7 +648,7 @@ Narrow-scope negation on a nominal is regular UD practice. Compare non solum ...
 
 ## S000078 (1.2.11)
 
-> illi interea ad nos, et Stolo: num cena comessa – inquit – venimus?
+> illi interea ad nos;
 
 <a id="rn_s000078_01"></a>
 **RN_S000078_01** · illi (1) · Syntax;Interpretation
@@ -1057,11 +1044,11 @@ Heurgon (comm. 55) identifies them; they are also cited by Columella and Pliny.
 > non enim, siquid propter agrum aut etiam in agro profectus domino, agri culturae acceptum referre debet, sed id modo quod ex satione terra sit natum ad fruendum.
 
 <a id="rn_s000116_01"></a>
-**RN_S000116_01** · profectus (11) · Syntax;Lexicon
+**RN_S000116_01** · profectus (12) · Syntax;Lexicon
 
-profectus is the noun 'gain, profit' in the nominative, the predicate of the verbless conditional si quid ... profectus domino [est] ('if any gain has come to the owner'), with siquid (4) as subject; it is not the participle of proficiscor.
+profectus is the noun 'gain, profit' in the nominative, the predicate of the verbless conditional si quid ... profectus domino [est] ('if any gain has come to the owner'), with quid (5) as subject; it is not the participle of proficiscor.
 
-<sub>Tokens: siquid (4), profectus (11)</sub>
+<sub>Tokens: quid (5), profectus (12)</sub>
 
 ## S000118 (1.2.25)
 
@@ -1129,14 +1116,14 @@ The verbless asseveration tam hercle quam hoc is rooted at hoc (6), tagged Prole
 
 Heurgon's rendering (« et ceci encore : si vous voulez... ») confirms that hoc points forward to the recipe.
 
-<sub>Tokens: hoc (6), , (7), iubet (14) · Sources: Heurgon, French translation</sub>
+<sub>Tokens: hoc (6), , (7), iubet (15) · Sources: Heurgon, French translation</sub>
 
 <a id="rn_s000122_02"></a>
-**RN_S000122_02** · decoxeris (26) · Syntax
+**RN_S000122_02** · decoxeris (27) · Syntax
 
-decoxeris (26) is a relative clause on aquam (19), not a further instruction coordinated with coicere (17): qua (22) refers back to the water in which the frog is boiled down to a third.
+decoxeris (27) is a relative clause on aquam (20), not a further instruction coordinated with coicere (18): qua (23) refers back to the water in which the frog is boiled down to a third.
 
-<sub>Tokens: aquam (19), qua (22), decoxeris (26)</sub>
+<sub>Tokens: aquam (20), qua (23), decoxeris (27)</sub>
 
 ## S000126 (1.2.27)
 
@@ -1563,7 +1550,7 @@ Heurgon on 1.4.4 cites Republican inscriptional parallels ubei, tibei, sibei.
 <a id="rn_s000153_01"></a>
 **RN_S000153_01** · quid (2) · Syntax;Lexicon
 
-quid (2) is the adverbial accusative 'why' (advmod on voco), not the object: illum (4) already fills voco's object slot. It stays PRON with PronType=Int, since the category does not change with the adverbial function.
+quid (2) is the adverbial accusative 'why' (advmod on voco), not the object: illum (4) already fills voco's object slot. As an adverb of cause it is tagged ADV (PronType=Int), as in the UD Latin treebanks.
 
 Allen & Greenough list quid 'why' among neuter accusatives used adverbially, with the parallel Quid moror? 'Why do I delay?'
 
@@ -2083,11 +2070,11 @@ Giusta (I 6,6) reads habeat for habet (28) (Variant=Giusta:habeat): the cum-clau
 <a id="rn_s000185_01"></a>
 **RN_S000185_01** · magis (2) · Syntax
 
-The sentence consists of two coordinated degree phrases, eo magis (2) and eo deterior (9), each with the subordinate clause next to it: siquis est inaequabilis depends on magis, quod fit ... aquosus on deterior. magis is the root.
+The sentence consists of two coordinated degree phrases, eo magis (2) and eo deterior (10), each with the subordinate clause next to it: siquis est inaequabilis depends on magis, quod fit ... aquosus on deterior. magis is the root.
 
 The alternative, deterior as root with magis as its modifier and both clauses attached to deterior, would have the conditional clause interrupt one phrase and reach past it; the adjacency of each clause to its own eo-phrase favours the symmetric structure.
 
-<sub>Tokens: magis (2), inaequabilis (6), deterior (9), fit (12)</sub>
+<sub>Tokens: magis (2), inaequabilis (7), deterior (10), fit (13)</sub>
 
 ## S000186 (1.6.6)
 

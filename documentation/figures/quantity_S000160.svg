@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 407 386" width="407" height="386">
+<style>
+svg{--surface:#ffffff;--ink:#1b2430;--ink-dim:#5b6675;--ink-faint:#8892a0;--border:#d7dde4;
+--border-strong:#b9c2cc;--accent:#2f6f6a;--accent-soft:#e2efed;--head-right:#2f5fa8;
+--head-left:#8a3fa0;--root:#b3261e;}
+.bg{fill:var(--surface);}
+.form{font:600 13px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink);}
+.lemma{font:italic 11px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink-dim);}
+.upos{font:600 10.5px "IBM Plex Mono",Consolas,monospace;fill:var(--accent);}
+.feats{font:9.5px "IBM Plex Mono",Consolas,monospace;fill:var(--ink-dim);}
+.idlabel{font:9.5px "IBM Plex Mono",Consolas,monospace;fill:var(--ink-faint);}
+.deprel{font:10.5px "IBM Plex Mono",Consolas,monospace;}
+.deprel.right{fill:var(--head-right);}
+.deprel.left{fill:var(--head-left);}
+.deprel.out{fill:var(--ink-faint);}
+.deprel-bg{fill:var(--surface);opacity:0.86;}
+.edge{fill:none;stroke-width:1.3;}
+.edge.right{stroke:var(--head-right);}
+.edge.left{stroke:var(--head-left);}
+.edge.out{stroke:var(--ink-faint);stroke-dasharray:3,3;}
+.ah.right{fill:var(--head-right);}
+.ah.left{fill:var(--head-left);}
+.ah.root{fill:var(--root);}
+.ah.out{fill:var(--ink-faint);}
+.rootline{fill:none;stroke:var(--root);stroke-width:1.4;}
+.rootlabel{font:600 10px "IBM Plex Mono",Consolas,monospace;fill:var(--root);}
+.connector{stroke:var(--border-strong);stroke-width:1;stroke-dasharray:2,3;}
+.nodebox{fill:var(--surface);stroke:var(--border-strong);stroke-width:1;}
+.nodebox.hl{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5;}
+.gap{font:13px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink-faint);}
+</style>
+<rect class="bg" x="0" y="0" width="407" height="386" rx="8"/>
+<path d="M 80.2 26.0 L 80.2 36.0" class="rootline"/><path d="M 80.2 44.0 L 76.2 36.0 L 84.2 36.0 Z" class="ah root"/>
+<text x="80.2" y="22.0" class="rootlabel" text-anchor="middle">root</text>
+<path d="M 80.2 96.0 L 162.7 147.7" class="edge right"/><path d="M 169.5 152.0 L 160.6 151.1 L 164.8 144.4 Z" class="ah right"/>
+<path d="M 80.2 96.0 L 243.1 149.5" class="edge right"/><path d="M 250.7 152.0 L 241.8 153.3 L 244.3 145.7 Z" class="ah right"/>
+<path d="M 250.7 204.0 L 328.4 255.6" class="edge right"/><path d="M 335.0 260.0 L 326.1 258.9 L 330.6 252.2 Z" class="ah right"/>
+<rect x="133.5" y="128.4" width="25.5" height="12" class="deprel-bg"/>
+<text x="146.3" y="137.9" class="deprel right" text-anchor="middle">cop</text>
+<rect x="187.1" y="128.4" width="38.5" height="12" class="deprel-bg"/>
+<text x="206.4" y="137.9" class="deprel right" text-anchor="middle">nsubj</text>
+<rect x="297.1" y="236.4" width="32.0" height="12" class="deprel-bg"/>
+<text x="313.1" y="245.9" class="deprel right" text-anchor="middle">amod</text>
+<rect x="41.0" y="44.0" width="78.5" height="52.0" rx="5" class="nodebox hl"/><text x="80.2" y="57.0" class="form" text-anchor="middle">quattuor</text><text x="80.2" y="71.0" class="lemma" text-anchor="middle">quattuor</text><text x="80.2" y="85.0" class="upos" text-anchor="middle">NUM</text>
+<rect x="146.4" y="152.0" width="46.2" height="52.0" rx="5" class="nodebox"/><text x="169.5" y="165.0" class="form" text-anchor="middle">sunt</text><text x="169.5" y="179.0" class="lemma" text-anchor="middle">sum</text><text x="169.5" y="193.0" class="upos" text-anchor="middle">AUX</text>
+<rect x="219.5" y="152.0" width="62.4" height="52.0" rx="5" class="nodebox"/><text x="250.7" y="165.0" class="form" text-anchor="middle">partes</text><text x="250.7" y="179.0" class="lemma" text-anchor="middle">pars</text><text x="250.7" y="193.0" class="upos" text-anchor="middle">NOUN</text>
+<rect x="303.8" y="260.0" width="62.4" height="52.0" rx="5" class="nodebox"/><text x="335.0" y="273.0" class="form" text-anchor="middle">summae</text><text x="335.0" y="287.0" class="lemma" text-anchor="middle">summus</text><text x="335.0" y="301.0" class="upos" text-anchor="middle">ADJ</text>
+<line x1="80.2" y1="96.0" x2="80.2" y2="342.0" class="connector"/>
+<text x="80.2" y="356.0" class="form" text-anchor="middle">quattuor</text>
+<text x="80.2" y="372.0" class="idlabel" text-anchor="middle">8</text>
+<line x1="169.5" y1="204.0" x2="169.5" y2="342.0" class="connector"/>
+<text x="169.5" y="356.0" class="form" text-anchor="middle">sunt</text>
+<text x="169.5" y="372.0" class="idlabel" text-anchor="middle">9</text>
+<line x1="250.7" y1="204.0" x2="250.7" y2="342.0" class="connector"/>
+<text x="250.7" y="356.0" class="form" text-anchor="middle">partes</text>
+<text x="250.7" y="372.0" class="idlabel" text-anchor="middle">10</text>
+<line x1="335.0" y1="312.0" x2="335.0" y2="342.0" class="connector"/>
+<text x="335.0" y="356.0" class="form" text-anchor="middle">summae</text>
+<text x="335.0" y="372.0" class="idlabel" text-anchor="middle">11</text>
+</svg>
