@@ -464,7 +464,7 @@ Where sources conflict, precedence follows the ordering above, from general Univ
 
 These guidelines move from general principles to specific constructions. Chapter 1 sets out the file format and the conceptual vocabulary (headedness, predication, argument structure, and unexpressed material) that later chapters presuppose without restating. Chapters 2 and 3 cover lemmas, parts of speech, and morphological features; Chapters 4 and 5 cover Basic and Enhanced syntax, Chapter 4 relation by relation, with decision guides for the most frequent choices in Section 4.15; Chapter 6 brings these together for constructions characteristic of Varro's Latin; Chapter 7 covers the textual, discourse, and review metadata. A reader unfamiliar with dependency grammar is best served by reading Chapter 1 in full before using later chapters as reference.
 
-The tree figures are drawn directly from the corpus rows of this treebank, so they show the annotation as it stands. Each figure shows only the words it names: an ellipsis in the bottom row marks words left out, and a dashed grey arrow above a word marks its relation to a head outside the figure. Each box shows the form, the lemma in italics, and the part of speech; arrows point from head to dependent, blue where the dependent follows its head and purple where it precedes it, and the highlighted box marks the word the figure is about.
+The tree figures are drawn directly from the corpus rows of this treebank, so they show the annotation as it stands. Each figure shows only the words it names: an ellipsis in the bottom row marks words left out, and a dashed grey arrow above a word marks its relation to a head outside the figure. Each box shows the form, the lemma in italics, and the part of speech; arrows point from head to dependent, blue where the dependent follows its head and purple where it precedes it, and the highlighted box marks the word the figure is about. A few figures use the Flat view instead: the words in a single row, with the Basic relations drawn above them and the Enhanced edges below.
 
 Three kinds of box are set off from the instructions. A plain quoted block gives background: the reasons behind a rule, typology, or the design rationale of UD. A blue box marked *Note* compares this treebank's analysis with ALDT/PDT-style Latin treebanking, and a yellow box marked *Warning* flags a point where the terms or categories of traditional Latin grammar do not map directly onto the annotation.
 
@@ -1047,7 +1047,7 @@ The restatement of a conjunct at equal standing, rather than a backgrounded rena
 
 #### 4.7.4 Ablative absolute: `advcl:abs`
 
-**Use** [`advcl:abs`](https://universaldependencies.org/la/dep/advcl-abs.html) for an ablative nominal with a predicate agreeing with it (typically a participle, also an adjective or noun) forming a predication independent of the main clause. The test is formal: the agreeing ablative pair. The semantic relation (temporal, causal, concessive) is not recorded. Attach the ablative noun to its own predicate as `nsubj` (`nsubj:pass` with a passive participle), and the predicate to the main clause's predicate (Section 6.1, Figure 6).
+**Use** [`advcl:abs`](https://universaldependencies.org/la/dep/advcl-abs.html) for an ablative nominal with a predicate agreeing with it (typically a participle, also an adjective or noun) forming a predication independent of the main clause. The test is formal: the agreeing ablative pair. The semantic relation (temporal, causal, concessive) is not recorded. Attach the ablative noun to its own predicate as `nsubj` (`nsubj:pass` with a passive participle), and the predicate to the main clause's predicate (Section 6.1, Figure 8).
 
 **Do not use for** a construction whose ablative subject is coreferent with an argument of the main clause (`advcl:pred`).
 
@@ -1264,19 +1264,58 @@ Each guide below states a question annotators meet often, the test that answers 
 
 #### 4.15.3 Attribute or secondary predicate?
 
-**Test.** Does the word characterize the nominal (attribute), or state something that holds of it in the situation the clause describes (secondary predicate)? The two agree alike, so form cannot decide. A secondary predicate is always `advcl:pred`, attached to the predicate of the clause. An attribute takes the relation its part of speech takes as a modifier; if the nominal it would modify is elided, the attribute stands for it and takes that nominal's own relation.
+**Test.** Does the word characterize the nominal (attribute), or state something that holds of it in the situation the clause describes (secondary predicate)? The two agree alike, so form cannot decide. Then check whether the nominal it goes with is overt or elided. The two variables give four cases:
 
-| Part of speech | Attribute, nominal overt | Attribute, nominal elided | Secondary predicate |
-|---|---|---|---|
-| `ADJ` | *comites incolumes reduxit* ‘he brought the unharmed companions back’: `amod` | *incolumes reduxit* ‘he brought the unharmed back’: `obj` | ‘he brought (the companions) back unharmed’: `advcl:pred` |
-| participle (`VERB`) | *aeditumus accersitus ab aedile nondum rediit* ‘the sacristan summoned by the aedile has not returned yet’: `acl` | *accersitus … nondum rediit* ‘the one summoned has not returned yet’: `nsubj` | ‘having been summoned, he has not returned yet’: `advcl:pred` |
-| `NOUN` | *Cicero consul coniurationem oppressit* ‘the consul Cicero crushed the conspiracy’: `appos` | *consul coniurationem oppressit* ‘the consul crushed the conspiracy’: `nsubj` | ‘Cicero, as consul, crushed the conspiracy’: `advcl:pred` |
-| `DET` | *consuli uni hoc licet* ‘this is permitted to the one consul’: `det` | — | ‘this is permitted to the consul alone’: `advcl:pred` |
+- **Attribute, nominal overt:** the relation the word's part of speech takes as a modifier (`amod`, `acl`, `appos`, `det`), attached to the nominal.
+- **Attribute, nominal elided:** the word stands for the nominal and takes that nominal's own relation (`obj`, `nsubj` and so on).
+- **Secondary predicate, co-referent overt:** `advcl:pred`, attached to the predicate of the clause, and two Enhanced edges (below).
+- **Secondary predicate, co-referent elided:** `advcl:pred`, attached to the predicate of the clause, and no Enhanced edge.
+
+| Part of speech | Attribute, nominal overt | Attribute, nominal elided | Secondary predicate, co-referent overt | Secondary predicate, co-referent elided |
+|---|---|---|---|---|
+| `ADJ` | *comites incolumes reduxit* ‘he brought the unharmed companions back’: `amod` | *incolumes reduxit* ‘he brought the unharmed back’: `obj` | *comites incolumes reduxit* ‘he brought the companions back unharmed’: `advcl:pred` + Enhanced edges | *incolumes reduxit* ‘he brought them back unharmed’: `advcl:pred` |
+| participle (`VERB`) | *aeditumus accersitus ab aedile nondum rediit* ‘the sacristan summoned by the aedile has not returned yet’: `acl` | *accersitus ab aedile nondum rediit* ‘the one summoned by the aedile has not returned yet’: `nsubj` | *aeditumus accersitus ab aedile nondum rediit* ‘the sacristan, having been summoned by the aedile, has not returned yet’: `advcl:pred` + Enhanced edges | *accersitus ab aedile nondum rediit* ‘having been summoned by the aedile, he has not returned yet’: `advcl:pred` |
+| `NOUN` | *Cicero consul coniurationem oppressit* ‘the consul Cicero crushed the conspiracy’: `appos` | *consul coniurationem oppressit* ‘the consul crushed the conspiracy’: `nsubj` | *Cicero consul coniurationem oppressit* ‘Cicero, as consul, crushed the conspiracy’: `advcl:pred` + Enhanced edges | *consul coniurationem oppressit* ‘as consul, he crushed the conspiracy’: `advcl:pred` |
+| `DET` | *consuli uni hoc licet* ‘this is permitted to the one consul’: `det` | — | *consuli uni hoc licet* ‘this is permitted to the consul alone’: `advcl:pred` + Enhanced edges | — |
 
 The first two rows are adapted from S000154 and S000041; the noun row is a school-grammar example; the determiner row shows that the pattern is not limited to the other three. The same contrast in one phrase: *Cato senex*, ‘old Cato’ (`amod`) against ‘Cato, when old’ (`advcl:pred`).
 
-- *suos comites ac familiam incolumes reduxit* (S000154, Figure 2): *incolumes* (40) `advcl:pred`: the companions were brought back, and they were unharmed.
-- *quod initium fructuum oritur* (S000139): *initium* (10) `advcl:pred`, a noun predicating of *quod*.
+| | Nominal overt | Nominal elided |
+|---|---|---|
+| **Attribute** | ![Adapted tree: comites incolumes reduxit with incolumes as amod of comites](figures/adj_attr_overt.svg) | ![Adapted tree: incolumes reduxit with incolumes as obj of reduxit](figures/adj_attr_elided.svg) |
+| **Secondary predicate** | ![Corpus tree S000154: comites … incolumes reduxit with incolumes as advcl:pred of reduxit](figures/adj_pred_overt_S000154.svg) | ![Adapted tree: incolumes reduxit with incolumes as advcl:pred of reduxit](figures/adj_pred_elided.svg) |
+
+*Figure 6.* The adjective row of the table as trees. The secondary predicate with overt co-referent (bottom left) is the corpus sentence S000154, as in Figure 2; the other three are adapted from it. Each column has the same words; only the reading, and with it the head of *incolumes*, differs.
+
+**Enhanced layer.** Where the co-referent is overt, add two edges in `DEPS`:
+
+- on the predicative word, a plain `advcl` edge to the predicate of the clause (the `:pred` subtype is not needed once the predication's subject is explicit);
+- on the co-referent nominal, an edge from the predicative word, labelled with the role the nominal plays in the secondary predication (`nsubj` in every attested instance).
+
+Where the co-referent is elided, add nothing: the Basic `advcl:pred` edge stands alone.
+
+![Flat view of comites … incolumes reduxit (S000154): Basic obj and advcl:pred arcs above the words, Enhanced nsubj and advcl arcs below](figures/advcl_pred_enhanced_S000154.svg)
+
+*Figure 7.* *comites … incolumes reduxit* (S000154) in the Flat view: the Basic relations above the words, the two Enhanced edges below them. *incolumes* has a plain `advcl` edge from *reduxit*, and *comites* an `nsubj` edge from *incolumes*.
+
+The two corpus cases, with the columns that matter (`DEPS` lists the edges the Enhanced layer adds):
+
+*suos comites ac familiam incolumes reduxit* ‘he brought his companions and household back unharmed’ (S000154, co-referent overt; Figure 2):
+
+| ID | FORM | UPOS | HEAD | DEPREL | DEPS |
+|---|---|---|---|---|---|
+| 37 | comites | `NOUN` | 41 | `obj` | `40:nsubj` |
+| 40 | incolumes | `ADJ` | 41 | `advcl:pred` | `41:advcl` |
+| 41 | reduxit | `VERB` | 0 | `root` | `_` |
+
+*accersitus … nondum rediit* ‘having been summoned, he has not yet returned’ (S000041, co-referent elided):
+
+| ID | FORM | UPOS | HEAD | DEPREL | DEPS |
+|---|---|---|---|---|---|
+| 2 | accersitus | `VERB` | 13 | `advcl:pred` | `_` |
+| 13 | rediit | `VERB` | 0 | `root` | `_` |
+
+A third case, a noun with an overt co-referent: *quod initium fructuum oritur* (S000139): *initium* (10) `advcl:pred`, `DEPS` 12:advcl; *quod* (9) `DEPS` 10:nsubj.
 
 #### 4.15.4 `xcomp`, `ccomp`, or `advcl:pred`?
 
@@ -1399,9 +1438,9 @@ The ablative noun or pronoun is the subject of the absolute predicate and attach
 
 ![Dependency tree of quibus propitiis … robigo … corrumpit (S000016): corrumpit has propitiis as advcl:abs and robigo as nsubj; quibus is nsubj of propitiis](figures/ablative_absolute_S000016.svg)
 
-*Figure 6.* *quibus propitiis … robigo … corrumpit* ‘when they are propitious, blight does not destroy …’ (S000016). The absolute predicate *propitiis* has its own subject *quibus* (Robigus and Flora), which is not an argument of *corrumpit*, whose subject is *robigo*.
+*Figure 8.* *quibus propitiis … robigo … corrumpit* ‘when they are propitious, blight does not destroy …’ (S000016). The absolute predicate *propitiis* has its own subject *quibus* (Robigus and Flora), which is not an argument of *corrumpit*, whose subject is *robigo*.
 
-Three reviewed instances illustrate the range of the construction. A nonverbal ablative absolute, predicated with a bare adjective rather than a participle: *quibus propitiis* ‘when they [Robigus and Flora] are propitious’ (S000016, Figure 6). Two participial instances: *iis … deis ad venerationem advocatis* ‘with those gods having been invoked for veneration’ (S000021); and *exclusis partibus quae non pertinent ad hanc rem* ‘excluding parts which do not pertain to this matter’ (S000086), each with its noun as `nsubj:pass`.
+Three reviewed instances illustrate the range of the construction. A nonverbal ablative absolute, predicated with a bare adjective rather than a participle: *quibus propitiis* ‘when they [Robigus and Flora] are propitious’ (S000016, Figure 8). Two participial instances: *iis … deis ad venerationem advocatis* ‘with those gods having been invoked for veneration’ (S000021); and *exclusis partibus quae non pertinent ad hanc rem* ‘excluding parts which do not pertain to this matter’ (S000086), each with its noun as `nsubj:pass`.
 
 ### 6.2 *Participium coniunctum* and secondary predication
 

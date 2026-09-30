@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381 278" width="381" height="278">
+<style>
+svg{--surface:#ffffff;--ink:#1b2430;--ink-dim:#5b6675;--ink-faint:#8892a0;--border:#d7dde4;
+--border-strong:#b9c2cc;--accent:#2f6f6a;--accent-soft:#e2efed;--head-right:#2f5fa8;
+--head-left:#8a3fa0;--root:#b3261e;}
+.bg{fill:var(--surface);}
+.form{font:600 13px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink);}
+.lemma{font:italic 11px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink-dim);}
+.upos{font:600 10.5px "IBM Plex Mono",Consolas,monospace;fill:var(--accent);}
+.feats{font:9.5px "IBM Plex Mono",Consolas,monospace;fill:var(--ink-dim);}
+.idlabel{font:9.5px "IBM Plex Mono",Consolas,monospace;fill:var(--ink-faint);}
+.deprel{font:10.5px "IBM Plex Mono",Consolas,monospace;}
+.deprel.right{fill:var(--head-right);}
+.deprel.left{fill:var(--head-left);}
+.deprel.out{fill:var(--ink-faint);}
+.deprel-bg{fill:var(--surface);opacity:0.86;}
+.edge{fill:none;stroke-width:1.3;}
+.edge.right{stroke:var(--head-right);}
+.edge.left{stroke:var(--head-left);}
+.edge.out{stroke:var(--ink-faint);stroke-dasharray:3,3;}
+.ah.right{fill:var(--head-right);}
+.ah.left{fill:var(--head-left);}
+.ah.root{fill:var(--root);}
+.ah.out{fill:var(--ink-faint);}
+.rootline{fill:none;stroke:var(--root);stroke-width:1.4;}
+.rootlabel{font:600 10px "IBM Plex Mono",Consolas,monospace;fill:var(--root);}
+.connector{stroke:var(--border-strong);stroke-width:1;stroke-dasharray:2,3;}
+.nodebox{fill:var(--surface);stroke:var(--border-strong);stroke-width:1;}
+.nodebox.hl{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5;}
+.gap{font:13px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink-faint);}
+</style>
+<rect class="bg" x="0" y="0" width="381" height="278" rx="8"/>
+<path d="M 305.2 96.0 L 84.0 150.1" class="edge left"/><path d="M 76.2 152.0 L 83.0 146.2 L 84.9 154.0 Z" class="ah left"/>
+<path d="M 305.2 96.0 L 211.7 148.1" class="edge left"/><path d="M 204.7 152.0 L 209.7 144.6 L 213.6 151.6 Z" class="ah left"/>
+<path d="M 305.2 26.0 L 305.2 36.0" class="rootline"/><path d="M 305.2 44.0 L 301.2 36.0 L 309.2 36.0 Z" class="ah root"/>
+<text x="305.2" y="22.0" class="rootlabel" text-anchor="middle">root</text>
+<rect x="123.0" y="128.4" width="25.5" height="12" class="deprel-bg"/>
+<text x="135.7" y="137.9" class="deprel left" text-anchor="middle">obj</text>
+<rect x="195.3" y="128.4" width="71.1" height="12" class="deprel-bg"/>
+<text x="230.8" y="137.9" class="deprel left" text-anchor="middle">advcl:pred</text>
+<rect x="41.0" y="152.0" width="70.4" height="52.0" rx="5" class="nodebox"/><text x="76.2" y="165.0" class="form" text-anchor="middle">comites</text><text x="76.2" y="179.0" class="lemma" text-anchor="middle">comes</text><text x="76.2" y="193.0" class="upos" text-anchor="middle">NOUN</text>
+<rect x="161.4" y="152.0" width="86.5" height="52.0" rx="5" class="nodebox hl"/><text x="204.7" y="165.0" class="form" text-anchor="middle">incolumes</text><text x="204.7" y="179.0" class="lemma" text-anchor="middle">incolumis</text><text x="204.7" y="193.0" class="upos" text-anchor="middle">ADJ</text>
+<rect x="270.0" y="44.0" width="70.4" height="52.0" rx="5" class="nodebox"/><text x="305.2" y="57.0" class="form" text-anchor="middle">reduxit</text><text x="305.2" y="71.0" class="lemma" text-anchor="middle">reduco</text><text x="305.2" y="85.0" class="upos" text-anchor="middle">VERB</text>
+<line x1="76.2" y1="204.0" x2="76.2" y2="234.0" class="connector"/>
+<text x="76.2" y="248.0" class="form" text-anchor="middle">comites</text>
+<text x="76.2" y="264.0" class="idlabel" text-anchor="middle">37</text>
+<line x1="204.7" y1="204.0" x2="204.7" y2="234.0" class="connector"/>
+<text x="204.7" y="248.0" class="form" text-anchor="middle">incolumes</text>
+<text x="204.7" y="264.0" class="idlabel" text-anchor="middle">40</text>
+<line x1="305.2" y1="96.0" x2="305.2" y2="234.0" class="connector"/>
+<text x="305.2" y="248.0" class="form" text-anchor="middle">reduxit</text>
+<text x="305.2" y="264.0" class="idlabel" text-anchor="middle">41</text>
+<text x="136.4" y="248.0" class="gap" text-anchor="middle">…</text>
+</svg>

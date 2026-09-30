@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353 205" width="353" height="205">
+<style>
+svg{--surface:#ffffff;--ink:#1b2430;--ink-dim:#5b6675;--ink-faint:#8892a0;--border:#d7dde4;
+--border-strong:#b9c2cc;--accent:#2f6f6a;--accent-soft:#e2efed;--head-right:#2f5fa8;
+--head-left:#8a3fa0;--root:#b3261e;}
+.bg{fill:var(--surface);}
+.form{font:600 13px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink);}
+.lemma{font:italic 11px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink-dim);}
+.upos{font:600 10.5px "IBM Plex Mono",Consolas,monospace;fill:var(--accent);}
+.feats{font:9.5px "IBM Plex Mono",Consolas,monospace;fill:var(--ink-dim);}
+.idlabel{font:9.5px "IBM Plex Mono",Consolas,monospace;fill:var(--ink-faint);}
+.deprel{font:10.5px "IBM Plex Mono",Consolas,monospace;}
+.deprel.right{fill:var(--head-right);}
+.deprel.left{fill:var(--head-left);}
+.deprel.out{fill:var(--ink-faint);}
+.deprel-bg{fill:var(--surface);opacity:0.86;}
+.edge{fill:none;stroke-width:1.3;}
+.edge.right{stroke:var(--head-right);}
+.edge.left{stroke:var(--head-left);}
+.edge.out{stroke:var(--ink-faint);stroke-dasharray:3,3;}
+.ah.right{fill:var(--head-right);}
+.ah.left{fill:var(--head-left);}
+.ah.root{fill:var(--root);}
+.ah.out{fill:var(--ink-faint);}
+.rootline{fill:none;stroke:var(--root);stroke-width:1.4;}
+.rootlabel{font:600 10px "IBM Plex Mono",Consolas,monospace;fill:var(--root);}
+.connector{stroke:var(--border-strong);stroke-width:1;stroke-dasharray:2,3;}
+.nodebox{fill:var(--surface);stroke:var(--border-strong);stroke-width:1;}
+.nodebox.hl{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5;}
+.gap{font:13px "IBM Plex Sans","Segoe UI",Arial,sans-serif;fill:var(--ink-faint);}
+</style>
+<rect class="bg" x="0" y="0" width="353" height="205" rx="8"/>
+<text x="10.0" y="26.0" class="idlabel" text-anchor="start">basic</text>
+<text x="10.0" y="199.0" class="idlabel" text-anchor="start">enhanced</text>
+<path d="M 282.2 91.0 L 273.2 64.0 L 216.7 64.0 L 207.7 91.0" class="edge left"/>
+<path d="M 207.7 91.0 L 203.7 84.0 L 211.7 84.0 Z" class="ah left"/>
+<rect x="212.0" y="57.0" width="65.9" height="13" class="deprel-bg"/>
+<text x="244.9" y="67.5" class="deprel left" text-anchor="middle">advcl:pred</text>
+<path d="M 282.2 91.0 L 273.2 47.0 L 110.2 47.0 L 101.2 91.0" class="edge left"/>
+<path d="M 101.2 91.0 L 97.2 84.0 L 105.2 84.0 Z" class="ah left"/>
+<rect x="179.7" y="40.0" width="24.0" height="13" class="deprel-bg"/>
+<text x="191.7" y="50.5" class="deprel left" text-anchor="middle">obj</text>
+<path d="M 199.7 160.0 L 190.7 187.0 L 110.2 187.0 L 101.2 160.0" class="edge left"/>
+<path d="M 101.2 160.0 L 97.2 167.0 L 105.2 167.0 Z" class="ah left"/>
+<rect x="132.5" y="180.0" width="35.9" height="13" class="deprel-bg"/>
+<text x="150.5" y="190.5" class="deprel left" text-anchor="middle">nsubj</text>
+<path d="M 282.2 160.0 L 273.2 187.0 L 216.7 187.0 L 207.7 160.0" class="edge left"/>
+<path d="M 207.7 160.0 L 203.7 167.0 L 211.7 167.0 Z" class="ah left"/>
+<rect x="227.0" y="180.0" width="35.9" height="13" class="deprel-bg"/>
+<text x="244.9" y="190.5" class="deprel left" text-anchor="middle">advcl</text>
+<text x="97.2" y="108.0" class="form" text-anchor="middle">comites</text>
+<text x="97.2" y="122.0" class="lemma" text-anchor="middle">comes</text>
+<text x="97.2" y="136.0" class="upos" text-anchor="middle">NOUN</text>
+<text x="97.2" y="152.0" class="idlabel" text-anchor="middle">37</text>
+<rect x="164.4" y="95.0" width="78.5" height="48" rx="5" class="nodebox hl"/>
+<text x="203.7" y="108.0" class="form" text-anchor="middle">incolumes</text>
+<text x="203.7" y="122.0" class="lemma" text-anchor="middle">incolumis</text>
+<text x="203.7" y="136.0" class="upos" text-anchor="middle">ADJ</text>
+<text x="203.7" y="152.0" class="idlabel" text-anchor="middle">40</text>
+<path d="M 286.2 36.0 L 286.2 83.0" class="rootline"/><path d="M 286.2 91.0 L 282.2 83.0 L 290.2 83.0 Z" class="ah root"/>
+<text x="286.2" y="32.0" class="rootlabel" text-anchor="middle">root</text>
+<text x="286.2" y="108.0" class="form" text-anchor="middle">reduxit</text>
+<text x="286.2" y="122.0" class="lemma" text-anchor="middle">reduco</text>
+<text x="286.2" y="136.0" class="upos" text-anchor="middle">VERB</text>
+<text x="286.2" y="152.0" class="idlabel" text-anchor="middle">41</text>
+<text x="146.4" y="108.0" class="gap" text-anchor="middle">…</text>
+</svg>
