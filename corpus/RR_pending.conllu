@@ -1,724 +1,3 @@
-# sent_id = S000187
-# speaker = Stolo
-# edition_loc = 1.7.1
-# text_old = Stolo, Quod ad hanc formam naturalem pertinet, de eo non incommode Cato videtur dicere, cum scribit optimum agrum esse, qui sub radice montis situs sit et spectet ad meridianam caeli partem.
-# text = Stolo: quod ad hanc formam naturalem pertinet, de eo non incommode Cato videtur dicere, cum scribit optimum agrum esse, qui sub radice montis situs sit et spectet ad meridianam caeli partem.
-1	Stolo	Stolo	PROPN	_	_	_	_	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Stolo
-2	:	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
-3	quod	qui	PRON	_	_	_	_	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|OrigForm=Quod|Speaker=Stolo
-4	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-5	hanc	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-6	formam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-7	naturalem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-8	pertinet	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-9	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-10	de	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-11	eo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-12	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-13	incommode	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-14	Cato	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-15	videtur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-16	dicere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-18	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-19	scribit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-20	optimum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-21	agrum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-22	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-23	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-24	qui	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-25	sub	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-26	radice	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-27	montis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-28	situs	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-29	sit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-30	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-31	spectet	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-32	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-33	meridianam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-34	caeli	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-35	partem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-36	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-
-# sent_id = S000188
-# speaker = Scrofa
-# edition_loc = 1.7.2
-# text_old = Subicit Scrofa, De formae cultura hoc dico, quae specie fiant venustiora, sequi ut maiore quoque fructu sint, ut qui habent arbusta, si sata sunt in quincuncem, propter ordines atque intervalla modica.
-# text = subicit Scrofa: de formae cultura hoc dico, quae specie fiant venustiora, sequi ut maiore quoque fructu sint, ut qui habent arbusta, si sata sunt in quincuncem, propter ordines atque intervalla modica.
-1	subicit	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=Subicit|Speaker=Scrofa
-2	Scrofa	_	_	_	_	_	_	_	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Scrofa
-3	:	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
-4	de	de	ADP	_	_	_	_	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|OrigForm=De|Speaker=Scrofa
-5	formae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	cultura	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	hoc	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	dico	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-9	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	specie	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	fiant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	venustiora	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-14	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	sequi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	maiore	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	quoque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	fructu	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	sint	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-21	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-23	qui	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-24	habent	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-25	arbusta	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-26	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-27	si	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-28	sata	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-29	sunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-30	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-31	quincuncem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-32	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-33	propter	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-34	ordines	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-35	atque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-36	intervalla	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-37	modica	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-38	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000189
-# speaker = Scrofa
-# edition_loc = 1.7.2
-# text_old = Itaque maiores nostri ex arvo aeque magno male consito et minus multum et minus bonum faciebant vinum et frumentum, quod quae suo quicque loco sunt posita, ea minus loci occupant, et minus officit aliud alii ab sole ac luna et vento.
-# text = itaque maiores nostri ex arvo aeque magno male consito et minus multum et minus bonum faciebant vinum et frumentum, quod quae suo quicque loco sunt posita, ea minus loci occupant, et minus officit aliud alii ab sole ac luna et vento.
-1	itaque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Scrofa
-2	maiores	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	nostri	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	arvo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	aeque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	magno	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	male	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	consito	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	minus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	multum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	minus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	bonum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	faciebant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	vinum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	frumentum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-20	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-21	quod	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-23	suo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-24	quicque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-25	loco	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-26	sunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-27	posita	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-28	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-29	ea	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-30	minus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-31	loci	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-32	occupant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-33	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-34	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-35	minus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-36	officit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-37	aliud	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-38	alii	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-39	ab	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-40	sole	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-41	ac	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-42	luna	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-43	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-44	vento	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-45	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000190
-# speaker = Scrofa
-# edition_loc = 1.7.3
-# text_old = Hoc licet coniectura videre ex aliquot rebus, ut nuces integras quas uno modio comprendere possis, quod putamina suo loco quaeque habet natura composita, cum easdem, si fregeris, vix sesquimodio concipere possis.
-# text = hoc licet coniectura videre ex aliquot rebus, ut nuces integras quas uno modio comprendere possis, quod putamina suo loco quaeque habet natura composita, cum easdem, si fregeris, vix sesquimodio concipere possis.
-1	hoc	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Hoc|Speaker=Scrofa
-2	licet	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	coniectura	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	videre	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	aliquot	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	rebus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-8	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	nuces	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	integras	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	quas	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	uno	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	modio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	comprendere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	possis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	quod	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	putamina	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	suo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-21	loco	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	quaeque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-23	habet	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-24	natura	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-25	composita	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-26	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-27	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-28	easdem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-29	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-30	si	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-31	fregeris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-32	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-33	vix	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-34	sesquimodio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-35	concipere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-36	possis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-37	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000191
-# speaker = Scrofa
-# edition_loc = 1.7.4
-# text_old = Praeterea quae arbores in ordinem satae sunt, eas aequabiliter ex omnibus partibus sol ac luna coquunt.
-# text = praeterea quae arbores in ordinem satae sunt, eas aequabiliter ex omnibus partibus sol ac luna coquunt.
-1	praeterea	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Praeterea|Speaker=Scrofa
-2	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	arbores	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	ordinem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	satae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	sunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-8	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	eas	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	aequabiliter	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	omnibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	partibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	sol	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	ac	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	luna	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	coquunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-18	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000192
-# speaker = Scrofa
-# edition_loc = 1.7.4
-# text_old = Quo fit ut uvae et oleae plures nascantur et ut celerius coquantur.
-# text = quo fit ut uvae et oleae plures nascantur et ut celerius coquantur.
-1	quo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Quo|Speaker=Scrofa
-2	fit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	uvae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	oleae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	plures	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	nascantur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	celerius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	coquantur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-13	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000193
-# speaker = Scrofa
-# edition_loc = 1.7.4
-# text_old = Quas res duas sequuntur altera illa duo, ut plus reddant musti et olei et preti pluris.
-# text = quas res duas sequuntur altera illa duo, ut plus reddant musti et olei et preti pluris.
-1	quas	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Quas|Speaker=Scrofa
-2	res	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	duas	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	sequuntur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	altera	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	illa	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	duo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-8	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	plus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	reddant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	musti	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	olei	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	preti	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	pluris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-18	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000194
-# speaker = Scrofa
-# edition_loc = 1.7.5
-# text_old = Sequitur secundum illud, quali terra solum sit fundi, a qua parte vel maxime bonus aut non bonus appellatur.
-# text = sequitur secundum illud, quali terra solum sit fundi, a qua parte vel maxime bonus aut non bonus appellatur.
-1	sequitur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Sequitur|Speaker=Scrofa
-2	secundum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	illud	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-4	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	quali	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	terra	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	solum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	sit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	fundi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-10	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	a	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	qua	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	parte	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	vel	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	maxime	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	bonus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	aut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	bonus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	appellatur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-21	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000195
-# speaker = Scrofa
-# edition_loc = 1.7.5
-# text_old = Refert enim, quae res in eo seri nascique et cuius modi possint;
-# text = refert enim, quae res in eo seri nascique et cuius modi possint;
-1	refert	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Refert|Speaker=Scrofa
-2	enim	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-3	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	res	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	eo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	seri	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9-10	nascique	_	_	_	_	_	_	_	_
-9	nasci	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-10	que	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	cuius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	modi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	possint	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-15	;	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000196
-# speaker = Scrofa
-# edition_loc = 1.7.5
-# text_old = non enim eadem omnia in eodem agro recte possunt.
-# text = non enim eadem omnia in eodem agro recte possunt.
-1	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-2	enim	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	eadem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	omnia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	eodem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	agro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	recte	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	possunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-10	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000197
-# speaker = Scrofa
-# edition_loc = 1.7.5
-# text_old = Nam ut alius est ad vitem appositus, alius ad frumentum, sic de ceteris alius ad aliam rem.
-# text = nam ut alius est ad vitem appositus, alius ad frumentum, sic de ceteris alius ad aliam rem.
-1	nam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Scrofa
-2	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	alius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	est	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	vitem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	appositus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-8	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	alius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	frumentum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-12	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	sic	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	de	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	ceteris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	alius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	aliam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	rem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-20	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000198
-# speaker = Scrofa
-# edition_loc = 1.7.6
-# text_old = Itaque Cretae ad Cortyniam dicitur platanus esse, quae folia hieme non amittat, itemque in Cypro, ut Theophrastus ait, una, item Subari, qui nunc Thurii dicuntur, quercus simili esse natura, quae est in oppidi conspectu;
-# text = itaque Cretae ad Cortyniam dicitur platanus esse, quae folia hieme non amittat, itemque in Cypro, ut Theophrastus ait, una, item Subari, qui nunc Thurii dicuntur, quercus simili esse natura, quae est in oppidi conspectu;
-1	itaque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Scrofa
-2	Cretae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	Cortyniam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	dicitur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	platanus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-8	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	folia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	hieme	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	amittat	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-14	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15-16	itemque	_	_	_	_	_	_	_	_
-15	item	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-16	que	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	Cypro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-19	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-21	Theophrastus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	ait	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-23	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-24	una	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-25	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-26	item	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-27	Subari	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-28	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-29	qui	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-30	nunc	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-31	Thurii	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-32	dicuntur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-33	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-34	quercus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-35	simili	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-36	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-37	natura	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-38	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-39	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-40	est	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-41	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-42	oppidi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-43	conspectu	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-44	;	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000199
-# speaker = Scrofa
-# edition_loc = 1.7.6
-# text_old = item contra atque apud nos fieri ad Elephantinen, ut neque ficus neque vites amittant folia.
-# text = item contra atque apud nos fieri ad Elephantinen, ut neque ficus neque vites amittant folia.
-1	item	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-2	contra	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	atque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	apud	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	nos	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	fieri	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	Elephantinen	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-9	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	neque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	ficus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	neque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	vites	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	amittant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	folia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-17	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000200
-# speaker = Scrofa
-# edition_loc = 1.7.6
-# text_old = Propter eandem causam multa sunt bifera, ut vitis apud mare Zmyrnae, malus in agro Consentino.
-# text = propter eandem causam multa sunt bifera, ut vitis apud mare Zmyrnae, malus in agro Consentino.
-1	propter	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Propter|Speaker=Scrofa
-2	eandem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	causam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	multa	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	sunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	bifera	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-7	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	vitis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	apud	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	mare	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	Zmyrnae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-13	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	malus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	agro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	Consentino	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-18	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000201
-# speaker = Scrofa
-# edition_loc = 1.7.7
-# text_old = Idem ostendit, quod in locis feris plura ferunt, in iis quae sunt culta meliora.
-# text = idem ostendit, quod in locis feris plura ferunt, in iis quae sunt culta meliora.
-1	idem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Idem|Speaker=Scrofa
-2	ostendit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-3	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	quod	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	locis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	feris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	plura	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	ferunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-10	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	iis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	sunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	culta	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	meliora	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-17	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000202
-# speaker = Scrofa
-# edition_loc = 1.7.7
-# text_old = Eadem de causa sunt quae non possunt vivere nisi in loco aquoso aut etiam aqua, et id discriminatim alia in lacubus, ut harundines in Reatino, alia in fluminibus, ut in Epiro arbores alni, alia in mari, ut scribit Theophrastus palmas et squillas.
-# text = eadem de causa sunt quae non possunt vivere nisi in loco aquoso aut etiam aqua, et id discriminatim alia in lacubus, ut harundines in Reatino, alia in fluminibus, ut in Epiro arbores alni, alia in mari, ut scribit Theophrastus palmas et squillas.
-1	eadem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Eadem|Speaker=Scrofa
-2	de	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	causa	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	sunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	possunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	vivere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	nisi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	loco	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	aquoso	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	aut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	etiam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	aqua	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-16	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	id	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	discriminatim	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	alia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-21	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	lacubus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-23	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-24	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-25	harundines	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-26	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-27	Reatino	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-28	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-29	alia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-30	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-31	fluminibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-32	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-33	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-34	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-35	Epiro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-36	arbores	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-37	alni	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-38	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-39	alia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-40	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-41	mari	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-42	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-43	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-44	scribit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-45	Theophrastus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-46	palmas	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-47	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-48	squillas	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-49	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000203
-# speaker = Scrofa
-# edition_loc = 1.7.8
-# text_old = In Gallia transalpina intus, ad Rhenum cum exercitum ducerem, aliquot regiones accessi, ubi nec vitis nec olea nec poma nascerentur, ubi agros stercorarent candida fossicia creta, ubi salem nec fossicium nec maritimum haberent, sed ex quibusdam lignis combustis carbonibus salsis pro eo uterentur.
-# text = in Gallia transalpina intus, ad Rhenum cum exercitum ducerem, aliquot regiones accessi, ubi nec vitis nec olea nec poma nascerentur, ubi agros stercorarent candida fossicia creta, ubi salem nec fossicium nec maritimum haberent, sed ex quibusdam lignis combustis carbonibus salsis pro eo uterentur.
-1	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=In|Speaker=Scrofa
-2	Gallia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	transalpina	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	intus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-5	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	Rhenum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	exercitum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	ducerem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-11	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	aliquot	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	regiones	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	accessi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-15	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-17	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	vitis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	olea	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-21	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	poma	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-23	nascerentur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-24	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-25	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-26	agros	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-27	stercorarent	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-28	candida	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-29	fossicia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-30	creta	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-31	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-32	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-33	salem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-34	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-35	fossicium	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-36	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-37	maritimum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-38	haberent	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-39	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-40	sed	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-41	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-42	quibusdam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-43	lignis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-44	combustis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-45	carbonibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-46	salsis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-47	pro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-48	eo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-49	uterentur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-50	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000204
-# speaker = Stolo
-# edition_loc = 1.7.9
-# text_old = Stolo, Cato quidem, inquit, gradatim praeponens alium alio agrum meliorem dicit esse in novem discriminibus, quod sit primus ubi vineae possint esse bono vino et multo, secundus ubi hortus inriguus, tertius ubi salicta, quartus ubi oliveta, quintus ubi pratum, sextus ubi campus frumentarius, septimus ubi caedua silva, octavus ubi arbustum, nonus ubi glandaria silva.
-# text = Stolo, Cato quidem – inquit – gradatim praeponens alium alio agrum meliorem dicit esse in novem discriminibus, quod sit primus ubi vineae possint esse bono vino et multo, secundus ubi hortus inriguus, tertius ubi salicta, quartus ubi oliveta, quintus ubi pratum, sextus ubi campus frumentarius, septimus ubi caedua silva, octavus ubi arbustum, nonus ubi glandaria silva.
-1	Stolo	Stolo	PROPN	_	_	_	_	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Stolo
-2	:	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
-3	Cato	Cato	PROPN	_	_	_	_	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|Speaker=Stolo
-4	quidem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-5	–	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
-6	inquit	_	_	_	_	_	_	_	DiscourseMode=Narrative|Speaker=Stolo
-7	–	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
-8	gradatim	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-9	praeponens	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-10	alium	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-11	alio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-12	agrum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-13	meliorem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-14	dicit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-15	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-16	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-17	novem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-18	discriminibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-19	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-20	quod	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-21	sit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-22	primus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-23	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-24	vineae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-25	possint	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-26	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-27	bono	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-28	vino	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-29	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-30	multo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-31	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-32	secundus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-33	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-34	hortus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-35	inriguus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-36	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-37	tertius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-38	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-39	salicta	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-40	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-41	quartus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-42	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-43	oliveta	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-44	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-45	quintus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-46	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-47	pratum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-48	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-49	sextus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-50	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-51	campus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-52	frumentarius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-53	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-54	septimus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-55	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-56	caedua	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-57	silva	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-58	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-59	octavus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-60	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-61	arbustum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-62	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-63	nonus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-64	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-65	glandaria	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-66	silva	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
-67	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-
-# sent_id = S000205
-# speaker = Scrofa
-# edition_loc = 1.7.10
-# text_old = Scrofa, Scio, inquit, scribere illum;
-# text = Scrofa: scio – inquit – scribere illum;
-1	Scrofa	Scrofa	PROPN	_	_	_	_	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Scrofa
-2	:	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
-3	scio	scio	VERB	_	_	_	_	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|OrigForm=Scio|Speaker=Scrofa
-4	–	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
-5	inquit	_	_	_	_	_	_	_	DiscourseMode=Narrative|Speaker=Scrofa
-6	–	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
-7	scribere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	illum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-9	;	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000206
-# speaker = Scrofa
-# edition_loc = 1.7.10
-# text_old = sed de hoc non consentiunt omnes, quod alii dant primatum bonis pratis, ut ego, a quo antiqui prata parata appellarunt.
-# text = sed de hoc non consentiunt omnes, quod alii dant primatum bonis pratis, ut ego, a quo antiqui prata parata appellarunt.
-1	sed	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-2	de	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-3	hoc	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	consentiunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	omnes	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-7	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	quod	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	alii	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	dant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	primatum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	bonis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	pratis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-14	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	ego	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	a	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	quo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	antiqui	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-21	prata	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	parata	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-23	appellarunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-24	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
-# sent_id = S000207
-# speaker = Scrofa
-# edition_loc = 1.7.10
-# text_old = Caesar Vopiscus, aedilicius causam cum ageret apud censores, campos Roseae Italiae dixit esse sumen, in quo relicta pertica postridie non appareret propter herbam.
-# text = Caesar Vopiscus, aedilicius causam cum ageret apud censores, campos Roseae Italiae dixit esse sumen, in quo relicta pertica postridie non appareret propter herbam.
-1	Caesar	Caesar	PROPN	_	_	_	_	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|Speaker=Scrofa
-2	Vopiscus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-3	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-4	aedilicius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-5	causam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-6	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-7	ageret	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-8	apud	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-9	censores	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-10	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	campos	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-12	Roseae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	Italiae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	dixit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-15	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	sumen	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-18	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-19	quo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-20	relicta	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-21	pertica	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-22	postridie	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-23	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-24	appareret	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-25	propter	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-26	herbam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
-27	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-
 # sent_id = S000208
 # speaker = Scrofa
 # edition_loc = 1.8.1
@@ -1581,9 +860,9 @@
 
 # sent_id = S000246
 # speaker = Scrofa
-# edition_loc = 1.9.2
-# text_old = In illa enim cum sint dissimili vi ac potestate partes permultae, in quis lapis, marmor, rudus, harena, sabulo, argilla, rubrica, pulvis, creta, cinis, carbunculus, id est quae sole perferve ita fit, ut radices satorum comburat, ab iis quae proprio nomine dicitur terra, cum est admixta ex iis generibus aliqua re, dicitur aut cretosa [...] sic ab aliis generum discriminibus mixta.
-# text = in illa enim cum sint dissimili vi ac potestate partes permultae, in quis lapis, marmor, rudus, harena, sabulo, argilla, rubrica, pulvis, creta, cinis, carbunculus, id est quae sole perferve ita fit, ut radices satorum comburat, ab iis quae proprio nomine dicitur terra, cum est admixta ex iis generibus aliqua re, dicitur aut cretosa [...] sic ab aliis generum discriminibus mixta.
+# edition_loc = 1.9.2;1.9.3
+# text_old = In illa enim cum sint dissimili vi ac potestate partes permultae, in quis lapis, marmor, rudus, harena, sabulo, argilla, rubrica, pulvis, creta, cinis, carbunculus, id est quae sole perferve ita fit, ut radices satorum comburat, ab iis quae proprio nomine dicitur terra, cum est admixta ex iis generibus aliqua re, dicitur aut cretosa … sic ab aliis generum discriminibus mixta.
+# text = in illa enim cum sint dissimili vi ac potestate partes permultae, in quis lapis, marmor, rudus, harena, sabulo, argilla, rubrica, pulvis, creta, cinis, carbunculus, id est quae sole perferve ita fit, ut radices satorum comburat, ab iis quae proprio nomine dicitur terra, cum est admixta ex iis generibus aliqua re, dicitur aut cretosa … sic ab aliis generum discriminibus mixta.
 1	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=In|Speaker=Scrofa
 2	illa	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 3	enim	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -1633,7 +912,7 @@
 47	satorum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 48	comburat	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 49	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-50	ab	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
+50	ab	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.9.3|Speaker=Scrofa
 51	iis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 52	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 53	proprio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -1653,7 +932,7 @@
 67	dicitur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 68	aut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 69	cretosa	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-70	[...]	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=Scrofa
+70	…	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=Scrofa
 71	sic	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 72	ab	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 73	aliis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -5793,7 +5072,7 @@
 
 # sent_id = S000399
 # speaker = Scrofa
-# edition_loc = 1.18.5
+# edition_loc = 1.18.4;1.18.5
 # text_old = Mitto illut, quod modum neque unum nec modicum proposuit CCXL iugerum (modicus enim centuria, et ea CC iugerum), e quo quom sexta pars sit ea XL, quae de CCXL demuntur, non video quem ad modum ex eius praecepto demam sextam partem et de XIII mancipiis, nihilo magis, si vilicum et vilicam removero, quem ad modum ex XI sextam partem demam.
 # text = mitto illut, quod modum neque unum nec modicum proposuit CCXL iugerum (modicus enim centuria, et ea CC iugerum) , e quo quom sexta pars sit ea XL, quae de CCXL demuntur, non video quem ad modum ex eius praecepto demam sextam partem et de XIII mancipiis, nihilo magis, si vilicum et vilicam removero, quem ad modum ex XI sextam partem demam.
 1	mitto	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Mitto|Speaker=Scrofa
@@ -5819,7 +5098,7 @@
 21	iugerum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 22	)	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 23	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-24	e	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
+24	e	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.18.5|Speaker=Scrofa
 25	quo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 26	quom	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 27	sexta	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -5971,7 +5250,7 @@
 
 # sent_id = S000403
 # speaker = Scrofa
-# edition_loc = 1.18.6
+# edition_loc = 1.18.6;1.18.7
 # text_old = Itaque de familiae magnitudine et reliquo instrumento commodissime scies quantam pares, si tria animadverteris diligenter:
 # text = itaque de familiae magnitudine et reliquo instrumento commodissime scies quantam pares, si tria animadverteris diligenter:
 1	itaque	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Scrofa
@@ -5986,7 +5265,7 @@
 10	quantam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 11	pares	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 12	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-13	si	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	si	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.18.7|Speaker=Scrofa
 14	tria	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 15	animadverteris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 16	diligenter	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
@@ -7766,7 +7045,7 @@
 
 # sent_id = S000465
 # speaker = Scrofa
-# edition_loc = 1.23.5
+# edition_loc = 1.23.4;1.23.5
 # text_old = Idoneus locus eligendus, ubi facias salictum et harundinetum, sic alia quae umidum locum quaerunt, contra ubi segetes frumentarias, ubi fabam potissimum seras, item alia quae arida loca secuntur;
 # text = idoneus locus eligendus, ubi facias salictum et harundinetum, sic alia quae umidum locum quaerunt, contra ubi segetes frumentarias, ubi fabam potissimum seras, item alia quae arida loca secuntur;
 1	idoneus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Idoneus|Speaker=Scrofa
@@ -7779,7 +7058,7 @@
 8	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 9	harundinetum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 10	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-11	sic	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	sic	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.23.5|Speaker=Scrofa
 12	alia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 13	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 14	umidum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -7879,7 +7158,7 @@
 
 # sent_id = S000469
 # speaker = Scrofa
-# edition_loc = 1.23.6
+# edition_loc = 1.23.5;1.23.6
 # text_old = alio loco ut seras ac colas silvam caeduam, alio ubi aucupere, sic ubi cannabim, linum, iuncum, spartum, unde nectas bubus soleas, lineas, restis, funes.
 # text = alio loco ut seras ac colas silvam caeduam, alio ubi aucupere, sic ubi cannabim, linum, iuncum, spartum, unde nectas bubus soleas, lineas, restis, funes.
 1	alio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -7891,7 +7170,7 @@
 7	silvam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 8	caeduam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 9	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-10	alio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	alio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.23.6|Speaker=Scrofa
 11	ubi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 12	aucupere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 13	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -8294,8 +7573,8 @@
 # sent_id = S000482
 # speaker = Scrofa
 # edition_loc = 1.24.4
-# text_old = Id prius bipalio verti, ibi oculos harundinis pedes ternos alium ab alio seri, [...] aptam esse utrique eandem fere culturam.
-# text = id prius bipalio verti, ibi oculos harundinis pedes ternos alium ab alio seri, [...] aptam esse utrique eandem fere culturam.
+# text_old = Id prius bipalio verti, ibi oculos harundinis pedes ternos alium ab alio seri, … aptam esse utrique eandem fere culturam.
+# text = id prius bipalio verti, ibi oculos harundinis pedes ternos alium ab alio seri, … aptam esse utrique eandem fere culturam.
 1	id	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Id|Speaker=Scrofa
 2	prius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 3	bipalio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -8311,7 +7590,7 @@
 13	alio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 14	seri	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 15	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-16	[...]	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=Scrofa
+16	…	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=Scrofa
 17	aptam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 18	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 19	utrique	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -8793,7 +8072,7 @@
 
 # sent_id = S000503
 # speaker = Scrofa
-# edition_loc = 1.28.1
+# edition_loc = 1.28.1;1.28.2
 # text_old = Cum unius cuiusque horum IIII signorum dies tertius et vicesimus IIII temporum sit primus et efficiat ut ver dies habeat XCI, aestas XCIV, autumnus XCI, hiems XXCIX, quae redacta ad dies civiles nostros, qui nunc sunt, primi verni temporis ex a. d. VII id. Febr., aestivi ex a. d. VII id. Mai., autumnalis ex a. d. III id. Sextil., hiberni ex a. d. IV id. Nov., suptilius descriptis temporibus observanda quaedam sunt, eaque in partes VIII dividuntur:
 # text = cum unius cuiusque horum IIII signorum dies tertius et vicesimus IIII temporum sit primus et efficiat ut ver dies habeat XCI, aestas XCIV, autumnus XCI, hiems XXCIX, quae redacta ad dies civiles nostros, qui nunc sunt, primi verni temporis ex a. d. VII id. Febr., aestivi ex a. d. VII id. Mai., autumnalis ex a. d. III id. Sextil., hiberni ex a. d. IV id. Nov., suptilius descriptis temporibus observanda quaedam sunt, eaque in partes VIII dividuntur:
 1	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Cum|Speaker=Scrofa
@@ -8888,7 +8167,7 @@
 90	Nov	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 91	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 92	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-93	suptilius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
+93	suptilius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.28.2|Speaker=Scrofa
 94	descriptis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 95	temporibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 96	observanda	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -11099,7 +10378,7 @@
 
 # sent_id = S000594
 # speaker = Stolo
-# edition_loc = 1.38.2
+# edition_loc = 1.38.2;1.38.3
 # text_old = Cassius secundum columbinum scribit esse hominis, tertio caprinum et ovillum et asininum, minime bonum equinum, sed in segetes;
 # text = Cassius secundum columbinum scribit esse hominis, tertio caprinum et ovillum et asininum, minime bonum equinum, sed in segetes;
 1	Cassius	Cassius	PROPN	_	_	_	_	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|Speaker=Stolo
@@ -11116,7 +10395,7 @@
 12	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 13	asininum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 14	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-15	minime	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
+15	minime	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.38.3|Speaker=Stolo
 16	bonum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 17	equinum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 18	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
@@ -12520,8 +11799,8 @@
 6	aridiora	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 7	—	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 8	quare	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-9	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-10	terra	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
+9	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo|Variant=Loeb:-
+10	terra	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo|Variant=Loeb:-
 11	potius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 12	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 13	seminariis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
@@ -15199,7 +14478,7 @@
 
 # sent_id = S000765
 # speaker = Stolo
-# edition_loc = 1.55.1
+# edition_loc = 1.55.1;1.55.2
 # text_old = Quae manu stricta, melior ea quae digitis nudis, quam illa quae cum digitabulis, durities enim eorum quod non solum stringit bacam, sed etiam ramos glubit ac relinquit ad gelicidium retectos.
 # text = quae manu stricta, melior ea quae digitis nudis, quam illa quae cum digitabulis, durities enim eorum quod non solum stringit bacam, sed etiam ramos glubit ac relinquit ad gelicidium retectos.
 1	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Quae|Speaker=Stolo
@@ -15227,7 +14506,7 @@
 23	stringit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 24	bacam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 25	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-26	sed	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
+26	sed	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.55.2|Speaker=Stolo
 27	etiam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 28	ramos	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 29	glubit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
@@ -15866,7 +15145,7 @@
 
 # sent_id = S000792
 # speaker = Stolo
-# edition_loc = 1.57.3
+# edition_loc = 1.57.2;1.57.3
 # text_old = Sic conditum triticum manet vel annos L, milium vero plus annos C. Supra terram granaria in agro quidam sublimia faciunt, ut in Hispania citeriore et in Apulia quidam, quae non solum a lateribus per fenestras, sed etiam subtus a solo ventus refrigerare possit.
 # text = sic conditum triticum manet vel annos L, milium vero plus annos C. Supra terram granaria in agro quidam sublimia faciunt, ut in Hispania citeriore et in Apulia quidam, quae non solum a lateribus per fenestras, sed etiam subtus a solo ventus refrigerare possit.
 1	sic	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Sic|Speaker=Stolo
@@ -15883,7 +15162,7 @@
 12	annos	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 13	C	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
 14	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
-15	Supra	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
+15	Supra	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=1.57.3|Speaker=Stolo
 16	terram	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 17	granaria	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
 18	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Stolo
@@ -17959,18 +17238,18 @@
 # sent_id = S000869
 # speaker = Narrator
 # edition_loc = 2.0.6
-# text_old = Incipiam hinc [...].
-# text = incipiam hinc [...].
+# text_old = Incipiam hinc ….
+# text = incipiam hinc ….
 1	incipiam	_	_	_	_	_	_	_	DiscourseMode=Preface|OrigForm=Incipiam|Speaker=Narrator
 2	hinc	_	_	_	_	_	_	_	DiscourseMode=Preface|Speaker=Narrator
-3	[...]	_	_	_	_	_	_	_	DiscourseMode=Lacuna|SpaceAfter=No|Speaker=Narrator
+3	…	_	_	_	_	_	_	_	DiscourseMode=Lacuna|SpaceAfter=No|Speaker=Narrator
 4	.	_	_	_	_	_	_	_	DiscourseMode=Preface|Speaker=Narrator
 
 # sent_id = S000869b
 # speaker = n.n.
 # edition_loc = 2.0.6
-# text = [...].
-1	[...]	_	_	_	_	_	_	_	DiscourseMode=Lacuna|SpaceAfter=No|Speaker=n.n.
+# text = ….
+1	…	_	_	_	_	_	_	_	DiscourseMode=Lacuna|SpaceAfter=No|Speaker=n.n.
 2	.	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=n.n.
 
 # sent_id = S000870
@@ -18032,8 +17311,8 @@
 # sent_id = S000872
 # speaker = Cossinius
 # edition_loc = 2.1.1
-# text_old = Ista, inquit ille, quae coeperat hic disserere, quae esset origo, quae dignitas, quae ars [...].
-# text = ista – inquit ille– quae coeperat hic disserere, quae esset origo, quae dignitas, quae ars [...].
+# text_old = Ista, inquit ille, quae coeperat hic disserere, quae esset origo, quae dignitas, quae ars ….
+# text = ista – inquit ille– quae coeperat hic disserere, quae esset origo, quae dignitas, quae ars ….
 1	ista	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Ista|Speaker=Cossinius
 2	–	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Cossinius
 3	inquit	_	_	_	_	_	_	_	DiscourseMode=Narrative|Speaker=Cossinius
@@ -18053,7 +17332,7 @@
 17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Cossinius
 18	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Cossinius
 19	ars	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Cossinius
-20	[...]	_	_	_	_	_	_	_	DiscourseMode=Lacuna|SpaceAfter=No|Speaker=Cossinius
+20	…	_	_	_	_	_	_	_	DiscourseMode=Lacuna|SpaceAfter=No|Speaker=Cossinius
 21	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Cossinius
 
 # sent_id = S000873
@@ -18214,7 +17493,7 @@
 
 # sent_id = S000878
 # speaker = Varro
-# edition_loc = 2.1.3
+# edition_loc = 2.1.3;2.1.4
 # text_old = Igitur, inquam, et homines et pecudes cum semper fuisse sit necesse natura — sive enim aliquod fuit principium generandi animalium, ut putavit Thales Milesius et Zeno Citieus, sive contra principium horum extitit nullum, ut credidit Pythagoras Samius et Aristoteles Stagerites — necesse est humanae vitae ab summa memoria gradatim descendisse ad hanc aetatem, ut scribit Dicaearchus, et summum gradum fuisse naturalem, cum viverent homines ex his rebus, quae inviolata ultro ferret terra, ex hac vita in secundam descendisse pastoriciam, e feris atque agrestibus ut arboribus ac virgultis decerpendo glandem, arbutum, mora, poma colligerent ad usum, sic ex animalibus cum propter eandem utilitatem, quae possent, silvestria deprenderent ac concluderent et mansuescerent.
 # text = igitur – inquam – et homines et pecudes cum semper fuisse sit necesse natura — sive enim aliquod fuit principium generandi animalium, ut putavit Thales Milesius et Zeno Citieus, sive contra principium horum extitit nullum, ut credidit Pythagoras Samius et Aristoteles Stagerites — necesse est humanae vitae ab summa memoria gradatim descendisse ad hanc aetatem, ut scribit Dicaearchus, et summum gradum fuisse naturalem, cum viverent homines ex his rebus, quae inviolata ultro ferret terra, ex hac vita in secundam descendisse pastoriciam, e feris atque agrestibus ut arboribus ac virgultis decerpendo glandem, arbutum, mora, poma colligerent ad usum, sic ex animalibus cum propter eandem utilitatem, quae possent, silvestria deprenderent ac concluderent et mansuescerent.
 1	igitur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Igitur|Speaker=Varro
@@ -18286,7 +17565,7 @@
 67	fuisse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 68	naturalem	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 69	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
-70	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
+70	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=2.1.4|Speaker=Varro
 71	viverent	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 72	homines	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 73	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
@@ -19005,7 +18284,7 @@
 
 # sent_id = S000905
 # speaker = Varro
-# edition_loc = 2.1.10
+# edition_loc = 2.1.9;2.1.10
 # text_old = Non idem, quod multa etiam nunc ex vetere instituto bubus et ovibus dicitur, et quod aes antiquissimum quod est flatum pecore est notatum, et quod, urbs cum condita est, tauro et vacca qua essent muri et portae definitum, et quod, populus Romanus cum lustratur suovitaurilibus, circumaguntur verres aries taurus, et quod nomina multa habemus ab utroque pecore, a maiore et a minore — a minore Porcius, Ovinius, Caprilius;
 # text = non idem, quod multa etiam nunc ex vetere instituto bubus et ovibus dicitur, et quod aes antiquissimum quod est flatum pecore est notatum, et quod, urbs cum condita est, tauro et vacca qua essent muri et portae definitum, et quod, populus Romanus cum lustratur suovitaurilibus, circumaguntur verres aries taurus, et quod nomina multa habemus ab utroque pecore, a maiore et a minore — a minore Porcius, Ovinius, Caprilius;
 1	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Non|Speaker=Varro
@@ -19042,7 +18321,7 @@
 32	condita	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 33	est	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 34	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
-35	tauro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
+35	tauro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=2.1.10|Speaker=Varro
 36	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 37	vacca	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 38	qua	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
@@ -20121,8 +19400,8 @@
 # sent_id = S000944
 # speaker = Scrofa
 # edition_loc = 2.1.19
-# text_old = Dicuntur agni cordi, qui post tempus nascuntur ac remanserunt in volvis intimis [...] vocant chorion, a quo cordi appellati.
-# text = dicuntur agni cordi, qui post tempus nascuntur ac remanserunt in volvis intimis [...]vocant chorion, a quo cordi appellati.
+# text_old = Dicuntur agni cordi, qui post tempus nascuntur ac remanserunt in volvis intimis … vocant chorion, a quo cordi appellati.
+# text = dicuntur agni cordi, qui post tempus nascuntur ac remanserunt in volvis intimis … vocant chorion, a quo cordi appellati.
 1	dicuntur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Dicuntur|Speaker=Scrofa
 2	agni	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 3	cordi	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
@@ -20136,7 +19415,7 @@
 11	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 12	volvis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 13	intimis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
-14	[...]	_	_	_	_	_	_	_	DiscourseMode=Lacuna|SpaceAfter=No|Speaker=Scrofa
+14	…	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=Scrofa
 15	vocant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
 16	chorion	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
 17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Scrofa
@@ -21515,7 +20794,7 @@
 
 # sent_id = S000998
 # speaker = Atticus
-# edition_loc = 2.2.6
+# edition_loc = 2.2.5;2.2.6
 # text_old = Et ille respondit "sunt" et expromisit nummos, emptor stipulatur prisca formula sic, "illasce oves, qua de re agitur, sanas recte esse, uti pecus ovillum, quod recte sanum est extra luscam surdam minam, id est ventre glabro, neque de pecore morboso esse habereque recte licere, haec sic recte fieri spondesne?"
 # text = et ille respondit “sunt” et expromisit nummos, emptor stipulatur prisca formula sic, “illasce oves, qua de re agitur, sanas recte esse, uti pecus ovillum, quod recte sanum est extra luscam surdam minam, id est ventre glabro, neque de pecore morboso esse habereque recte licere, haec sic recte fieri spondesne?”
 1	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Et|Speaker=Atticus
@@ -21535,7 +20814,7 @@
 15	sic	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Atticus
 16	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
 17	“	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Atticus
-18	illasce	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
+18	illasce	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=2.2.6|Speaker=Atticus
 19	oves	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Atticus
 20	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
 21	qua	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
@@ -26740,7 +26019,7 @@
 
 # sent_id = S001225
 # speaker = Varro
-# edition_loc = 2.5.4
+# edition_loc = 2.5.3;2.5.4
 # text_old = Hic socius hominum in rustico opere et Cereris minister, ab hoc antiqui manus ita abstineri voluerunt, ut capite sanxerint, siquis occidisset.
 # text = hic socius hominum in rustico opere et Cereris minister, ab hoc antiqui manus ita abstineri voluerunt, ut capite sanxerint, siquis occidisset.
 1	hic	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Hic|Speaker=Varro
@@ -26753,7 +26032,7 @@
 8	Cereris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 9	minister	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 10	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
-11	ab	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
+11	ab	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=2.5.4|Speaker=Varro
 12	hoc	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 13	antiqui	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 14	manus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
@@ -27083,7 +26362,7 @@
 
 # sent_id = S001240
 # speaker = Vaccius
-# edition_loc = 2.5.8
+# edition_loc = 2.5.7;2.5.8
 # text_old = ut sint bene compositae, ut integris membris, oblongae, amplae, nigrantibus cornibus, latis frontibus, oculis magnis et nigris, pilosis auribus, compressis malis subsimae, ne gibberae, spina leviter remissa, apertis naribus, labris subnigris, cervicibus crassis ac longis, a collo palea demissa, corpore bene costato, latis umeris, bonis clunibus, codam profusam usque ad calces ut habeant, inferiorem partem frequentibus pilis subcrispam, cruribus potius minoribus rectis, genibus eminulis distantibus inter se, pedibus non latis, neque ingredientibus qui displudantur, nec cuius ungulae divarent, et cuius ungues sint leves et pares, corium tactu non asperum ac durum, colore potissimum nigro, deinde robeo, tertio helvo, quarto albo;
 # text = ut sint bene compositae, ut integris membris, oblongae, amplae, nigrantibus cornibus, latis frontibus, oculis magnis et nigris, pilosis auribus, compressis malis subsimae, ne gibberae, spina leviter remissa, apertis naribus, labris subnigris, cervicibus crassis ac longis, a collo palea demissa, corpore bene costato, latis umeris, bonis clunibus, codam profusam usque ad calces ut habeant, inferiorem partem frequentibus pilis subcrispam, cruribus potius minoribus rectis, genibus eminulis distantibus inter se, pedibus non latis, neque ingredientibus qui displudantur, nec cuius ungulae divarent, et cuius ungues sint leves et pares, corium tactu non asperum ac durum, colore potissimum nigro, deinde robeo, tertio helvo, quarto albo;
 1	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Vaccius
@@ -27130,7 +26409,7 @@
 42	labris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Vaccius
 43	subnigris	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Vaccius
 44	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Vaccius
-45	cervicibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Vaccius
+45	cervicibus	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=2.5.8|Speaker=Vaccius
 46	crassis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Vaccius
 47	ac	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Vaccius
 48	longis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Vaccius
@@ -28510,7 +27789,7 @@
 
 # sent_id = S001305
 # speaker = Murrius
-# edition_loc = 2.6.2
+# edition_loc = 2.6.2;2.6.3
 # text_old = unum ferum, quos vocant onagros, ut in Phrygia et Lycaonia sunt greges multi;
 # text = unum ferum, quos vocant onagros, ut in Phrygia et Lycaonia sunt greges multi;
 1	unum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Murrius
@@ -28520,7 +27799,7 @@
 5	vocant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Murrius
 6	onagros	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Murrius
 7	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Murrius
-8	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Murrius
+8	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=2.6.3|Speaker=Murrius
 9	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Murrius
 10	Phrygia	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Murrius
 11	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Murrius
@@ -31201,7 +30480,7 @@
 
 # sent_id = S001419
 # speaker = Atticus
-# edition_loc = 2.9.4
+# edition_loc = 2.9.3;2.9.4
 # text_old = Facie debent esse formosi, magnitudine ampla, oculis nigrantibus aut ravis, naribus congruentibus, labris subnigris aut rubicundis neque resimis superioribus nec pendulis subtus, mento suppresso et ex eo enatis duobus dentibus dextra et sinistra paulo eminulis, superioribus directis potius quam brocchis, acutos quos habeant labro tectos, capitibus et auriculis magnis ac flaccis, crassis cervicibus ac collo, internodis articulorum longis, cruribus rectis et potius varis quam vatiis, pedibus magnis et latis, qui ingredienti ei displodantur, digitis discretis, unguibus duris ac curvis, solo ne ut corneo ne nimium duro, sed ut fermentato ac molli;
 # text = facie debent esse formosi, magnitudine ampla, oculis nigrantibus aut ravis, naribus congruentibus, labris subnigris aut rubicundis neque resimis superioribus nec pendulis subtus, mento suppresso et ex eo enatis duobus dentibus dextra et sinistra paulo eminulis, superioribus directis potius quam brocchis, acutos quos habeant labro tectos, capitibus et auriculis magnis ac flaccis, crassis cervicibus ac collo, internodis articulorum longis, cruribus rectis et potius varis quam vatiis, pedibus magnis et latis, qui ingredienti ei displodantur, digitis discretis, unguibus duris ac curvis, solo ne ut corneo ne nimium duro, sed ut fermentato ac molli;
 1	facie	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Facie|Speaker=Atticus
@@ -31251,7 +30530,7 @@
 45	quam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
 46	brocchis	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Atticus
 47	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
-48	acutos	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
+48	acutos	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=2.9.4|Speaker=Atticus
 49	quos	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
 50	habeant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
 51	labro	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Atticus
@@ -34049,7 +33328,7 @@
 
 # sent_id = S001531
 # speaker = Cossinius
-# edition_loc = 2.11.5
+# edition_loc = 2.11.6
 # text_old = De tonsura ovium primum animadverto, antequam incipiam facere, num scabiem aut ulcera habeant, ut, si opus est, ante curentur, quam tondeantur.
 # text = de tonsura ovium primum animadverto, antequam incipiam facere, num scabiem aut ulcera habeant, ut, si opus est, ante curentur, quam tondeantur.
 1	de	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=De|Speaker=Cossinius
@@ -34083,7 +33362,7 @@
 
 # sent_id = S001532
 # speaker = Cossinius
-# edition_loc = 2.11.5
+# edition_loc = 2.11.6
 # text_old = Tonsurae tempus inter aequinoctium vernum et solstitium, cum sudare inceperunt oves, a quo sudore recens lana tonsa sucida appellata est.
 # text = tonsurae tempus inter aequinoctium vernum et solstitium, cum sudare inceperunt oves, a quo sudore recens lana tonsa sucida appellata est.
 1	tonsurae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Tonsurae|Speaker=Cossinius
@@ -36418,7 +35697,7 @@
 
 # sent_id = S001617
 # speaker = Appius
-# edition_loc = 3.2.7
+# edition_loc = 3.2.12
 # text_old = Appius: Posse ad te fieri, inquit, Seianas pastiones non negavit Merula;
 # text = Appius: posse ad te fieri – inquit – Seianas pastiones non negavit Merula;
 1	Appius	Appius	PROPN	_	_	_	_	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Appius
@@ -37002,7 +36281,7 @@
 
 # sent_id = S001639
 # speaker = Merula
-# edition_loc = 3.2.9
+# edition_loc = 3.2.18
 # text_old = Ille: Quin simulac promiseris minerval, incipiam, inquit.
 # text = ille: quin simulac promiseris minerval, incipiam – inquit –
 1	ille	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=Ille|SpaceAfter=No|Speaker=Merula
@@ -37038,7 +36317,7 @@
 
 # sent_id = S001642
 # speaker = Appius
-# edition_loc = 3.2.12
+# edition_loc = 3.2.18
 # text_old = Appius: Credo simul ac primum ex isto villatico pecore mortui erunt anseres aut pavones.
 # text = Appius: credo simul ac primum ex isto villatico pecore mortui erunt anseres aut pavones.
 1	Appius	Appius	PROPN	_	_	_	_	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Appius
@@ -38212,7 +37491,7 @@
 
 # sent_id = S001692
 # speaker = Merula
-# edition_loc = 3.4.3
+# edition_loc = 3.5.1;3.5.2
 # text_old = Igitur testudo, aut peristylum tectum tegulis aut rete, fit magna, in qua milia aliquot turdorum ac merularum includere possint, quidam cum eo adiciant praeterea aves alias quoque, quae pingues veneunt care, ut miliariae ac coturnices.
 # text = igitur testudo, aut peristylum tectum tegulis aut rete, fit magna, in qua milia aliquot turdorum ac merularum includere possint, quidam cum eo adiciant praeterea aves alias quoque, quae pingues veneunt care, ut miliariae ac coturnices.
 1	igitur	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Igitur|Speaker=Merula
@@ -38238,7 +37517,7 @@
 21	includere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 22	possint	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
 23	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
-24	quidam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
+24	quidam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=3.5.2|Speaker=Merula
 25	cum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 26	eo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 27	adiciant	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
@@ -38931,7 +38210,7 @@
 
 # sent_id = S001714
 # speaker = Varro
-# edition_loc = 3.5.9
+# edition_loc = 3.5.9;3.5.10
 # text_old = Quoi ego: Cum habeam sub oppido Casino flumen, quod per villam fluat, liquidum et altum marginibus lapideis, latum pedes quinquaginta septem, et e villa in villam pontibus transeatur, longum pedes DCCCCL derectum ab insula, quae est in imo fluvio, ubi confluit altera amnis, ad summum flumen, ubi est museum, circum huius ripas ambulatio sub dio pedes lata denos, ab hac est in agrum versus ornithonis locus ex duabus partibus dextra et sinistra maceriis altis conclusus.
 # text = quoi ego: cum habeam sub oppido Casino flumen, quod per villam fluat, liquidum et altum marginibus lapideis, latum pedes quinquaginta septem, et e villa in villam pontibus transeatur, longum pedes DCCCCL derectum ab insula, quae est in imo fluvio, ubi confluit altera amnis, ad summum flumen, ubi est museum, circum huius ripas ambulatio sub dio pedes lata denos, ab hac est in agrum versus ornithonis locus ex duabus partibus dextra et sinistra maceriis altis conclusus.
 1	quoi	_	_	_	_	_	_	_	DiscourseMode=Narrative|OrigForm=Quoi|Speaker=Varro
@@ -38994,7 +38273,7 @@
 58	est	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 59	museum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Varro
 60	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
-61	circum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
+61	circum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=3.5.10|Speaker=Varro
 62	huius	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 63	ripas	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
 64	ambulatio	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Varro
@@ -42392,7 +41671,7 @@
 
 # sent_id = S001854
 # speaker = Merula
-# edition_loc = 3.9.8
+# edition_loc = 3.9.8;3.9.9
 # text_old = Quae velis incubet, negant plus XXV oportere ova incubare, quamvis propter fecunditatem pepererit plura, optimum esse partum ab aequinoctio verno ad autumnale.
 # text = quae velis incubet, negant plus XXV oportere ova incubare, quamvis propter fecunditatem pepererit plura, optimum esse partum ab aequinoctio verno ad autumnale.
 1	quae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Quae|Speaker=Merula
@@ -42412,7 +41691,7 @@
 15	pepererit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 16	plura	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
 17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
-18	optimum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
+18	optimum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=3.9.9|Speaker=Merula
 19	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 20	partum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 21	ab	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
@@ -48098,9 +47377,9 @@
 
 # sent_id = S002081
 # speaker = Merula
-# edition_loc = 3.16.22
-# text_old = Nec, si ex alvo in alvum in eodem loco traicias, neglegenter faciendum, sed et in quam transiturae sint apes, ea apiastro perfricanda, quod inlicium hoc illis, et favi melliti intus ponendi a faucibus non longe, ne, cum animadverterint aut inopiam esse [...] habuisse dicit.
-# text = nec, si ex alvo in alvum in eodem loco traicias, neglegenter faciendum, sed et in quam transiturae sint apes, ea apiastro perfricanda, quod inlicium hoc illis, et favi melliti intus ponendi a faucibus non longe, ne, cum animadverterint aut inopiam esse [...] habuisse dicit.
+# edition_loc = 3.16.21;3.16.22
+# text_old = Nec, si ex alvo in alvum in eodem loco traicias, neglegenter faciendum, sed et in quam transiturae sint apes, ea apiastro perfricanda, quod inlicium hoc illis, et favi melliti intus ponendi a faucibus non longe, ne, cum animadverterint aut inopiam esse … habuisse dicit.
+# text = nec, si ex alvo in alvum in eodem loco traicias, neglegenter faciendum, sed et in quam transiturae sint apes, ea apiastro perfricanda, quod inlicium hoc illis, et favi melliti intus ponendi a faucibus non longe, ne, cum animadverterint aut inopiam esse … habuisse dicit.
 1	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Nec|SpaceAfter=No|Speaker=Merula
 2	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 3	si	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
@@ -48116,7 +47395,7 @@
 13	neglegenter	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 14	faciendum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
 15	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
-16	sed	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
+16	sed	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=3.16.22|Speaker=Merula
 17	et	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 18	in	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 19	quam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
@@ -48150,7 +47429,7 @@
 47	aut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 48	inopiam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 49	esse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
-50	[...]	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=Merula
+50	…	_	_	_	_	_	_	_	DiscourseMode=Lacuna|Speaker=Merula
 51	habuisse	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 52	dicit	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
 53	.	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
@@ -48472,7 +47751,7 @@
 
 # sent_id = S002095
 # speaker = Merula
-# edition_loc = 3.16.26
+# edition_loc = 3.16.25;3.16.26
 # text_old = Item ex aliis floribus ita carpere, ut alia ad singulas res sumant, alia ad plures, nec non etiam aliut discrimen sequantur in carptura aut eas sequatur, ut in melle, quod ex alia re faciant liquidum mel, ut e siserae flore, ex alia contra spissum, ut e rore marino;
 # text = item ex aliis floribus ita carpere, ut alia ad singulas res sumant, alia ad plures, nec non etiam aliut discrimen sequantur in carptura aut eas sequatur, ut in melle, quod ex alia re faciant liquidum mel, ut e siserae flore, ex alia contra spissum, ut e rore marino;
 1	item	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=Item|Speaker=Merula
@@ -48493,7 +47772,7 @@
 16	ad	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 17	plures	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
 18	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
-19	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
+19	nec	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=3.16.26|Speaker=Merula
 20	non	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 21	etiam	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 22	aliut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
@@ -48839,7 +48118,7 @@
 
 # sent_id = S002106
 # speaker = Merula
-# edition_loc = 3.16.29
+# edition_loc = 3.16.29;3.16.30
 # text_old = unum, quod superioribus diebus, maxime vespertinis, multae ante foramen ut uvae aliae ex aliis pendent conglobatae;
 # text = unum, quod superioribus diebus, maxime vespertinis, multae ante foramen ut uvae aliae ex aliis pendent conglobatae;
 1	unum	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
@@ -48854,7 +48133,7 @@
 10	multae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 11	ante	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 12	foramen	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
-13	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
+13	ut	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=3.16.30|Speaker=Merula
 14	uvae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 15	aliae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 16	ex	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
@@ -48920,7 +48199,7 @@
 
 # sent_id = S002109
 # speaker = Merula
-# edition_loc = 3.16.31
+# edition_loc = 3.16.30;3.16.31
 # text_old = A mellario cum id fecisse sunt animadversae, iaciundo in eas pulvere et circumtinniendo aere perterritae, quo volunt perducere, non longe inde oblinunt erithace atque apiastro ceterisque rebus, quibus delectantur.
 # text = a mellario cum id fecisse sunt animadversae, iaciundo in eas pulvere et circumtinniendo aere perterritae, quo volunt perducere, non longe inde oblinunt erithace atque apiastro ceterisque rebus, quibus delectantur.
 1	a	_	_	_	_	_	_	_	DiscourseMode=Dialogue|OrigForm=A|Speaker=Merula
@@ -48940,7 +48219,7 @@
 15	aere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 16	perterritae	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
 17	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
-18	quo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
+18	quo	_	_	_	_	_	_	_	DiscourseMode=Dialogue|NextLoc=3.16.31|Speaker=Merula
 19	volunt	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula
 20	perducere	_	_	_	_	_	_	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Merula
 21	,	_	_	_	_	_	_	_	DiscourseMode=Dialogue|Speaker=Merula

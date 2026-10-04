@@ -1625,7 +1625,7 @@
 
 # sent_id = S000046
 # speaker = Agrius
-# edition_loc = 1.2.4
+# edition_loc = 1.2.3;1.2.4
 # text_old = Primum cum orbis terrae divisus sit in duas partes ab Eratosthene maxume secundum naturam, ad meridiem versus et ad septemtriones, et sine dubio quoniam salubrior pars septemtrionalis est quam meridiana, et quae salubriora illa fructuosiora, dicendum utique Italiam magis etiam fuisse opportunam ad colendum quam Asiam, primum quod est in Europa, secundo quod haec temperatior pars quam interior.
 # text = primum cum orbis terrae divisus sit in duas partes ab Eratosthene maxume secundum naturam, ad meridiem versus et ad septemtriones, et sine dubio quoniam salubrior pars septemtrionalis est quam meridiana, et quae salubriora illa fructuosiora, dicendum utique Italiam magis etiam fuisse opportunam ad colendum quam Asiam, primum quod est in Europa, secundo quod haec temperatior pars quam interior.
 # text_en = First, since the globe of the earth has been divided by Eratosthenes, chiefly according to nature, into two parts, toward the south and toward the north, and since without doubt the northern part is healthier than the southern, and those things that are healthier are more fruitful, it must certainly be said that Italy was even more suitable for cultivation than Asia, first because it is in Europe, secondly because this part is more temperate than the inner one.
@@ -1649,7 +1649,7 @@
 13	secundum	secundum	ADP	_	_	14	case	_	DiscourseMode=Dialogue|Speaker=Agrius
 14	naturam	natura	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	5	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Agrius
 15	,	,	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Agrius
-16	ad	ad	ADP	_	_	17	case	_	DiscourseMode=Dialogue|Speaker=Agrius
+16	ad	ad	ADP	_	_	17	case	_	DiscourseMode=Dialogue|NextLoc=1.2.4|Speaker=Agrius
 17	meridiem	meridies	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurE|Number=Sing	9	appos	_	DiscourseMode=Dialogue|Speaker=Agrius
 18	versus	versus	ADV	_	_	17	advmod	_	DiscourseMode=Dialogue|ReviewNote=RN_S000046_02|ReviewTags=Syntax|Speaker=Agrius
 19	et	et	CCONJ	_	_	21	cc	_	DiscourseMode=Dialogue|Speaker=Agrius
@@ -6148,4 +6148,842 @@
 11	habent	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
 12	momentum	momentum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	11	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa|Variant=Giusta:momenta
 13	.	.	PUNCT	_	_	11	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000187
+# speaker = Stolo
+# edition_loc = 1.7.1
+# text_old = Stolo, Quod ad hanc formam naturalem pertinet, de eo non incommode Cato videtur dicere, cum scribit optimum agrum esse, qui sub radice montis situs sit et spectet ad meridianam caeli partem.
+# text = Stolo: quod ad hanc formam naturalem pertinet, de eo non incommode Cato videtur dicere, cum scribit optimum agrum esse, qui sub radice montis situs sit et spectet ad meridianam caeli partem.
+# text_en = Stolo: “What pertains to this natural form, about that Cato seems to speak not unfittingly, when he writes that a field is best which is situated at the foot of a mountain and faces toward the southern part of the sky.”
+# text_fr = Stolon : « Ce qui concerne cette forme naturelle, là-dessus Caton semble parler non sans justesse, quand il écrit qu’un champ est le meilleur, qui est situé au pied d’une montagne et regarde vers la partie méridionale du ciel. »
+# text_fi = Stolo: ”Mikä koskee tätä luonnollista muotoa, siitä Cato näyttää puhuvan ei sopimattomasti, kun hän kirjoittaa, että se pelto on paras, joka sijaitsee vuoren juurella ja on suunnattu kohti taivaan eteläistä osaa.”
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	Stolo	Stolo	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Sur|Number=Sing	15	parataxis:reporting	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Stolo
+2	:	:	PUNCT	_	_	1	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+3	quod	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	8	nsubj	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|OrigForm=Quod|Speaker=Stolo
+4	ad	ad	ADP	_	_	6	case	_	DiscourseMode=Dialogue|Speaker=Stolo
+5	hanc	hic	DET	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	6	det	_	DiscourseMode=Dialogue|Speaker=Stolo
+6	formam	forma	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	8	obl:arg	_	DiscourseMode=Dialogue|Speaker=Stolo
+7	naturalem	naturalis	ADJ	_	Case=Acc|Gender=Fem|InflClass=IndEurI|Number=Sing	6	amod	_	DiscourseMode=Dialogue|Speaker=Stolo
+8	pertinet	pertineo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+9	,	,	PUNCT	_	_	8	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+10	de	de	ADP	_	_	11	case	_	DiscourseMode=Dialogue|Speaker=Stolo
+11	eo	is	PRON	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	16	obl	_	DiscourseMode=Dialogue|Speaker=Stolo|SyntaxNote=Prolepsis
+12	non	non	PART	_	Polarity=Neg	13	advmod:neg	_	DiscourseMode=Dialogue|Speaker=Stolo
+13	incommode	incommode	ADV	_	_	16	advmod	_	DiscourseMode=Dialogue|Speaker=Stolo
+14	Cato	Cato	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Sur|Number=Sing	15	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Stolo
+15	videtur	video	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	DiscourseMode=Dialogue|Speaker=Stolo
+16	dicere	dico	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	15	xcomp	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+17	,	,	PUNCT	_	_	19	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+18	cum	cum	SCONJ	_	_	19	mark	_	DiscourseMode=Dialogue|Speaker=Stolo
+19	scribit	scribo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	advcl	_	DiscourseMode=Dialogue|Speaker=Stolo
+20	optimum	bonus	ADJ	_	Case=Acc|Degree=Abs|Gender=Masc|InflClass=IndEurO|Number=Sing	19	ccomp	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000187_01|ReviewTags=Syntax;Translation|Speaker=Stolo
+21	agrum	ager	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	20	nsubj	_	DiscourseMode=Dialogue|Speaker=Stolo
+22	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	20	cop	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+23	,	,	PUNCT	_	_	28	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+24	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	28	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Stolo
+25	sub	sub	ADP	_	_	26	case	_	DiscourseMode=Dialogue|Speaker=Stolo
+26	radice	radix	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurX|Number=Sing	28	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Stolo
+27	montis	mons	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurI|Number=Sing	26	nmod	_	DiscourseMode=Dialogue|Speaker=Stolo
+28	situs	sino	VERB	_	Aspect=Perf|Case=Nom|Gender=Masc|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	21	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Stolo
+29	sit	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	_	DiscourseMode=Dialogue|Speaker=Stolo
+30	et	et	CCONJ	_	_	31	cc	_	DiscourseMode=Dialogue|Speaker=Stolo
+31	spectet	specto	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+32	ad	ad	ADP	_	_	35	case	_	DiscourseMode=Dialogue|Speaker=Stolo
+33	meridianam	meridianus	ADJ	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	35	amod	_	DiscourseMode=Dialogue|Speaker=Stolo
+34	caeli	caelum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	35	nmod	_	DiscourseMode=Dialogue|Speaker=Stolo
+35	partem	pars	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurI|Number=Sing	31	obl:lmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+36	.	.	PUNCT	_	_	15	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000188
+# speaker = Scrofa
+# edition_loc = 1.7.2
+# text_old = Subicit Scrofa, De formae cultura hoc dico, quae specie fiant venustiora, sequi ut maiore quoque fructu sint, ut qui habent arbusta, si sata sunt in quincuncem, propter ordines atque intervalla modica.
+# text = subicit Scrofa: de formae cultura hoc dico, quae specie fiant venustiora, sequi ut maiore quoque fructu sint, ut qui habent arbusta, si sata sunt in quincuncem, propter ordines atque intervalla modica.
+# text_en = Scrofa adds: “About the cultivation of the form I say this: that it follows that the things which become more pleasing in appearance are also of greater yield, as [is the case with] those who have tree plantations, if these are planted in a quincunx, on account of the rows and the moderate intervals.”
+# text_fr = Scrofa ajoute : « Sur la culture de la forme, je dis ceci : il s’ensuit que les choses qui deviennent plus plaisantes d’aspect sont aussi d’un plus grand rapport, comme [c’est le cas pour] ceux qui ont des plantations d’arbres, si elles sont plantées en quinconce, à cause des rangées et des intervalles modérés. »
+# text_fi = Scrofa lisää: ”Muodon viljelystä sanon tämän: seuraa, että ne asiat, jotka tulevat ulkonäöltään miellyttävämmiksi, ovat myös suurempituottoisia, kuten [on laita] niillä, joilla on puuistutuksia, jos ne on istutettu viisikkoasetelmaan, rivien ja kohtuullisten välien vuoksi.”
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	subicit	subicio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	parataxis:reporting	_	DiscourseMode=Narrative|OrigForm=Subicit|Speaker=Scrofa
+2	Scrofa	Scrofa	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurA|NameType=Sur|Number=Sing	1	nsubj	_	DiscourseMode=Narrative|SpaceAfter=No|Speaker=Scrofa
+3	:	:	PUNCT	_	_	1	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
+4	de	de	ADP	_	_	6	case	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|OrigForm=De|Speaker=Scrofa
+5	formae	forma	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|Number=Sing	6	nmod	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000188_01|ReviewTags=Textual;Interpretation|Speaker=Scrofa|Variant=Giusta:forma_e
+6	cultura	cultura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	8	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	hoc	hic	DET	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	8	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=Prolepsis:Cataphoric
+8	dico	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+9	,	,	PUNCT	_	_	12	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	12	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	specie	species	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurE|Number=Sing	12	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	fiant	fio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	csubj:relcl	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000188_02|ReviewTags=Syntax|Speaker=Scrofa|SyntaxNote=ClauseDisplaced
+13	venustiora	venustus	ADJ	_	Case=Nom|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Plur	12	xcomp	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+14	,	,	PUNCT	_	_	12	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	sequi	sequor	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Pass	7	acl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	ut	ut	SCONJ	_	_	19	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+17	maiore	magnus	ADJ	_	Case=Abl|Degree=Cmp|Gender=Masc|InflClass=IndEurX|Number=Sing	19	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	quoque	quoque	PART	_	_	19	discourse	_	DiscourseMode=Dialogue|Speaker=Scrofa
+19	fructu	fructus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurU|Number=Sing	15	csubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+20	sint	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+21	,	,	PUNCT	_	_	24	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+22	ut	ut	SCONJ	_	_	24	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+23	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	24	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:quem
+24	habent	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	advcl:cmp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+25	arbusta	arbustum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	24	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+26	,	,	PUNCT	_	_	28	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+27	si	si	SCONJ	_	_	28	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+28	sata	sero	VERB	_	Aspect=Perf|Case=Nom|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Plur|VerbForm=Part|Voice=Pass	24	advcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+29	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+30	in	in	ADP	_	_	31	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+31	quincuncem	quincunx	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	28	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+32	,	,	PUNCT	_	_	28	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+33	propter	propter	ADP	_	_	34	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+34	ordines	ordo	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Plur	24	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+35	atque	atque	CCONJ	_	_	36	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+36	intervalla	intervallum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	34	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+37	modica	modicus	ADJ	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	36	amod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+38	.	.	PUNCT	_	_	8	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000189
+# speaker = Scrofa
+# edition_loc = 1.7.2
+# text_old = Itaque maiores nostri ex arvo aeque magno male consito et minus multum et minus bonum faciebant vinum et frumentum, quod quae suo quicque loco sunt posita, ea minus loci occupant, et minus officit aliud alii ab sole ac luna et vento.
+# text = itaque maiores nostri ex arvo aeque magno male consito et minus multum et minus bonum faciebant vinum et frumentum, quod quae suo quicque loco sunt posita, ea minus loci occupant, et minus officit aliud alii ab sole ac luna et vento.
+# text_en = Therefore our ancestors, from a field equally large but badly planted, made both less abundant and less good wine and grain, because the things which have been placed each in its own place, those occupy less space, and one thing obstructs another less from the sun and the moon and the wind.
+# text_fr = Ainsi nos ancêtres, d’un champ également grand mais mal planté, faisaient un vin et un blé à la fois moins abondants et moins bons, parce que les choses qui ont été placées chacune à sa place, celles-ci occupent moins d’espace, et l’une gêne moins l’autre à l’égard du soleil, de la lune et du vent.
+# text_fi = Siksi esi-isämme tekivät yhtä suuresta mutta huonosti istutetusta pellosta sekä vähemmän runsasta että vähemmän hyvää viiniä ja viljaa, koska ne asiat, jotka on asetettu kukin omalle paikalleen, ne vievät vähemmän tilaa, ja yksi estää toista vähemmän auringolta ja kuulta ja tuulelta.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	itaque	itaque	PART	_	_	16	discourse	_	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Scrofa
+2	maiores	maior	ADJ	_	Case=Nom|Degree=Cmp|Gender=Masc|InflClass=IndEurX|Number=Plur	16	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	nostri	noster	DET	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Plur|Number[psor]=Plur|Person[psor]=1|Poss=Yes|PronType=Prs	2	det:poss	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	ex	ex	ADP	_	_	5	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	arvo	arvum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	16	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	aeque	aeque	ADV	_	_	7	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	magno	magnus	ADJ	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	5	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	male	male	ADV	_	_	9	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:sed+
+9	consito	consero	VERB	_	Aspect=Perf|Case=Abl|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	et	et	CCONJ	_	_	12	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	minus	parum	ADV	_	Degree=Cmp	12	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	multum	multus	DET	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing|NumType=Card|PronType=Ind	17	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	et	et	CCONJ	_	_	15	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	minus	parum	ADV	_	Degree=Cmp	15	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	bonum	bonus	ADJ	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	12	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	faciebant	facio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000189_01|ReviewTags=Textual;Interpretation|Speaker=Scrofa|Variant=Giusta:†faciebant†
+17	vinum	vinum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	16	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	et	et	CCONJ	_	_	19	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+19	frumentum	frumentum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	17	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+20	,	,	PUNCT	_	_	32	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+21	quod	quod	SCONJ	_	_	32	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+22	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	27	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+23	suo	suus	DET	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing|Person[psor]=3|Poss=Yes|PronType=Prs|Reflex=Yes	25	det:poss	_	DiscourseMode=Dialogue|Speaker=Scrofa
+24	quicque	quisque	PRON	_	Case=Nom|Compound=Yes|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Ind	22	appos	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=PartitiveApposition|Variant=Heurgon:quaeque
+25	loco	locus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	27	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+26	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	aux:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+27	posita	pono	VERB	_	Aspect=Perf|Case=Nom|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Plur|VerbForm=Part|Voice=Pass	29	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+28	,	,	PUNCT	_	_	27	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+29	ea	is	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Dem	32	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=Prolepsis
+30	minus	parvus	ADJ	_	Case=Acc|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Sing	32	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+31	loci	locus	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	30	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+32	occupant	occupo	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+33	,	,	PUNCT	_	_	36	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+34	et	et	CCONJ	_	_	36	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+35	minus	parum	ADV	_	Degree=Cmp	36	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+36	officit	officio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	32	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+37	aliud	alius	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Con	36	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+38	alii	alius	DET	_	Case=Dat|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Con	36	obl:arg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+39	ab	ab	ADP	_	_	40	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+40	sole	sol	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurX|Number=Sing	36	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+41	ac	atque	CCONJ	_	_	42	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+42	luna	luna	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	40	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+43	et	et	CCONJ	_	_	44	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+44	vento	ventus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	40	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+45	.	.	PUNCT	_	_	16	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000190
+# speaker = Scrofa
+# edition_loc = 1.7.3
+# text_old = Hoc licet coniectura videre ex aliquot rebus, ut nuces integras quas uno modio comprendere possis, quod putamina suo loco quaeque habet natura composita, cum easdem, si fregeris, vix sesquimodio concipere possis.
+# text = hoc licet coniectura videre ex aliquot rebus, ut nuces integras quas uno modio comprendere possis, quod putamina suo loco quaeque habet natura composita, cum easdem, si fregeris, vix sesquimodio concipere possis.
+# text_en = This one may see by inference from several things, as the whole nuts which you can hold in one modius, because nature holds the shells composed, each in its own place, whereas the same, if you have broken them, you can scarcely contain in a modius and a half.
+# text_fr = On peut voir cela par conjecture d’après un certain nombre de faits, comme les noix entières que tu peux contenir dans un seul modius, parce que la nature tient les coquilles composées, chacune à sa place, alors que les mêmes, si tu les as cassées, tu peux à peine les contenir dans un modius et demi.
+# text_fi = Tämän voi nähdä päättelemällä useista asioista, kuten ehjät pähkinät, jotka voit mahduttaa yhteen modiukseen, koska luonto pitää kuoret koottuina, kunkin omalla paikallaan, kun taas samoja, jos olet rikkonut ne, tuskin voit mahduttaa puoleentoista modiukseen.
+# VariantStructure = Giusta:transpose_21_after_22
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	hoc	hic	DET	_	Case=Acc|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	4	obj	_	DiscourseMode=Dialogue|OrigForm=Hoc|Speaker=Scrofa
+2	licet	licet	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	coniectura	coniectura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	4	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	videre	video	VERB	_	Aspect=Imp|InflClass=LatE|VerbForm=Inf|Voice=Act	2	csubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	ex	ex	ADP	_	_	7	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	aliquot	aliquot	DET	_	Case=Abl|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind	7	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	rebus	res	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurE|Number=Plur	4	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+8	,	,	PUNCT	_	_	10	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	ut	ut	SCONJ	_	_	10	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	nuces	nux	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Plur	4	advcl:cmp	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000190_01|ReviewTags=Syntax;Textual|Speaker=Scrofa|Variant=Giusta:nucibus
+11	integras	integer	ADJ	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	10	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	quas	qui	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Rel	15	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	uno	unus	NUM	_	Case=Abl|Gender=Masc|InflClass=LatPron|Number=Sing|NumForm=Word|NumType=Card	14	nummod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	modio	modius	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	15	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	comprendere	comprehendo	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	16	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	possis	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	10	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+17	,	,	PUNCT	_	_	23	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	quod	quod	SCONJ	_	_	23	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+19	putamina	putamen	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurX|Number=Plur	23	obj	25:nsubj	DiscourseMode=Dialogue|Speaker=Scrofa
+20	suo	suus	DET	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing|Person[psor]=3|Poss=Yes|PronType=Prs|Reflex=Yes	21	det:poss	_	DiscourseMode=Dialogue|Speaker=Scrofa
+21	loco	locus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	25	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+22	quaeque	quisque	PRON	_	Case=Acc|Compound=Yes|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Ind	19	appos	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000190_02|ReviewTags=Syntax;Morphology|Speaker=Scrofa|SyntaxNote=PartitiveApposition
+23	habet	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	advcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+24	natura	natura	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	23	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+25	composita	compono	VERB	_	Aspect=Perf|Case=Acc|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Plur|VerbForm=Part|Voice=Pass	23	advcl:pred	23:advcl	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+26	,	,	PUNCT	_	_	36	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+27	cum	cum	SCONJ	_	_	36	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+28	easdem	idem	DET	_	Case=Acc|Form=Emp|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Dem	35	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+29	,	,	PUNCT	_	_	31	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+30	si	si	SCONJ	_	_	31	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+31	fregeris	frango	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Sub|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	36	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+32	,	,	PUNCT	_	_	31	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+33	vix	vix	ADV	_	_	36	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+34	sesquimodio	sesquimodius	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	35	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+35	concipere	concipio	VERB	_	Aspect=Imp|InflClass=LatI2|VerbForm=Inf|Voice=Act	36	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+36	possis	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	16	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+37	.	.	PUNCT	_	_	2	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000191
+# speaker = Scrofa
+# edition_loc = 1.7.4
+# text_old = Praeterea quae arbores in ordinem satae sunt, eas aequabiliter ex omnibus partibus sol ac luna coquunt.
+# text = praeterea quae arbores in ordinem satae sunt, eas aequabiliter ex omnibus partibus sol ac luna coquunt.
+# text_en = Besides, the trees which have been planted in a row, those the sun and the moon ripen evenly from all sides.
+# text_fr = En outre, les arbres qui ont été plantés en rang, ceux-ci le soleil et la lune les mûrissent également de toutes parts.
+# text_fi = Lisäksi ne puut, jotka on istutettu riviin, niitä aurinko ja kuu kypsyttävät tasaisesti joka puolelta.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	praeterea	praeterea	ADV	_	Compound=Yes	17	advmod	_	DiscourseMode=Dialogue|OrigForm=Praeterea|Speaker=Scrofa
+2	quae	qui	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Rel	3	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	arbores	arbor	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Plur	6	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	in	in	ADP	_	_	5	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	ordinem	ordo	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	6	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	satae	sero	VERB	_	Aspect=Perf|Case=Nom|Gender=Fem|InflClass=LatX|InflClass[nominal]=IndEurA|Number=Plur|VerbForm=Part|Voice=Pass	9	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+8	,	,	PUNCT	_	_	6	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	eas	is	PRON	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Dem	17	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=Prolepsis
+10	aequabiliter	aequabiliter	ADV	_	_	17	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	ex	ex	ADP	_	_	13	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	omnibus	omnis	DET	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Plur|PronType=Tot	13	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	partibus	pars	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Plur	17	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	sol	sol	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|Number=Sing	17	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	ac	atque	CCONJ	_	_	16	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	luna	luna	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	14	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+17	coquunt	coquo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+18	.	.	PUNCT	_	_	17	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000192
+# speaker = Scrofa
+# edition_loc = 1.7.4
+# text_old = Quo fit ut uvae et oleae plures nascantur et ut celerius coquantur.
+# text = quo fit ut uvae et oleae plures nascantur et ut celerius coquantur.
+# text_en = By which it comes about that grapes and olives grow more numerous and that they ripen more quickly.
+# text_fr = Par quoi il arrive que les raisins et les olives naissent plus nombreux et qu’ils mûrissent plus vite.
+# text_fi = Minkä vuoksi tapahtuu, että rypäleitä ja oliiveja syntyy lukuisampina ja että ne kypsyvät nopeammin.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	quo	qui	PRON	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	2	obl	_	DiscourseMode=Dialogue|OrigForm=Quo|ReviewNote=RNP_S000192_01|ReviewTags=Syntax|Speaker=Scrofa|SyntaxNote=ClauseDisplaced:Connective
+2	fit	fio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	ut	ut	SCONJ	_	_	8	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	uvae	uva	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Plur	8	nsubj	7:nsubj	DiscourseMode=Dialogue|Speaker=Scrofa
+5	et	et	CCONJ	_	_	6	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	oleae	olea	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Plur	4	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	plures	multus	DET	_	Case=Nom|Degree=Cmp|Gender=Fem|InflClass=IndEurX|Number=Plur|NumType=Card|PronType=Ind	8	advcl:pred	8:advcl	DiscourseMode=Dialogue|Speaker=Scrofa
+8	nascantur	nascor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	2	csubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	et	et	CCONJ	_	_	12	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	ut	ut	SCONJ	_	_	12	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	celerius	celeriter	ADV	_	Degree=Cmp	12	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	coquantur	coquo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	8	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+13	.	.	PUNCT	_	_	2	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000193
+# speaker = Scrofa
+# edition_loc = 1.7.4
+# text_old = Quas res duas sequuntur altera illa duo, ut plus reddant musti et olei et preti pluris.
+# text = quas res duas sequuntur altera illa duo, ut plus reddant musti et olei et preti pluris.
+# text_en = Which two things those other two follow: that they yield more of must and of oil, and of a higher price.
+# text_fr = Lesquelles deux choses, ces deux autres les suivent : qu’ils rendent plus de moût et d’huile, et d’un plus grand prix.
+# text_fi = Mitkä kaksi asiaa nuo toiset kaksi seuraavat: että ne tuottavat enemmän rypälemehua ja öljyä, ja korkeampaan hintaan.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	quas	qui	DET	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Rel	2	det	_	DiscourseMode=Dialogue|OrigForm=Quas|ReviewNote=RNP_S000193_01|ReviewTags=Syntax|Speaker=Scrofa|SyntaxNote=ClauseDisplaced:Connective
+2	res	res	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurE|Number=Plur	4	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	duas	duo	NUM	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur|NumForm=Word|NumType=Card	2	nummod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	sequuntur	sequor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	altera	alter	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Con	7	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	illa	ille	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Dem	7	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	duo	duo	NUM	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur|NumForm=Word|NumType=Card	4	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+8	,	,	PUNCT	_	_	11	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	ut	ut	SCONJ	_	_	11	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	plus	multus	DET	_	Case=Acc|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Sing|NumType=Card|PronType=Ind	11	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	reddant	reddo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	musti	mustum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	10	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	et	et	CCONJ	_	_	14	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	olei	oleum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	12	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	et	et	CCONJ	_	_	16	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	preti	pretium	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	10	conj	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000193_02|ReviewTags=Syntax;Interpretation|Speaker=Scrofa
+17	pluris	multus	DET	_	Case=Gen|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Sing|NumType=Card|PronType=Ind	16	det	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+18	.	.	PUNCT	_	_	4	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000194
+# speaker = Scrofa
+# edition_loc = 1.7.5
+# text_old = Sequitur secundum illud, quali terra solum sit fundi, a qua parte vel maxime bonus aut non bonus appellatur.
+# text = sequitur secundum illud, quali terra solum sit fundi, a qua parte vel maxime bonus aut non bonus appellatur.
+# text_en = That second [point] follows, of what earth the soil of the farm is, from which aspect it is above all called good or not good.
+# text_fr = Vient ensuite ce second [point], de quelle terre est le sol du domaine, aspect d’après lequel il est appelé surtout bon ou non bon.
+# text_fi = Seuraa tuo toinen [kohta], millaista maata tilan maaperä on, minkä puolen perusteella sitä kaikkein eniten kutsutaan hyväksi tai ei-hyväksi.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	sequitur	sequor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	DiscourseMode=Dialogue|OrigForm=Sequitur|Speaker=Scrofa
+2	secundum	secundus	ADJ	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing|NumType=Ord	3	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	illud	ille	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	1	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa|SyntaxNote=Prolepsis:Cataphoric
+4	,	,	PUNCT	_	_	6	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	quali	qualis	DET	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Sing|PronType=Int	6	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	terra	terra	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	3	acl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	solum	solum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	6	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	sit	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	fundi	fundus	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	7	nmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+10	,	,	PUNCT	_	_	20	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	a	ab	ADP	_	_	13	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	qua	qui	DET	_	Case=Abl|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	13	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	parte	pars	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Sing	20	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	vel	vel	ADV	_	_	15	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	maxime	magis	ADV	_	Degree=Abs	20	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	bonus	bonus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	20	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+17	aut	aut	CCONJ	_	_	19	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	non	non	PART	_	Polarity=Neg	19	advmod:neg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+19	bonus	bonus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	16	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+20	appellatur	appello	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	3	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+21	.	.	PUNCT	_	_	1	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000195
+# speaker = Scrofa
+# edition_loc = 1.7.5
+# text_old = Refert enim, quae res in eo seri nascique et cuius modi possint;
+# text = refert enim, quae res in eo seri nascique et cuius modi possint;
+# text_en = For it matters which things and of what kind can be sown and grow in it;
+# text_fr = Il importe en effet quelles choses et de quelle sorte peuvent être semées et naître dans celui-ci ;
+# text_fi = Merkitsee näet, mitkä ja millaiset asiat voivat tulla siinä kylvetyiksi ja kasvaa;
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	refert	refert	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|OrigForm=Refert|Speaker=Scrofa
+2	enim	enim	PART	_	_	1	discourse	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+3	,	,	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	quae	qui	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Plur|PronType=Int	5	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	res	res	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurE|Number=Plur	14	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	in	in	ADP	_	_	7	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	eo	is	PRON	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	8	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	seri	sero	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Pass	14	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9-10	nascique	_	_	_	_	_	_	_	_
+9	nasci	nascor	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Pass	8	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	que	que	CCONJ	_	_	9	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	et	et	CCONJ	_	_	13	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	cuius	qui	DET	_	Case=Gen|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Int	13	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	modi	modus	NOUN	_	Case=Gen|Gender=Masc|InflClass=IndEurO|Number=Sing	4	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	possint	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	csubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+15	;	;	PUNCT	_	_	1	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000196
+# speaker = Scrofa
+# edition_loc = 1.7.5
+# text_old = non enim eadem omnia in eodem agro recte possunt.
+# text = non enim eadem omnia in eodem agro recte possunt.
+# text_en = For not all the same things can [be sown and grow] properly in the same field.
+# text_fr = Car les mêmes choses ne peuvent pas toutes [être semées et naître] convenablement dans le même champ.
+# text_fi = Eivät näet kaikki samat asiat voi [tulla kylvetyiksi ja kasvaa] oikein samalla pellolla.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	non	non	PART	_	Polarity=Neg	9	advmod:neg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+2	enim	enim	PART	_	_	9	discourse	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	eadem	idem	DET	_	Case=Nom|Form=Emp|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Dem	9	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	omnia	omnis	DET	_	Case=Nom|Gender=Neut|InflClass=IndEurI|Number=Plur|PronType=Tot	3	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	in	in	ADP	_	_	7	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	eodem	idem	DET	_	Case=Abl|Form=Emp|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	7	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	agro	ager	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	9	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	recte	recte	ADV	_	_	9	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:reddere
+9	possunt	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000196_01|ReviewTags=Syntax;Textual|SpaceAfter=No|Speaker=Scrofa|SyntaxNote=Ellipsis
+10	.	.	PUNCT	_	_	9	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000197
+# speaker = Scrofa
+# edition_loc = 1.7.5
+# text_old = Nam ut alius est ad vitem appositus, alius ad frumentum, sic de ceteris alius ad aliam rem.
+# text = nam ut alius est ad vitem appositus, alius ad frumentum, sic de ceteris alius ad aliam rem.
+# text_en = For as one [field] is suited to the vine, another to grain, so with the rest, one to one thing, another to another.
+# text_fr = Car, de même que l’un est approprié à la vigne, l’autre au blé, ainsi pour le reste, l’un à une chose, l’autre à une autre.
+# text_fi = Sillä niin kuin yksi on sovelias viiniköynnökselle, toinen viljalle, niin muistakin yksi yhdelle asialle, toinen toiselle.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	nam	nam	PART	_	_	16	discourse	16.1:discourse	DiscourseMode=Dialogue|OrigForm=Nam|Speaker=Scrofa
+2	ut	ut	SCONJ	_	_	7	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	alius	alius	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	7	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	ad	ad	ADP	_	_	6	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	vitem	vitis	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurI|Number=Sing	7	obl:arg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	appositus	appositus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	16	orphan	16.1:advcl:cmp	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+8	,	,	PUNCT	_	_	9	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	alius	alius	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	7	conj	9.1:nsubj	DiscourseMode=Dialogue|Speaker=Scrofa
+9.1	appositus	_	_	_	_	_	_	7:conj	InheritedFrom=S000197:7
+10	ad	ad	ADP	_	_	11	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	frumentum	frumentum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing	9	orphan	9.1:obl:arg	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+12	,	,	PUNCT	_	_	7	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	sic	sic	ADV	_	_	16	orphan	16.1:advmod	DiscourseMode=Dialogue|Speaker=Scrofa
+14	de	de	ADP	_	_	15	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	ceteris	ceterus	DET	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur|PronType=Con	16	orphan	16.1:obl	DiscourseMode=Dialogue|Speaker=Scrofa
+16	alius	alius	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	0	root	16.1:nsubj	DiscourseMode=Dialogue|Speaker=Scrofa
+16.1	appositus	_	_	_	_	_	_	0:root	InheritedFrom=S000197:7
+17	ad	ad	ADP	_	_	19	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	aliam	alius	DET	_	Case=Acc|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Con	19	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+19	rem	res	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurE|Number=Sing	16	orphan	16.1:obl:arg	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+20	.	.	PUNCT	_	_	16	punct	16.1:punct	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000198
+# speaker = Scrofa
+# edition_loc = 1.7.6
+# text_old = Itaque Cretae ad Cortyniam dicitur platanus esse, quae folia hieme non amittat, itemque in Cypro, ut Theophrastus ait, una, item Subari, qui nunc Thurii dicuntur, quercus simili esse natura, quae est in oppidi conspectu;
+# text = itaque Cretae ad Cortyniam dicitur platanus esse, quae folia hieme non amittat, itemque in Cypro, ut Theophrastus ait, una, item Subari, qui nunc Thurii dicuntur, quercus simili esse natura, quae est in oppidi conspectu;
+# text_en = Thus in Crete near Cortynia a plane tree is said to be, which does not lose its leaves in winter, and likewise in Cyprus, as Theophrastus says, one, likewise at Sybaris, which now are called Thurii, an oak [is said] to be of a similar nature, which is in sight of the town;
+# text_fr = Ainsi en Crète, près de Cortynia, un platane est dit se trouver, qui ne perd pas ses feuilles en hiver, et de même à Chypre, comme le dit Théophraste, un [autre], de même à Sybaris, qui sont maintenant appelés Thurii, un chêne [est dit] être d’une nature semblable, qui est en vue de la ville ;
+# text_fi = Niinpä Kreetalla Cortynian lähellä sanotaan olevan plataani, joka ei pudota lehtiään talvella, ja samoin Kyproksella, kuten Theofrastos sanoo, yksi, samoin Sybariksessa, joita nyt kutsutaan Thuriiksi, tammen [sanotaan] olevan samankaltaista luontoa, joka on kaupungin näkyvillä;
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	itaque	itaque	PART	_	_	5	discourse	_	DiscourseMode=Dialogue|OrigForm=Itaque|Speaker=Scrofa
+2	Cretae	Creta	PROPN	_	Case=Loc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	5	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	ad	ad	ADP	_	_	4	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	Cortyniam	Cortynia	PROPN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	2	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	dicitur	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	platanus	platanus	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurO|Number=Sing	5	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	2	cop	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+8	,	,	PUNCT	_	_	13	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	13	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	folia	folium	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	13	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	hieme	hiems	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurX|Number=Sing	13	obl:tmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	non	non	PART	_	Polarity=Neg	13	advmod:neg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	amittat	amitto	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+14	,	,	PUNCT	_	_	24	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15-16	itemque	_	_	_	_	_	_	_	_
+15	item	item	ADV	_	_	24	orphan	24.1:advmod	DiscourseMode=Dialogue|Speaker=Scrofa
+16	que	que	CCONJ	_	_	24	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+17	in	in	ADP	_	_	18	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	Cypro	Cyprus	PROPN	_	Case=Abl|Gender=Fem|InflClass=IndEurO|NameType=Geo|Number=Sing	24	orphan	24.1:xcomp	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+19	,	,	PUNCT	_	_	22	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+20	ut	ut	SCONJ	_	_	22	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+21	Theophrastus	Theophrastus	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	22	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+22	ait	aio	VERB	_	Aspect=Imp|InflClass=LatI2|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	orphan	24.1:advcl:cmp	DiscourseMode=Dialogue|ReviewNote=RNP_S000198_01|ReviewTags=Syntax;Interpretation|SpaceAfter=No|Speaker=Scrofa
+23	,	,	PUNCT	_	_	22	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+24	una	unus	DET	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|NumType=Card|NumValue=1|PronType=Ind	5	conj	24.1:nsubj:pass	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+24.1	dicitur	_	_	_	_	_	_	5:conj	InheritedFrom=S000198:5
+25	,	,	PUNCT	_	_	34	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+26	item	item	ADV	_	_	34	orphan	34.1:advmod	DiscourseMode=Dialogue|Speaker=Scrofa
+27	Subari	Sybaris	PROPN	_	Case=Loc|Gender=Fem|InflClass=IndEurI|NameType=Geo|Number=Sing	37	obl:lmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+28	,	,	PUNCT	_	_	32	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+29	qui	qui	PRON	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Rel	32	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+30	nunc	nunc	ADV	_	AdvType=Tim	32	advmod:tmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+31	Thurii	Thurii	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Geo|Number=Plur	32	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+32	dicuntur	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	27	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+33	,	,	PUNCT	_	_	32	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+34	quercus	quercus	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurU|Number=Sing	5	conj	34.1:nsubj:pass	DiscourseMode=Dialogue|Speaker=Scrofa
+34.1	dicitur	_	_	_	_	_	_	5:conj	InheritedFrom=S000198:5
+35	simili	similis	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurI|Number=Sing	37	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=MSS:similis
+36	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	37	cop	_	DiscourseMode=Dialogue|Speaker=Scrofa
+37	natura	natura	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	34	orphan	34.1:xcomp	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+38	,	,	PUNCT	_	_	43	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+39	quae	qui	PRON	_	Case=Nom|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Rel	43	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+40	est	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	cop	_	DiscourseMode=Dialogue|Speaker=Scrofa
+41	in	in	ADP	_	_	43	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+42	oppidi	oppidum	NOUN	_	Case=Gen|Gender=Neut|InflClass=IndEurO|Number=Sing	43	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+43	conspectu	conspectus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurU|Number=Sing	34	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+44	;	;	PUNCT	_	_	5	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000199
+# speaker = Scrofa
+# edition_loc = 1.7.6
+# text_old = item contra atque apud nos fieri ad Elephantinen, ut neque ficus neque vites amittant folia.
+# text = item contra atque apud nos fieri ad Elephantinen, ut neque ficus neque vites amittant folia.
+# text_en = Likewise, contrary to [what happens] among us, [it is said] to happen at Elephantine that neither the figs nor the vines lose their leaves.
+# text_fr = De même, à l’inverse de chez nous, il [est dit] arriver à Éléphantine que ni les figuiers ni les vignes ne perdent leurs feuilles.
+# text_fi = Samoin, päinvastoin kuin meillä, [sanotaan] tapahtuvan Elefantinella, etteivät viikunapuut eivätkä viiniköynnökset pudota lehtiään.
+# review_status = bronze
+# review_note = RNP_S000199_01
+# review_tags = Segmentation
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	item	item	ADV	_	_	6	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+2	contra	contra	ADV	_	_	6	advmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	atque	atque	SCONJ	_	_	5	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	apud	apud	ADP	_	_	5	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	nos	nos	PRON	_	Case=Acc|InflClass=LatAnom|Number=Plur|Person=1|PronType=Prs	2	advcl:cmp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	fieri	fio	VERB	_	Aspect=Imp|InflClass=LatI|VerbForm=Inf|Voice=Pass	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=Ellipsis
+7	ad	ad	ADP	_	_	8	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	Elephantinen	Elephantine	PROPN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing|Variant=Greek	6	obl:lmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+9	,	,	PUNCT	_	_	15	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	ut	ut	SCONJ	_	_	15	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	neque	neque	CCONJ	_	Polarity=Neg	12	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	ficus	ficus	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurU|Number=Plur	15	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	neque	neque	CCONJ	_	Polarity=Neg	14	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	vites	vitis	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Plur	12	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	amittant	amitto	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	csubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	folia	folium	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	15	obj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+17	.	.	PUNCT	_	_	6	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000200
+# speaker = Scrofa
+# edition_loc = 1.7.6
+# text_old = Propter eandem causam multa sunt bifera, ut vitis apud mare Zmyrnae, malus in agro Consentino.
+# text = propter eandem causam multa sunt bifera, ut vitis apud mare Zmyrnae, malus in agro Consentino.
+# text_en = For the same reason many [plants] are twice-bearing, as the vine by the sea at Smyrna, the apple tree in the Consentine territory.
+# text_fr = Pour la même raison beaucoup [de plantes] sont bifères, comme la vigne près de la mer à Smyrne, le pommier dans le territoire de Consentia.
+# text_fi = Samasta syystä monet [kasvit] kantavat satoa kahdesti, kuten viiniköynnös meren äärellä Smyrnassa, omenapuu Consentian alueella.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	propter	propter	ADP	_	_	3	case	_	DiscourseMode=Dialogue|OrigForm=Propter|Speaker=Scrofa
+2	eandem	idem	DET	_	Case=Acc|Form=Emp|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	3	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	causam	causa	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	6	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	multa	multus	DET	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur|NumType=Card|PronType=Ind	6	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	bifera	bifer	ADJ	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+7	,	,	PUNCT	_	_	9	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	ut	ut	SCONJ	_	_	9	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	vitis	vitis	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Sing	6	advcl:cmp	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000200_01|ReviewTags=Syntax|Speaker=Scrofa
+10	apud	apud	ADP	_	_	11	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	mare	mare	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurI|Number=Sing	9	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=AdnominalPP
+12	Zmyrnae	Smyrna	PROPN	_	Case=Loc|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	11	nmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+13	,	,	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	malus	malus	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurO|Number=Sing	9	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	in	in	ADP	_	_	16	case	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=MSS:biferae_ut+
+16	agro	ager	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	14	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=AdnominalPP
+17	Consentino	Consentinus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|NameType=Geo|Number=Sing	16	amod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+18	.	.	PUNCT	_	_	6	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000201
+# speaker = Scrofa
+# edition_loc = 1.7.7
+# text_old = Idem ostendit, quod in locis feris plura ferunt, in iis quae sunt culta meliora.
+# text = idem ostendit, quod in locis feris plura ferunt, in iis quae sunt culta meliora.
+# text_en = The same thing shows that in wild places they bear more, in those which are cultivated, better.
+# text_fr = La même chose montre que dans les lieux sauvages ils portent davantage, dans ceux qui sont cultivés, de meilleures [choses].
+# text_fi = Sama asia osoittaa, että villeillä paikoilla ne kantavat enemmän, niillä, jotka ovat viljeltyjä, parempaa.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	idem	idem	DET	_	Case=Nom|Form=Emp|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	2	nsubj	_	DiscourseMode=Dialogue|OrigForm=Idem|ReviewNote=RNP_S000201_01|ReviewTags=Syntax;Interpretation;Translation|Speaker=Scrofa
+2	ostendit	ostendo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+3	,	,	PUNCT	_	_	9	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	quod	quod	SCONJ	_	_	9	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	in	in	ADP	_	_	6	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	locis	locus	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur	9	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	feris	ferus	ADJ	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur	6	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	plura	multus	DET	_	Case=Acc|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Plur|NumType=Card|PronType=Ind	9	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	ferunt	fero	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa|Variant=Giusta:feruntur
+10	,	,	PUNCT	_	_	16	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	in	in	ADP	_	_	12	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	iis	is	PRON	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Dem	16	orphan	16.1:obl:lmod	DiscourseMode=Dialogue|Speaker=Scrofa
+13	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	15	nsubj:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	culta	colo	VERB	_	Aspect=Perf|Case=Nom|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Plur|VerbForm=Part|Voice=Pass	12	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	meliora	bonus	ADJ	_	Case=Acc|Degree=Cmp|Gender=Neut|InflClass=IndEurX|Number=Plur	9	conj	16.1:obj	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+16.1	ferunt	_	_	_	_	_	_	9:conj	InheritedFrom=S000201:9
+17	.	.	PUNCT	_	_	2	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000202
+# speaker = Scrofa
+# edition_loc = 1.7.7
+# text_old = Eadem de causa sunt quae non possunt vivere nisi in loco aquoso aut etiam aqua, et id discriminatim alia in lacubus, ut harundines in Reatino, alia in fluminibus, ut in Epiro arbores alni, alia in mari, ut scribit Theophrastus palmas et squillas.
+# text = eadem de causa sunt quae non possunt vivere nisi in loco aquoso aut etiam aqua, et id discriminatim alia in lacubus, ut harundines in Reatino, alia in fluminibus, ut in Epiro arbores alni, alia in mari, ut scribit Theophrastus palmas et squillas.
+# text_en = For the same reason there are [things] which cannot live except in a watery place or even in water, and that distinctively: some in lakes, as the reeds in the Reatine [district], others in rivers, as in Epirus the alder trees, others in the sea, as Theophrastus writes palms and squills [do].
+# text_fr = Pour la même raison il y a des [plantes] qui ne peuvent vivre que dans un lieu aqueux ou même dans l’eau, et cela de façon distincte : les unes dans les lacs, comme les roseaux dans le [territoire] de Réate, les autres dans les fleuves, comme en Épire les arbres d’aulne, d’autres dans la mer, comme Théophraste écrit [que le font] les palmiers et les squilles.
+# text_fi = Samasta syystä on [kasveja], jotka eivät voi elää muualla kuin vetisellä paikalla tai jopa vedessä, ja sekin eriytyneesti: toiset järvissä, kuten ruo’ot Reatinumin [alueella], toiset joissa, kuten Epeiroksessa leppäpuut, toiset meressä, kuten Theofrastos kirjoittaa palmujen ja merisipulien [elävän].
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	eadem	idem	DET	_	Case=Abl|Form=Emp|Gender=Fem|InflClass=LatPron|Number=Sing|PronType=Dem	3	det	_	DiscourseMode=Dialogue|OrigForm=Eadem|Speaker=Scrofa
+2	de	de	ADP	_	_	3	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	causa	causa	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	7	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	sunt	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop:outer	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000202_01|ReviewTags=Syntax|Speaker=Scrofa
+5	quae	qui	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Rel	7	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	non	non	PART	_	Polarity=Neg	7	advmod:neg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	possunt	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	vivere	vivo	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	7	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	nisi	nisi	SCONJ	_	_	11	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	in	in	ADP	_	_	11	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	loco	locus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	8	advcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	aquoso	aquosus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Sing	11	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	aut	aut	CCONJ	_	_	15	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	etiam	etiam	ADV	_	_	15	advmod:emph	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	aqua	aqua	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	11	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+16	,	,	PUNCT	_	_	18	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+17	et	et	CCONJ	_	_	18	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	id	is	PRON	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	7	conj	18.1:nsubj	DiscourseMode=Dialogue|ReviewNote=RNP_S000202_02|ReviewTags=Syntax;Enhanced|Speaker=Scrofa
+18.1	_	_	_	_	_	_	_	7:conj	_
+19	discriminatim	discriminatim	ADV	_	_	18	orphan	18.1:advmod	DiscourseMode=Dialogue|Speaker=Scrofa
+20	alia	alius	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Con	18	parataxis	22.1:nsubj	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta,MSS:ut+
+21	in	in	ADP	_	_	22	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+22	lacubus	lacus	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurU|Number=Plur	20	orphan	22.1:obl:lmod	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+22.1	vivunt	_	_	_	_	_	_	18.1:parataxis	InheritedFrom=S000202:8
+23	,	,	PUNCT	_	_	25	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+24	ut	ut	SCONJ	_	_	25	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:uiuant+
+25	harundines	harundo	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Plur	20	orphan	22.1:advcl:cmp	DiscourseMode=Dialogue|ReviewNote=RNP_S000202_03|ReviewTags=Syntax|Speaker=Scrofa
+26	in	in	ADP	_	_	27	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+27	Reatino	Reatinus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|NameType=Geo|Number=Sing	25	nmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa|SyntaxNote=AdnominalPP
+28	,	,	PUNCT	_	_	29	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+29	alia	alius	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Con	20	conj	31.1:nsubj	DiscourseMode=Dialogue|Speaker=Scrofa
+30	in	in	ADP	_	_	31	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+31	fluminibus	flumen	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurX|Number=Plur	29	orphan	31.1:obl:lmod	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+31.1	vivunt	_	_	_	_	_	_	22.1:conj	InheritedFrom=S000202:8
+32	,	,	PUNCT	_	_	36	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+33	ut	ut	SCONJ	_	_	36	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+34	in	in	ADP	_	_	35	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+35	Epiro	Epirus	PROPN	_	Case=Abl|Gender=Fem|InflClass=IndEurO|NameType=Geo|Number=Sing	36	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=AdnominalPP
+36	arbores	arbor	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurX|Number=Plur	29	orphan	31.1:advcl:cmp	DiscourseMode=Dialogue|Speaker=Scrofa
+37	alni	alnus	NOUN	_	Case=Gen|Gender=Fem|InflClass=IndEurO|Number=Sing	36	nmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+38	,	,	PUNCT	_	_	39	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+39	alia	alius	DET	_	Case=Nom|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Con	20	conj	41.1:nsubj	DiscourseMode=Dialogue|Speaker=Scrofa
+40	in	in	ADP	_	_	41	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+41	mari	mare	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurI|Number=Sing	39	orphan	41.1:obl:lmod	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+41.1	vivunt	_	_	_	_	_	_	22.1:conj	InheritedFrom=S000202:8
+42	,	,	PUNCT	_	_	44	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+43	ut	ut	SCONJ	_	_	44	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+44	scribit	scribo	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	39	orphan	41.1:advcl:cmp	DiscourseMode=Dialogue|Speaker=Scrofa
+45	Theophrastus	Theophrastus	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Giv|Number=Sing	44	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+46	palmas	palma	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	44	ccomp	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=Ellipsis
+47	et	et	CCONJ	_	_	48	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+48	squillas	squilla	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Plur	46	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+49	.	.	PUNCT	_	_	7	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000203
+# speaker = Scrofa
+# edition_loc = 1.7.8
+# text_old = In Gallia transalpina intus, ad Rhenum cum exercitum ducerem, aliquot regiones accessi, ubi nec vitis nec olea nec poma nascerentur, ubi agros stercorarent candida fossicia creta, ubi salem nec fossicium nec maritimum haberent, sed ex quibusdam lignis combustis carbonibus salsis pro eo uterentur.
+# text = in Gallia transalpina intus, ad Rhenum cum exercitum ducerem, aliquot regiones accessi, ubi nec vitis nec olea nec poma nascerentur, ubi agros stercorarent candida fossicia creta, ubi salem nec fossicium nec maritimum haberent, sed ex quibusdam lignis combustis carbonibus salsis pro eo uterentur.
+# text_en = In Transalpine Gaul, in the interior, when I was leading an army to the Rhine, I came to several regions where neither the vine nor the olive nor fruit trees grew, where they manured the fields with white dug chalk, where they had salt neither dug nor marine, but instead of it used salty coals from certain burnt woods.
+# text_fr = En Gaule transalpine, à l’intérieur, alors que je conduisais une armée vers le Rhin, j’ai abordé un certain nombre de régions où ne naissaient ni la vigne ni l’olivier ni les arbres fruitiers, où ils fumaient les champs avec une craie blanche extraite du sol, où ils n’avaient de sel ni fossile ni marin, mais à sa place se servaient de charbons salés tirés de certains bois brûlés.
+# text_fi = Alppien takaisessa Galliassa, sisämaassa, kun johdin armeijaa Reinille, saavuin muutamille seuduille, joissa ei kasvanut viiniköynnöstä eikä oliivia eikä hedelmäpuita, joissa he lannoittivat peltoja valkoisella kaivetulla liidulla, joissa heillä ei ollut suolaa, ei kaivettua eikä merestä saatua, vaan sen sijasta he käyttivät suolaisia hiiliä eräistä poltetuista puista.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	in	in	ADP	_	_	2	case	_	DiscourseMode=Dialogue|OrigForm=In|Speaker=Scrofa
+2	Gallia	Gallia	PROPN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	14	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	transalpina	transalpinus	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	2	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	intus	intus	ADV	_	AdvType=Loc	14	advmod:lmod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+5	,	,	PUNCT	_	_	10	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	ad	ad	ADP	_	_	7	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+7	Rhenum	Rhenus	PROPN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|NameType=Geo|Number=Sing	10	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	cum	cum	SCONJ	_	_	10	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=Anastrophe
+9	exercitum	exercitus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurU|Number=Sing	10	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	ducerem	duco	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	14	advcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+11	,	,	PUNCT	_	_	10	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	aliquot	aliquot	DET	_	Case=Acc|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind	13	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	regiones	regio	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurX|Number=Plur	14	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	accessi	accedo	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+15	,	,	PUNCT	_	_	23	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	23	advmod:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+17	nec	neque	CCONJ	_	Polarity=Neg	18	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	vitis	vitis	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurI|Number=Sing	23	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+19	nec	neque	CCONJ	_	Polarity=Neg	20	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+20	olea	olea	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	18	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+21	nec	neque	CCONJ	_	Polarity=Neg	22	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+22	poma	pomum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	18	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+23	nascerentur	nascor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	13	acl:relcl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+24	,	,	PUNCT	_	_	27	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+25	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	27	advmod:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+26	agros	ager	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	27	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+27	stercorarent	stercoro	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+28	candida	candidus	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	30	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+29	fossicia	fossicius	ADJ	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	30	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+30	creta	creta	NOUN	_	Case=Abl|Gender=Fem|InflClass=IndEurA|Number=Sing	27	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+31	,	,	PUNCT	_	_	38	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+32	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	38	advmod:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+33	salem	sal	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Sing	38	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+34	nec	neque	CCONJ	_	Polarity=Neg	35	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+35	fossicium	fossicius	ADJ	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	33	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+36	nec	neque	CCONJ	_	Polarity=Neg	37	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+37	maritimum	maritimus	ADJ	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	35	conj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+38	haberent	habeo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+39	,	,	PUNCT	_	_	49	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+40	sed	sed	CCONJ	_	_	49	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+41	ex	ex	ADP	_	_	43	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+42	quibusdam	quidam	DET	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Plur|PronType=Ind	43	det	_	DiscourseMode=Dialogue|Speaker=Scrofa
+43	lignis	lignum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Plur	45	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+44	combustis	comburo	VERB	_	Aspect=Perf|Case=Abl|Gender=Neut|InflClass=LatX|InflClass[nominal]=IndEurO|Number=Plur|VerbForm=Part|Voice=Pass	43	acl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+45	carbonibus	carbo	NOUN	_	Case=Abl|Gender=Masc|InflClass=IndEurX|Number=Plur	49	obl:arg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+46	salsis	salsus	ADJ	_	Case=Abl|Gender=Masc|InflClass=IndEurO|Number=Plur	45	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+47	pro	pro	ADP	_	_	48	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+48	eo	is	PRON	_	Case=Abl|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	49	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+49	uterentur	utor	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	38	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+50	.	.	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000204
+# speaker = Stolo
+# edition_loc = 1.7.9
+# text_old = Stolo, Cato quidem, inquit, gradatim praeponens alium alio agrum meliorem dicit esse in novem discriminibus, quod sit primus ubi vineae possint esse bono vino et multo, secundus ubi hortus inriguus, tertius ubi salicta, quartus ubi oliveta, quintus ubi pratum, sextus ubi campus frumentarius, septimus ubi caedua silva, octavus ubi arbustum, nonus ubi glandaria silva.
+# text = Stolo, Cato quidem – inquit – gradatim praeponens alium alio agrum meliorem dicit esse in novem discriminibus, quod sit primus ubi vineae possint esse bono vino et multo, secundus ubi hortus inriguus, tertius ubi salicta, quartus ubi oliveta, quintus ubi pratum, sextus ubi campus frumentarius, septimus ubi caedua silva, octavus ubi arbustum, nonus ubi glandaria silva.
+# text_en = Stolo said: “Cato indeed, ranking step by step, says that one field is better than another in nine grades: that the first is where vineyards can be of good and abundant wine, the second where [there is] an irrigated garden, the third where willow beds, the fourth where olive groves, the fifth where meadow, the sixth where grain land, the seventh where coppice wood, the eighth where tree plantation, the ninth where mast wood.”
+# text_fr = Stolon dit : « Caton certes, en classant par degrés, dit qu’un champ est meilleur qu’un autre selon neuf distinctions : que le premier est celui où les vignes peuvent être d’un vin bon et abondant, le deuxième où [il y a] un jardin irrigué, le troisième où des saulaies, le quatrième où des oliveraies, le cinquième où un pré, le sixième où une plaine à blé, le septième où un bois taillis, le huitième où une plantation d’arbres, le neuvième où un bois à glands. »
+# text_fi = Stolo sanoi: ”Cato tosin, asettaen asteittain järjestykseen, sanoo yhden pellon olevan toista parempi yhdeksän erottelun mukaan: että ensimmäinen on se, missä viinitarhat voivat olla hyvää ja runsasta viiniä tuottavia, toinen missä [on] kasteltu puutarha, kolmas missä pajukot, neljäs missä oliivitarhat, viides missä niitty, kuudes missä viljapelto, seitsemäs missä vesametsä, kahdeksas missä puuistutus, yhdeksäs missä terhometsä.”
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	Stolo	Stolo	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Sur|Number=Sing	6	nsubj	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Stolo
+2	:	:	PUNCT	_	_	1	punct	_	DiscourseMode=Narrative|OrigForm=,|ReviewNote=RNP_S000204_01|ReviewTags=Tokenization|Speaker=Stolo
+3	Cato	Cato	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Sur|Number=Sing	14	nsubj	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|Speaker=Stolo
+4	quidem	quidem	PART	_	_	14	discourse	_	DiscourseMode=Dialogue|Speaker=Stolo
+5	–	–	PUNCT	_	_	6	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+6	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	parataxis:reporting	_	DiscourseMode=Narrative|Speaker=Stolo
+7	–	–	PUNCT	_	_	6	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Stolo
+8	gradatim	gradatim	ADV	_	_	9	advmod	_	DiscourseMode=Dialogue|Speaker=Stolo
+9	praeponens	praepono	VERB	_	Aspect=Imp|Case=Nom|Gender=Masc|InflClass=LatX|InflClass[nominal]=IndEurI|Number=Sing|VerbForm=Part|Voice=Act	14	advcl	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000204_02|ReviewTags=Syntax;Morphology|Speaker=Stolo
+10	alium	alius	DET	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	12	det	_	DiscourseMode=Dialogue|Speaker=Stolo
+11	alio	alius	DET	_	Case=Abl|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Con	13	obl:cmp	_	DiscourseMode=Dialogue|Speaker=Stolo
+12	agrum	ager	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Sing	13	nsubj	_	DiscourseMode=Dialogue|Speaker=Stolo
+13	meliorem	bonus	ADJ	_	Case=Acc|Degree=Cmp|Gender=Masc|InflClass=IndEurX|Number=Sing	14	ccomp	_	DiscourseMode=Dialogue|Speaker=Stolo
+14	dicit	dico	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Stolo
+15	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	13	cop	_	DiscourseMode=Dialogue|Speaker=Stolo
+16	in	in	ADP	_	_	18	case	_	DiscourseMode=Dialogue|Speaker=Stolo
+17	novem	novem	NUM	_	NumForm=Word|NumType=Card	18	nummod	_	DiscourseMode=Dialogue|Speaker=Stolo
+18	discriminibus	discrimen	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurX|Number=Plur	13	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+19	,	,	PUNCT	_	_	25	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+20	quod	quod	SCONJ	_	_	25	mark	_	DiscourseMode=Dialogue|Speaker=Stolo
+21	sit	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+22	primus	primus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	25	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+23	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	advmod:lmod	_	DiscourseMode=Dialogue|Speaker=Stolo
+24	vineae	vinea	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Plur	25	nsubj	_	DiscourseMode=Dialogue|Speaker=Stolo
+25	possint	possum	VERB	_	Aspect=Imp|InflClass=LatAnom|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	acl	_	DiscourseMode=Dialogue|Speaker=Stolo
+26	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	28	cop	_	DiscourseMode=Dialogue|Speaker=Stolo
+27	bono	bonus	ADJ	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	28	amod	_	DiscourseMode=Dialogue|Speaker=Stolo
+28	vino	vinum	NOUN	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing	25	xcomp	_	DiscourseMode=Dialogue|Speaker=Stolo
+29	et	et	CCONJ	_	_	30	cc	_	DiscourseMode=Dialogue|Speaker=Stolo
+30	multo	multus	DET	_	Case=Abl|Gender=Neut|InflClass=IndEurO|Number=Sing|NumType=Card|PronType=Ind	27	conj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+31	,	,	PUNCT	_	_	33	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+32	secundus	secundus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	33	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+33	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+34	hortus	hortus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	33	nsubj	_	DiscourseMode=Dialogue|Speaker=Stolo
+35	inriguus	irriguus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	34	amod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+36	,	,	PUNCT	_	_	38	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+37	tertius	tertius	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	38	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+38	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+39	salicta	salictum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	38	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+40	,	,	PUNCT	_	_	42	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+41	quartus	quartus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	42	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+42	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+43	oliveta	olivetum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Plur	42	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+44	,	,	PUNCT	_	_	46	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+45	quintus	quintus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	46	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+46	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+47	pratum	pratum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	46	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+48	,	,	PUNCT	_	_	50	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+49	sextus	sextus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	50	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+50	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+51	campus	campus	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	50	nsubj	_	DiscourseMode=Dialogue|Speaker=Stolo
+52	frumentarius	frumentarius	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	51	amod	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+53	,	,	PUNCT	_	_	55	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+54	septimus	septimus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	55	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+55	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+56	caedua	caeduus	ADJ	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	57	amod	_	DiscourseMode=Dialogue|Speaker=Stolo
+57	silva	silva	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	55	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+58	,	,	PUNCT	_	_	60	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+59	octavus	octavus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	60	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+60	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+61	arbustum	arbustum	NOUN	_	Case=Nom|Gender=Neut|InflClass=IndEurO|Number=Sing	60	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+62	,	,	PUNCT	_	_	64	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+63	nonus	nonus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing|NumType=Ord	64	nsubj:outer	_	DiscourseMode=Dialogue|Speaker=Stolo
+64	ubi	ubi	ADV	_	AdvType=Loc|PronType=Rel	25	conj	_	DiscourseMode=Dialogue|Speaker=Stolo
+65	glandaria	glandarius	ADJ	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	66	amod	_	DiscourseMode=Dialogue|Speaker=Stolo
+66	silva	silva	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	64	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Stolo
+67	.	.	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Stolo
+
+# sent_id = S000205
+# speaker = Scrofa
+# edition_loc = 1.7.10
+# text_old = Scrofa, Scio, inquit, scribere illum;
+# text = Scrofa: scio – inquit – scribere illum;
+# text_en = Scrofa said: “I know that he writes [so];”
+# text_fr = Scrofa dit : « Je sais qu’il écrit [ainsi] ; »
+# text_fi = Scrofa sanoi: ”Tiedän hänen kirjoittavan [niin];”
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	Scrofa	Scrofa	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurA|NameType=Sur|Number=Sing	5	nsubj	_	DiscourseMode=Narrative|FieldStatus3=g|FieldStatus4=g|SpaceAfter=No|Speaker=Scrofa
+2	:	:	PUNCT	_	_	1	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
+3	scio	scio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|OrigForm=Scio|Speaker=Scrofa
+4	–	–	PUNCT	_	_	5	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
+5	inquit	inquam	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis:reporting	_	DiscourseMode=Narrative|Speaker=Scrofa
+6	–	–	PUNCT	_	_	5	punct	_	DiscourseMode=Narrative|OrigForm=,|Speaker=Scrofa
+7	scribere	scribo	VERB	_	Aspect=Imp|InflClass=LatX|VerbForm=Inf|Voice=Act	3	ccomp	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:sic+
+8	illum	ille	DET	_	Case=Acc|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Dem	7	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+9	;	;	PUNCT	_	_	3	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000206
+# speaker = Scrofa
+# edition_loc = 1.7.10
+# text_old = sed de hoc non consentiunt omnes, quod alii dant primatum bonis pratis, ut ego, a quo antiqui prata parata appellarunt.
+# text = sed de hoc non consentiunt omnes, quod alii dant primatum bonis pratis, ut ego, a quo antiqui prata parata appellarunt.
+# text_en = but about this not all agree, because some give primacy to good meadows, as I [do], from which the ancients called meadows (prata) “ready” (parata).
+# text_fr = mais là-dessus tous ne sont pas d’accord, parce que certains donnent la primauté aux bonnes prairies, comme moi, d’après quoi les anciens ont appelé les prés (prata) « prêts » (parata).
+# text_fi = mutta tästä eivät kaikki ole yhtä mieltä, koska toiset antavat etusijan hyville niityille, kuten minä, mistä muinaiset kutsuivat niittyjä (prata) ”valmiiksi” (parata).
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	sed	sed	CCONJ	_	_	5	cc	_	DiscourseMode=Dialogue|Speaker=Scrofa
+2	de	de	ADP	_	_	3	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+3	hoc	hic	DET	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Dem	5	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	non	non	PART	_	Polarity=Neg	5	advmod:neg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+5	consentiunt	consentio	VERB	_	Aspect=Imp|InflClass=LatI|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	omnes	omnis	DET	_	Case=Nom|Gender=Masc|InflClass=IndEurI|Number=Plur|PronType=Tot	5	nsubj	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+7	,	,	PUNCT	_	_	10	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	quod	quod	SCONJ	_	_	10	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	alii	alius	DET	_	Case=Nom|Gender=Masc|InflClass=LatPron|Number=Plur|PronType=Con	10	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+10	dant	do	VERB	_	Aspect=Imp|InflClass=LatA|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	primatum	primatus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurU|Number=Sing	10	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	bonis	bonus	ADJ	_	Case=Dat|Gender=Neut|InflClass=IndEurO|Number=Plur	13	amod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	pratis	pratum	NOUN	_	Case=Dat|Gender=Neut|InflClass=IndEurO|Number=Plur	10	obl:arg	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+14	,	,	PUNCT	_	_	16	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	ut	ut	SCONJ	_	_	16	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	ego	ego	PRON	_	Case=Nom|InflClass=LatAnom|Number=Sing|Person=1|PronType=Prs	10	advcl:cmp	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+17	,	,	PUNCT	_	_	23	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	a	ab	ADP	_	_	19	case	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:ac
+19	quo	qui	PRON	_	Case=Abl|Gender=Masc|InflClass=LatPron|Number=Sing|PronType=Rel	23	obl	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta,MSS:quoque
+20	antiqui	antiquus	ADJ	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Plur	23	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+21	prata	pratum	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	23	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa|Variant=Giusta:qui+
+22	parata	paratus	ADJ	_	Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Plur	23	xcomp	_	DiscourseMode=Dialogue|Speaker=Scrofa
+23	appellarunt	appello	VERB	_	Aspect=Perf|InflClass=LatA|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000206_01|ReviewTags=Syntax;Textual;Interpretation|SpaceAfter=No|Speaker=Scrofa
+24	.	.	PUNCT	_	_	5	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+
+# sent_id = S000207
+# speaker = Scrofa
+# edition_loc = 1.7.10
+# text_old = Caesar Vopiscus, aedilicius causam cum ageret apud censores, campos Roseae Italiae dixit esse sumen, in quo relicta pertica postridie non appareret propter herbam.
+# text = Caesar Vopiscus, aedilicius causam cum ageret apud censores, campos Roseae Italiae dixit esse sumen, in quo relicta pertica postridie non appareret propter herbam.
+# text_en = Caesar Vopiscus, a former aedile, when he was pleading a case before the censors, said that the plains of Rosea were the udder of Italy, in which a pole left [there] would not be visible the next day on account of the grass.
+# text_fr = César Vopiscus, ancien édile, alors qu’il plaidait une cause devant les censeurs, dit que les plaines de Rosea étaient la mamelle de l’Italie, dans laquelle une perche laissée [là] n’apparaîtrait pas le lendemain à cause de l’herbe.
+# text_fi = Caesar Vopiscus, entinen edili, ajaessaan asiaa sensorien edessä, sanoi Rosean tasankojen olevan Italian utare, jossa jätetty seiväs ei seuraavana päivänä näkyisi ruohon vuoksi.
+# review_status = bronze
+# bronze_checks = syntaxnote;variants;commentary;connectivity;enhanced
+1	Caesar	Caesar	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurX|NameType=Sur|Number=Sing	14	nsubj	_	DiscourseMode=Dialogue|FieldStatus3=g|FieldStatus4=g|Speaker=Scrofa
+2	Vopiscus	Vopiscus	PROPN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|NameType=Sur|Number=Sing	1	flat:name	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+3	,	,	PUNCT	_	_	4	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+4	aedilicius	aedilicius	NOUN	_	Case=Nom|Gender=Masc|InflClass=IndEurO|Number=Sing	1	appos	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000207_01|ReviewTags=Syntax|Speaker=Scrofa
+5	causam	causa	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	7	obj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+6	cum	cum	SCONJ	_	_	7	mark	_	DiscourseMode=Dialogue|Speaker=Scrofa|SyntaxNote=Anastrophe
+7	ageret	ago	VERB	_	Aspect=Imp|InflClass=LatX|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	advcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+8	apud	apud	ADP	_	_	9	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+9	censores	censor	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurX|Number=Plur	7	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+10	,	,	PUNCT	_	_	7	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+11	campos	campus	NOUN	_	Case=Acc|Gender=Masc|InflClass=IndEurO|Number=Plur	16	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+12	Roseae	Rosea	PROPN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	11	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+13	Italiae	Italia	PROPN	_	Case=Gen|Gender=Fem|InflClass=IndEurA|NameType=Geo|Number=Sing	16	nmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+14	dixit	dico	VERB	_	Aspect=Perf|InflClass=LatX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	DiscourseMode=Dialogue|Speaker=Scrofa
+15	esse	sum	AUX	_	Aspect=Imp|InflClass=LatAnom|VerbForm=Inf	16	cop	_	DiscourseMode=Dialogue|Speaker=Scrofa
+16	sumen	sumen	NOUN	_	Case=Acc|Gender=Neut|InflClass=IndEurX|Number=Sing	14	ccomp	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+17	,	,	PUNCT	_	_	24	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
+18	in	in	ADP	_	_	19	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+19	quo	qui	PRON	_	Case=Abl|Gender=Neut|InflClass=LatPron|Number=Sing|PronType=Rel	24	obl:lmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+20	relicta	relinquo	VERB	_	Aspect=Perf|Case=Nom|Gender=Fem|InflClass=LatX|InflClass[nominal]=IndEurA|Number=Sing|VerbForm=Part|Voice=Pass	21	acl	_	DiscourseMode=Dialogue|ReviewNote=RNP_S000207_02|ReviewTags=Syntax;Translation|Speaker=Scrofa
+21	pertica	pertica	NOUN	_	Case=Nom|Gender=Fem|InflClass=IndEurA|Number=Sing	24	nsubj	_	DiscourseMode=Dialogue|Speaker=Scrofa
+22	postridie	postridie	ADV	_	AdvType=Tim	24	advmod:tmod	_	DiscourseMode=Dialogue|Speaker=Scrofa
+23	non	non	PART	_	Polarity=Neg	24	advmod:neg	_	DiscourseMode=Dialogue|Speaker=Scrofa
+24	appareret	appareo	VERB	_	Aspect=Imp|InflClass=LatE|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	acl:relcl	_	DiscourseMode=Dialogue|Speaker=Scrofa
+25	propter	propter	ADP	_	_	26	case	_	DiscourseMode=Dialogue|Speaker=Scrofa
+26	herbam	herba	NOUN	_	Case=Acc|Gender=Fem|InflClass=IndEurA|Number=Sing	24	obl	_	DiscourseMode=Dialogue|SpaceAfter=No|Speaker=Scrofa
+27	.	.	PUNCT	_	_	14	punct	_	DiscourseMode=Dialogue|Speaker=Scrofa
 

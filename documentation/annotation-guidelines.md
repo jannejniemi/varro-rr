@@ -109,7 +109,7 @@ The general CoNLL-U format fixes this structure; this treebank's own comment-lin
 The keys below identify and structure the sentence record itself; keys governing review status, speaker attribution, and textual variation belong to the chapters that treat those topics (Sections 7 and 7.9) and are introduced there instead. A silver or gold record carries only these keys: markers used while a sentence is being processed are removed when it is committed at silver, and the history of a sentence's processing is kept in this treebank's workflow records, not in the corpus file.
 
 - `sent_id`: the sentence's unique identifier, stable once assigned.
-- `edition_loc`: the canonical text-location identifier (for example `1.2.17`), grouping one or more sentences under the same passage; the primary review-unit key, with `sent_id` as the secondary key.
+- `edition_loc`: the canonical text-location identifier (for example `1.2.17`), grouping one or more sentences under the same passage; the primary review-unit key, with `sent_id` as the secondary key. Section numbering follows the working text (LacusCurtius). A sentence that crosses a section boundary lists every section it covers, in text order, separated by a semicolon (`# edition_loc = 1.2.3;1.2.4`); the first token of each later section carries `NextLoc` in `MISC` (Section 1.2.7).
 - `text`: the accepted working-form surface text, normalized to lower case at the sentence boundary.
 - `text_old`: the as-transmitted surface text, preceding that normalization; distinct from `text`.
 - `text_en`, `text_fr`, `text_fi`: English, French, and Finnish translations of the sentence, supplied alongside the Latin text rather than derived from it during review.
@@ -197,6 +197,7 @@ Token-level treebank metadata is stored in `MISC`. Important categories include:
 - editorial variation, such as `Variant`;
 - speaker and discourse information, such as `Speaker` and `DiscourseMode`;
 - references to retained reasoning, such as `ReviewNote` and `ReviewTags`;
+- section changes inside a sentence, `NextLoc`;
 - special-construction labels, such as `SyntaxNote`;
 - compatibility and provenance information, such as `InheritedFrom`;
 - temporary review markers.
@@ -204,6 +205,8 @@ Token-level treebank metadata is stored in `MISC`. Important categories include:
 These attributes share a storage field but do not form one linguistic layer. Each is governed by its own definition and lifecycle.
 
 `MISC` is a `|`-separated list of `Key=Value` pairs, or bare keys where a key is boolean in effect. The keys are defined in Chapter 7.
+
+`NextLoc=<loc>` marks the first token (the first syntactic word, where that token is a multiword token) of each section after the first in a sentence whose `edition_loc` lists more than one section. Its value is the full location, equal to the corresponding entry of `edition_loc` (for example `NextLoc=1.2.4`). It is not UD's `Ref`, which is written on every token: `NextLoc` marks only the change.
 
 **Corpus examples**
 
