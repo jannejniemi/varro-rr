@@ -1,6 +1,6 @@
 # Varro RR Annotation Guidelines
 
-> **Work in progress, 30 September 2026.** This document sets out the structure of the Varro RR annotation manual, with prose drafted throughout. It is not yet a release-authoritative specification.
+> **Work in progress, 13 October 2026.** This document sets out the structure of the Varro RR annotation manual, with prose drafted throughout. It is not yet a release-authoritative specification.
 
 ## Contents
 
@@ -74,29 +74,17 @@
 
 ### 1.1 Scope of the treebank
 
-The Varro RR treebank provides a morphologically and syntactically annotated representation of Varro's *Res rusticae*. Its primary annotation framework is Universal Dependencies (UD), supplemented by harmonized Latin conventions and a limited set of explicit treebank-specific decisions required by the text, the research questions, or the practicalities of review. Categories and interpretive habits inherited from the older, more philologically oriented Prague-school treebank tradition (this treebank's README covers that lineage) inform decisions wherever UD's own guidance is underspecified for Latin; a callout box labelled "ALDT comparison" marks a point where this manual sets out a contrast with that tradition's own analysis (for example, Section 1.3.3, on nonverbal predication).
+The Varro RR treebank annotates Varro's *Res rusticae* in Universal Dependencies (UD), following harmonized Latin UD conventions and adding a small number of stated treebank-specific decisions. Where UD is underspecified for Latin, the Prague-style tradition of the Ancient Latin Dependency Treebank (ALDT) informs the decision; boxes marked *ALDT comparison* set out the contrasts (Section 1.5).
 
-The treebank represents more than a sequence of dependency trees. Its CoNLL-U records may also preserve textual normalization, editorial variants, alternative analyses, speaker and discourse information, review notes, review status, and selected linguistic observations that cannot be recovered economically from ordinary dependency queries alone.
-
-The purpose of these guidelines is to explain that combined system as a coherent annotation model, organized by linguistic topic.
+Besides the dependency trees, the CoNLL-U records carry textual normalization, editorial variants, alternative analyses, speaker and discourse labels, review notes, review status, and labels for constructions that ordinary dependency queries cannot find.
 
 ### 1.2 Annotation layers and the CoNLL-U format
 
-This treebank distinguishes conceptual annotation layers, but stores them together in CoNLL-U records. A single token row may therefore carry lexical, morphological, Basic-syntactic, Enhanced-syntactic, provenance, and treebank-specific information.
-
-At a first approximation:
-
-A [CoNLL-U](https://universaldependencies.org/format.html) file is a sequence of sentence records separated by a single blank line. The subsections below take the layers one by one, each with its serialization.
+A [CoNLL-U](https://universaldependencies.org/format.html) file is a sequence of sentence records separated by a blank line. One token row may carry lexical, morphological, Basic, Enhanced, and treebank-specific information; the subsections below take these layers one by one.
 
 #### 1.2.1 Sentence records and sentence metadata
 
-Each record consists of, in order:
-
-- zero or more comment lines, each beginning with `#`, carrying sentence-level metadata;
-- one row per syntactic word, multiword-token range, or empty node, in ascending `ID` order;
-- no blank lines within the record.
-
-The general CoNLL-U format fixes this structure; this treebank's own comment-line keys are extensions within it. Sentence metadata is written as `# key = value` comment lines before the token rows; it is not a numbered CoNLL-U field. For example:
+A record consists of `#` comment lines with sentence metadata, then one row per syntactic word, multiword-token range, or empty node in ascending `ID` order, with no blank lines inside the record:
 
 ```conllu
 # sent_id = S000001
@@ -106,48 +94,38 @@ The general CoNLL-U format fixes this structure; this treebank's own comment-lin
 # speaker = Narrator
 ```
 
-The keys below identify and structure the sentence record itself; keys governing review status, speaker attribution, and textual variation belong to the chapters that treat those topics (Sections 7 and 7.9) and are introduced there instead. A silver or gold record carries only these keys: markers used while a sentence is being processed are removed when it is committed at silver, and the history of a sentence's processing is kept in this treebank's workflow records, not in the corpus file.
+The keys that identify and structure the record:
 
-- `sent_id`: the sentence's unique identifier, stable once assigned.
-- `edition_loc`: the canonical text-location identifier (for example `1.2.17`), grouping one or more sentences under the same passage; the primary review-unit key, with `sent_id` as the secondary key. Section numbering follows the working text (LacusCurtius). A sentence that crosses a section boundary lists every section it covers, in text order, separated by a semicolon (`# edition_loc = 1.2.3;1.2.4`); the first token of each later section carries `NextLoc` in `MISC` (Section 1.2.7).
-- `text`: the accepted working-form surface text, normalized to lower case at the sentence boundary.
-- `text_old`: the as-transmitted surface text, preceding that normalization; distinct from `text`.
-- `text_en`, `text_fr`, `text_fi`: English, French, and Finnish translations of the sentence, supplied alongside the Latin text rather than derived from it during review.
-- `source_sentence` / `source_sentences`: on a sentence record representing an alternative segmentation or analysis, the primary sentence, or sentences, it derives from.
-- `alt_type`: on such an alternative record, the kind of divergence involved, where the divergence is a resegmentation rather than an alternative structural analysis of an identically scoped sentence.
+- `sent_id`: the unique sentence identifier, stable once assigned.
+- `edition_loc`: the text location (for example `1.2.17`), with section numbering as in the working text (LacusCurtius). A sentence that crosses a section boundary lists every section it covers, in text order, separated by a semicolon (`# edition_loc = 1.2.3;1.2.4`); the first token of each later section carries `NextLoc` (Section 1.2.7).
+- `text`: the accepted surface text, lower-cased at the sentence boundary; `text_old`: the transmitted text before that normalization.
+- `text_en`, `text_fr`, `text_fi`: English, French, and Finnish translations.
+- `source_sentence` / `source_sentences` and `alt_type`: on an alternative record, the sentence or sentences it derives from and, for a resegmentation, the kind of divergence (Section 7.4).
+
+Review status, speaker, and structural variants have their own keys, treated in Chapter 7. A silver or gold record carries no working markers: they are removed when the sentence is committed at silver.
 
 #### 1.2.2 Columns, tokens, and lexical representation
 
-Each row has exactly ten tab-separated fields:
-
-```text
-ID    FORM    LEMMA    UPOS    XPOS    FEATS    HEAD    DEPREL    DEPS    MISC
-```
+Each row has ten tab-separated fields:
 
 | # | Field | Content |
 |---|---|---|
 | 1 | `ID` | Word index, multiword-token range, or decimal empty-node index |
 | 2 | `FORM` | Accepted surface form |
-| 3 | `LEMMA` | Lemma of the form |
-| 4 | `UPOS` | Universal part-of-speech category |
-| 5 | `XPOS` | Not used as an independent treebank-specific tagset; normally `_` |
+| 3 | `LEMMA` | Lemma |
+| 4 | `UPOS` | Universal part of speech |
+| 5 | `XPOS` | Not used; `_` |
 | 6 | `FEATS` | Morphological features |
-| 7 | `HEAD` | Basic-dependency governor (the `ID` of the head, or `0` for the sentence root) |
-| 8 | `DEPREL` | Basic dependency relation to `HEAD` |
-| 9 | `DEPS` | Enhanced dependency graph |
-| 10 | `MISC` | Treebank and format metadata not covered by the preceding fields |
+| 7 | `HEAD` | Basic governor (`0` for the root) |
+| 8 | `DEPREL` | Basic relation to `HEAD` |
+| 9 | `DEPS` | Enhanced dependencies |
+| 10 | `MISC` | Other token metadata |
 
-An inapplicable or unspecified field is written as a single underscore, `_`, rather than left empty.
-
-An ordinary syntactic-word row has an integer `ID`. `HEAD` and `DEPREL` are always required for such a row; `LEMMA` and `UPOS` are always required; `FEATS`, `DEPS`, and `MISC` take `_` wherever nothing applies to that token.
-
-`ID` identifies ordinary syntactic words, multiword-token ranges, or decimal-ID empty nodes. `FORM` records the accepted surface token, `LEMMA` its lemma, and `UPOS` its Universal Part-of-Speech category. `XPOS` is not used as an independent treebank-specific tagset and is normally `_`.
-
-Tokenization decisions are part of the annotation. A change in token boundaries may renumber every later token in the sentence and therefore affects dependency references as well as forms.
+An empty field is `_`. A syntactic-word row always has `LEMMA`, `UPOS`, `HEAD`, and `DEPREL`. Tokenization is part of the annotation: changing a token boundary renumbers the later tokens and every reference to them.
 
 #### 1.2.3 Multiword tokens
 
-The format additionally provides for a multiword token: a single orthographic token that corresponds to more than one syntactic word. Its row uses a range `ID` (for example `4-5`), gives the orthographic surface form in `FORM`, and takes `_` in every other field. Each syntactic word within the range then receives its own ordinary row, with an integer `ID` inside the range and its own complete analysis.
+A multiword token is one orthographic token that contains more than one syntactic word. Its row has a range `ID` (`4-5`), the surface form in `FORM`, and `_` elsewhere; each syntactic word then has its own row with an integer `ID` inside the range and a full analysis.
 
 **Corpus examples**
 
@@ -155,35 +133,23 @@ The format additionally provides for a multiword token: a single orthographic to
 
 #### 1.2.4 Morphological annotation
 
-Morphological features are stored in `FEATS` as alphabetically ordered `Feature=Value` pairs separated by vertical bars:
+`FEATS` holds `Feature=Value` pairs in alphabetical order, separated by vertical bars:
 
 ```conllu
 Case=Acc|Gender=Neut|InflClass=IndEurO|Number=Sing
 ```
 
-Some morphology-related compatibility metadata is stored in `MISC` rather than `FEATS`. In particular, `TraditionalMood` and `TraditionalTense` preserve traditional Latin categories alongside the harmonized UD feature analysis. Their storage location does not make them discourse or review features: `MISC` is a serialization field containing several conceptually different kinds of metadata.
+`TraditionalMood`, which names the gerund, gerundive, and supine, is a `MISC` key, not a feature (Section 3.3.2).
 
 #### 1.2.5 Basic dependency syntax
 
-Basic dependency syntax is stored in:
-
-```text
-HEAD    DEPREL
-```
-
-Every syntactic-word row has one Basic governor, except that the sentence root is governed by the virtual root node `0`. `HEAD` gives the governor's token ID and `DEPREL` gives the relation between the dependent and that governor.
-
-The Basic layer is a tree. It therefore requires one root and one incoming Basic relation per syntactic word. Where ellipsis or sharing makes the linguistic structure richer than a single tree can express, the Basic layer selects one structural analysis and the Enhanced layer may add further information.
+`HEAD` and `DEPREL` form the Basic tree: every syntactic word has exactly one governor and one relation, and the root is governed by `0`. Where ellipsis or sharing makes the structure richer than a tree, the Basic layer chooses one analysis and the Enhanced layer adds the rest.
 
 #### 1.2.6 Enhanced dependency syntax and empty nodes
 
-Enhanced dependency syntax is stored in `DEPS`. Unlike the Basic layer, the Enhanced representation may form a graph: a token may have more than one incoming relation, and decimal-ID empty nodes may represent elided predicates or other reconstructed structure where this treebank's policy licenses them.
+`DEPS` holds the Enhanced graph as a `|`-separated list of `head:relation` pairs, one per incoming edge. It adds to the Basic tree and never replaces it. In this treebank `DEPS` is sparse until gold: it lists only the edges that differ from the Basic tree, and only of the kinds listed in Section 5.1.
 
-Enhanced syntax does not replace the Basic tree. It adds information that the Basic representation cannot encode without violating its single-head structure.
-
-`DEPS` is a `|`-separated list of `head:relation` pairs, one for each incoming Enhanced edge; a token with more than one incoming Enhanced relation lists each pair separately (Chapter 5).
-
-A decimal-ID empty node represents elided predicative or other reconstructed structure that the Enhanced layer licenses (Section 1.2.6, Section 5.3). Its `ID` takes the form `<host>.<n>` (for example `4.1`). `FORM` records the reconstructed form where it is clear from context, and `_` where it is not; `UPOS` may stand in for `FORM` where only the category is clear. `LEMMA`, `XPOS`, `FEATS`, `HEAD`, and `DEPREL` are always `_`, since an empty node has no place in the Basic tree; its syntactic contribution is expressed entirely through `DEPS`.
+An empty node has a decimal `ID` (`17.1`) and stands for an elided predicate (Section 5.3). `FORM` is filled where the elided word is clear from context, and `UPOS` may stand in for it; `LEMMA`, `XPOS`, `FEATS`, `HEAD`, and `DEPREL` are always `_`, and the node's whole contribution is in `DEPS`.
 
 **Corpus examples**
 
@@ -191,22 +157,18 @@ A decimal-ID empty node represents elided predicative or other reconstructed str
 
 #### 1.2.7 `MISC`: treebank metadata and analytical notes
 
-Token-level treebank metadata is stored in `MISC`. Important categories include:
+`MISC` is a `|`-separated list of `Key=Value` pairs, with the keys in alphabetical order. The keys fall into unrelated groups:
 
-- textual history, such as `OrigForm`;
-- editorial variation, such as `Variant`;
-- speaker and discourse information, such as `Speaker` and `DiscourseMode`;
-- references to retained reasoning, such as `ReviewNote` and `ReviewTags`;
-- section changes inside a sentence, `NextLoc`;
-- special-construction labels, such as `SyntaxNote`;
-- compatibility and provenance information, such as `InheritedFrom`;
-- temporary review markers.
+- textual history and normalization: `OrigForm`, `SpaceAfter`, `Lang` (Section 7.1);
+- editorial variation: `Variant` (Section 7.2);
+- speaker and discourse: `Speaker`, `DiscourseMode` (Sections 7.5, 7.6);
+- retained reasoning: `ReviewNote`, `ReviewTags` (Section 7.8);
+- construction labels: `SyntaxNote` (Section 7.7);
+- lexical and morphological compatibility: `LemmaNorm` (Section 2.1), `TraditionalMood` (Section 3.3.2);
+- Enhanced provenance: `InheritedFrom` (Section 5.7);
+- section changes inside a sentence: `NextLoc`.
 
-These attributes share a storage field but do not form one linguistic layer. Each is governed by its own definition and lifecycle.
-
-`MISC` is a `|`-separated list of `Key=Value` pairs, or bare keys where a key is boolean in effect. The keys are defined in Chapter 7.
-
-`NextLoc=<loc>` marks the first token (the first syntactic word, where that token is a multiword token) of each section after the first in a sentence whose `edition_loc` lists more than one section. Its value is the full location, equal to the corresponding entry of `edition_loc` (for example `NextLoc=1.2.4`). It is not UD's `Ref`, which is written on every token: `NextLoc` marks only the change.
+`NextLoc=<loc>` marks the first token (the first syntactic word, where that token is a multiword token) of each section after the first in a sentence whose `edition_loc` lists more than one section. Its value equals the corresponding entry of `edition_loc` (`NextLoc=1.2.4`). Unlike UD's `Ref`, which is written on every token, `NextLoc` marks only the change.
 
 **Corpus examples**
 
@@ -214,34 +176,20 @@ These attributes share a storage field but do not form one linguistic layer. Eac
 
 #### 1.2.8 File-level consistency requirements
 
-Consistency across a file, beyond what holds within one sentence record, follows from three requirements:
-
-- token identifiers are renumbered whenever tokenization changes, so a dependency reference is valid only relative to its own sentence's current numbering;
-- an empty node's `DEPS` reference to another empty node in the same sentence uses that node's decimal `ID` exactly as assigned;
-- sentence identifiers are unique across the file, including alternative-analysis records, which are distinguished from their source sentence by their own `sent_id` and linked back to it through `source_sentence` or `source_sentences`.
+- A dependency reference is valid only within its own sentence's current numbering.
+- An empty node is referred to by its decimal `ID` exactly as assigned.
+- `sent_id` is unique across the file, alternative records included; an alternative record points to its source through `source_sentence` or `source_sentences`.
 
 ### 1.3 Key concepts
 
 #### 1.3.1 Dependencies, headedness, and flat structures
 
-Dependency annotation represents a construction by identifying a head and attaching its dependents to it with labelled relations. The first question is therefore not which label to choose, but which element organizes the construction syntactically.
+Annotating a construction means first choosing its head, then labelling the relations of its dependents. The head is not necessarily the first word, the finite verb, the morphologically richest word, or the word an English translation renders as a verb.
 
-A head is not necessarily:
-
-- the first word;
-- the finite verb;
-- the morphologically richest word;
-- the word named first in traditional grammar;
-- the word translated by an English verb.
-
-Ordinary dependencies are used wherever a syntactic head can be identified. A flat structure is appropriate only where no component is an adequate internal head, or where an applicable annotation convention deliberately treats the components as structurally parallel.
-
-In UD relations such as [`flat`](https://universaldependencies.org/u/dep/flat.html), `flat:name`, and `flat:foreign`, the first component is used as the technical head by convention. This does not assert that it is semantically more important than the following components. In `flat:gov`, the conventional first-word headedness may even stand in explicit tension with the second element's semantic prominence.
+Use ordinary headed relations wherever a head can be identified. A flat relation ([`flat`](https://universaldependencies.org/u/dep/flat.html), `flat:name`, `flat:foreign`, `flat:gov`) is for a construction with no adequate internal head, or one that a UD convention treats as headless; its first word is the technical head by convention, which says nothing about prominence. Unity of meaning, a naming function, or idiomaticity is not by itself evidence for a flat analysis.
 
 > [!NOTE]
-> **ALDT comparison.** This use of *flat* is specific to UD and does not correspond directly to every Prague-style treatment of coordination, apposition, multiword expressions, or formally headless constructions. Comparisons with PDT-style annotation are explanatory aids, not conversion rules.
-
-An internal head is sought before any flat relation is applied: apparent unity of meaning, naming function, or idiomaticity is not by itself evidence for flatness.
+> **ALDT comparison.** UD's flat relations have no direct counterpart in Prague-style treatments of coordination, apposition, or multiword expressions. Comparisons with PDT-style annotation explain the differences; they are not conversion rules.
 
 **Corpus examples**
 
@@ -249,42 +197,26 @@ An internal head is sought before any flat relation is applied: apparent unity o
 
 #### 1.3.2 Predication in dependency grammar
 
-A predicate is the syntactic centre of a predication. It is not necessarily a finite verb.
+The predicate is the syntactic centre of a clause, and it need not be a finite verb.
 
 > [!WARNING]
-> **Traditional grammar.** This differs from several traditional uses of *predicate* and *predicative*. Traditional grammar may use *predicate* for everything said about a subject, or may assume that a finite verb heads the clause because it carries person, tense, and mood. It may use *predicative* for several formally similar constructions that dependency grammar distinguishes structurally. Traditional terminology provides useful evidence, but it does not map mechanically to dependency relations. A traditional “predicative” may correspond to a primary nonverbal predicate, a selected predicative complement, an optional secondary predicate, an apposition, or an attributive modifier, and the annotation identifies which structure is actually present.
+> **Traditional grammar.** Traditional *predicate* and *predicative* do not map onto dependency relations. A traditional "predicative" may be a primary nonverbal predicate, a selected predicative complement, a secondary predicate, an apposition, or an attribute; the annotation identifies which structure is present.
 
-In these guidelines, predicate identification is a head-selection problem, and it is decided by meaning rather than by form or position. The predicate is the element that supplies what is asserted, ascribed, or asked about an argument already established in the clause: it describes the subject, rather than being what the subject describes. Put in terms of information, the predicate brings the new information, and the element it is predicated of is the subject.
+Choosing the predicate is choosing the clause head, and it is decided by meaning, not by form or position. The predicate is the element that supplies what is asserted, ascribed, or asked about an argument already established in the clause: it brings the new information, and the element it is predicated of is the subject. An event, membership of a class, a property, a location, or a degree on a scale (quantity, measure) can each be predicated, by a declinable or an indeclinable word alike.
 
-Inflection, finiteness, and word order do not identify the predicate: an indeclinable locative adverb or numeral predicates exactly as a declined adjective or noun does. The kinds of predicate to look for are an event, membership of a class, a property, a location, or a degree on a scale (quantity and measure).
+> **Background.** This typology follows Stassen (1997), on which the UD guidelines for [nonverbal predication and copulas](https://universaldependencies.org/v2/copula.html) build: event, class, property, and location predicates, each realized by whatever formal means a language has. Quantity and measure expressions predicate a degree on a scale in the same way.
 
-> **Background.** This typology follows Stassen (1997), on which the UD guidelines for [nonverbal predication and copulas](https://universaldependencies.org/v2/copula.html) build: event, class, property, and location predicates, each realized by whatever formal means a language has. Quantity and measure expressions predicate a degree on a scale, and are predicates in the same way.
+The clause head may therefore be a lexical verb, an adjective, a noun, a numeral or other quantity expression, an adverb or prepositional phrase, or, under ellipsis, a promoted surviving element.
 
-The clause predicate may therefore be:
+Three errors give a wrong clause head:
 
-- a lexical verb;
-- an adjective in a nonverbal predication;
-- a noun in an identity or classification predication;
-- a numeral or other quantity expression;
-- an adverb or adpositional expression functioning as the primary predication;
-- a promoted surviving element when the semantic predicate is elided.
+- taking a copula or auxiliary as head because it is the clause's only finite verb (Section 1.3.3);
+- promoting a stranded dependent under ellipsis without first checking whether the predicate is recoverable (Sections 1.3.6 and 4.1.2);
+- taking the first or most obvious word when the predicate stands elsewhere.
 
-Three errors lead to a wrong clause head, and all three are avoided by asking the semantic question first:
+Run the test on every clause, subordinate clauses and indirect questions included, before attaching the clause. If the predicate is not obvious, look further; never fall back on a default head. Where the decision is hard, annotate the best-supported candidate and give the reasoning in a review note (Section 7.8).
 
-- taking a copula or auxiliary as the head because it is the only finite verb in the clause (the case of *sum*, Section 1.3.3);
-- promoting a stranded dependent to head under ellipsis without first checking whether the predicate is recoverable and should be represented as elided (Sections 1.3.6 and 4.1.2);
-- taking whichever word stands first, or looks most obvious, when the predicate stands elsewhere in the clause.
-
-The test applies to every clause, not only to main clauses: a subordinate clause, an indirect question, or a complement clause needs the same search before its external relation is attached. A predicate that is not immediately obvious is a reason to look further, never a reason to fall back on a default head. Where the decision is difficult, the best-supported candidate is annotated and the reasoning is recorded in a review note (Section 7.8).
-
-Existential and presentational clauses require particular care. Neither of the following inferences is sufficient:
-
-```text
-form of sum → therefore sum is a copula
-traditional existential label → therefore sum must be a lexical root
-```
-
-What matters is what is being predicated and what contribution *sum* makes in the clause. Depending on the construction, a form of *sum* is ordinarily a pure copula or a verbal auxiliary; an existential or lexical use is attested but rare (Section 1.3.3).
+A form of *sum* is ordinarily a copula or an auxiliary; neither the presence of *sum* nor a traditional "existential" label decides its analysis, only what is predicated in the clause (Section 1.3.3).
 
 **Corpus examples**
 
@@ -294,51 +226,44 @@ What matters is what is being predicated and what contribution *sum* makes in th
 
 #### 1.3.3 Nonverbal predication and the copula
 
-In a pure nonverbal predication, the nonverbal predicate heads the clause. A pure copula is attached to that predicate with [`cop`](https://universaldependencies.org/u/dep/cop.html); a verbal copula is tagged `AUX`, not `VERB`.
+In a nonverbal predication the predicate heads the clause, and the copula *sum* is `AUX` attached to it as [`cop`](https://universaldependencies.org/u/dep/cop.html).
 
 ![Dependency tree of si est homo bulla (S000001): bulla heads the clause, with si as mark, est as cop, and homo as nsubj](figures/copula_S000001.svg)
 
 *Figure 1.* *si est homo bulla* ‘if man is a bubble’ (S000001). The dashed arrow above *bulla* is the relation of the whole clause to the rest of the sentence, whose head is not shown.
 
-Here:
+*bulla* is the predicate and carries the clause's relation to the sentence (`advcl`); *homo* is its `nsubj`; *est* is `cop` and *si* `mark`, both attached to the predicate.
+
+```text
+Nonverbal predication           predicate is head; sum is AUX, cop
+Periphrastic verbal form        verbal form is head; sum is AUX, aux or aux:pass
+```
+
+The choice depends on the function of *sum* in the clause, not on its lemma.
+
+**Finding the predicate.** Every clause with a form of *sum* has a predicating element; the task is to find it (Section 1.3.2). The examples in these guidelines (an adjective, a noun, a numeral, a locative adverb, an interrogative) are not a checklist.
+
+**Question words.** The semantic test decides whether an interrogative is the predicate, and the predicate is usually the element with more content:
+
+- *Quis ille est?* ‘Who is he?’ (constructed): *quis* is the predicate (`root`), *ille* its `nsubj`.
+- *Quis dux est?* ‘Who is the leader?’ (constructed): *dux* is the predicate, *quis* its `nsubj`; if the leader has already been identified and the question asks who that person is, *quis* is the predicate.
+
+An interrogative or relative word paired with a separate content word leaves the predicate to that word; one that stands alone can itself be the predicate (see the examples below).
+
+**Existential *sum*.** Take *sum* as a lexical verb (‘exist’) only after the predicate search has failed, and give the reasoning in a review note. It is then `VERB`, heads its clause, and takes `nsubj` (or `csubj` for a relative clause). Test *sunt qui* X first for the copular reading *sunt [ei] qui* X, with the relative clause as predicate, the understood *ei* as `nsubj:outer`, and *sunt* as `cop:outer` (Section 4.10.2); only if that fails is it ‘[those who] X exist’, with the relative clause as `csubj` and *sunt* as `VERB`.
+
+> **Background.** A lexical *sum* is very rare in Classical Latin. Cicero's *omnium qui sunt, qui fuerunt, qui futuri sunt* (*Fam.* 11.21.1) is a clear instance, and the perfect forms *fuit*, *fuerunt* also occur euphemistically for ‘is dead’. In UD_Latin-CIRCSE none of the 427 tokens of *sum* is tagged `VERB`. Most clauses traditionally called existential are nominal predications with a copula, sometimes with a clause as the predicate.
+
+> [!NOTE]
+> **ALDT comparison.** ALDT makes the copula the head of *si est homo bulla*, with the subject (`Sb`) and the nominal predicate (`Pnom`) attached to it. This treebank inverts that headedness: *bulla* heads the clause, *homo* is its `nsubj`, and *est* depends on it as `cop`. The two schemes agree on the roles and differ on which word is structurally in charge, which changes what every other relation in the clause attaches to.
+
+**Corpus examples**
 
 - *bulla* is the predicate and the head of its clause, and it carries the clause's own relation to the sentence (`advcl`, since the clause is conditional);
 - *homo* is its subject;
 - *est* supports the predication as `cop`, and the subordinator *si* attaches to the predicate as `mark`;
-- the finite copula is not the clause head merely because it carries verbal morphology.
-
-A practical two-way distinction is:
-
-```text
-Pure nonverbal predication
-    nonverbal predicate is head; sum is AUX with cop
-
-Periphrastic verbal construction
-    lexical verbal form is head; sum is AUX with aux or aux:pass
-```
-
-This is not a lemma-based classification: the same surface form is analysed according to its function in the particular clause.
-
-**Finding the predicate.** Every clause built on a form of *sum* is treated as having a predicating element, and the task is to find it, not to decide whether one exists. The question is the one set out in Section 1.3.2: which element denotes the property, state, class, quantity, location, or circumstance ascribed to the subject? The search covers subordinate clauses as much as main clauses: a form of *sum* inside a *cum*-clause, an indirect question, an *ut*-clause, or a modal complement is itself the signal to run the test before the finite form is taken as the clause head. The predicates illustrated in these guidelines (an adjective, a noun, a numeral, a locative adverb, an interrogative) are not a checklist to be eliminated, and a predicate need not resemble any of them.
-
-**Question words.** No rule makes an interrogative the predicate, or excludes it from being the predicate; the semantic test decides, and the predicate is usually the element with more content. Two constructed sentences show the contrast:
-
 - *Quis ille est?* ‘Who is he?’: *quis* is the predicate (`root`) and *ille* its `nsubj`, since the question carries more content than a bare demonstrative.
 - *Quis dux est?* ‘Who is the leader?’: *dux* is the predicate (`root`) and *quis* its `nsubj`, since being the leader is the content and *quis* only selects the person.
-
-Context can reverse the second: if the leader has already been identified and the speaker asks who that person is, *quis* is the predicate, as in the first sentence. In the corpus, an interrogative or relative word paired with a separate content word leaves the predicate to that content word, while one that stands alone can itself be the predicate (see the examples below).
-
-**Existential *sum*.** Consider a lexical reading of *sum* (‘exist’, predicating nothing else, not even an elided element) only after the full predicate search has failed, and record the reasoning in a review note. *sum* is then annotated as any lexical verb: `VERB`, heading its own clause, with its subject as `nsubj` (or, for a relative clause, `csubj`).
-
-> **Background.** A lexical *sum* is very rare in Classical Latin. Cicero's *omnium qui sunt, qui fuerunt, qui futuri sunt* (*Fam.* 11.21.1) is a clear instance, and the perfect forms *fuit*, *fuerunt*, and similar also occur euphemistically for ‘he is’ / ‘they are dead’. In the manually annotated UD_Latin-CIRCSE treebank, none of the 427 tokens of *sum* is tagged `VERB`. Other instances traditionally labelled “existential”, including in some PDT-style dependency schemes, are analysable as nominal predication with a copula, sometimes with a clause as the predicating element.
-
-Even *sunt qui* X, as in *sunt qui putant posse te non decedere* (*Fam.* 1.9.25), is first tested for the copular reading: *sunt [ei] qui* X ‘there are those who X’, with the relative clause X as the predicate, the understood *ei* as `nsubj:outer`, and *sunt* as `cop:outer` (Section 4.10.2). Only where that reading fails is the sentence taken as ‘[people or things who] X exist’, with the relative clause as `csubj` and *sunt* as `VERB`. The two readings are often both available and need particular care.
-
-> [!NOTE]
-> **ALDT comparison.** A PDT/ALDT-style analysis of a nonverbal predication such as *si est homo bulla* (Figure 1) takes the copula as the clause's syntactic head, with the subject and the nominal predicate both attached to it (`Sb` and `Pnom`, in ALDT's own labels). This treebank's UD-based analysis inverts that headedness: the predicate, not the copula, is the head of the clause (*bulla*), the subject attaches to the predicate (*homo*, `nsubj`), and the copula itself is a dependent of the predicate it supports (*est*, `cop`). The two schemes agree entirely on which words play which semantic role; they disagree only on which one is structurally in charge — the single most consequential point of divergence between PDT/ALDT-style Latin treebanking and this treebank's UD-based analysis, since it changes what every other relation in the clause ultimately attaches to.
-
-**Corpus examples**
-
 - *si est homo bulla* ‘if man is a bubble’ (S000001): *est* (30) `cop`, `AUX`; *homo* (31) `nsubj`. The sentence of Figure 1: the noun bulla heads its clause, and both est and homo depend on it.
 - *agri culturae quod esset initium et finis* ‘what the beginning and end of agriculture was’ (S000155): *initium* (7) `ccomp`; *quod* (5) `nsubj`; *esset* (6) `cop`. In the indirect question, the noun initium is the content of the answer and heads the clause; the interrogative quod only selects.
 - *quae sit forma* ‘what its shape is’ (S000170): *forma* (12) `appos`; *quae* (10) `nsubj`; *sit* (11) `cop`. quae only asks which shape; forma carries the content, so forma is the predicate and quae its subject.
@@ -346,19 +271,11 @@ Even *sunt qui* X, as in *sunt qui putant posse te non decedere* (*Fam.* 1.9.25)
 
 #### 1.3.4 Secondary predication
 
-Secondary predication adds another predication to a clause without replacing its primary predicate. It commonly expresses a state, role, or circumstance that holds of a participant while the main event or state holds.
+A secondary predicate adds a predication to a clause without replacing its primary predicate, typically a state, role, or circumstance holding of a participant during the main event.
 
-The concept is broader than any one dependency relation. The most important distinctions are:
+**Optional secondary predicate.** An adjunct, `advcl:pred`: the clause is complete without it. Attach it to the predicate of its clause, never to the nominal it describes, whether that nominal is overt or not.
 
-**Optional secondary predication**
-
-An optional secondary predicate is an adjunct. In this treebank it is typically represented by `advcl:pred`. The clause remains structurally complete without it. The secondary predicate attaches to the predicate of its clause, never to the nominal it describes, whether or not that nominal is overt.
-
-**Selected predicative complement**
-
-A predicate may require or select another predication. Where the understood subject of that complement is obligatorily controlled by a matrix argument, the analysis is typically `xcomp`, not `advcl:pred`. The test is valency: if the clause is grammatical without the element, the element is an adjunct.
-
-The two structures look alike on the surface, since in both an adjective agrees with a noun that is an argument of the verb. Figures 2 and 3 compare them.
+**Selected predicative complement.** Where the predicate selects the predication and its subject is controlled by a matrix argument, use `xcomp`. The test is valency: if the clause is grammatical without the element, it is an adjunct. Figures 2 and 3 compare the two.
 
 ![Dependency tree of comites … incolumes reduxit (S000154): reduxit heads the clause, with comites as obj and incolumes as advcl:pred](figures/advcl_pred_S000154.svg)
 
@@ -368,17 +285,11 @@ The two structures look alike on the surface, since in both an adjective agrees 
 
 *Figure 3.* *quem … fructuosum … facere velis* ‘which you wish to make productive’ (S000003). *fructuosum* is selected by *facere*: ‘to make it’ needs the result it is made into, so the adjective is `xcomp`, and its understood subject is the object *quem*.
 
-**Absolute secondary predication**
+**Absolute predication.** An ablative absolute has its own subject and is `advcl:abs` (Section 6.1).
 
-An ablative absolute brings its own subject and is represented by `advcl:abs`. The ablative noun or pronoun is the subject of the absolute predicate (`nsubj`, or `nsubj:pass` with a passive participle), not a dependent of the main clause. Its independence from the main clause's arguments distinguishes it from ordinary secondary predication (Section 6.1).
+**Attribute.** An adjective, participle, or noun that characterizes or identifies a nominal is `amod`, `acl`, or `appos`. Agreement does not distinguish an attribute from a secondary predicate; Section 4.15.3 sets out the test by part of speech.
 
-**Attributive or identifying modification**
-
-An adjective, participle, or noun may characterize or identify a nominal rather than assert a circumstance holding of it in the clause. Such structures take relations such as `amod`, `acl`, or `appos`, depending on their form and function.
-
-The morphology of attributive and secondary-predicative expressions may be identical, so the distinction cannot be read off agreement alone: it depends on whether the expression characterizes the nominal or contributes an additional predication to the clause. The contrasts are set out by part of speech in Section 4.15.3.
-
-**Open point.** How far secondary predication extends beyond `advcl:pred` has not yet been settled in this treebank. In particular, nominal predication linked by a copula-like verb, where *fio*, *evado*, and similar verbs take a predicative `xcomp`, has not yet been examined as a class. Until it is, such cases follow the distinctions above (a selected complement is `xcomp`, an optional adjunct `advcl:pred`), and the question is left for future work.
+**Open point.** Whether secondary predication extends to nominal predication with copula-like verbs (*fio*, *evado*, with a predicative `xcomp`) has not been examined as a class. Until it is, such cases follow the distinctions above.
 
 **Corpus examples**
 
@@ -388,19 +299,7 @@ The morphology of attributive and secondary-predicative expressions may be ident
 
 #### 1.3.5 Arguments, complements, and adjuncts
 
-A predicate's arguments are participants or propositions selected by its lexical or constructional requirements. Adjuncts add optional circumstances such as time, place, manner, cause, or condition.
-
-This distinction underlies several important relation choices:
-
-- `obj` versus `obl`;
-- `obl:arg` versus plain `obl`;
-- `ccomp` or `xcomp` versus `advcl`;
-- `xcomp` versus `advcl:pred`;
-- selected locatives versus ordinary locative modifiers.
-
-Section 4.15 gives a decision guide for the most frequent of these choices.
-
-Morphological case and semantic plausibility do not settle argument status on their own: it instead depends on the governor's valency and on whether the dependent is required or selected in that construction.
+Arguments are selected by the predicate; adjuncts add optional circumstances. The distinction underlies the choice between `obj` and `obl`, `obl:arg` and `obl`, `ccomp` or `xcomp` and `advcl`, and `xcomp` and `advcl:pred` (Section 4.15). Case and plausibility do not decide it: the governor's valency does.
 
 **Corpus examples**
 
@@ -409,18 +308,14 @@ Morphological case and semantic plausibility do not settle argument status on th
 
 #### 1.3.6 Overt, omitted, and reconstructed structure
 
-Latin frequently leaves material unexpressed, and dependency annotation distinguishes several different situations:
+Unexpressed material is annotated in one of these ways:
 
-- an ordinary null subject recoverable from verbal morphology;
-- an omitted copula that does not require structural reconstruction;
-- an ellipsis that leaves all surviving elements with ordinary governors;
-- head ellipsis that strands dependents and requires promotion with `orphan`;
-- an Enhanced reconstruction that licenses a decimal-ID empty node;
-- a physical gap in the transmitted text.
+- a null subject or an omitted copula: nothing is added;
+- an ellipsis after which every surviving word keeps its governor: `SyntaxNote=Ellipsis` (Section 5.4);
+- an ellipsis that strands dependents: promotion with `orphan` in the Basic tree (Section 4.1.2) and an empty node in the Enhanced layer (Section 5.3);
+- a physical gap in the transmitted text: `orphan:missing` (Section 4.1.3).
 
-Not every understood element is represented by an empty node, and not every clause without an overt finite verb contains an ellipsis requiring reconstruction. The deciding factor is what structure is needed to represent the surviving relations without distortion.
-
-A promoted element under ellipsis may become the Basic root even though it is not the semantic predicate. This is a structural repair required by the tree format, not a claim that the promoted word has become a lexical predicate.
+A word promoted under ellipsis may become the Basic root without being the semantic predicate; the promotion is a repair required by the tree format.
 
 **Corpus examples**
 
@@ -429,47 +324,33 @@ A promoted element under ellipsis may become the Basic root even though it is no
 
 #### 1.3.7 Annotation criteria and illustrative examples
 
-Definitions and stated criteria determine what an annotation category licenses. Examples illustrate those criteria but do not define their limits.
-
-Accordingly:
-
-- the absence of a construction from the examples does not make it unlicensed;
-- the presence of several examples does not turn them into a closed inventory;
-- corpus frequency does not determine grammatical availability;
-- current non-attestation may reflect the reviewed range rather than the language;
-- a rule remains interpretable even with every example removed.
-
-Examples follow from the governing criterion rather than preceding it. An uncertain case remains open rather than being settled by treating a precedent as an automatic answer.
+The stated criteria define a category; examples illustrate it. A construction missing from the examples is not thereby excluded, several examples do not form a closed list, and corpus frequency or a precedent does not settle an uncertain case.
 
 Examples are chosen in this order of preference:
 
 1. a corpus example, trimmed to the relevant words;
 2. a real Latin example from another author, cited;
 3. a corpus example adapted to show the other side of a contrast, labelled “adapted from” its sentence;
-4. a minimal constructed example, labelled “constructed”, where only the essential should be shown.
+4. a minimal constructed example, labelled “constructed”.
 
 ### 1.4 Sources of authority
 
-This treebank distinguishes four kinds of authority:
+In order of precedence:
 
-1. **General Universal Dependencies**, governing the cross-linguistic framework and the CoNLL-U format.
-2. **Latin Universal Dependencies**, governing Latin-specific features, relations, and documented conventions.
-3. **Harmonized Latin annotation**, used where a shared Latin-treebank convention has been adopted across relevant resources.
-4. **Treebank-specific decisions**, used only where this treebank deliberately chooses or defines a convention not settled by the preceding levels.
+1. general Universal Dependencies (the framework and the CoNLL-U format);
+2. Latin Universal Dependencies (Latin-specific features, relations, and conventions);
+3. harmonized Latin annotation, as set out in Gamba and Zeman (2023a, 2023b);
+4. treebank-specific decisions, only where the levels above leave a point open.
 
-The current reference works for the harmonized-Latin tier are Gamba and Zeman's cross-treebank harmonization of Latin syntax (2023a) and of Latin morphology (2023b).
-
-Treebank-specific decisions do not silently override UD: a deliberate deviation is stated as such, scoped narrowly, and given a rationale rather than left implicit. Parser output, corpus frequency, and precedent function as evidence rather than authority.
-
-Where sources conflict, precedence follows the ordering above, from general Universal Dependencies down to treebank-specific decisions.
+A treebank-specific deviation is stated, narrowly scoped, and justified. Parser output, corpus frequency, and precedent are evidence, not authority.
 
 ### 1.5 How to use these guidelines
 
-These guidelines move from general principles to specific constructions. Chapter 1 sets out the file format and the conceptual vocabulary (headedness, predication, argument structure, and unexpressed material) that later chapters presuppose without restating. Chapters 2 and 3 cover lemmas, parts of speech, and morphological features; Chapters 4 and 5 cover Basic and Enhanced syntax, Chapter 4 relation by relation, with decision guides for the most frequent choices in Section 4.15; Chapter 6 brings these together for constructions characteristic of Varro's Latin; Chapter 7 covers the textual, discourse, and review metadata. A reader unfamiliar with dependency grammar is best served by reading Chapter 1 in full before using later chapters as reference.
+Chapter 1 gives the format and the concepts the later chapters assume. Chapters 2 and 3 cover lemmas, parts of speech, and features; Chapter 4 the Basic relations one by one, with decision guides in Section 4.15; Chapter 5 the Enhanced layer; Chapter 6 the named Latin constructions; Chapter 7 the textual, discourse, and review metadata.
 
-The tree figures are drawn directly from the corpus rows of this treebank, so they show the annotation as it stands. Each figure shows only the words it names: an ellipsis in the bottom row marks words left out, and a dashed grey arrow above a word marks its relation to a head outside the figure. Each box shows the form, the lemma in italics, and the part of speech; arrows point from head to dependent, blue where the dependent follows its head and purple where it precedes it, and the highlighted box marks the word the figure is about. A few figures use the Flat view instead: the words in a single row, with the Basic relations drawn above them and the Enhanced edges below.
+The figures are drawn from the corpus rows. Each box shows the form, the lemma in italics, and the part of speech; arrows point from head to dependent, blue where the dependent follows its head and purple where it precedes it, and the highlighted box is the word the figure is about. A figure shows only the words it names: an ellipsis in the bottom row marks words left out, and a dashed grey arrow marks a relation to a head outside the figure. A few figures use the Flat view: the words in one row, Basic relations above them and Enhanced edges below.
 
-Three kinds of box are set off from the instructions. A plain quoted block gives background: the reasons behind a rule, typology, or the design rationale of UD. A blue box marked *Note* compares this treebank's analysis with ALDT/PDT-style Latin treebanking, and a yellow box marked *Warning* flags a point where the terms or categories of traditional Latin grammar do not map directly onto the annotation.
+Three kinds of box are set off from the instructions: a plain quoted block gives background; a blue *Note* box compares the analysis with ALDT/PDT-style Latin treebanking; a yellow *Warning* box flags a point where traditional grammar does not map directly onto the annotation.
 
 ---
 
@@ -477,21 +358,31 @@ Three kinds of box are set off from the instructions. A plain quoted block gives
 
 ### 2.1 General lemma and UPOS principles
 
-Lemma and part-of-speech assignment precede the assignment of other morphological features: a lemma and a [UPOS](https://universaldependencies.org/u/pos/) category are fixed for a token before its case, tense, or other feature values are considered, since those later choices depend on the category already established.
+Fix the lemma and the [UPOS](https://universaldependencies.org/u/pos/) category before the features, which depend on them. Morphology follows harmonized Latin UD, with [`InflClass`](https://universaldependencies.org/la/feat/InflClass.html) wherever the class is determinable (Section 3.3.1). `XPOS` is not used.
 
-This treebank follows harmonized Latin UD morphology throughout, adding [`InflClass`](https://universaldependencies.org/la/feat/InflClass.html) wherever the inflectional class is determinable, rather than inventing local tagsets. A default, unmarked degree carries no `Degree` feature at all: the absence of `Degree` is itself how the ordinary positive degree is represented, not a written-out `Degree=Pos` value. `XPOS` is not used as an independent treebank-specific tagset and is normally `_` (Section 1.2.2).
+Where `LEMMA` is a by-form with an enclitic or suffix that the dictionary does not list separately, `LemmaNorm` in `MISC` gives the dictionary headword, so that a search by dictionary lemma finds the token: *hosce* and *huiusce* have `LEMMA` *hice* and `LemmaNorm=hic`.
+
+**Corpus examples**
+
+- *hosce ipsos … redegit Diophanes* ‘Diophanes reduced these very [works]’ (S000032): *hosce* (1) `LemmaNorm=hic`. LEMMA records the by-form hice; LemmaNorm gives the dictionary headword.
 
 ### 2.2 The UPOS inventory
 
-**Nominal categories.** [`NOUN`](https://universaldependencies.org/u/pos/NOUN.html) is the ordinary common noun, taking Case, Gender, Number, and InflClass under regular Latin inflection; an indeclinable or defective noun instead carries no `InflClass` at all, with the remaining features added only where they are independently recoverable. [`PROPN`](https://universaldependencies.org/u/pos/PROPN.html) is a proper noun with regular Latin morphology, or one carrying `Variant=Greek` or `Variant=Archaic` where its form departs from the regular Latin paradigm — a Greek-declined name, for instance. [`PRON`](https://universaldependencies.org/u/pos/PRON.html) and [`DET`](https://universaldependencies.org/u/pos/DET.html) divide the pronominal territory by a lexical rather than functional criterion, set out fully in Section 2.3. [`ADJ`](https://universaldependencies.org/u/pos/ADJ.html) covers the ordinary adjective in its default positive degree (Case, Gender, Number, InflClass), a form marked for comparative, absolute-superlative, or diminutive degree, an ordinal or other numeral-type adjectival form, and a lexicalized deverbal or participial adjective (Section 2.4). [`NUM`](https://universaldependencies.org/u/pos/NUM.html) is a numeral: written out as a word, and inflected accordingly, or given in a symbolic form — a Roman numeral, a digit, or a citation-style reference — which does not otherwise take Case, Gender, or Number.
+**Nominal categories.**
 
-**Verbal categories.** [`VERB`](https://universaldependencies.org/u/pos/VERB.html) is the lexical verb in its finite (Aspect, Mood, Tense, Person, Number, Voice), infinitive (Aspect, Voice), or participial (Aspect, Voice, Case, Gender, Number) forms. This treebank represents the traditional gerund, gerundive, and active supine as forms of the participle and converb respectively, rather than through dedicated `VerbForm` values of their own (Section 3.1.2). [`AUX`](https://universaldependencies.org/u/pos/AUX.html) is the auxiliary verb, chiefly forms of *sum*, discussed in Section 2.5.
+- [`NOUN`](https://universaldependencies.org/u/pos/NOUN.html): common noun. An indeclinable noun has no `InflClass`.
+- [`PROPN`](https://universaldependencies.org/u/pos/PROPN.html): proper noun; a Greek-declined name takes `Variant=Greek`.
+- [`PRON`](https://universaldependencies.org/u/pos/PRON.html) and [`DET`](https://universaldependencies.org/u/pos/DET.html): Section 2.3.
+- [`ADJ`](https://universaldependencies.org/u/pos/ADJ.html): adjective, including comparative, superlative, and diminutive forms, ordinals, distributives (`NumType=Dist`), and lexicalized participles (Section 2.4).
+- [`NUM`](https://universaldependencies.org/u/pos/NUM.html): cardinal numeral, written as a word, or as a Roman numeral, digits, or a reference (`NumForm`), in which case it has no `Case`, `Gender`, or `Number`.
 
-**Adverbial and adpositional categories.** [`ADV`](https://universaldependencies.org/u/pos/ADV.html) is unfeatured by default; a comparative or absolute form takes Degree, a lexically spatiotemporal adverb takes `AdvType`, and a pronominal or quantifier adverb takes `PronType` or `NumType`. [`ADP`](https://universaldependencies.org/u/pos/ADP.html) is the ordinary Latin preposition class, normally without features: `AdpType` is not part of this treebank's standard for ordinary prepositions.
+**Verbal categories.** [`VERB`](https://universaldependencies.org/u/pos/VERB.html) is the lexical verb in all its forms; the gerund, gerundive, and supines are treated in Section 3.1.2. [`AUX`](https://universaldependencies.org/u/pos/AUX.html) is *sum* as copula or auxiliary (Section 2.5).
 
-**Function words.** [`CCONJ`](https://universaldependencies.org/u/pos/CCONJ.html) and [`SCONJ`](https://universaldependencies.org/u/pos/SCONJ.html) are ordinarily unfeatured, taking `Polarity=Neg` for a negative connective or subordinating marker. A pronominal subordinator takes `PronType` on `SCONJ` (`PronType=Rel` on *quo*); do not assume that other pronominal values transfer to `SCONJ`. [`PART`](https://universaldependencies.org/u/pos/PART.html) is default and unfeatured, negative (`Polarity=Neg`), emphatic (`Form=Emp`), or interrogative (`PartType=Int`). [`INTJ`](https://universaldependencies.org/u/pos/INTJ.html) is normally unfeatured and uninflected.
+**Adverbs and adpositions.** [`ADV`](https://universaldependencies.org/u/pos/ADV.html) is unfeatured unless it has `Degree`, a lexical `AdvType`, or a pronominal `PronType` or `NumType`. The connective *vero* is `ADV`; *itaque*, like *enim*, *igitur*, and *nam*, is `PART`. [`ADP`](https://universaldependencies.org/u/pos/ADP.html) is the preposition, without `AdpType`; only enclitic *cum* (*nobiscum*, Section 1.2.3) takes `AdpType=Post`.
 
-**Other categories.** [`PUNCT`](https://universaldependencies.org/u/pos/PUNCT.html) never carries `FEATS`. [`X`](https://universaldependencies.org/u/pos/X.html) is reserved for residual, foreign, or unanalysable material and is discussed in Section 2.6.
+**Function words.** [`CCONJ`](https://universaldependencies.org/u/pos/CCONJ.html) and [`SCONJ`](https://universaldependencies.org/u/pos/SCONJ.html) take `Polarity=Neg` when negative; a pronominal subordinator such as *quo* takes `PronType=Rel` on `SCONJ`. [`PART`](https://universaldependencies.org/u/pos/PART.html) is unfeatured, or takes `Polarity=Neg`, `Form=Emp`, or `PartType=Int`. [`INTJ`](https://universaldependencies.org/u/pos/INTJ.html) is unfeatured.
+
+**Other.** [`PUNCT`](https://universaldependencies.org/u/pos/PUNCT.html) has no features. [`X`](https://universaldependencies.org/u/pos/X.html) is for unanalysed material (Section 2.6).
 
 **Corpus examples**
 
@@ -501,18 +392,24 @@ This treebank follows harmonized Latin UD morphology throughout, adding [`InflCl
 
 ### 2.3 The `DET` / `PRON` boundary
 
-`DET` is assigned lexically, not by syntactic function. A lemma on this treebank's closed determiner list — demonstratives and identity words, indefinites and quantifiers, possessives, and numeral-like quantifiers — is tagged `DET` wherever it occurs, whether it modifies a noun or stands on its own, and a head-like or substantival use of such a lemma is not by itself grounds to retag it `PRON`. `PRON` is reserved for pronominal lemmas outside that closed list, such as the relative and interrogative *qui*/*quis*, and for a genuine non-`DET` homonym: *hic* used adverbially ("here") or *unus* used as an ordinary cardinal numeral is tagged by its actual category, not forced to `DET` merely because the same form appears there elsewhere.
+`DET` is a closed lexical list (demonstratives and identity words, indefinites and quantifiers, possessives, pronominal quantifiers with `NumType=Card`), not the relation `det`. A lemma on the list is `DET` wherever it occurs, also when it stands alone: *hic*, *ille*, *iste*, *idem*, *ipse*, *quidam*, *quisque*, *nullus*, *totus*, *multus*. *aliquis* is not on the list and is `PRON`. `PRON` is for pronouns outside the list: personal, relative, and interrogative. A homonym of another category takes that category (*hic* ‘here’ is `ADV`).
 
-One further construction sits inside this boundary rather than outside it: a bare *quis* or *qui* used indefinitely after *si*, *nisi*, *ne*, *num*, or a small set of comparable subordinators functions as a substitute for *aliquis* or *quispiam* ("someone", "something") and takes `DET` with `PronType=Ind`, on the same lexical basis as any other indefinite determiner.
+**Exceptions decided by use.**
+
+- *is* is `DET` with `PronType=Dem` and no `Person` in demonstrative use: adnominal (*is ager*); antecedent of a clause it points forward to (*is qui*, *id quod*); the correlative ablative (*eo magis … quod*); *et id* ‘and that too’; set against another referent. It is `PRON` with `PronType=Prs` and `Person=3` when it refers back to an entity or proposition already in the discourse (*eius*, *ab ea*). When both readings fit, use `PRON`.
+- Indefinite *quis* after *si*, *nisi*, *ne*, *num*, *quo*, *quanto*, *ubi*, or *cum* is `PRON` with lemma *quis* and `PronType=Ind`, also when it modifies a noun (relation `det`). Where the edition writes the two as one word (*siquis*, *nequid*), split it as a multiword token, *si* or *ne* (`SCONJ`, `mark`) + *quis*; lexicalized compounds (*siquidem*, *nequaquam*) are not split.
 
 **Corpus examples**
 
 - *hos nobilitate Mago Carthaginiensis praeteriit* ‘Mago the Carthaginian surpassed these men in fame’ (S000030): *hos* (1) `DET`, `obj`. A closed-list demonstrative used substantivally, as the object, is still DET.
 - *ego hic … vivere non possum* ‘here I cannot live’ (S000051): *hic* (2) `ADV`, `advmod:lmod`. The adverb hic ‘here’ is a separate homonym of the determiner and is tagged by its own category.
+- *utilissimus autem is ager* ‘that land, moreover, is most useful’ (S000145): *is* (3) `DET`, `PronType=Dem`, `det`. The adnominal use is demonstrative: DET.
+- *itaque dum id nobiscum una videatis* ‘so, while you look into this together with us’ (S000082): *id* (3) `PRON`, `PronType=Prs`, `Person=3`, `obj`. id refers back to what has just been said: the anaphoric pronoun.
+- *siqua in re quaeres* ‘if you seek [something] in any matter’ (S000008): *si* (12) `SCONJ`, `mark`; *qua* (13) `PRON`, `PronType=Ind`, `det`. The edition's siqua is split as a multiword token; the indefinite stays PRON although it modifies re.
 
 ### 2.4 Lexicalized participles and the `ADJ` / `VERB` boundary
 
-A deverbal or participial form is tagged `ADJ`, not `VERB`, once it has lexicalized as an adjective — that is, once it functions descriptively, independent of the governing verb's own valency and argument structure, rather than retaining an ordinary participle's verbal behaviour. An ordinary `VERB` participle remains `VERB` even where an English gloss suggests an adjectival reading. Case, Gender, Number, and InflClass are required as for any adjective; `VerbForm=Part` is added only where harmonized policy treats the specific lexeme as deverbative, and `Degree` only where the lexicalized adjective has itself developed a comparative or superlative form.
+A participle is `ADJ` once it has lexicalized as an adjective, describing independently of the verb's valency; otherwise it stays `VERB`, whatever the English gloss suggests. A lexicalized participle takes `VerbForm=Part` only where harmonized practice treats the lexeme as deverbal, and `Degree` only where the adjective has its own comparative or superlative.
 
 **Corpus examples**
 
@@ -521,7 +418,7 @@ A deverbal or participial form is tagged `ADJ`, not `VERB`, once it has lexicali
 
 ### 2.5 Copular and auxiliary uses of *sum*
 
-A form of *sum* functioning as a copula or as a verbal auxiliary is tagged `AUX`, never `VERB` — Section 1.3.2 sets out the conceptual basis for that distinction, and Section 1.3.3 the resulting predicate-and-copula structure. `AUX` takes the same finite (Aspect, Mood, Tense, Person, Number) or infinitive (Aspect) feature sets as `VERB`, without Voice: *sum* carries no Voice in any form, finite or infinitive, since it does not inflect for one. Where *sum* instead functions as a genuine lexical predicate (the existential use noted in Section 1.3.3), it is tagged `VERB` like any other lexical verb, on the strength of that clause's own predication rather than the lemma's ordinary behaviour elsewhere in the corpus.
+*sum* as copula or auxiliary is `AUX`, never `VERB` (Sections 1.3.2, 1.3.3). It has no `Voice`. Lexical *sum* (Section 1.3.3) is `VERB`.
 
 **Corpus examples**
 
@@ -531,7 +428,7 @@ A form of *sum* functioning as a copula or as a verbal auxiliary is tagged `AUX`
 
 ### 2.6 Foreign, corrupt, and unanalysed material
 
-`X` is reserved for residual, foreign, or unanalysable tokens, and is used only once no other UPOS category is workable; ordinary Latin morphological features are not added to it unless the token is in fact analysed. Every word that is not Latin carries `Foreign=Yes`, following the Universal Dependencies treatment of [foreign expressions and code-switching](https://universaldependencies.org/foreign.html). A Greek word that receives a real grammatical analysis is tagged according to its actual category, with `Foreign=Yes` and a `Lang` value recording its source language (Section 7), rather than defaulted to `X` merely because it is Greek; it is not assigned a Latin lemma or forced into a Latin inflectional class it does not belong to. Only foreign material left unanalysed takes `X`, again with `Foreign=Yes`.
+Every word that is not Latin takes `Foreign=Yes` ([foreign expressions](https://universaldependencies.org/foreign.html)). A Greek word that is analysed takes its own category and features, `Lang=grc`, and no Latin lemma or inflectional class (Section 7.1). Only material left unanalysed is `X`, without Latin features. A gap in the transmitted text is a single token `…` with `DiscourseMode=Lacuna` (Section 7.6); a word governed by the gap takes `orphan:missing` (Section 4.1.3).
 
 **Corpus examples**
 
@@ -539,23 +436,21 @@ A form of *sum* functioning as a copula or as a verbal auxiliary is tagged `AUX`
 
 ## 3. Morphological Features
 
-Morphological features fall into three tiers, treated in order of importance:
+Features fall into three tiers:
 
-- **core features** (Section 3.1): case, gender, number, the verbal features, person, and degree. They directly inform the syntactic analysis and must agree with it: a subject's case, a finite verb's person and number, a participle's agreement with its noun;
-- **classificatory features** (Section 3.2): conventional lexical classifications. Some bear on the syntax (`PronType` on relative and interrogative words, `Poss`, `Polarity`); others mainly help semantic interpretation (`NameType`);
-- **compatibility features** (Section 3.3): `InflClass` and the traditional mood and tense labels, kept for conformity with Latin UD practice.
+- **core features** (Section 3.1): case, gender, number, the verbal features, person, and degree. They must agree with the syntactic analysis: a subject's case, a finite verb's person and number, a participle's agreement with its noun;
+- **classificatory features** (Section 3.2): lexical classifications, some of them relevant to the syntax (`PronType` on relative and interrogative words, `Poss`, `Polarity`), others mainly to interpretation (`NameType`);
+- **compatibility features** (Section 3.3): `InflClass` and the traditional mood and tense labels, kept for Latin UD.
 
 ### 3.1 Core features
 
 #### 3.1.1 Case, gender, and number
 
-Latin's nominal morphology is represented by three independent features.
+[`Case`](https://universaldependencies.org/u/feat/Case.html): `Nom`, `Acc`, `Gen`, `Dat`, `Abl`, `Voc`, `Loc`. Use `Voc` only for direct address, not for a nominative in apposition to it. Use `Loc` only for the surviving locatives (town names, *domi*, *ruri*, *humi*); an ordinary place expression is a preposition with the ablative or accusative.
 
-[`Case`](https://universaldependencies.org/u/feat/Case.html) has seven values in this treebank: nominative (`Nom`, the subject and citation form), accusative (`Acc`, the direct object, and in Latin also the goal of motion and several adverbial uses), genitive (`Gen`, roughly "of"), dative (`Dat`, the indirect object), ablative (`Abl`, prototypically source or separation, but in Latin also absorbing the functions of the lost Indo-European instrumental and locative cases), vocative (`Voc`, direct address — reserved for genuine address, not a nominative standing in apposition to one), and locative (`Loc`, surviving only for a closed set of place names and a few nouns such as *domus*, *rus*, and *humi*; ordinary place expressions take the ablative or accusative with a preposition instead).
+[`Gender`](https://universaldependencies.org/u/feat/Gender.html): `Masc`, `Fem`, `Neut`, as the grammatical gender of the word. `Com` is not used.
 
-[`Gender`](https://universaldependencies.org/u/feat/Gender.html) takes one of three values — masculine, feminine, or neuter — assigned by a noun's grammatical class rather than by the sex of its referent: many masculine and feminine nouns denote nothing male or female. Latin's three-way system does not licence UD's `Gender=Com` ("common"), a value reserved for languages that systematically merge masculine and feminine into one non-neuter category.
-
-[`Number`](https://universaldependencies.org/u/feat/Number.html) is singular or plural. Latin's binary number morphology does not licence UD's further typological values — dual, trial, paucal, and the rest — documented for languages that grammaticalize such distinctions.
+[`Number`](https://universaldependencies.org/u/feat/Number.html): `Sing`, `Plur`.
 
 **Corpus examples**
 
@@ -564,17 +459,13 @@ Latin's nominal morphology is represented by three independent features.
 
 #### 3.1.2 Verb form, mood, tense, aspect, and voice
 
-These five features jointly describe the Latin verb.
+[`VerbForm`](https://universaldependencies.org/u/feat/VerbForm.html): `Fin` (every form with a `Mood`), `Inf`, `Part`, and, following harmonized Latin UD, `Conv` for the active supine and `Vnoun` for the ablative supine (tagged `NOUN`; Section 6.9). The gerund and the gerundive are `VerbForm=Part` with `Aspect=Prosp` and `Voice=Pass`: the gerund carries `Case` only, the gerundive `Case`, `Gender`, and `Number`. UD's `Ger`, `Gdv`, and `Sup` are not used; the traditional names are recorded in `TraditionalMood` (Section 3.3.2).
 
-[`VerbForm`](https://universaldependencies.org/u/feat/VerbForm.html) distinguishes finite forms (`Fin`, identified by the rule of thumb that a non-empty `Mood` value means the form is finite), infinitives (`Inf`), and participles (`Part`). In this treebank's harmonized scheme, two further values stand in for general UD's dedicated gerund, gerundive, and supine categories: `Conv` for the active supine, and `Vnoun` for a verbal noun — in this treebank's usage, reserved for the passive (ablative) supine, tagged `NOUN`, as in *dictu* ("to say", in *mirabile dictu*; Section 6.9). The traditional gerund and gerundive are both represented as `VerbForm=Part`, distinguished from an ordinary participle, and from each other, by their combination of `Aspect=Prosp` and `Voice=Pass` together with their agreement features: the gerund carries `Case` alone, the gerundive full `Case`, `Gender`, and `Number` agreement; their traditional names survive as `MISC`-field metadata rather than as separate `VerbForm` values (Section 3.3.2).
+[`Mood`](https://universaldependencies.org/u/feat/Mood.html), on finite forms only: `Ind`, `Sub`, `Imp`.
 
-[`Aspect`](https://universaldependencies.org/u/feat/Aspect.html) distinguishes imperfective (`Imp`, action ongoing, with no information about completion), perfective (`Perf`, action completed, with emphasis on the point of completion), and prospective (`Prosp`, action expected to follow a reference point that may itself be past, present, or future — the value underlying the gerund, gerundive, and future participle). A fourth value, inchoative (`Inch`), remains formally documented for Latin but is not adopted in this treebank's current practice: *-sco* verbs are tagged `Aspect=Imp`, like any other imperfective-stem form.
+[`Tense`](https://universaldependencies.org/u/feat/Tense.html), on finite forms: `Pres`, `Past`, `Fut`, `Pqp`. [`Aspect`](https://universaldependencies.org/u/feat/Aspect.html): `Imp`, `Perf`, `Prosp`. Tense and aspect are factored separately: the imperfect is `Aspect=Imp|Tense=Past`, the perfect `Aspect=Perf|Tense=Past` (never a tense value of its own). `Prosp` marks the future participle, the gerund, and the gerundive. `Aspect=Inch` is not used: *-sco* verbs are `Aspect=Imp`.
 
-[`Mood`](https://universaldependencies.org/u/feat/Mood.html) applies to finite forms only, with three values: indicative (`Ind`, the default, stating that something happens without added speaker attitude), subjunctive (`Sub`, used in various subordinate-clause contexts for actions treated as subjective or uncertain), and imperative (`Imp`, ordering or asking the addressee to act).
-
-[`Tense`](https://universaldependencies.org/u/feat/Tense.html) also applies to finite forms, with four values — present (`Pres`), past (`Past`), future (`Fut`), and pluperfect (`Pqp`) — factored independently of `Aspect` throughout: the Latin imperfect indicative, for instance, is `Aspect=Imp` combined with `Tense=Past`, not a dedicated `Tense=Imp` value, which names a different category (the morphological imperfect) easily confused with imperfective aspect by name alone.
-
-[`Voice`](https://universaldependencies.org/u/feat/Voice.html) is active (`Act`, the subject is the agent) or passive (`Pass`, the subject is the patient; an expressed agent appears as an oblique or object dependent), and is omitted on every form of *sum*, which does not inflect for it. UD's further voice values — middle, reciprocal, causative, and others — belong to valency systems Latin does not have and are not used here.
+[`Voice`](https://universaldependencies.org/u/feat/Voice.html): `Act`, `Pass`. Deponents take the voice of their form (`Pass`). No form of *sum* carries `Voice`.
 
 **Corpus examples**
 
@@ -584,7 +475,7 @@ These five features jointly describe the Latin verb.
 
 #### 3.1.3 Person
 
-[`Person`](https://universaldependencies.org/u/feat/Person.html) marks the ordinary three-way distinction — first, second, third — on finite verbs and on personal pronouns. UD's zero-person and fourth-person values, documented for languages such as Finnish and Navajo, have no place in Latin's ordinary system. The possessor features `Person[psor]` and `Number[psor]` are treated with the possessives (Section 3.2.1).
+[`Person`](https://universaldependencies.org/u/feat/Person.html): `1`, `2`, `3`, on finite verbs and personal pronouns. The possessor features `Person[psor]` and `Number[psor]` are treated with the possessives (Section 3.2.1).
 
 **Corpus examples**
 
@@ -592,7 +483,7 @@ These five features jointly describe the Latin verb.
 
 #### 3.1.4 Degree
 
-[`Degree`](https://universaldependencies.org/u/feat/Degree.html) marks comparison on adjectives and adverbs: comparative (`Cmp`), the traditional Latin superlative (`Abs` — this treebank's value for it, since UD's separate `Sup` overlaps with `Abs` in Latin usage and is not used here), and diminutive (`Dim`), reserved strictly for true diminutive forms such as *homunculus* ("little man") or *dormito* ("to doze"). The default positive degree carries no `Degree` value at all (Section 2.1); UD's `Degree=Equ` ("equative") is not used for Latin.
+[`Degree`](https://universaldependencies.org/u/feat/Degree.html): `Cmp` for the comparative, `Abs` for the superlative, `Dim` for true diminutive forms (*homunculus*, *dormito*). The positive degree carries no `Degree` (Section 2.1). `Sup` and `Equ` are not used.
 
 **Corpus examples**
 
@@ -603,15 +494,17 @@ These five features jointly describe the Latin verb.
 
 #### 3.2.1 Pronoun, numeral, and possessive features
 
-[`PronType`](https://universaldependencies.org/la/feat/PronType.html) classifies a pronominal word by semantic type: personal (`Prs`), demonstrative (`Dem`), relative (`Rel`), interrogative (`Int`), indefinite (`Ind`), negative (`Neg`), total (`Tot`, "all"), contrastive (`Con`, "the other"), and reciprocal (`Rcp`). UD's emphatic and article values are documented as obsolete or inapplicable for Latin and are not used. [`Poss`](https://universaldependencies.org/u/feat/Poss.html) and [`Reflex`](https://universaldependencies.org/u/feat/Reflex.html) are boolean features, present only where they apply and simply omitted otherwise, with no explicit negative value; `Reflex` is lexical, marking a canonically reflexive form regardless of its function in a given clause, with any contextual nuance — a reciprocal use of a reflexive form, for instance — captured separately through `PronType`.
+[`PronType`](https://universaldependencies.org/la/feat/PronType.html): `Prs`, `Dem`, `Rel`, `Int`, `Ind`, `Neg`, `Tot`, `Con`, `Rcp`. `Emp` and `Art` are not used.
 
-[`NumType`](https://universaldependencies.org/u/feat/NumType.html) classifies a numeral or numeral-like word as cardinal (`Card`), ordinal (`Ord`), distributive (`Dist`, "ten each"), or multiplicative (`Mult`, "ten times"). [`NumForm`](https://universaldependencies.org/la/feat/NumForm.html) records how a numeral is written — as a word, in Roman numerals, as digits, or as a citation-style reference — with the latter three forms generally taking no Case, Gender, or Number. [`NumValue`](https://universaldependencies.org/la/feat/NumValue.html) is reserved narrowly for two special pronominal numerals: *unus*, ambivalent between an exact "one" and an indefinite-article-like use, and inflecting like a pronoun rather than an ordinary adjective; and *ambo*, pairing with `PronType=Tot` to mark two elements considered together rather than an exact count.
+[`Poss`](https://universaldependencies.org/u/feat/Poss.html) and [`Reflex`](https://universaldependencies.org/u/feat/Reflex.html) take only `Yes` and are omitted otherwise. `Reflex` is lexical: it marks a reflexive form whatever its use in the clause; a reciprocal use is recorded by `PronType`.
 
-`Person[psor]` and `Number[psor]` layer person and number values onto a possessive determiner or pronoun to encode who and how many the possessor is, independently of the word's own person or number if it has one; both combine with `Poss=Yes`.
+[`NumType`](https://universaldependencies.org/u/feat/NumType.html): `Card`, `Ord`, `Dist`, `Mult`. Distributives are `ADJ` with `NumType=Dist` and no `PronType`; on `DET`, `NumType` is only `Card`. [`NumForm`](https://universaldependencies.org/la/feat/NumForm.html) records how a numeral is written (word, Roman numeral, digits, reference); the non-word forms generally take no `Case`, `Gender`, or `Number`. [`NumValue`](https://universaldependencies.org/la/feat/NumValue.html) is used only on *unus* (`1`) and *ambo* (`2`, with `PronType=Tot`).
+
+`Person[psor]` and `Number[psor]` give the person and number of the possessor on a possessive, independently of the word's own agreement features; both go with `Poss=Yes`.
 
 **Corpus examples**
 
-- *iugerum unum denos et quinos denos culleos fert* ‘one iugerum bears ten and fifteen cullei each’ (S000061): *unum* (5) `NumValue=1`, `NumType=Card`; *denos* (6) `NumType=Dist`.
+- *iugerum unum denos et quinos denos culleos fert* ‘one iugerum bears ten and fifteen cullei each’ (S000061): *unum* (5) `NumValue=1`, `NumType=Card`; *denos* (6) `ADJ`, `NumType=Dist`. A distributive is an adjective, without PronType.
 - *in fundo suo* ‘on his own estate’ (S000066): *suo* (18) `Reflex=Yes`, `Poss=Yes`, `PronType=Prs`.
 - *omnes domus repletae essent* ‘all the houses had been filled’ (S000154): *omnes* (13) `PronType=Tot`.
 - *non hic Varro noster* ‘[did] not this Varro of ours’ (S000154): *noster* (4) `Poss=Yes`, `Person[psor]=1`, `Number[psor]=Plur`, `Number=Sing`. The possessor features (first person plural) are independent of the determiner's own agreement number.
@@ -619,9 +512,17 @@ These five features jointly describe the Latin verb.
 
 #### 3.2.2 Polarity, abbreviation, and other lexical features
 
-[`Variant`](https://universaldependencies.org/la/feat/Variant.html) marks a form that departs from its expected paradigm: `Greek` for Greek inflectional morphology retained on a Latin word (not merely a Greek-origin lexeme inflected regularly), and `Archaic` for a form crystallized from an older stage of the language and officially treated as an archaic variant, rather than an ordinary old spelling.
+[`Variant`](https://universaldependencies.org/la/feat/Variant.html): `Greek` for Greek inflection on a Latin word (not a Greek loan inflected regularly), `Archaic` for a form treated as an archaic variant (not an ordinary old spelling).
 
-A small group of remaining features mark specific lexical or morphological properties as they arise: [`Abbr=Yes`](https://universaldependencies.org/u/feat/Abbr.html) for an abbreviation; [`AdvType`](https://universaldependencies.org/la/feat/AdvType.html) (`Loc` or `Tim`) for a lexically spatial or temporal adverb or subordinator, assigned lexically rather than contextually; [`Compound=Yes`](https://universaldependencies.org/la/feat/Compound.html) for a univerbation of two or more originally independent words fused into one token whose components remain discernible, such as *scilicet* (*scio* + *licet*); [`Form=Emp`](https://universaldependencies.org/la/feat/Form.html) for an expanded, emphatic variant of a functional word, such as *egomet* or *sese*; [`Polarity=Neg`](https://universaldependencies.org/u/feat/Polarity.html) for grammatical, as opposed to merely lexical, negation; [`PartType`](https://universaldependencies.org/u/feat/PartType.html) (`Int` or `Emp`) for a particle whose interrogative or emphatic function is not already captured by `Form` or `Polarity`; and [`Foreign=Yes`](https://universaldependencies.org/u/feat/Foreign.html) for a word that is not Latin, whether analysed or not (Section 2.6).
+Other lexical features, where they apply:
+
+- [`Abbr=Yes`](https://universaldependencies.org/u/feat/Abbr.html): an abbreviation;
+- [`AdvType`](https://universaldependencies.org/la/feat/AdvType.html) (`Loc`, `Tim`): a lexically spatial or temporal adverb or subordinator, assigned by the lexeme, not by context;
+- [`Compound=Yes`](https://universaldependencies.org/la/feat/Compound.html): a univerbation whose parts are still discernible (*scilicet*);
+- [`Form=Emp`](https://universaldependencies.org/la/feat/Form.html): an emphatic form of a function word (*egomet*, *sese*);
+- [`Polarity=Neg`](https://universaldependencies.org/u/feat/Polarity.html): grammatical negation;
+- [`PartType`](https://universaldependencies.org/u/feat/PartType.html) (`Int`, `Emp`): a particle whose function `Form` or `Polarity` does not already record;
+- [`Foreign=Yes`](https://universaldependencies.org/u/feat/Foreign.html): a word that is not Latin, analysed or not (Section 2.6).
 
 **Corpus examples**
 
@@ -630,34 +531,48 @@ A small group of remaining features mark specific lexical or morphological prope
 
 #### 3.2.3 `NameType`
 
-[`NameType`](https://universaldependencies.org/u/feat/NameType.html) classifies a proper name semantically: astronomical (`Ast`), calendrical (`Cal`), organizational (`Com`), geographical (`Geo`), a given name (`Giv`), a letter (`Let`), a literary work (`Lit`), a meteorological phenomenon (`Met`), a national or ethnic designation (`Nat`), a religious or mythological being (`Rel` — distinguished from `Giv`, which covers a mortal's given name even where that mortal is legendary), a surname (`Sur`, covering both the Roman *nomen* and *cognomen*), or another named entity not otherwise covered (`Oth`).
+[`NameType`](https://universaldependencies.org/u/feat/NameType.html): `Ast`, `Cal`, `Com`, `Geo`, `Giv`, `Let`, `Lit`, `Met`, `Nat`, `Rel`, `Sur`, `Oth`.
+
+- `Giv`: a praenomen, or a single personal name (a Greek name); a legendary mortal.
+- `Sur`: a *nomen gentilicium* or a *cognomen*.
+- `Rel`: gods and mythological beings.
+- `Nat`: an ethnic or place adjective that refers to people: part of a name (*Amphilochus Atheniensis*), an attribute of a person or group (*eques Romanus*, *Graeci scriptores*), or used as a noun (*Mediolanenses*).
+- `Geo`: a place, and an ethnic or place adjective that does not refer to people (*ager Campanus*, *lingua Graeca*).
+
+The `Gender` of a personal name follows the person, not the noun it derives from: *Scrofa* is `Masc`.
 
 **Corpus examples**
 
-- *C. Licinius* ‘Gaius Licinius’ (S000073): *C* (3) `Abbr=Yes`, `NameType=Giv`; *Licinius* (5) `flat:name`.
+- *C. Licinius* ‘Gaius Licinius’ (S000073): *C* (3) `Abbr=Yes`, `NameType=Giv`; *Licinius* (5) `NameType=Sur`, `flat:name`. The praenomen is Giv, the nomen Sur.
+- *Agrium equitem R.* ‘Agrius, a Roman knight’ (S000037): *Agrium* (13) `NameType=Sur`; *R* (15) `Abbr=Yes`, `NameType=Nat`. Romanus refers to a person, so it is Nat.
+- *Graeca lingua Sextilio praetori* ‘in Greek to the praetor Sextilius’ (S000030): *Graeca* (24) `NameType=Geo`; *Sextilio* (26) `NameType=Sur`. Graeca qualifies a language, not people, so it is Geo.
 
 ### 3.3 Compatibility features
 
-> These features are kept for conformity with Latin UD practice and are not used by this treebank's own analysis. `TraditionalMood` and `TraditionalTense` repeat, in traditional terms, what the UD features already record.
+> These features are kept for conformity with Latin UD practice and are not used by this treebank's own analysis.
 
 #### 3.3.1 `InflClass` and `InflClass[nominal]`
 
-[`InflClass`](https://universaldependencies.org/la/feat/InflClass.html) records the inflectional class governing a word's paradigm, independently of Case, Gender, and Number. For nominal words it distinguishes the five Latin declensions by their historical Indo-European stem vowel: `IndEurA` (first declension, a-stem, mostly feminine), `IndEurO` (second declension, o-stem, mostly masculine and neuter), `IndEurI` (third-declension i-stem, spanning all genders and found across adjectives, determiners, numerals, and present participles), `IndEurX` (third-declension consonant-stem), `IndEurU` (fourth declension, u-stem), and `IndEurE` (fifth declension, e-stem). `LatPron` marks the pronominal declension, distinguished by identical genitive/dative singular forms across genders and a neuter nominative/accusative in *-d*. For verbal words it distinguishes the conjugations by thematic vowel: `LatA` (first conjugation, *amo*), `LatE` (second, *uideo*), `LatI` (fourth, *audio*), `LatI2` (the mixed conjugation historically grouped with the fourth, *capio*), and `LatX` (third conjugation, *lego*). `LatAnom` marks anomalous inflection not reducible to the other verbal classes, chiefly certain verbs and personal pronouns. `InflClass=Ind`, deprecated in UD, is not used: an indeclinable word from an otherwise inflecting category simply carries no `InflClass`.
+[`InflClass`](https://universaldependencies.org/la/feat/InflClass.html) gives the inflectional class:
 
-[`InflClass[nominal]`](https://universaldependencies.org/la/feat/InflClass-nominal.html) applies the same nominal-class values at the nominal-stem layer of a verbal form that also declines like a noun or adjective — a participle, gerund, gerundive, or supine — independently of that form's own verbal `InflClass`.
+- nominal: `IndEurA` (1st declension), `IndEurO` (2nd), `IndEurX` (3rd, consonant stems), `IndEurI` (3rd, i-stems, including adjectives, determiners, numerals, and present participles of that class), `IndEurU` (4th), `IndEurE` (5th), `LatPron` (pronominal declension);
+- verbal: `LatA` (1st conjugation), `LatE` (2nd), `LatX` (3rd), `LatI` (4th), `LatI2` (mixed, *capio*; also *inquam*, *aio*, and *coepio* in every form);
+- `LatAnom`: anomalous verbs and the personal pronouns.
+
+The class is that of the form, not of the lemma: first-class adjectives and determiners (possessives, ordinals, and distributives included), and the nominal layer of participles and gerundives, are `IndEurA` in the feminine and `IndEurO` in the masculine and neuter. An indeclinable word carries no `InflClass` (`InflClass=Ind` is not used).
+
+[`InflClass[nominal]`](https://universaldependencies.org/la/feat/InflClass-nominal.html) gives the declension of a verbal form that also declines (participle, gerund, gerundive, supine), alongside its verbal `InflClass`.
 
 **Corpus examples**
 
 - *otium si essem consecutus* ‘if I had obtained leisure’ (S000001): *consecutus* (4) `InflClass=LatX`, `InflClass[nominal]=IndEurO`; *essem* (3) `InflClass=LatAnom`; *otium* (1) `InflClass=IndEurO`. The participle carries both its verbal conjugation and, at the nominal layer, the declension it inflects by.
 - *qui res dispersas comprendit* ‘who gathered the scattered material together’ (S000030): *res* (10) `InflClass=IndEurE`; *dispersas* (11) `InflClass[nominal]=IndEurA`; *qui* (9) `InflClass=LatPron`.
 
-#### 3.3.2 `TraditionalMood` and `TraditionalTense`
+#### 3.3.2 `TraditionalMood`
 
-`TraditionalMood` and `TraditionalTense` are `MISC`-field attributes, not `FEATS` values (Section 1.2.4), but they belong here conceptually: each records the traditional Latin category alongside the harmonized UD morphological analysis, for a form whose traditional name does not correspond to a distinct value in this treebank's own `FEATS` scheme.
+`TraditionalMood` is a `MISC` key, not a feature (Section 1.2.4). Its values `Gerundium`, `Gerundivum`, and `Supinum` distinguish the gerund, the gerundive, and the supine from an ordinary participle, since the UD `VerbForm` values for them are not used (Section 3.1.2).
 
-`TraditionalMood` preserves the traditional label for the gerund (`Gerundium`), gerundive (`Gerundivum`), and supine (`Supinum`) — three categories traditional Latin grammar treats under "mood" in its broader sense, extended to nonfinite forms, even though UD's own `Mood` feature applies only to finite verbs. All three share the harmonized `VerbForm=Part`/`Aspect=Prosp`/`Voice=Pass` representation (or, for the active supine, `VerbForm=Conv`/`Aspect=Prosp`, and for the passive supine `VerbForm=Vnoun` on a `NOUN`); `TraditionalMood` is what distinguishes them from an ordinary participle and from each other, since general UD's separate `Ger`/`Gdv`/`Sup` `VerbForm` values are not used in this treebank.
-
-`TraditionalTense` preserves the traditional Latin tense name — `Praesens`, `Imperfectum`, `Perfectum`, `Plusquamperfectum`, `Futurum`, and `FuturumExactum` — alongside the harmonized `Tense`/`Aspect` combination, on finite and, where applicable, nonfinite verb forms. This treebank distinguishes `FuturumExactum` from `Futurum` as two separate values, rather than folding the future perfect into a single, coarser future category. Neither the gerund nor the gerundive takes a `TraditionalTense` value, since both are nonfinite forms outside the tense system that feature describes.
+`TraditionalTense` is not annotated.
 
 **Corpus examples**
 
@@ -721,6 +636,8 @@ A single clause with no coordinate partner can show the first pattern: the elide
 
 **Do not use for** material the author left out (Section 4.1.2).
 
+In the text, the gap is the single token `…` with `DiscourseMode=Lacuna` (Section 7.6).
+
 ### 4.2 Voice and the passive
 
 Voice is a property of the predicate, and it affects every clause type. Annotate it once, on the predicate, and let three relations follow from it:
@@ -763,6 +680,7 @@ The subtypes are licensed by the voice of the governing predicate alone, never b
 **Examples**
 
 - *accersitus ab aedile … nondum rediit* ‘summoned by the aedile, he has not yet returned’ (S000041): *aedile* (4) `obl:agent`; *ab* (3) `case`; *nondum* (12) `advmod:tmod`.
+- *vilicus … appellatus a villa* ‘the steward [was] named after the villa’ (S000089): *villa* (9) `obl`. *a villa* looks like an agent, but the villa would not be the subject of the active clause: it is what the steward is named after.
 
 ### 4.3 Subjects
 
@@ -854,7 +772,7 @@ The subtypes are licensed by the voice of the governing predicate alone, never b
 
 **Use** [`advmod`](https://universaldependencies.org/u/dep/advmod.html) for a non-clausal modifier realized as an adverb, modifying a predicate, an adjective, another adverb, or, in limited cases, a nominal. The criterion is formal: the same meaning realized as a case-marked nominal or an adpositional phrase is `obl`.
 
-**Do not use for** an adverbial realized as a nominal or adpositional phrase (`obl`); a clausal modifier (`advcl`); a discourse particle (`discourse`, Section 4.13).
+**Do not use for** an adverbial realized as a nominal or adpositional phrase (`obl`); a clausal modifier (`advcl`); a particle or connective adverb that links the clause to the surrounding discourse (`discourse`, Section 4.13).
 
 **Head and dependent.** Head: the predicate, or the word modified. Dependent: `ADV` (and `PART` for negation and focus particles).
 
@@ -953,17 +871,20 @@ The subtypes are licensed by the voice of the governing predicate alone, never b
 
 #### 4.5.6 `appos`
 
-**Use** [`appos`](https://universaldependencies.org/u/dep/appos.html) for a nominal that renames, defines, or re-identifies the referent of an adjacent nominal, agreeing with it in case. Both halves must be complete nominals that could be exchanged with the same reference. Attach every appositive of one nominal directly to that nominal; never chain them.
+**Use** [`appos`](https://universaldependencies.org/u/dep/appos.html) for a nominal that renames, defines, or re-identifies the referent of an adjacent nominal, agreeing with it in case. Both halves must be complete nominals that could be exchanged with the same reference. The requirement is by part of speech: a `NOUN`, `PROPN`, or `PRON` qualifies also when it heads a copular clause of its own; a `VERB` never does. Attach every appositive of one nominal directly to that nominal; never chain them.
 
 **Do not use for**:
 - a nominal that modifies rather than renames (`nmod`);
 - a multiword name whose parts do not refer independently (`flat:name`);
 - a nominal predicating a circumstance of its head (`advcl:pred`);
-- a clause: UD restricts `appos` to two nominals. A clause elaborating a noun is `acl`; a clause restating a clause is `parataxis` or `conj:expl`.
+- a verb-headed clause: UD restricts `appos` to two nominals. A clause elaborating a noun is `acl`; a clause restating a clause is `parataxis` or `conj:expl`.
 
 The restatement of a conjunct at equal standing, rather than a backgrounded renaming, is `conj:expl` (Section 4.9.1).
 
 **Examples**: *indices* (S000008:6), in the example of Section 4.5.5.
+
+- *haec quattuor … quae sit forma* ‘these four things … what its shape is’ (S000170): *forma* (12) `appos`; *quae* (10) `nsubj`; *sit* (11) `cop`. forma is a noun heading a copular clause of its own (Section 1.3.3), and as a noun it can be appos.
+- *ex radicibus trinis, et quae ipse … animadverti* ‘from three roots, both what I myself have observed …’ (S000035): *animadverti* (14) `acl`; *radicibus* (4) `root`. The clause naming the roots is headed by a verb, so it is acl, not appos.
 
 ### 4.6 Clausal complements
 
@@ -1087,7 +1008,7 @@ Free relatives as a construction are treated in Section 6.5.
 
 #### 4.9.1 `conj`
 
-**Use** [`conj`](https://universaldependencies.org/u/dep/conj.html) for each non-first conjunct of a coordination, attached to the first conjunct: from the first to the second, from the first to the third, and so on, never to a shared external head and never chained through the intervening conjuncts. Coordination may be asyndetic. In the Basic tree a dependent shared by the conjuncts attaches to the first conjunct only; the Enhanced graph may distribute it (Section 5.2).
+**Use** [`conj`](https://universaldependencies.org/u/dep/conj.html) for each non-first conjunct of a coordination, attached to the first conjunct: from the first to the second, from the first to the third, and so on, never to a shared external head and never chained through the intervening conjuncts. Coordination may be asyndetic. In the Basic tree a dependent shared by the conjuncts attaches to the first conjunct only; its Enhanced edges to the other conjuncts are not yet added (Section 5.2).
 
 **Do not use for** the conjunction itself (`cc`); juxtaposed units with no coordination (`parataxis`, Section 4.15.7).
 
@@ -1133,7 +1054,9 @@ The deciding test for the `:outer` subtypes is that the predicate of the copular
 
 *Figure 5.* *quod est “Romanus sedendo vincit”* ‘which is “the Roman wins by sitting still”’ (S000042). The proverb is the predicate of the relative clause, and its head *vincit* heads the whole copular clause. *vincit* already has a subject of its own, *Romanus*, so the relative pronoun *quod*, the subject of the outer predication, is `nsubj:outer`, and the copula *est* is `cop:outer`.
 
-The copula is often elided, and `nsubj:outer` then stands without a `cop:outer` partner; the missing copula is not a reason to doubt the analysis. The enumerated parts of agriculture, from S000161 on, show the boundary: a list-item word takes `nsubj:outer` only where the clause predicated of it already has its own subject, and plain `nsubj` where it has none, although the two look alike on the surface. The subtypes are easy to over-apply to ordinary copular clauses, so every use is justified in a review note.
+The copula is often elided, and `nsubj:outer` then stands without a `cop:outer` partner; the missing copula is not a reason to doubt the analysis. The subtypes are easy to over-apply to ordinary copular clauses, so every use is justified in a review note.
+
+**Enumerated items.** In a list such as the parts of agriculture (*prima …, secunda …*, from S000161 on), the content of each item heads its clause, and the ordinal is its `nsubj`, or `nsubj:outer` where that clause already has a subject of its own. No copula is supplied and no empty node is added.
 
 **Examples**
 
@@ -1168,7 +1091,7 @@ The copula is often elided, and `nsubj:outer` then stands without a `cop:outer` 
 
 **Examples**
 
-- *quem ad modum quidque te in colendo oporteat facere* ‘how you ought to do each thing in farming’ (S000008): *quem* (18) `advmod`; *ad* (19) `fixed`; *modum* (20) `fixed`. Both later words of quem ad modum attach to its first word.
+- *quem ad modum quidque te in colendo oporteat facere* ‘how you ought to do each thing in farming’ (S000008): *quem* (18) `advmod`, `ExtPos=ADV`; *ad* (19) `fixed`; *modum* (20) `fixed`. Both later words of quem ad modum attach to its first word, which carries ExtPos for the whole expression.
 
 #### 4.11.2 `flat`
 
@@ -1219,15 +1142,16 @@ Reported speech forms a small, tightly coupled family of three relations. [`para
 
 #### 4.13.1 `discourse`
 
-**Use** [`discourse`](https://universaldependencies.org/u/dep/discourse.html) for a word whose contribution is pragmatic rather than propositional and which plays no part in the clause's argument structure: an interjection, a pragmatic particle (*enim*, *igitur*, *quoque*), a list enumerator. Attach it to the head of the nearest relevant unit, normally the clause. Following Latin UD practice, the connective adverbs *itaque* and *vero* also take `discourse`, although tagged `ADV`.
+**Use** [`discourse`](https://universaldependencies.org/u/dep/discourse.html) for a word whose contribution is pragmatic rather than propositional and which plays no part in the clause's argument structure: an interjection, a pragmatic or connective particle (*enim*, *igitur*, *itaque*, *quoque*), a connective adverb, a list enumerator. Attach it to the head of the nearest relevant unit, normally the clause. Function decides, not part of speech: an adverb that links its clause to the surrounding discourse without modifying an individual word (*vero*) is `discourse` and stays `ADV`.
 
-**Do not use for** a lexical adverb doing pragmatic work on an occasion (`advmod`); a focus particle scoping over a specific constituent (`advmod:emph`): *etiam* ‘even’ is `advmod:emph`, *quoque* ‘also’ is `discourse`.
+**Do not use for** an adverb that modifies an individual word or phrase, or adds to the content of the clause (time, place, manner, degree) (`advmod`); a focus particle scoping over a specific constituent (`advmod:emph`): *etiam* ‘even’ is `advmod:emph`, *quoque* ‘also’ is `discourse`.
 
 **Examples**
 
 - *vocabulis quoque sunt diversi* ‘they are also different in their titles’ (S000088): *quoque* (8) `discourse`.
 - *hoc nomine etiam Athenis in arcem non inigi* ‘for this reason, even at Athens, [goats] are not driven onto the Acropolis’ (S000105): *etiam* (3) `advmod:emph`; *Athenis* (4) `obl`. etiam attaches to the constituent it focuses, Athenis, not to the predicate.
 - *voltis igitur … usurpemus* ‘do you want us, then, to make use of …’ (S000042): *igitur* (2) `discourse`; *voltis* (1) `root`.
+- *itaque prius ostendam* ‘so I shall first show’ (S000034): *itaque* (1) `PART`, `discourse`. The connective particle relates the clause to what precedes and modifies no single word.
 
 ### 4.14 Punctuation
 
@@ -1365,15 +1289,21 @@ A third case, a noun with an overt co-referent: *quod initium fructuum oritur* (
 
 ## 5. Enhanced Syntax
 
-Section 1.2.6 introduced the Enhanced layer as a graph rather than a tree: a token may carry more than one incoming Enhanced relation, and a decimal-ID empty node may stand for elided predicative or other reconstructed structure that the Basic tree, restricted to a single head per token, cannot represent. This chapter works through what the Enhanced graph is licensed to add, and how each addition is recorded.
+The Enhanced layer (Section 1.2.6) adds to the Basic tree what its single-head format cannot hold. This chapter states what is added before gold and how.
 
 ### 5.1 General Enhanced principles
 
-Universal Dependencies' [Enhanced Dependencies](https://universaldependencies.org/u/overview/enhanced-syntax.html) overview sets out the general framework this chapter applies to this treebank's own material. Within that framework, the Enhanced graph records accepted linguistic structure — a reading the review process has settled on — rather than an alternative reading held open alongside the Basic one, a speculative possibility, or an unresolved case awaiting a decision; a construction whose Enhanced treatment is still unsettled is left without an Enhanced addition until it is settled, rather than populated provisionally. Every Enhanced-graph edge introduced in the sections below is a further instance of this same principle applied to a specific construction.
+The framework is UD's [Enhanced Dependencies](https://universaldependencies.org/u/overview/enhanced-syntax.html). Until gold, `DEPS` records only accepted structure that differs from the Basic tree, and exactly these three kinds:
+
+1. ellipsis: an empty node where the Basic tree has an `orphan`, with its edges (Sections 5.3, 5.4);
+2. secondary predication with an overt co-referent: two edges (Section 5.5);
+3. syllepsis: the second role of a form that has two (Section 5.6).
+
+Nothing else is added: not a rejected or provisional reading, and not a construction whose analysis is still open. `nsubj:outer`, `csubj:outer`, and `cop:outer` are Basic relations with no Enhanced counterpart. The full Enhanced graph is completed at gold.
 
 ### 5.2 Propagated and shared dependents
 
-A dependent shared across a coordination is one case where the Basic tree's single-head restriction and the actual linguistic relationship come apart: because [`conj`](https://universaldependencies.org/u/dep/conj.html) fixes the first conjunct as head (Section 4.9), a dependent shared by every conjunct can attach, in the Basic tree, only to that first conjunct — even though it just as genuinely belongs to each of the others. The Enhanced graph is where that gap is closed: it may add a further edge from the shared dependent to each additional conjunct it belongs to, so that the dependent's relation to every conjunct it modifies is directly retrievable, rather than recoverable only by reasoning through the `conj` chain from the first.
+A dependent shared by coordinated predicates attaches in the Basic tree to the first conjunct only (Section 4.9). The Enhanced graph can add an edge from it to each further conjunct. This propagation is not yet annotated across the corpus: it is either applied in a corpus-wide pass or completed at gold. Until then, do not add propagation edges; those already present, such as the two in S000089 below, are kept.
 
 **Corpus examples**
 
@@ -1381,11 +1311,15 @@ A dependent shared across a coordination is one case where the Basic tree's sing
 
 ### 5.3 Empty nodes
 
-An empty node is added only where the Basic tree's structural repair under ellipsis has already left a dependent taking [`orphan`](https://universaldependencies.org/u/dep/orphan.html) (Section 4.1.2); an ellipsis whose promoted element leaves every dependent with a governor whose ordinary relation still holds has nothing for an empty node to stand in for, and takes the treatment in Section 5.4 instead.
+Add an empty node only where the Basic tree has an [`orphan`](https://universaldependencies.org/u/dep/orphan.html) (Section 4.1.2), and always add one there. Without an orphan, the omission takes `SyntaxNote=Ellipsis` and no node (Section 5.4).
 
-Two fields are required of an empty node: its `ID`, in the decimal form already described (Section 1.2.6), assigned in surface-plausible sequence among the sentence's ordinary tokens; and its `DEPS`, recording the empty node's own Enhanced attachment as a `head:relation` pair (for example `9:conj`) — the node's syntactic contribution, standing in for the elided predicate it represents. `FORM` and, in its place, `UPOS` are populated only where the elided content is recoverable with enough confidence to state, never supplied merely to complete the row; `HEAD`, `DEPREL`, `XPOS`, and `FEATS` remain `_` throughout, since an empty node has no place in the Basic tree at all (Section 1.2.6). Its `MISC` field is limited to `InheritedFrom` (Section 5.7) and any review note carried over with it — not broader commentary.
+- `ID`: decimal, placed where the elided word would plausibly stand.
+- `DEPS`: the node's own attachment, the relation the elided predicate would have (`9:conj`). Required.
+- `FORM`: the elided form where the context makes it clear; `UPOS` may stand in for it. Never filled merely to complete the row.
+- `LEMMA`, `XPOS`, `FEATS`, `HEAD`, `DEPREL`: `_`.
+- `MISC`: only `InheritedFrom` (Section 5.7) and a review note carried with the node.
 
-The empty node's own `DEPS` edge is only half of the connection. The token that was promoted to stand in the elided predicate's structural slot, and any token left with `orphan` because no predicational material survived to be promoted, each in turn carry their own `DEPS` edge pointing back to the empty node, labelled with whatever relation actually holds between them (for example a genitive dependent's edge back to the node as `nmod`). Between the empty node's outgoing edge and these incoming ones, the elided material's full network of connections becomes recoverable from the Enhanced graph, even though the Basic tree could represent only the one promoted head.
+The promoted word and each `orphan` then carry an edge back to the node with the relation they have to the elided predicate (*servis* → `17.1:obl:arg`).
 
 **Corpus examples**
 
@@ -1393,17 +1327,21 @@ The empty node's own `DEPS` edge is only half of the connection. The token that 
 
 ### 5.4 Ellipsis
 
-An omission that leaves a dependent needing a governor is resolved by the root-promotion and `orphan` mechanism of Section 4.1.2, optionally together with an empty node (Section 5.3) recording the elided predicate's own Enhanced attachment; neither `orphan` nor `orphan:missing` is itself an Enhanced-graph relation, and what the Enhanced layer records for such a construction, where it records anything beyond the empty node's own edges, is exactly the pattern just described.
+An omission that leaves a dependent without a governor is resolved by promotion and `orphan` (Section 4.1.2) together with an empty node (Section 5.3). `orphan` and `orphan:missing` are Basic relations only.
 
-An omission that leaves no dependent orphaned at all — every surviving element already keeps a governor whose ordinary relation is unaffected by the missing material — is recorded differently: a `SyntaxNote=Ellipsis` value marks the clause as containing an analytically important omission, typically of a verb other than a copula or auxiliary, without any structural change to the tree. Exactly one of the two treatments applies to a given omission, and the deciding factor is structural, not epistemic: whether the tree needs a node for something left without a governor, not how confidently the missing word's identity can be reconstructed. Even a fully determinate omission — a verb repeated, word for word, from a parallel clause elsewhere in the same sentence — takes `SyntaxNote=Ellipsis` rather than an empty node, provided nothing is left ungoverned by its absence.
+An omission after which every surviving word keeps a governor whose ordinary relation still holds is marked with `SyntaxNote=Ellipsis` on the word that would govern or be governed by the missing one, and the tree is not changed. The choice between the two is structural: it depends on whether something is left without a governor, not on how certainly the missing word can be identified. A verb repeated word for word from a parallel clause still takes `SyntaxNote=Ellipsis` if nothing is left ungoverned.
+
+The elided word may be named after a colon, in the form it would take in the text: `SyntaxNote=Ellipsis:aram`. Naming is optional; use it where it makes the analysis clearer, and only for a word the context recovers with certainty.
 
 **Corpus examples**
 
 - *hoc nomine etiam Athenis in arcem non inigi* ‘for this reason [they say] that not even at Athens is [a goat] driven onto the citadel’ (S000105): *inigi* (8) `root`, `SyntaxNote=Ellipsis`. The governing verb of saying is carried over from the preceding sentence; every dependent of inigi keeps its governor, so no empty node is added.
+- *ad alii dei aram hostia adduceretur, ad alii non sacrificaretur* ‘that a victim should be brought to the altar of one god, at that of another it should not be sacrificed’ (S000101): *alii* (19) `obl:lmod`, `SyntaxNote=Ellipsis:aram`. The second ad alii repeats the construction without aram; the genitive takes the place of the missing noun in the tree, and every word keeps its governor.
+- *quo pacto libum* ‘by what method [one ought to make] a libum’ (S000132): *libum* (33) `conj`, `DEPS` 33.1:obj; *pacto* (32) `orphan`, `DEPS` 33.1:obl; *facere* (33.1) `DEPS` 28:conj. Nothing verbal survives in the second question: libum is promoted, pacto is its orphan, and the empty node stands for the elided facere.
 
 ### 5.5 Secondary predication
 
-Section 4.7 gives the full account of `advcl:pred` and the Enhanced edges its overt-co-referent variant adds: a plain `advcl` edge from the predicative token to the predicate, alongside the Basic-inherited relation, and an edge from the predicative token to the co-referent nominal carrying whatever role it plays within the secondary predication. Where the co-referent is elided instead, no such edge is added, and the Basic-inherited relation stands alone. The ablative absolute (`advcl:abs`, Sections 4.7 and 6) never adds these edges under either condition, since its subject is never coreferential with any argument of the main clause in the first place — there is no separate co-referent nominal for a second edge to reach.
+With an overt co-referent, `advcl:pred` adds two edges (Section 4.15.3): on the predicative word, a plain `advcl` edge to the predicate; on the co-referent, an edge from the predicative word with its role (`nsubj`). With the co-referent elided, nothing is added. `advcl:abs` adds nothing: its subject is not an argument of the main clause.
 
 **Corpus examples**
 
@@ -1411,9 +1349,7 @@ Section 4.7 gives the full account of `advcl:pred` and the Enhanced edges its ov
 
 ### 5.6 Syllepsis
 
-[`obj:syllepsis`](https://universaldependencies.org/u/dep/obj.html) and [`nsubj:syllepsis`](https://universaldependencies.org/u/dep/nsubj.html) record a second grammatical role for a single overt token that already does full syntactic duty in the Basic tree under its ordinary role. Unlike every other construction in this chapter, syllepsis in this treebank's sense involves no elided or reconstructed material at all: the token carrying both roles is fully present and fully inflected already, and what the Enhanced edge adds is a second relation for that same surface form, not a stand-in for anything missing.
-
-The construction arises where one argument does double duty for two predicates, filling a role the Basic tree can express directly for one of them and a second role that its single-head format cannot express for the other. The Basic tree carries the token's primary role by an ordinary relation; the secondary role is added purely as an Enhanced edge, restricted to a `DET` or `PRON` dependent of a verbal predicate exactly as `obj` or `nsubj` would otherwise apply. Neither subtype is ever used as a Basic `DEPREL` — a zero count for either relation in the Basic layer is the expected, correct state, not a coverage gap — and neither belongs to the general or Latin UD documented relation inventory; the governing documentation is the Enhanced Dependencies overview cited in Section 5.1, since the plain `obj` and `nsubj` pages say nothing about this Enhanced-only use. A `SyntaxNote=Syllepsis` value and an explanatory note setting out the shared-argument analysis accompany the edge in every instance, since the edge alone does not carry the reasoning that supports it.
+A single overt form that has an accepted second role in another clause gets that role as an Enhanced-only edge, [`obj:syllepsis`](https://universaldependencies.org/u/dep/obj.html) or [`nsubj:syllepsis`](https://universaldependencies.org/u/dep/nsubj.html); its primary role stays in the Basic tree. Nothing is elided. The two subtypes are never Basic relations and are not part of the UD inventory; they are this treebank's own. Every instance carries `SyntaxNote=Syllepsis` and a review note setting out the analysis.
 
 **Corpus examples**
 
@@ -1421,7 +1357,7 @@ The construction arises where one argument does double duty for two predicates, 
 
 ### 5.7 `InheritedFrom` metadata
 
-`InheritedFrom`, a `MISC` key most often attached to an empty node (Section 5.3), records which existing token the empty node's content is syntactically related to, in the `sent_id:token_id` format exactly — including where the reference is to a token within the same sentence as the empty node itself. It is populated only where that relationship is a genuine derivation from a specific, identifiable token that is not itself repeated on the surface, never for a token merely similar to or reminiscent of another one elsewhere: an inherited-from link is a claim about where the content actually came from, not a note about resemblance.
+`InheritedFrom=<sent_id>:<token_id>`, usually on an empty node, names the token the elided content is taken from, also within the same sentence. Use it only for a real derivation from an identifiable token that is not repeated on the surface, not for a merely similar construction.
 
 **Corpus examples**
 
@@ -1429,38 +1365,39 @@ The construction arises where one argument does double duty for two predicates, 
 
 ## 6. Latin and Varronian Constructions
 
-Chapters 1 to 5 organize their material by annotation layer. This chapter cuts across them, gathering what a reader familiar with traditional Latin grammar would recognize as a single named construction — the ablative absolute, the accusative and infinitive, and so on — even where its annotation is spread across several `FEATS` values, a relation, and possibly an Enhanced-layer addition besides. Each section opens by naming which earlier sections supply its underlying mechanism, and builds the construction-level picture from there rather than re-deriving it. The sections are ordered from the most central constructions to the more specialized.
+This chapter gathers the annotation of named Latin constructions, whose parts are spread over the earlier chapters, from the most central to the more specialized.
 
 ### 6.1 Ablative absolute
 
-Draws on Sections 4.7.3 and 4.7.4 (`advcl:pred` and its dedicated `advcl:abs` subtype) and Section 4.5 (`amod`, the ordinary attributive construction the ablative absolute is not).
+See also Sections 4.7.3 and 4.7.4.
 
-The construction is licensed by a purely formal test: a nominal in the ablative case together with a predicate agreeing with it — typically a participle, though a bare ablative adjective or noun predicate is equally licensed — forming a predication syntactically independent of the main clause. Nothing about the semantic relation the construction expresses on a given occasion (temporal, causal, concessive, and so on) enters into the test, and the relation itself records none of it. The ablative absolute belongs to secondary predication generally (Section 4.7.3): what earns it a dedicated label rather than plain `advcl:pred` is only that its ablative subject is never coreferential with any argument of the main clause, since the construction brings its own subject along rather than predicating of one already present in the clause. A participle's morphological voice is recorded as it stands even where a formally passive form carries an active sense.
-
-The ablative noun or pronoun is the subject of the absolute predicate and attaches to it, not to the main clause: `nsubj` with an adjective, a noun, or an active participle, and `nsubj:pass` with a passive participle. The predicate carries `advcl:abs` to the predicate of the main clause.
+Annotate as `advcl:abs` an ablative nominal with an agreeing predicate (participle, adjective, or noun) forming a predication independent of the main clause. The test is formal; the semantic relation (temporal, causal, concessive) is not recorded. Attach the ablative noun to the absolute predicate as `nsubj`, or `nsubj:pass` with a passive participle, and the predicate to the main predicate as `advcl:abs`. Record a participle's voice as its form shows, also where a passive form has an active sense. If the ablative subject is coreferent with an argument of the main clause, the construction is not absolute: use `advcl:pred`.
 
 ![Dependency tree of quibus propitiis … robigo … corrumpit (S000016): corrumpit has propitiis as advcl:abs and robigo as nsubj; quibus is nsubj of propitiis](figures/ablative_absolute_S000016.svg)
 
 *Figure 8.* *quibus propitiis … robigo … corrumpit* ‘when they are propitious, blight does not destroy …’ (S000016). The absolute predicate *propitiis* has its own subject *quibus* (Robigus and Flora), which is not an argument of *corrumpit*, whose subject is *robigo*.
 
-Three reviewed instances illustrate the range of the construction. A nonverbal ablative absolute, predicated with a bare adjective rather than a participle: *quibus propitiis* ‘when they [Robigus and Flora] are propitious’ (S000016, Figure 8). Two participial instances: *iis … deis ad venerationem advocatis* ‘with those gods having been invoked for veneration’ (S000021); and *exclusis partibus quae non pertinent ad hanc rem* ‘excluding parts which do not pertain to this matter’ (S000086), each with its noun as `nsubj:pass`.
+**Corpus examples**
+
+- *quibus propitiis* ‘when they [Robigus and Flora] are propitious’ (S000016, Figure 8): an adjective as the absolute predicate.
+- *iis … deis ad venerationem advocatis* ‘with those gods having been invoked for veneration’ (S000021) and *exclusis partibus quae non pertinent ad hanc rem* ‘excluding parts which do not pertain to this matter’ (S000086): participial, with the noun as `nsubj:pass`.
 
 ### 6.2 *Participium coniunctum* and secondary predication
 
-Draws on Section 4.7.3 (the full `advcl:pred` mechanism) and Section 5.5 (its Enhanced-graph edges).
+See also Sections 4.7.3 and 4.15.3.
 
-Where the predicating element of `advcl:pred` is specifically a participle, this is what traditional grammar calls *participium coniunctum*. Like secondary predication generally, it occurs both with an overt co-referent nominal and without one, and in both cases it attaches to the predicate of its clause, never to the nominal it describes. Without an overt co-referent: *accersitus … nondum rediit* ‘having been summoned, he has not yet returned’ (S000041), where the person summoned is understood only from context, no nominal for the participle to agree with appears in the clause, and no Enhanced edges are added, as Section 5.5 sets out for the elided co-referent. With an overt co-referent, shown here with an adjective (a participle in the same position is annotated in the same way): *comites … incolumes reduxit* ‘he brought his companions back unharmed’ (S000154, Figure 2), where the co-referent *comites* is present in the clause and the Enhanced edges of Section 5.5 are added.
+A participle used as a secondary predicate is `advcl:pred`, annotated like any other secondary predicate: attached to the predicate of its clause, with the two Enhanced edges when the co-referent is overt, and none when it is elided (Section 4.15.3). Without an overt co-referent: *accersitus … nondum rediit* ‘having been summoned, he has not yet returned’ (S000041).
 
 > [!WARNING]
-> **Traditional grammar.** The construction is not limited to participles, even though its traditional name covers only the participial instance: a bare noun may predicate in the same way, as in *quod initium fructuum oritur* ‘which comes up as the beginning of the crop’ (S000139), where *initium* predicates of the relative pronoun *quod* rather than characterizing it.
+> **Traditional grammar.** *Participium coniunctum* names only the participial case. A noun or adjective predicates in the same way and takes the same annotation, as *initium* in *quod initium fructuum oritur* ‘which comes up as the beginning of the crop’ (S000139).
 
-Whether secondary predication extends further, to nominal predication with copula-like verbs such as *fio* and *evado*, is an open point (Section 1.3.4).
+Whether secondary predication extends to nominal predication with copula-like verbs such as *fio* and *evado* is an open point (Section 1.3.4).
 
 ### 6.3 Accusative and infinitive
 
-Draws on Section 4.3 (subjects) and Section 4.6 (`ccomp` against `xcomp`).
+See also Section 4.6.
 
-Section 4.6 already establishes the core point: finiteness is not the criterion in Latin, and an accusative-and-infinitive construction is a non-finite complement with its own subject, taking `ccomp` on that basis alone. Put in construction-specific terms, the accusative subject is `nsubj` of the infinitive itself, never of the matrix verb, and the whole non-finite clause attaches to the matrix predicate as `ccomp` regardless of the infinitive's own tense or voice. The two mechanisms combine rather than compete within a single construction: *Tarquennam audivi … ei mederi posse*, "I heard that Tarquenna could heal him" (S000127) — *Tarquennam*, accusative, is the `nsubj` of *posse*, itself an infinitival complement of *audivi* taking `ccomp`; *posse*, in turn, takes *mederi* as its own subject-controlled `xcomp` (Section 4.6), since *mederi*'s understood subject is obligatorily *Tarquennam* with no other reading available.
+Attach the accusative subject to the infinitive as `nsubj`, never to the matrix verb, and the infinitive to the matrix predicate as `ccomp`, whatever its tense or voice. A control infinitive inside the construction is `xcomp` of its own governor: in *Tarquennam audivi … ei mederi posse* ‘I heard that Tarquenna could heal him’ (S000127), *Tarquennam* is `nsubj` of *posse*, *posse* is `ccomp` of *audivi*, and *mederi* is `xcomp` of *posse*.
 
 **Corpus examples**
 
@@ -1468,11 +1405,17 @@ Section 4.6 already establishes the core point: finiteness is not the criterion 
 
 ### 6.4 Gerund and gerundive
 
-Draws on Section 3.1.2 and Section 3.3.2 (the harmonized morphology) and Section 4.2.2 (`aux:pass`, for the passive periphrastic).
+See also Sections 3.1.2 and 4.2.2.
 
-The gerund retains its own verb's valency even while inflecting like a noun, and its case and construction determine its syntactic attachment: a genitive gerund complementing a noun takes `nmod`; a gerund governed by a preposition, such as an accusative of purpose after *ad* or an ablative after *in*, takes `obl`, with the preposition as its `case` dependent; and a bare ablative gerund of means or manner, heading a non-finite adverbial clause, takes `advcl`. An example of the ablative of means is *quem bene colendo fructuosum... facere velis*, "which you wish to make productive by cultivating it well" (S000003), where the ablative gerund *colendo* attaches as `advcl` to *facere*, the head of the `xcomp` chain *fructuosum... facere* itself controlled from *velis*.
+Both are `VerbForm=Part` with `Aspect=Prosp` and `Voice=Pass`, distinguished by `TraditionalMood` (`Gerundium`, `Gerundivum`); UD's `Ger` and `Gdv` are not used (Section 3.1.2).
 
-The gerundive appears in two distinct syntactic contexts. The first is gerundive attraction, or the gerundive of purpose: a gerundive agreeing with a noun stands in place of a gerund governing that noun as its object. This needs no dedicated relation of its own: the gerundive remains a verbal form and is attached by ordinary relations. Where the noun heads the phrase, the gerundive is its `acl` (*agri colendi causa*, "for the sake of cultivating the land", S000089); in the purpose construction with *ad*, the gerundive heads the phrase as `advcl`, and the noun it agrees with is its `nsubj:pass` (*ad leges accipiendas*, "to receive the laws", S000073). The second is the passive periphrastic, traditionally called the gerundive of obligation: a gerundive combined with a form of *sum*, which attaches to the gerundive as `aux:pass` (Section 4.2.2), expressing necessity and optionally taking a dative of agent, with the auxiliary itself very often omitted. Where the construction is impersonal, the gerundive standing in the neuter singular with no nominal subject it agrees with, a `SyntaxNote=ImpersonalGerundive` value flags it for retrieval, since its impersonal status is not otherwise recoverable from morphology and Basic dependencies alone. Examples are S000084 (*discernendum*), whose only subject is the following *utrum* clause, and S000170 (*videndum*), whose neuter singular does not agree with the plural *haec quattuor* annotated as its subject; in both the auxiliary is omitted. The value is not applied to a personal neuter gerundive, an ordinary gerund, or gerundive attraction, since all three are already fully recoverable from ordinary annotation without it.
+**Gerund.** Attach it by its case and construction: a genitive with a noun is `nmod`; with a preposition, `obl` (the preposition `case`); a bare ablative of means or manner, `advcl`. It keeps its own verbal dependents: in *quem bene colendo fructuosum … facere velis* (S000003), *colendo* is `advcl` of *facere*.
+
+**Gerundive.**
+
+- *Gerundive for gerund* (attraction): ordinary relations. Where the noun heads the phrase, the gerundive is its `acl` (*agri colendi causa*, S000089); with *ad*, the gerundive heads the phrase as `advcl` and its noun is `nsubj:pass` (*ad leges accipiendas*, S000073).
+- *Passive periphrastic*: *sum*, often omitted, is `aux:pass` of the gerundive (Section 4.2.2); a dative of agent follows Section 4.2.3.
+- *Impersonal gerundive*: a neuter singular gerundive with no nominal subject takes `SyntaxNote=ImpersonalGerundive` (S000084 *discernendum*, whose only subject is the *utrum* clause; S000170 *videndum*, which does not agree with the plural *haec quattuor* annotated as its subject). Do not use it for a personal neuter gerundive, a gerund, or attraction.
 
 **Corpus examples**
 
@@ -1482,9 +1425,9 @@ The gerundive appears in two distinct syntactic contexts. The first is gerundive
 
 ### 6.5 Free relative clauses
 
-Draws on Section 4.6 (`ccomp:relcl`/`xcomp:relcl`) and Section 4.8 (the full family, including `csubj:relcl` and `advcl:relcl`).
+See also Section 4.8.
 
-Whichever grammatical position a free relative clause fills, the same double-duty mechanism applies throughout (Section 4.8): the relative word is annotated for its role inside its own clause, and the construction as a whole is marked with the `:relcl` subtype of whatever relation names the clause's role in the matrix one. A reviewed instance filling a clausal-complement slot: *cecinisse quae... prodessent hominibus*, "prophesied [that] which would be beneficial to people" (S000005) — the free relative *quae... prodessent* fills the complement slot of *cecinisse* and is marked `ccomp:relcl` accordingly. In the same sentence, *quae* separately carries an Enhanced `obj:syllepsis` edge to *cecinisse* itself (Section 5.6) — a second, unrelated instance of double duty on the same word, the free-relative mechanism and the syllepsis mechanism operating independently and without conflict.
+Annotate the relative word for its role inside its own clause; the clause takes the `:relcl` subtype of its role in the matrix clause. In *cecinisse quae … prodessent hominibus* ‘prophesied what would benefit people’ (S000005), *prodessent* is `ccomp:relcl` of *cecinisse*; *quae* also has an Enhanced `obj:syllepsis` edge to *cecinisse* (Section 5.6), independently of the free relative.
 
 **Corpus examples**
 
@@ -1492,23 +1435,25 @@ Whichever grammatical position a free relative clause fills, the same double-dut
 
 ### 6.6 Comparison
 
-Draws on Section 3.1.4 (`Degree`) and Sections 4.4 and 4.7 (`obl:cmp` and `advcl:cmp`).
+See also Sections 3.1.4, 4.4.3, and 4.7.2.
 
-Comparison brings together degree morphology (Section 3.1.4) with the nominal/clausal split of Sections 4.4 and 4.7: a bare oblique naming the standard of comparison directly, with no overt *quam* (`obl:cmp`), against a comparative clause, typically introduced by *quam* or *ut* (`advcl:cmp`). Examples of both: *ecquam cultiorem Italia vidistis?*, "have you seen any [land] more cultivated than Italy?" (S000044), for the bare ablative standard with no overt *quam* (*Italia*, `obl:cmp`); *priores partes agit quod utile est, quam quod delectat*, "what is useful plays the leading part, rather than what is pleasing" (S000142), for the clausal standard (*delectat*, `advcl:cmp`) — where, exactly as Section 4.7 notes, an elided comparative predicate leaving only a bare nominal remnant would still take `advcl:cmp` rather than being reanalysed as a plain nominal.
+Use `obl:cmp` for a bare nominal standard with no *quam* (*ecquam cultiorem Italia vidistis?* ‘have you seen any [land] more cultivated than Italy?’, S000044: *Italia* `obl:cmp`), and `advcl:cmp` for a clausal standard (*priores partes agit quod utile est, quam quod delectat*, S000142: *delectat* `advcl:cmp`). A standard with *quam* whose comparative predicate is elided, leaving only a nominal, is still `advcl:cmp`.
 
 ### 6.7 Ellipsis and orphan structures
 
-Draws on Section 4.1.2 (root promotion and `orphan`) and Sections 5.3 and 5.4 (empty nodes, and the `orphan`-versus-`SyntaxNote=Ellipsis` choice).
+See also Sections 4.1.2, 5.3, 5.4, and 4.15.9.
 
-A single reviewed sentence shows the empty-node mechanism working exactly as Section 5.3 describes it in the abstract. *Iuppiter pater appellatur, Tellus terra mater* — "Jupiter is called Father, [and] Tellus [is called] Mother Earth" (S000012) — supplies a complete predicate, *appellatur*, in its first conjunct; the second elides that same predicate entirely, promoting *Tellus* into its structural slot as a further conjunct of *appellatur* and adding an empty node that records the promoted predicate's own Enhanced attachment as `11:conj`, precisely the `head:relation` pattern Section 5.3 illustrates. *Terra*, whose relation to *mater* is unaffected by the ellipsis, keeps its ordinary `nmod`. *Mater* itself, whose relation was to the now-missing predicate, cannot be labelled normally and takes `orphan`, with a `DEPS` edge pointing back to the empty node recording what its relation would have been (`xcomp`, matching *pater*'s relation to the overt *appellatur* in the first conjunct); and the promoted *Tellus* carries the matching reciprocal edge to the same empty node (`nsubj:pass`) — the complete three-part pattern of empty node, orphaned dependent, and promoted head that Section 5.3 sets out.
+**With promotion and an empty node.** In *Iuppiter pater appellatur, Tellus terra mater* ‘Jupiter is called Father, Tellus Mother Earth’ (S000012), the second *appellatur* is elided. *Tellus* (13) is promoted as `conj` of *appellatur*; *mater* (15) cannot be labelled against *Tellus* and takes `orphan`; *terra* (14) keeps its `nmod`. The empty node 15.1 stands for the elided verb (`DEPS` 11:conj); *Tellus* has `DEPS` 15.1:nsubj:pass and *mater* 15.1:xcomp, the relations *Iuppiter* and *pater* have in the first clause.
 
-A second reviewed sentence illustrates the alternative, no-empty-node treatment of Section 5.4. *Vel fel bubulum cum aceto mixtum, unguito lectum* — "or [take] ox-gall mixed with vinegar; anoint the bed" (S000121) — is typical of the compressed, list-like recipe style found throughout the corpus's agricultural sections. An imperative verb governing *fel* ("take," or similar) is understood but never supplied; unlike the previous example, however, nothing is left ungoverned by its absence, since *fel* itself attaches by ordinary `parataxis` to the surviving imperative, *unguito*. No orphan and no empty node are needed, so the omission is recorded instead as `SyntaxNote=Ellipsis` on *fel* — exactly the structural test Section 5.4 sets out for choosing between the two treatments. This recipe-compression register is itself explicitly excluded from `Anacoluthon` (Section 6.11): an elided predicate recoverable from context, however severely compressed the surrounding prose, is ordinary ellipsis, not a break in the sentence's syntactic plan. The same sentence separately carries a genuine `Anacoluthon` at its own root, *unguito* (Section 6.11) — a distinct phenomenon, on a different token, from the ellipsis just described.
+**Without.** In *hoc nomine etiam Athenis in arcem non inigi* (S000105), a verb of saying is understood from the preceding sentence, but every word keeps its governor: *inigi* is `root`, marked `SyntaxNote=Ellipsis`, and no empty node is added. In *segetes meliores existimantur esse campestres, vineae collinae, silvae montanae* ‘plain grain-crops are reckoned the better ones, hill vineyards, mountain forests’ (S000181), the predicate *meliores* is not repeated in the second and third members, but *vineae* (18) and *silvae* (21) attach to it as `conj` and their adjectives keep their `amod`; nothing is left without a governor, so *vineae* and *silvae* take `SyntaxNote=Ellipsis` and no empty node is added.
+
+Compressed recipe style with a recoverable predicate is ordinary ellipsis, not `Anacoluthon` (Section 6.11).
 
 ### 6.8 Reporting expressions and dialogue
 
-Draws on Section 4.12 (the full `parataxis:reporting`/`ccomp:reported`/`csubj:reported` family).
+See Section 4.12.2.
 
-> **Background.** *De Re Rustica* is cast throughout as a reported conversation among named speakers, which makes the reported-speech family a structurally central part of the corpus's syntax rather than a peripheral one — and why this treebank separates the narrative frame of the conversation (`parataxis:reporting`) from reported speech within it (`ccomp:reported`) (Section 4.12). No further construction-level machinery is introduced here beyond what Section 4.12 already sets out; this subsection exists to name the phenomenon at the level a reader coming from traditional Latin grammar would expect to find it, pointing back to the fuller technical treatment there.
+> **Background.** The *Res rusticae* is a dialogue, so reported speech is structurally central in the corpus. The narrator's frame (`parataxis:reporting`) is kept apart from reported speech within the dialogue (`ccomp:reported`); the relations are defined in Section 4.12.2.
 
 **Corpus examples**
 
@@ -1517,27 +1462,36 @@ Draws on Section 4.12 (the full `parataxis:reporting`/`ccomp:reported`/`csubj:re
 
 ### 6.9 Active and passive supines
 
-Draws on Section 3.1.2 and Section 3.3.2 (the harmonized morphology) and Section 4.6 (`xcomp`, for the active supine's attachment).
+See also Section 3.1.2.
 
-The active supine functions as a purpose complement of a verb of motion, its subject obligatorily identical to the matrix verb's own subject, and takes `xcomp` on exactly the same basis as any other subject-controlled complement (Section 4.6). An example is *huius spectatum veniant villas*, "they come to view his villas" (S000076) — the supine *spectatum* attaching as `xcomp` to the verb of motion it complements, *veniant*, and keeping its own object, *villas*.
-
-The passive, or ablative, supine is tagged `NOUN` rather than `VERB` and functions as an ablative-of-respect construction, typically governed by an adjective: *mirabile dictu*, "wonderful to say," where the supine attaches as an ordinary oblique dependent of the adjective it qualifies.
+The active supine (`VerbForm=Conv`) is `xcomp` of the verb of motion, keeping its own dependents: in *huius spectatum veniant villas* ‘they come to view his villas’ (S000076), *spectatum* is `xcomp` of *veniant* and governs *villas*. The ablative supine is `NOUN` with `VerbForm=Vnoun`, attached as `obl` to the adjective it qualifies (*mirabile dictu*).
 
 ### 6.10 Dislocation and prolepsis
 
-Draws on nothing in Chapters 4 or 5: the whole `dislocated` family, and its companion `SyntaxNote` values, are treated here in full.
+The `dislocated` family and its companion `SyntaxNote` values are treated only here.
 
-`dislocated` is licensed only where both halves of a two-part test are met: a constituent sits at the clause's periphery — fronted or postposed — outside its core grammatical relations, and a separate element within the clause proper fills the grammatical role that constituent would otherwise have filled. Coreference alone is not enough: where the element inside the clause is instead the *head* that the peripheral constituent modifies, the construction is adnominal, not dislocated (an ordinary relative clause, an apposition, or an ordinary modifier, according to what actually holds). A subtype is always required, and it names the type of the dislocated element itself — never the grammatical role of its resumptive or anticipatory counterpart inside the matrix clause, since the two frequently differ and reading the subtype off the matrix element is the standing error the naming convention exists to prevent. The six subtypes cover a dislocated adverbial clause, clausal complement, or clausal subject (`dislocated:advcl`, `dislocated:ccomp`, `dislocated:csubj`), and a dislocated nominal that would otherwise be a subject, object, or oblique (`dislocated:nsubj`, `dislocated:obj`, `dislocated:obl`).
+**Test.** Use `dislocated` only when both hold:
 
-`dislocated` is not a first-choice analysis. An adnominal relative clause, an apposition, an ordinary complement or clausal subject, or a plain argument in marked word order accounts for most candidates that superficially resemble it, and the family is reached for only once those readings have been tried and fail the test above.
+1. a constituent stands at the periphery of the clause (fronted or postposed), outside its core relations;
+2. a separate element inside the clause fills the role that constituent would otherwise fill.
 
-> **Background.** Across the wider Latin treebank tradition, the family is concentrated well away from classical prose — heaviest in Late Antique and biblical material, and in early medieval charter Latin where its subtypes are actually used in any number; a single plain instance appears in comparable technical prose, and the largest Latin treebank does not use the relation at all. Applying the family to Varro's classical technical prose is therefore an extrapolation from documentation grounded elsewhere, which argues for care in identifying an instance rather than for treating the relation as unavailable.
+If the element inside the clause is instead the head that the peripheral constituent modifies, the construction is adnominal (relative clause, apposition, modifier). Try the ordinary analyses first (adnominal relative, apposition, complement or clausal subject, argument in marked word order); use `dislocated` only when they fail.
 
-A worked boundary case illustrates the test in practice. At S000041, *nos* ("us") is a plausible dislocation candidate by surface position, sitting early in its clause ahead of the subordinate clause that would seem to license it. Checked directly, it resolves instead as an instance of the syllepsis construction (Section 5.6): *nos* fills the object of *rogaret*, in the relative clause *qui rogaret*, outright in the ordinary Basic tree, and only its second role — as the understood subject of the subordinate *expectaremus* — is added as a further Enhanced edge. The coreferential element the test requires is therefore not a distinct resumptive word at all, but the very same token doing a second job on the Enhanced layer alone — precisely the configuration `dislocated` requires *not* to hold. Testing a candidate this way and reassigning it to a different construction is expected practice, not a defect in either construction's definition.
+**Subtype.** Always use one, naming the type of the dislocated element itself, not the role of its counterpart inside the clause: `dislocated:advcl`, `dislocated:ccomp`, `dislocated:csubj`, `dislocated:nsubj`, `dislocated:obj`, `dislocated:obl`.
 
-Several `SyntaxNote` values share the same displaced-or-anticipatory character without themselves being the `dislocated` relation. `Anastrophe` marks word-order inversion not economically recoverable from a stable tree query on its own; examples are *si* at S000001:2, *cum* at S000003:11 and *quod* at S000135:16. `Prolepsis` marks a detached, anticipatory constituent whose resumptive or licensing structure is not recoverable from local dependencies alone. `Prolepsis:Cataphoric` narrows this to a demonstrative or comparable form anticipating a later catalogue, content clause, or specification: *hi*, at the head of S000024, anticipates the two names given afterward (*Hieron Siculus et Attalus Philometor*), and *ea*, at the head of S000035, anticipates the three *quae*-clauses that follow it. `ClauseDisplaced` marks a displaced clause whose discourse-syntactic displacement outruns what its Basic attachment and word order alone convey — attested at S000011 and S000024, where a relative clause is placed before, rather than after, the antecedent it modifies — with two further named subtypes: `ClauseDisplaced:Connective`, for a relative clause or phrase functioning as a discourse-connecting continuation rather than an ordinary modifier, and `ClauseDisplaced:Afterthought`, a controlled subtype for a postposed clause serving as a discourse afterthought, applied only once that interpretation is independently established. A comparative clause fronted next to the very word it contrasts, rather than the more usual relative-clause-before-antecedent pattern, has also been accepted under plain `ClauseDisplaced` (S000177) — each instance in this family is justified on its own merits, not by matching a prior instance's exact shape. `RelativeAttraction` (*attractio relativi*, Section 6.11) belongs conceptually with this group as well, though it is treated there alongside the other Varronian stylistic values rather than here.
+> **Background.** In Latin treebanks the family occurs mostly in Late Antique, biblical, and early medieval charter Latin; the largest Latin treebank does not use it at all. Applying it to classical technical prose calls for care in identifying an instance, not for treating the relation as unavailable.
 
-> **Background.** The construction's wider historical development in Latin, including its concentration in Varro among republican-period writers, is traced in Halla-aho (2012).
+**A boundary case.** At S000041, *nos* stands early, before the subordinate clause that seems to license it, but it is not dislocated: it is the `obj` of *rogaret* in the Basic tree, and its second role, subject of *expectaremus*, is an Enhanced syllepsis edge (Section 5.6). The same token doing a second job is exactly what `dislocated` excludes.
+
+**Related `SyntaxNote` values.**
+
+- `Anastrophe`: word-order inversion that a tree query cannot find reliably (*si* S000001:2, *cum* S000003:11, *quod* S000135:16).
+- `Prolepsis`: a detached, anticipatory constituent whose resumption is not recoverable from local dependencies.
+- `Prolepsis:Cataphoric`: a demonstrative or similar form anticipating a later catalogue or clause (*hi* at the head of S000024; *ea* at the head of S000035).
+- `ClauseDisplaced`: a displaced clause whose displacement the tree and word order do not show, such as a relative clause before its antecedent (S000011, S000024) or a comparative clause fronted next to the word it contrasts (S000177). Subtypes: `ClauseDisplaced:Connective`, a connecting relative; `ClauseDisplaced:Afterthought`, a postposed afterthought, used only once that reading is independently established.
+- `RelativeAttraction` belongs with this group but is treated in Section 6.11.
+
+> **Background.** The historical development of prolepsis in Latin, including its concentration in Varro among republican writers, is traced in Halla-aho (2012).
 
 **Corpus examples**
 
@@ -1547,17 +1501,16 @@ Several `SyntaxNote` values share the same displaced-or-anticipatory character w
 
 ### 6.11 Retrievable Varronian constructions recorded with `SyntaxNote`
 
-Draws on nothing structurally new: every value below supplements, rather than replaces, whatever Basic or Enhanced analysis the sentence in question already carries.
+These values add to the Basic and Enhanced analysis; they never replace it.
 
-Six `SyntaxNote` values are, in one way or another, Varronian stylistic phenomena rather than general-Latin constructions of the kind treated in the earlier sections of this chapter, and have no better home elsewhere in this chapter's outline.
+> **Background.** On Varro's style and language more generally, see Heurgon (1950), Laughton (1960), and Chahoud (2016).
 
-> **Background.** For background on Varro's style and language more generally — not tied to any specific value below — see Heurgon (1950), Laughton (1960), and Chahoud (2016).
-
-`LooseAgreement` marks agreement following sense, reference, or an understood class rather than the overt grammatical controller, in a way that could otherwise be mistaken for annotation error — for example at S000015:7 (*venit*), S000072:56 (*quos*), and S000097:1 (*quas*). `SubjectChange` marks an unexpressed or structurally opaque subject switch not recoverable from overt `nsubj` relations, applied sparingly, and never merely because coordinated clauses happen to have different overt subjects — for example at S000016:18, *florent*. `Anacoluthon` marks a genuine constructional break, abandoned syntactic plan, incompatible continuation, or missing governor that the imposed dependency tree necessarily regularizes — explicitly excluded are long periods, ordinary ellipsis (Section 6.7), asyndeton, recipe compression, and unusual word order taken alone. An example is S000120:14, *accedent*, the third member of an asyndetically coordinated imperative series (*condito* ... *infundito* ... *accedent*) that shifts without warning from imperative to plain indicative mood and from instruction to bare assertion. The tree attaches *accedent* to *infundito* by ordinary `conj`, the only relation the coordination affords it, but that attachment alone does not record the discontinuity: the syntactic plan set up by the imperative pair is not the plan the third conjunct actually carries out.
-
-`RelativeAttraction` (*attractio relativi*) marks a relative-clause element whose case has been attracted to its antecedent's, in a way not reliably recoverable from `FEATS` and dependencies alone without confusion with ordinary syntax, an attachment or morphology error, or a textual variant. It is a classical construction; an example is S000139:9, *quod*.
-
-Two further values, more recently introduced, round out the group. `PartitiveApposition` marks a word denoting a part standing in apposition to a word denoting the whole, typically with the part-term placed contrary to ordinary apposition order — the distributive *quisque*-apposition pattern, and the *id genus*/*hoc genus*/*omne genus* idiom, are its two named instances. It is distinguished from ordinary apposition (Section 4.5) precisely by that part-whole relation and reversed order. `AdnominalPP` marks a prepositional phrase read as modifying a noun directly, with no governing verb present or recoverable for it to attach to verbally — *in capite apex*, "the projection at the top," is its reference instance. It is distinguished from an ordinary verb-governed oblique by the complete absence of a verbal governor, and from an elided-but-recoverable verbal attachment, which instead takes `SyntaxNote=Ellipsis` (Section 6.7).
+- `LooseAgreement`: agreement following sense or reference rather than the grammatical controller, which could otherwise look like an annotation error (S000015:7 *venit*, S000072:56 *quos*, S000097:1 *quas*).
+- `SubjectChange`: an unexpressed subject switch that the overt `nsubj` relations do not show; not merely because coordinated clauses have different overt subjects (S000016:18 *florent*).
+- `Anacoluthon`: a constructional break, abandoned plan, incompatible continuation, or missing governor that the tree has to regularize. Not for long periods, ordinary ellipsis (Section 6.7), asyndeton, recipe compression, or word order alone. At S000121:2, *fel*: the recipe opens with *fel bubulum cum aceto mixtum* as if it were the object of a verb of taking and continues with *unguito*, whose object is *lectum*; the tree attaches *fel* to *unguito* as `obl`, since the gall is what the bed is anointed with, which does not record the break.
+- `RelativeAttraction`: a relative-clause element whose case is attracted to its antecedent's, which could otherwise be mistaken for an error or a variant (S000139:9 *quod*).
+- `PartitiveApposition`: a part-term in apposition to the whole, typically in reversed order (distributive *quisque*; *id genus*, *hoc genus*, *omne genus*). It differs from ordinary apposition (Section 4.5.6) by the part-whole relation and the order.
+- `AdnominalPP`: a prepositional phrase modifying a noun directly, with no verbal governor present or recoverable (*in capite apex* ‘the projection at the top’); a recoverable verbal governor takes `SyntaxNote=Ellipsis` instead (Section 6.7).
 
 **Corpus examples**
 
@@ -1566,15 +1519,13 @@ Two further values, more recently introduced, round out the group. `PartitiveApp
 
 ## 7. Text, Discourse, and Review Metadata
 
-The chapters so far describe the accepted linguistic analysis itself. This chapter describes what surrounds it: the surface text the analysis is built on, the editorial witnesses that sometimes propose a different text, the discourse context a sentence sits in, and the reasoning retained alongside the annotation rather than folded into it. None of the metadata described here is itself a Basic or Enhanced relation, a `UPOS` category, or a `FEATS` value; all of it lives in the `MISC` field or in sentence-level comment keys (Section 1.2, Section 1.2.1).
+This chapter covers what surrounds the analysis: the surface text, editorial variants, alternative records, speaker and discourse labels, construction labels, review notes, and review status. All of it is in `MISC` or in sentence-level comment lines (Sections 1.2.1, 1.2.7); none of it is a relation, a part of speech, or a feature.
 
 ### 7.1 Accepted text and original form
 
-Draws on Section 1.2.1 (the `text`/`text_old` sentence-metadata keys already introduced there).
+`text` is the accepted text and `text_old` the transmitted text (Section 1.2.1). `OrigForm` gives a token's transmitted form where the token itself was normalized, for example a capital or a punctuation mark. It comes with the text and is corrected only for a change of proper-noun capitalization or punctuation.
 
-Section 1.2.1 already distinguishes, at the sentence level, the accepted working-form surface text (`text`) from the as-transmitted surface text preceding its normalization (`text_old`). `OrigForm` extends the same distinction down to an individual token: where a specific token has been normalized independently of the sentence as a whole, `OrigForm` records its pre-normalization surface form, supplied to this treebank already in that normalized state rather than authored fresh during ordinary review. It is preset, inherited data, corrected only in the narrow case of a proper-noun capitalization or punctuation-preference change; nothing about it is re-derived as a matter of routine.
-
-Two further token-level keys round out how the accepted surface text is represented. `SpaceAfter=No` — the general Universal Dependencies convention, not a treebank-specific device — marks that no space separates a token from the one following it; where a space does follow, the key is simply omitted, since UD's format has no corresponding `SpaceAfter=Yes`. [`Lang`](https://universaldependencies.org/foreign.html) records the language of a token analysed under its own source-language annotation rather than as Latin — Ancient Greek material integrated into the Latin text takes `Lang=grc` — always together with `Foreign=Yes` (Section 2.6), which marks the word as not Latin; `Lang` adds which language it is.
+`SpaceAfter=No` (general UD) marks a token not followed by a space; there is no `SpaceAfter=Yes`. [`Lang`](https://universaldependencies.org/foreign.html) gives the language of a token analysed as non-Latin (`Lang=grc` for Greek), always with `Foreign=Yes` (Section 2.6).
 
 **Corpus examples**
 
@@ -1583,25 +1534,32 @@ Two further token-level keys round out how the accepted surface text is represen
 
 ### 7.2 Token-local variants
 
-Draws on nothing earlier in the manual; this is the first appearance of this treebank's editorial-witness apparatus.
+`Variant=Source:reading` records a reading proposed by an editorial witness and anchored on one accepted token. It is the default device for a variant; Section 7.3 covers what one token cannot carry.
 
-`Variant=Source:reading` records a token-anchored variant reading proposed by one of this treebank's registered editorial witnesses — the Loeb edition (the implicit baseline against which a comparison reading is normally read), Goetz's second edition, Keil, Heurgon, Giusta, or a securely attested reading from Flach. It is the default and preferred device for an editorial variant wherever the variant can be anchored to a single accepted token, reserving the sentence-level mechanism of Section 7.3 for what token-level anchoring genuinely cannot cover.
+The sources are labels from a fixed list:
 
-Four patterns cover the range of token-local variants. An ordinary replacement reading is written directly (`Variant=Keil:possem`). A proposed omission of the token uses a bare hyphen as the reading (`Variant=Giusta:-`), the mirror image of a proposed addition, which is anchored instead to the token immediately *following* the insertion point, with a trailing `+` on the reading (`Variant=Giusta:Prius+`, "Giusta proposes inserting *Prius* immediately before this token") — anchoring forward this way handles a sentence-initial insertion the same as any other, since there is no preceding token for it to attach to. Where a single proposed reading replaces a span of two or more accepted tokens, the full reading is anchored to one token in the span, with the remaining participating token or tokens marked `Source:CF_<anchor_token_id>` rather than duplicating the reading text on every token. Where more than one witness proposes the *same* reading on a token, the witnesses are joined by a comma before the colon (`Variant=Heurgon,Keil:atque`); where a token carries more than one *distinct* proposal, the proposals themselves are joined by a semicolon (`Variant=Giusta:ad+;Heurgon,Keil:atque`).
+- the editions: `Loeb` (the working text, so normally implicit), the Budé editor of the book (`Heurgon`, `Guiraud`), `Goetz2`, `Keil`, `Giusta`, `Flach`, `Walter`;
+- the sources cited in the Loeb apparatus: `MSS` (the manuscripts), `EarlyEditions`, `EditioPrinceps`, `Editors` (other editors generally), and named scholars (`Schneider`, `Pontedera`, `Scaliger`, and others).
+
+The reading takes one of these forms:
+
+- a replacement: `Variant=Keil:possem`;
+- an omission of the token: a bare hyphen, `Variant=Giusta:-` (`Variant=Loeb:-` where the Loeb text deletes a word the working text keeps);
+- an addition: anchored on the token that follows the insertion point, with a trailing `+`, `Variant=Giusta:Prius+`;
+- a reading replacing a span of tokens: written once, on one token of the span, with the others marked `Source:CF_<anchor_id>`.
+
+Several witnesses with the same reading are joined by a comma before the colon (`Variant=Heurgon,Keil:atque`); several distinct readings on one token are separated by a semicolon.
 
 **Corpus examples**
 
 - *otium si essem consecutus …* ‘if I had obtained leisure …’ (S000001): *otium* (1) `Variant=Giusta:Prius+`. Giusta proposes inserting Prius before the first word of the sentence; the addition is anchored on the following token, otium.
 - *… meque ut id mihi habeam curare roges …* ‘… and (since) you ask me to see to it that I keep this for myself …’ (S000003): *me* (15) `Variant=Giusta:aeque`; *que* (16) `Variant=Giusta:CF_15`. Giusta's single reading aeque replaces the two tokens me and que; the reading is written once, on me, and que points to it.
-- *… mente est captus adque adgnatos et gentiles est deducendus.* ‘… he is out of his mind and must be handed over to his agnates and clansmen’ (S000068): *adque* (15) `Variant=Giusta:ad+;Heurgon,Keil:atque`. Two distinct proposals on one token are joined by a semicolon; the second, atque, is shared by Heurgon and Keil, whose names are joined by a comma.
+- *… mente est captus adque adgnatos et gentiles est deducendus.* ‘… he is out of his mind and must be handed over to his agnates and clansmen’ (S000068): *adque* (15) `Variant=Heurgon,Keil:atque`; *adgnatos* (16) `Variant=Giusta,Heurgon,Keil:ad+`. Witnesses with the same reading are joined by a comma; the insertion of ad is anchored on the following token.
+- *ut istae, quas dixisti, caprae* ‘as those goats which you mentioned’ (S000099): *dixisti* (14) `Variant=Heurgon,Walter:dixti;MSS:dixi`. Two distinct readings, separated by a semicolon: Heurgon and Walter print dixti, the manuscripts have dixi.
 
 ### 7.3 Structural variants
 
-Draws on Section 7.2 (`Variant`, whose token-level anchoring this mechanism exists to supplement, not duplicate).
-
-`VariantStructure`, a sentence-level key, records an editorial-witness variant that cannot be anchored to a single token: an omission spanning more than a token-local replacement, a transposition or reordering, a cross-sentence relocation, non-local punctuation or segmentation, or an editorial proposal about speaker attribution. A plain local addition still belongs to token-level `Variant` and its trailing-`+` convention (Section 7.2), not here; `VariantStructure` is reserved for what that convention cannot express, chiefly a change with no single following token able to carry it. A `VariantStructure` entry always names its source witness and, where possible, anchors to a token number; a speaker or segmentation description may stand without a token number.
-
-Working markers used during review, such as `witness_gap`, belong to the review workflow and never appear in silver or gold records.
+`VariantStructure`, a sentence-level key, records a variant that no single token can carry: an omission of more than a token, a transposition, a move across sentences, a change of punctuation or segmentation, or a different speaker attribution. It names its source and, where possible, the token numbers. Working markers such as `witness_gap` never appear in silver or gold records.
 
 **Corpus examples**
 
@@ -1610,15 +1568,11 @@ Working markers used during review, such as `witness_gap`, belong to the review 
 
 ### 7.4 Alternative and revised sentence records
 
-Draws on Section 1.2.1 (`source_sentence`/`source_sentences` and `alt_type`) and Section 1.2.8 (sentence-identifier uniqueness).
-
-An alternative sentence record exists where a single passage admits more than one defensible rendering into CoNLL-U — a different segmentation into sentences, or a different structural analysis of a sentence whose scope is not itself in question — and this treebank keeps the alternatives side by side rather than resolving the question by silent choice. Such a record carries its own `sent_id`, with an `ALT` or `REV` prefix in place of the ordinary `S`, and is linked back to what it derives from through `source_sentence` or `source_sentences`. `alt_type` is added where the divergence is a resegmentation (`period_segmentation`, at present the only value) and is omitted where the record is an alternative analysis of an identically scoped sentence (Section 1.2.1). Which of the parallel analyses of a passage the released treebank carries is decided only at gold level (Section 7.9).
+Where a passage admits more than one defensible segmentation or analysis, the alternatives are kept side by side. An alternative record has its own `sent_id` with the prefix `ALT` or `REV`, points to its source with `source_sentence` or `source_sentences`, and, for a resegmentation, has `alt_type = period_segmentation`. Which analysis the release carries is decided at gold.
 
 ### 7.5 Speaker attribution
 
-Draws on nothing earlier in the manual.
-
-`Speaker`, a token-level `MISC` key, records which named speaker utters a given stretch of text, using a recurring set of labels rather than free text. A sentence-level `speaker` key, present on every sentence record, mirrors it: all tokens of a sentence carry the same `Speaker` value, and the sentence-level key repeats that value. The narrative frame of a quoted turn (*inquit Agrius*) takes the speaker of that turn and is distinguished instead by `DiscourseMode` (Section 7.6). Where the two keys disagree, the token-level value is authoritative, and the mismatch is itself a data-quality signal rather than a legitimate difference of scope. Speaker attribution is preset, inherited data rather than something assigned fresh during ordinary review, and is corrected only where a missed speaker-turn change is detected — most concretely, where the text itself contains an overt turn-marking verb of speaking (*inquam*, *inquit*) that the current attribution does not yet reflect.
+`Speaker` names the speaker of every token; the sentence-level `speaker` key repeats it, and the token value is authoritative if the two differ. The narrative frame of a quoted turn (*inquit Agrius*) has the speaker of the turn and is marked by `DiscourseMode` (Section 7.6). Varro's own turns, framed by *ego … inquam*, have `Speaker=Varro`. Speaker labels come with the text and are corrected only where an overt verb of speaking (*inquam*, *inquit*) shows a turn change that the labels miss.
 
 **Corpus examples**
 
@@ -1627,22 +1581,31 @@ Draws on nothing earlier in the manual.
 
 ### 7.6 `DiscourseMode`
 
-Draws on Section 4.12 (`parataxis:reporting`, whose reporting frame `DiscourseMode` reliably helps identify).
+`DiscourseMode` labels the discourse section of each token:
 
-`DiscourseMode`, a token-level `MISC` key, marks the discourse section a token belongs to — a preface, a narrative passage, a stretch of dialogue, and so on — again using a recurring, controlled set of labels. Unlike `Speaker`, `DiscourseMode` deliberately has no sentence-level mirror, since it legitimately takes more than one value within a single sentence — a sentence may mix dialogue and narrative material, most often where a narrative frame introduces a quoted turn — and a single sentence-level value would misrepresent that. Like `Speaker`, it is preset, inherited data corrected only where a missed speaker-turn change is detected, not re-derived from scratch as a matter of routine; within a mixed-discourse sentence, a narrative-labelled span reliably identifies the reporting frame around a quoted turn (Section 4.12), which is existing evidence worth relying on rather than a hypothesis to re-test on every occasion, though an irregular-looking case is still checked rather than assumed correct.
+- `Preface`: Varro's dedication;
+- `Dialogue`: the speakers' words, Varro's own turns included;
+- `Narrative`: the narrator's frame, including *inquit* or *inquam* outside the dialogue;
+- `Lacuna`: the token `…` that stands for a gap in the transmitted text; it keeps the `Speaker` of the passage it interrupts.
+
+It has no sentence-level key, since a sentence may mix dialogue and narrative. Within such a sentence the `Narrative` span identifies the reporting frame (Section 4.12.2). Like `Speaker`, it comes with the text and is corrected only for a missed turn change.
 
 **Corpus examples**
 
 - *Scrofa: prius – inquit – discernendum …* ‘Scrofa said: first it must be determined …’ (S000084): *Scrofa* (1) `DiscourseMode=Narrative`; *inquit* (5) `DiscourseMode=Narrative`, `parataxis:reporting`; *discernendum* (7) `DiscourseMode=Dialogue`. A mixed sentence: the narrative span is the reporting frame around the quoted turn.
 - *otium si essem consecutus, Fundania, commodius tibi haec scriberem …* ‘if I had obtained leisure, Fundania, I would write these things to you more suitably …’ (S000001): *otium* (1) `DiscourseMode=Preface`.
+- *dicitur aut cretosa … sic ab aliis generum discriminibus mixta* ‘is called either chalky … so, mixed by the other distinctions of kinds’ (S000246): *…* (70) `DiscourseMode=Lacuna`, `Speaker=Scrofa`. The lacuna token keeps the speaker of the passage it interrupts.
 
 ### 7.7 `SyntaxNote`
 
-Draws on nothing earlier in the manual as a mechanism, though its individual controlled values are treated throughout Chapters 4 to 6, cross-referenced below.
+`SyntaxNote` labels a construction that the Basic and Enhanced annotation, or another key, does not make reliably findable. A value is justified for either of two reasons:
 
-`SyntaxNote` is a controlled set of linguistic-observation labels, applied where a special construction is not reliably or practically recoverable from the Basic or Enhanced annotation, or from another explicit mechanism such as `TraditionalMood`, `Variant`, `ReviewNote`, or `InheritedFrom`, and where reconstructing it without the label would require disproportionately heterogeneous queries across the record. Two distinct justifications license a value, though the underlying mechanism is identical either way: ambiguity resolution, where something interpretively important is missing from the Basic tree without affecting any `DEPREL` at all; and research findability, where a genuine Varronian stylistic or rhetorical feature is already correctly represented in the tree but a simple structural query still cannot reliably locate it. A value is applied during ordinary syntactic review, using the shortest applicable controlled label, and never duplicates what is already economically recoverable elsewhere.
+- ambiguity resolution: something interpretively important, such as an elided predicate, is missing from the tree without affecting any relation;
+- research findability: a Varronian stylistic feature is represented correctly in the tree, but a simple query cannot find it.
 
-`SyntaxNote` is deliberately exploratory rather than authoritative in the way core annotation is: a false positive is filtered out downstream at no lasting cost, but a false negative leaves nothing behind to analyse at all, which is why a genuine borderline case noticed during review is tagged rather than withheld pending greater certainty. The controlled values themselves are treated where the construction each one names actually belongs, rather than gathered in one place here: `FixedExpression` in Section 4.11; `ImpersonalGerundive` in Section 6.4; `Ellipsis` and `Syllepsis` in Sections 5.4 and 5.6; and the remaining Varronian-stylistics values — `Anastrophe`, `Prolepsis` and `Prolepsis:Cataphoric`, `ClauseDisplaced` and its subtypes, `LooseAgreement`, `SubjectChange`, `Anacoluthon`, `RelativeAttraction`, `PartitiveApposition`, and `AdnominalPP` — in Sections 6.10 and 6.11.
+Apply a value when a plausible case is noticed, even under some uncertainty: a false positive is filtered out later, a false negative is lost. Use the shortest applicable value. The format is `SyntaxNote=<value>[:<subtype>]`; for `Ellipsis` the part after the colon may instead name the elided word (`Ellipsis:aram`, Section 5.4). Several values on one token are separated by a semicolon (`SyntaxNote=Prolepsis;Syllepsis`).
+
+The values are defined with their constructions: `FixedExpression` in Section 4.11; `ImpersonalGerundive` in Section 6.4; `Ellipsis` and `Syllepsis` in Sections 5.4 and 5.6; `Anastrophe`, `Prolepsis`, `Prolepsis:Cataphoric`, `ClauseDisplaced` and its subtypes, `LooseAgreement`, `SubjectChange`, `Anacoluthon`, `RelativeAttraction`, `PartitiveApposition`, and `AdnominalPP` in Sections 6.10 and 6.11.
 
 **Corpus examples**
 
@@ -1651,13 +1614,14 @@ Draws on nothing earlier in the manual as a mechanism, though its individual con
 
 ### 7.8 Review notes and tags
 
-Draws on nothing earlier in the manual.
+A review note gives the reasoning that the annotation does not show: a non-obvious choice, a plausible alternative and the reason against it, a decision that rests on a commentary or an edition, or a genuine alternative reading of the Latin. It does not repeat what the annotation already records, and it never asks a question, raises a doubt about policy or procedure, or records workflow history. The notes are published as `documentation/review_notes.md`.
 
-Review notes record the reasoning behind an analysis that cannot be read off the annotation itself: a non-obvious interpretive choice, a plausible alternative rejected and the reason against it, a decision that depends on a commentary or an edition, or a question the annotation leaves open. They do not restate what the tree, `DEPS`, `FEATS`, `Variant`, `SyntaxNote`, or `InheritedFrom` already encode, and they never record workflow history: how or when an analysis was reached, earlier values, or corrections. The notes are published together, sentence by sentence, as `documentation/review_notes.md`.
+- **One note, one point, one anchor.** A note belongs to one sentence and is anchored on the token that heads the issue (`ReviewNote=RN_<sent_id>_<NN>`, with `ReviewTags`); a note on a short list of tokens is anchored on the first and names the others. Only a point no token can carry (segmentation, a merge or split, speaker assignment) is anchored on the header (`# review_note`, `# review_tags`).
+- **Numbering.** Notes are numbered within the sentence in anchor order, header notes first. Several notes on one token are listed in number order, separated by semicolons, and `ReviewTags` is the union of their topics.
+- **Topics**: `Syntax`, `Morphology`, `Lexicon`, `Tokenization`, `Segmentation`, `Enhanced`, `Textual`, `Interpretation`, `Translation`.
+- **Status**: `Settled`, or `Open` where the note states a genuine alternative reading that the evidence leaves open, giving both readings.
 
-Each note belongs to one sentence and makes one point. It is anchored in one place in that sentence: normally on the token that heads the issue, through the `MISC` key `ReviewNote=RN_<sent_id>_<NN>`, with `ReviewTags` giving the note's topics; where the point concerns a short list of tokens, the note is anchored on the first of them and names the others. Only a point that no single token can carry, such as sentence segmentation, a merge or split, or speaker assignment, is anchored on the sentence header instead, through the `# review_note` and `# review_tags` pair. A note is never referenced from more than one token, from both a token and the header, or from another sentence. Notes are numbered within their sentence in the order of their anchors, header notes first and then token notes in token order; where several notes fall on one token, `ReviewNote` lists them in number order, separated by semicolons, and `ReviewTags` gives the union of their topics.
-
-Topics come from a controlled set: `Syntax`, `Morphology`, `Lexicon`, `Tokenization`, `Segmentation`, `Enhanced`, `Textual`, `Interpretation`, and `Translation`. Each note also has a status, `Settled` or `Open`, the latter marking a question the annotation leaves open. Where the same point applies to an alternative or revised record of the same passage (Section 7.4), that record carries its own note, whose text refers to the note on the primary sentence.
+An alternative or revised record (Section 7.4) has its own note, which refers to the note on the primary sentence.
 
 **Corpus examples**
 
@@ -1666,25 +1630,19 @@ Topics come from a controlled set: `Syntax`, `Morphology`, `Lexicon`, `Tokenizat
 
 ### 7.9 Review status
 
-`review_status` and its related metadata record how much verification a sentence's annotation has received. They are provenance information, not annotation labels: two sentences with the same correct analysis can carry different `review_status` values if one has been checked more thoroughly than the other.
+`review_status` records how much verification a sentence has had, not which analysis it has.
 
 #### 7.9.1 Review-status values
 
-A sentence that has not yet entered the review pipeline at all carries no `review_status` key. This absent state is distinct from every registered value: it is not a review depth of zero, but the state of material that has not yet been considered under this treebank's annotation policy at all.
-
-`review_status=ore` marks a sentence carrying an automatically produced baseline analysis — morphology and a Basic dependency tree generated mechanically, before any of this treebank's own review has been applied. This is a one-time production stage, not a depth of review comparable to bronze, silver, or gold: it does not recur once a sentence has passed through it, and it precedes the bronze/silver/gold progression rather than sitting on it as a further rung.
-
-Once a sentence has been through this treebank's own annotation procedure, its `review_status` records how thoroughly that procedure was carried out, not which annotation choices were made.
-
-`bronze` marks a first pass of population and evidence gathering on the baseline: the structure is described, and `SyntaxNote` values, textual variants, commentary evidence, translations, and Enhanced and ellipsis structure are added, but the analysis is not yet adjudicated, and bronze material is never independent authority for an analysis. `silver` marks the routine, current level of ordinary sentence-by-sentence review: the analysis is adjudicated with human verification, syntax, textual variation, and policy compliance are all checked, and non-obvious reasoning is retained as review notes (Section 7.8). `gold` marks a final level prepared for release: every applicable validation has passed, no review flag remains open unless it is explicitly documented as intentional, open review notes are closed, and the choice among parallel analyses of a passage (Section 7.4) is made.
-
-These three values describe depth of verification, not different kinds of correctness: a bronze and a gold analysis of the same sentence, where both are correctly annotated, differ in how much scrutiny has been recorded, not in the underlying annotation itself.
+- No key: the sentence has not entered the pipeline.
+- `ore`: an automatically produced baseline (morphology and a Basic tree), made once before review.
+- `bronze`: a first pass that adds construction labels, variants, commentary evidence, translations, and Enhanced structure, without adjudicating the analysis; bronze material is never authority for an analysis.
+- `silver`: the routine review level: the analysis is adjudicated by a human, text, syntax, and policy compliance are checked, and the reasoning is kept in review notes.
+- `gold`: the release level: every validation passes, open notes are closed, and the choice among alternative records is made.
 
 #### 7.9.2 Per-field status metadata
 
-`FieldStatusN` is inherited from earlier analytical work: the tags can inform the ore workflow, but no new tags are produced.
-
-Where finer granularity is useful, an individual CoNLL-U column can carry its own status, independently of the sentence's overall `review_status`, through a `MISC` key of the form `FieldStatusN`, where N identifies the column (3 for `LEMMA`, 4 for `UPOS`, 5 for `XPOS`, 6 for `FEATS`, 7 for `HEAD`, 8 for `DEPREL`, 9 for `DEPS`). Its value records what kind of scrutiny that one field has had: `p` for a raw, unreviewed production or parser value; `q` for a value explicitly flagged as uncertain and awaiting review; `r` for a value that has been reviewed, or that was imported from an earlier reference annotation before that annotation was integrated into the working tree (the code does not distinguish the two); `s` for a value belonging to an accepted silver-reviewed analysis; `g` for a value that has completed gold-level adjudication; and `_` for a value that carries no annotation evidence at all, regardless of what the field itself contains. This per-field marker is transitional: it is removed when the sentence is committed, once the field has been accepted or otherwise resolved, and never remains on silver or gold material.
+`FieldStatusN` is a temporary per-column marker inherited from earlier work, where N is the column (3 `LEMMA`, 4 `UPOS`, 5 `XPOS`, 6 `FEATS`, 7 `HEAD`, 8 `DEPREL`, 9 `DEPS`). Its values are `p` (raw production or parser value), `q` (flagged as uncertain), `r` (reviewed, or imported from an earlier reference annotation), `s` (accepted at silver), `g` (adjudicated at gold), and `_` (no annotation evidence). It informs ore and bronze; no new values are produced, and it is removed when a sentence is committed at silver, so silver and gold records carry none.
 
 ## References
 
